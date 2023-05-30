@@ -13,10 +13,10 @@ namespace DialogSystem
         public event Action OnDialogEnd; 
         
         public float CharactersPerSecond;
-
+        [HideInInspector] public int SentenceIndex;
+        [HideInInspector] public Dialog Dialog;
+        
         private float charsPerSec;
-        public Dialog Dialog;
-        public int SentenceIndex;
         private bool lineFinished;
         private bool dialogFinished = true;
         private bool isClosed;
