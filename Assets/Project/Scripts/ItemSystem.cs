@@ -17,13 +17,16 @@ public class ItemSystem : MonoBehaviour
                 break;
             case Items.Papier:
                 break;
+            case Items.Karte:
+                break;
         }
     }
 }
 public enum Items
 {
-    Leer,//0
+    None,//0
     Stock,//1
     Stein,//2
     Papier,//3
+    Karte,//4
 }
