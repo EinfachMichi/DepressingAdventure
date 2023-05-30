@@ -20,12 +20,13 @@ namespace DialogSystem
             DialogManager.Instance.OnDialogEnd += OnDialogEnd;
         }
 
-        private void OnDialogStart(Dialog dialog, int index)
+        private void OnDialogStart()
         {
             anim.SetTrigger("FadeIn");
-            
-            IconImage.sprite = dialog.Speaker(index).Icon;
-            SpeakerName.text = dialog.Speaker(index).Name;
+
+            DialogManager manager = DialogManager.Instance;
+            IconImage.sprite = manager.Dialog.Speaker(manager.SentenceIndex).Icon;
+            SpeakerName.text = manager.Dialog.Speaker(manager.SentenceIndex).Name;
         }
         
         private void OnTextChanged(string text)

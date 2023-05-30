@@ -2,20 +2,21 @@ using System;
 using System.Collections;
 using Main;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DialogSystem
 {
     public class DialogManager : Singleton<DialogManager>
     {
         public event Action<string> OnTextChanged;
-        public event Action<Dialog, int> OnDialogStart; 
+        public event Action OnDialogStart; 
         public event Action OnDialogEnd; 
         
         public float CharactersPerSecond;
 
         private float charsPerSec;
-        private Dialog dialog;
-        private int sentenceIndex;
+        public Dialog Dialog;
+        public int SentenceIndex;
         private bool lineFinished;
         private bool dialogFinished;
         private bool isClosed;
@@ -35,19 +36,19 @@ namespace DialogSystem
 
         public void StartDialog(Dialog dialog)
         {
-            this.dialog = dialog;
-            sentenceIndex = 0;
+            this.Dialog = dialog;
+            SentenceIndex = 0;
             lineFinished = false;
             dialogFinished = false;
             isClosed = false;
-            OnDialogStart?.Invoke(dialog, sentenceIndex);
+            OnDialogStart?.Invoke();
 
             StartCoroutine(Type());
         }
 
         private IEnumerator Type()
         {
-            string text = dialog.Text(sentenceIndex);
+            string text = Dialog.Text(SentenceIndex);
             string sentence = "";
             lineFinished = false;
             for (int i = 0; i < text.Length; i++)
@@ -58,7 +59,7 @@ namespace DialogSystem
             }
 
             lineFinished = true;
-            if (dialog.Sentences.Length <= sentenceIndex + 1)
+            if (Dialog.Sentences.Length <= SentenceIndex + 1)
             {
                 dialogFinished = true;
             }
@@ -73,7 +74,7 @@ namespace DialogSystem
                 return;
             }
 
-            sentenceIndex++;
+            SentenceIndex++;
             StartCoroutine(Type());
         }
     }

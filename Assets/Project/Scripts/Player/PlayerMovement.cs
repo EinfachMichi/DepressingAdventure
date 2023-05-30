@@ -1,4 +1,5 @@
 using System;
+using DialogSystem;
 using Environment;
 using UnityEngine;
 
@@ -24,6 +25,8 @@ namespace Player
         {
             TeleportAnimation.Instance.OnTeleportAnimationStart += Freeze;
             TeleportAnimation.Instance.OnTeleportAnimationDone += UnFreeze;
+            DialogManager.Instance.OnDialogStart += Freeze;
+            DialogManager.Instance.OnDialogEnd += UnFreeze;
 
             speed = WalkSpeed;
         }
