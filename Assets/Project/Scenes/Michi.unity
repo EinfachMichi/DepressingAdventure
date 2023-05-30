@@ -2060,6 +2060,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharactersPerSecond: 20
+  Dialog: {fileID: 0}
+  SentenceIndex: 0
 --- !u!4 &2035582318
 Transform:
   m_ObjectHideFlags: 0

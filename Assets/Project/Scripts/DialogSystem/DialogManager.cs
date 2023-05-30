@@ -18,7 +18,7 @@ namespace DialogSystem
         public Dialog Dialog;
         public int SentenceIndex;
         private bool lineFinished;
-        private bool dialogFinished;
+        private bool dialogFinished = true;
         private bool isClosed;
 
         private void Start()
@@ -36,6 +36,8 @@ namespace DialogSystem
 
         public void StartDialog(Dialog dialog)
         {
+            if (!dialogFinished) return;
+            
             this.Dialog = dialog;
             SentenceIndex = 0;
             lineFinished = false;
