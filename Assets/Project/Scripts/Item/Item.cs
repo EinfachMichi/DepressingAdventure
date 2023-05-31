@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Main;
 
-public class Item : MonoBehaviour,IInteractable
+public class Item : Event,IInteractable
 {
     public Items ItemTyp;
     public Sprite Icon;
@@ -16,6 +16,6 @@ public class Item : MonoBehaviour,IInteractable
         }
         gameObject.SetActive(false);
         Iventory.Instance.AddItem(this);
-        print("Test");
+        TriggerEvent();
     }  
 }
