@@ -9,11 +9,12 @@ public class Item : MonoBehaviour,IInteractable
 
     public void Interact()
     {
-        if(Iventory.Instance.InvFull)
+        if(Iventory.Instance.IsInvFull())
         {
             return;
         }
         gameObject.SetActive(false);
         Iventory.Instance.AddItem(GameobjectItem);
+        print("Test");
     }  
 }
