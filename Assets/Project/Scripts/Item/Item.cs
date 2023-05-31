@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Main;
 
-public class Item : MonoBehaviour,IInteractable
+public class Item : Event,IInteractable
 {
-    public Items GameobjectItem;
+    public Items ItemTyp;
+    public Sprite Icon;
 
     public void Interact()
     {
@@ -14,7 +15,7 @@ public class Item : MonoBehaviour,IInteractable
             return;
         }
         gameObject.SetActive(false);
-        Iventory.Instance.AddItem(GameobjectItem);
-        print("Test");
+        Iventory.Instance.AddItem(this);
+        TriggerEvent();
     }  
 }

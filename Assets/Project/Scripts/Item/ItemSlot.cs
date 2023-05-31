@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour
 {
-    public Items Item=Items.None;
+    public Item Item;
+    public Image Image;
 
     public bool IsSlotFull()
     {
-        if (Item == Items.None)
+        if (Item==null)
         {
             return false;
         }
         return true;
     }
 
-    public void SetItem(Items newItem)
+    public void SetItem(Item newItem)
     {
-        Item = newItem;   
+        Item = newItem;
+        Image.sprite = Item.Icon;
     } 
 }
