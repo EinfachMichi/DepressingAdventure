@@ -18,20 +18,17 @@ namespace Environment
             playerTransform = GameObject.FindWithTag("Player").transform;
         }
 
-        private void Start()
-        {
-            TeleportAnimation.Instance.OnTeleport += Teleport;
-        }
-
         public void Interact()
         {
+            TeleportAnimation.Instance.OnTeleport += Teleport;
             TeleportAnimation.Instance.StartTeleportation();
         }
 
         private void Teleport()
         {
+            TeleportAnimation.Instance.OnTeleport -= Teleport;
             playerTransform.position = houseInfo.TeleportationPoint.position;
-            MainCamera.Instance.SetBoundary(houseInfo.Collider);
+            MainCamera.Instance.SetBoundary(houseInfo.CameraBorder);
         }
     }
 }
