@@ -169,6 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baca5f1f8333ac840a073529f29bc12a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Button:
+  - {fileID: 587230550}
+  - {fileID: 584926145}
+  - {fileID: 2091628169}
 --- !u!1 &451071653
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +321,7 @@ GameObject:
   - component: {fileID: 584926149}
   - component: {fileID: 584926148}
   - component: {fileID: 584926147}
+  - component: {fileID: 584926150}
   m_Layer: 5
   m_Name: SteinButton
   m_TagString: Untagged
@@ -438,6 +443,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584926145}
   m_CullTransparentMesh: 1
+--- !u!114 &584926150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584926145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca43c712a5e21b4d8754031d4a84516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &587230550
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +467,7 @@ GameObject:
   - component: {fileID: 587230554}
   - component: {fileID: 587230553}
   - component: {fileID: 587230552}
+  - component: {fileID: 587230555}
   m_Layer: 5
   m_Name: SchereButton
   m_TagString: Untagged
@@ -571,6 +589,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587230550}
   m_CullTransparentMesh: 1
+--- !u!114 &587230555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587230550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca43c712a5e21b4d8754031d4a84516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1306206068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,6 +1132,7 @@ GameObject:
   - component: {fileID: 2091628173}
   - component: {fileID: 2091628172}
   - component: {fileID: 2091628171}
+  - component: {fileID: 2091628174}
   m_Layer: 5
   m_Name: PapierButton
   m_TagString: Untagged
@@ -1223,3 +1254,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091628169}
   m_CullTransparentMesh: 1
+--- !u!114 &2091628174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091628169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca43c712a5e21b4d8754031d4a84516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
