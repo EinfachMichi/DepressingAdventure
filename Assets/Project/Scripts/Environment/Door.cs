@@ -9,7 +9,7 @@ namespace Environment
     [RequireComponent(typeof(BoxCollider2D))]
     public class Door : MonoBehaviour, IInteractable
     {
-        [FormerlySerializedAs("TeleportHouse")] public House houseInfo;
+        public House houseInfo;
 
         private Transform playerTransform;
 

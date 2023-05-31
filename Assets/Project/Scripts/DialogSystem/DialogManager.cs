@@ -31,14 +31,14 @@ namespace DialogSystem
             if (Input.GetMouseButton(0)) charsPerSec = CharactersPerSecond * 2;
             else charsPerSec = CharactersPerSecond;
             
-            if(Input.GetKeyDown(KeyCode.Return) && lineFinished && !isClosed) NextLine();
+            if(Input.GetKeyDown(KeyCode.F) && lineFinished && !isClosed) NextLine();
         }
 
         public void StartDialog(Dialog dialog)
         {
             if (!dialogFinished) return;
             
-            this.Dialog = dialog;
+            Dialog = dialog;
             SentenceIndex = 0;
             lineFinished = false;
             dialogFinished = false;
