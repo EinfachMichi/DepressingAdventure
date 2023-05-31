@@ -9,26 +9,31 @@ namespace Environment
     [RequireComponent(typeof(BoxCollider2D))]
     public class Door : MonoBehaviour, IInteractable
     {
-        public House houseInfo;
-
-        private Transform playerTransform;
+        public DoorType Type;
+        
+        private House house;
 
         private void Awake()
         {
-            playerTransform = GameObject.FindWithTag("Player").transform;
+            house = GetComponentInParent<House>();
         }
 
         public void Interact()
         {
-            TeleportAnimation.Instance.OnTeleport += Teleport;
             TeleportAnimation.Instance.StartTeleportation();
+            TeleportAnimation.Instance.OnTeleport += Teleport;
         }
 
         private void Teleport()
         {
+            house.Teleport(Type);
             TeleportAnimation.Instance.OnTeleport -= Teleport;
-            playerTransform.position = houseInfo.TeleportationPoint.position;
-            MainCamera.Instance.SetBoundary(houseInfo.CameraBorder);
         }
+    }
+
+    public enum DoorType
+    {
+        In,
+        Out
     }
 }
