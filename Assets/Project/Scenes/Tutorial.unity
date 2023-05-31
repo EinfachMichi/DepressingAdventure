@@ -720,6 +720,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 398666970}
     m_Modifications:
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 103581394}
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Disable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Environment.Barrier, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466937097475765344, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4466937097475765346, guid: bc1b2d64ee050e54a829e21e4ec212fc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1361,7 +1389,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 2.4861546}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1372,7 +1400,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 4}
+  m_Size: {x: 1, y: 20.049156}
   m_EdgeRadius: 0
 --- !u!4 &503110591
 Transform:
@@ -2950,12 +2978,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 18.012794, y: -0.48036766}
+  - {x: 17.95341, y: 9.882308}
   - {x: 18.039768, y: 9.931534}
   - {x: -18.057367, y: 10.020808}
   - {x: -18.085009, y: -10.027387}
   - {x: 17.961332, y: -9.985143}
-  - {x: 18.016676, y: -4.560251}
+  - {x: 18.016676, y: -10.190256}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
