@@ -6,7 +6,6 @@ using Main;
 public class Iventory : Singleton<Iventory>
 {
     public ItemSlot[] Slots;
-    public bool InvFull=false;
 
     public void AddItem(Items newItem)
     {
