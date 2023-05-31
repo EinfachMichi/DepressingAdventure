@@ -5,7 +5,8 @@ using Main;
 
 public class Item : MonoBehaviour,IInteractable
 {
-    public Items GameobjectItem;
+    public Items ItemTyp;
+    public Sprite Icon;
 
     public void Interact()
     {
@@ -14,7 +15,7 @@ public class Item : MonoBehaviour,IInteractable
             return;
         }
         gameObject.SetActive(false);
-        Iventory.Instance.AddItem(GameobjectItem);
+        Iventory.Instance.AddItem(this);
         print("Test");
     }  
 }

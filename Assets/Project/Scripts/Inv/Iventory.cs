@@ -7,7 +7,7 @@ public class Iventory : Singleton<Iventory>
 {
     public ItemSlot[] Slots;
 
-    public void AddItem(Items newItem)
+    public void AddItem(Item newItem)
     {
         for (int i = 0; i < Slots.Length; i++)
         {
