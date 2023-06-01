@@ -1,0 +1,979 @@
+{
+    "passages": [
+      {
+        "text": "Iris: Hey! Du da!\n\n[[Totos_Quest_2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_2",
+            "link": "Totos_Quest_2",
+            "pid": "2"
+          }
+        ],
+        "name": "Totos_Quest_1",
+        "pid": "1",
+        "position": {
+          "x": "800",
+          "y": "350"
+        },
+        "tags": [
+          "Start"
+        ]
+      },
+      {
+        "text": "Steve: Sprichst du mit mir kleines Mädchen?\n\n[[Totos_Quest_3]]",
+        "links": [
+          {
+            "name": "Totos_Quest_3",
+            "link": "Totos_Quest_3",
+            "pid": "3"
+          }
+        ],
+        "name": "Totos_Quest_2",
+        "pid": "2",
+        "position": {
+          "x": "800",
+          "y": "475"
+        }
+      },
+      {
+        "text": "Iris: Gut erkannt!\n\n[[Totos_Quest_4]]",
+        "links": [
+          {
+            "name": "Totos_Quest_4",
+            "link": "Totos_Quest_4",
+            "pid": "4"
+          }
+        ],
+        "name": "Totos_Quest_3",
+        "pid": "3",
+        "position": {
+          "x": "800",
+          "y": "600"
+        }
+      },
+      {
+        "text": "Steve: Hat dir deine Mutter nicht beigebracht, dass du fremde Leute nicht einfach so ansprechen kannst?\n\n[[Totos_Quest_5]]",
+        "links": [
+          {
+            "name": "Totos_Quest_5",
+            "link": "Totos_Quest_5",
+            "pid": "5"
+          }
+        ],
+        "name": "Totos_Quest_4",
+        "pid": "4",
+        "position": {
+          "x": "800",
+          "y": "725"
+        }
+      },
+      {
+        "text": "Iris: Sie ist nie da, da sie andere Dinge zu tun hat, Tequila\n\n[[Totos_Quest_6]]",
+        "links": [
+          {
+            "name": "Totos_Quest_6",
+            "link": "Totos_Quest_6",
+            "pid": "6"
+          }
+        ],
+        "name": "Totos_Quest_5",
+        "pid": "5",
+        "position": {
+          "x": "800",
+          "y": "850"
+        }
+      },
+      {
+        "text": "Steve: Das tut mir leid, kleines Mädchen. Kann ich dir irgendwie helfen?\n\n[[Totos_Quest_7]]",
+        "links": [
+          {
+            "name": "Totos_Quest_7",
+            "link": "Totos_Quest_7",
+            "pid": "7"
+          }
+        ],
+        "name": "Totos_Quest_6",
+        "pid": "6",
+        "position": {
+          "x": "800",
+          "y": "975"
+        }
+      },
+      {
+        "text": "Iris: Ja, dass kannst du! Indem du gegen mich antrittst, Tequila!\n\n[[Totos_Quest_8]]",
+        "links": [
+          {
+            "name": "Totos_Quest_8",
+            "link": "Totos_Quest_8",
+            "pid": "8"
+          }
+        ],
+        "name": "Totos_Quest_7",
+        "pid": "7",
+        "position": {
+          "x": "800",
+          "y": "1100"
+        }
+      },
+      {
+        "text": "Steve: Gegen dich antrete?\n\n[[Totos_Quest_9]]",
+        "links": [
+          {
+            "name": "Totos_Quest_9",
+            "link": "Totos_Quest_9",
+            "pid": "9"
+          }
+        ],
+        "name": "Totos_Quest_8",
+        "pid": "8",
+        "position": {
+          "x": "800",
+          "y": "1225"
+        }
+      },
+      {
+        "text": "Iris: Ganz genau! Trete gegen mich in Schere, Stein, Papier an!\n\n[[Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?]]\n[[Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig seinSteve: ]]",
+        "links": [
+          {
+            "name": "Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?",
+            "link": "Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?",
+            "pid": "11"
+          },
+          {
+            "name": "Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig seinSteve: ",
+            "link": "Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig seinSteve: ",
+            "pid": "10"
+          }
+        ],
+        "name": "Totos_Quest_9",
+        "pid": "9",
+        "position": {
+          "x": "800",
+          "y": "1350"
+        }
+      },
+      {
+        "text": "Iris: Da unterschätzt du mich, denn in diesem Dorf hat mich bisher niemand geschlagen!\n\n[[Totos_Quest_10.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_10.2",
+            "link": "Totos_Quest_10.2",
+            "pid": "36"
+          }
+        ],
+        "name": "Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig seinSteve: ",
+        "pid": "10",
+        "position": {
+          "x": "925",
+          "y": "1475"
+        }
+      },
+      {
+        "text": "Iris: Nenn mich nicht immer so! Schließlich sagt meine Mutter, dass ich mich schon sehr erwachsen benehme!\n\n[[Totos_Quest_10.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_10.1",
+            "link": "Totos_Quest_10.1",
+            "pid": "12"
+          }
+        ],
+        "name": "Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?",
+        "pid": "11",
+        "position": {
+          "x": "800",
+          "y": "1475"
+        }
+      },
+      {
+        "text": "Steve: Die, die nie für dich da ist?\n\n[[Totos_Quest_11.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_11.1",
+            "link": "Totos_Quest_11.1",
+            "pid": "13"
+          }
+        ],
+        "name": "Totos_Quest_10.1",
+        "pid": "12",
+        "position": {
+          "x": "800",
+          "y": "1600"
+        }
+      },
+      {
+        "text": "Iris: …\n\n[[Totos_Quest_12.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_12.1",
+            "link": "Totos_Quest_12.1",
+            "pid": "14"
+          }
+        ],
+        "name": "Totos_Quest_11.1",
+        "pid": "13",
+        "position": {
+          "x": "800",
+          "y": "1725"
+        }
+      },
+      {
+        "text": "Iris: Willst du nun gegen mich antreten, oder nicht?\n\n[[Totos_Quest_13.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_13.1",
+            "link": "Totos_Quest_13.1",
+            "pid": "15"
+          }
+        ],
+        "name": "Totos_Quest_12.1",
+        "pid": "14",
+        "position": {
+          "x": "800",
+          "y": "1850"
+        }
+      },
+      {
+        "text": "Steve: An sich sollte es nicht zu schwer sein dich zu besiegen, doch hast du meine Frage nicht beantwortet, warum ich es tun sollte.\n\n[[Totos_Quest_14.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_14.1",
+            "link": "Totos_Quest_14.1",
+            "pid": "16"
+          }
+        ],
+        "name": "Totos_Quest_13.1",
+        "pid": "15",
+        "position": {
+          "x": "800",
+          "y": "1975"
+        }
+      },
+      {
+        "text": "Iris: Der Gewinner darf sich etwas vom Verlierer wünschen, Tequila.\n\n[[Totos_Quest_15.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_15.1",
+            "link": "Totos_Quest_15.1",
+            "pid": "17"
+          }
+        ],
+        "name": "Totos_Quest_14.1",
+        "pid": "16",
+        "position": {
+          "x": "800",
+          "y": "2100"
+        }
+      },
+      {
+        "text": "Steve: sich etwas von dem anderen wünschen?\n\n[[Totos_Quest_16.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_16.1",
+            "link": "Totos_Quest_16.1",
+            "pid": "18"
+          }
+        ],
+        "name": "Totos_Quest_15.1",
+        "pid": "17",
+        "position": {
+          "x": "800",
+          "y": "2225"
+        }
+      },
+      {
+        "text": "Iris: Ganz genau!\n\n[[Totos_Quest_17.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_17.1",
+            "link": "Totos_Quest_17.1",
+            "pid": "19"
+          }
+        ],
+        "name": "Totos_Quest_16.1",
+        "pid": "18",
+        "position": {
+          "x": "800",
+          "y": "2350"
+        }
+      },
+      {
+        "text": "Steve: Klingt gar nicht mal so schlecht\n\n[[Totos_Quest_18.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_18.1",
+            "link": "Totos_Quest_18.1",
+            "pid": "20"
+          }
+        ],
+        "name": "Totos_Quest_17.1",
+        "pid": "19",
+        "position": {
+          "x": "800",
+          "y": "2475"
+        }
+      },
+      {
+        "text": "Stever: Okay. Ich bin dabei. Wenn ich gewinne, hilfst du mir eine passende Unterkunft zu finden, wo ich einige Tage ruhen kann!\n\n[[Totos_Quest_19.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_19.1",
+            "link": "Totos_Quest_19.1",
+            "pid": "21"
+          }
+        ],
+        "name": "Totos_Quest_18.1",
+        "pid": "20",
+        "position": {
+          "x": "800",
+          "y": "2600"
+        }
+      },
+      {
+        "text": "Steve: Lass mich raten, wenn du gewinnst, dann wünschst du von mir eine Flasche Tequila?\n\n[[Totos_Quest_20.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_20.1",
+            "link": "Totos_Quest_20.1",
+            "pid": "22"
+          }
+        ],
+        "name": "Totos_Quest_19.1",
+        "pid": "21",
+        "position": {
+          "x": "800",
+          "y": "2725"
+        }
+      },
+      {
+        "text": "Iris: Hmm, darüber habe ich gar nicht nachgedacht. Ich bräuchte einen kleinen Moment, um darüber nachzudenken!\n\n[[Totos_Quest_21.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_21.1",
+            "link": "Totos_Quest_21.1",
+            "pid": "23"
+          }
+        ],
+        "name": "Totos_Quest_20.1",
+        "pid": "22",
+        "position": {
+          "x": "800",
+          "y": "2850"
+        }
+      },
+      {
+        "text": "Iris: Hmm…\n\n[[Totos_Quest_22.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_22.1",
+            "link": "Totos_Quest_22.1",
+            "pid": "24"
+          }
+        ],
+        "name": "Totos_Quest_21.1",
+        "pid": "23",
+        "position": {
+          "x": "800",
+          "y": "2975"
+        }
+      },
+      {
+        "text": "Iris: …\n\n[[Totos_Quest_23.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_23.1",
+            "link": "Totos_Quest_23.1",
+            "pid": "25"
+          }
+        ],
+        "name": "Totos_Quest_22.1",
+        "pid": "24",
+        "position": {
+          "x": "800",
+          "y": "3100"
+        }
+      },
+      {
+        "text": "Iris: Okay! Wenn ich gewinne, wirst du meine Mutter finden, Tequila!\n\n[[Totos_Quest_24.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_24.1",
+            "link": "Totos_Quest_24.1",
+            "pid": "26"
+          }
+        ],
+        "name": "Totos_Quest_23.1",
+        "pid": "25",
+        "position": {
+          "x": "800",
+          "y": "3225"
+        }
+      },
+      {
+        "text": "Steve: Einverstanden! Aber bevor ich dich in dem Spiel besiege hätte ich eine weitere Frage an dich.\n\n[[Totos_Quest_25.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_25.1",
+            "link": "Totos_Quest_25.1",
+            "pid": "27"
+          }
+        ],
+        "name": "Totos_Quest_24.1",
+        "pid": "26",
+        "position": {
+          "x": "800",
+          "y": "3350"
+        }
+      },
+      {
+        "text": "Iris: Die wäre?\n\n[[Totos_Quest_26.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_26.1",
+            "link": "Totos_Quest_26.1",
+            "pid": "28"
+          }
+        ],
+        "name": "Totos_Quest_25.1",
+        "pid": "27",
+        "position": {
+          "x": "800",
+          "y": "3475"
+        }
+      },
+      {
+        "text": "Steve: Warum sagst du nach fast jeden Satz ´Tequila´?\n\n[[Totos_Quest_27.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_27.1",
+            "link": "Totos_Quest_27.1",
+            "pid": "29"
+          }
+        ],
+        "name": "Totos_Quest_26.1",
+        "pid": "28",
+        "position": {
+          "x": "800",
+          "y": "3600"
+        }
+      },
+      {
+        "text": "Iris: Meine Mutter sagte einst zu mir, dass es ein Wunder Trank wäre und es Menschen glücklich macht!\n\n[[Totos_Quest_28.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_28.1",
+            "link": "Totos_Quest_28.1",
+            "pid": "30"
+          }
+        ],
+        "name": "Totos_Quest_27.1",
+        "pid": "29",
+        "position": {
+          "x": "800",
+          "y": "3725"
+        }
+      },
+      {
+        "text": "Steve: …\n\n[[Totos_Quest_29.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_29.1",
+            "link": "Totos_Quest_29.1",
+            "pid": "31"
+          }
+        ],
+        "name": "Totos_Quest_28.1",
+        "pid": "30",
+        "position": {
+          "x": "800",
+          "y": "3850"
+        }
+      },
+      {
+        "text": "Steve: Unrecht hat sie nicht.\n\n[[Totos_Quest_30.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_30.1",
+            "link": "Totos_Quest_30.1",
+            "pid": "32"
+          }
+        ],
+        "name": "Totos_Quest_29.1",
+        "pid": "31",
+        "position": {
+          "x": "800",
+          "y": "3975"
+        }
+      },
+      {
+        "text": "Iris: Meine Mutter hätte nie Unrecht!\n\n[[Totos_Quest_31.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_31.1",
+            "link": "Totos_Quest_31.1",
+            "pid": "33"
+          }
+        ],
+        "name": "Totos_Quest_30.1",
+        "pid": "32",
+        "position": {
+          "x": "800",
+          "y": "4100"
+        }
+      },
+      {
+        "text": "Iris: Also können wir jetzt endlich spielen?\n\n[[Totos_Quest_32.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_32.1",
+            "link": "Totos_Quest_32.1",
+            "pid": "34"
+          }
+        ],
+        "name": "Totos_Quest_31.1",
+        "pid": "33",
+        "position": {
+          "x": "800",
+          "y": "4225"
+        }
+      },
+      {
+        "text": "Steve: Natürlich! Lass uns beginnen!\n\n[[Totos_Quest_33.1]]",
+        "links": [
+          {
+            "name": "Totos_Quest_33.1",
+            "link": "Totos_Quest_33.1",
+            "pid": "35"
+          }
+        ],
+        "name": "Totos_Quest_32.1",
+        "pid": "34",
+        "position": {
+          "x": "800",
+          "y": "4350"
+        }
+      },
+      {
+        "text": "Iris: Wir spielen drei Runden. Wer die meisten Runden gewonnen hat, gewinnt auch das Spiel!",
+        "name": "Totos_Quest_33.1",
+        "pid": "35",
+        "position": {
+          "x": "800",
+          "y": "4475"
+        }
+      },
+      {
+        "text": "Steve: Gegen wie viele Kinder bist du denn angetreten?\n\n[[Totos_Quest_11.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_11.2",
+            "link": "Totos_Quest_11.2",
+            "pid": "37"
+          }
+        ],
+        "name": "Totos_Quest_10.2",
+        "pid": "36",
+        "position": {
+          "x": "925",
+          "y": "1600"
+        }
+      },
+      {
+        "text": "Iris: Ich rede hier nicht von Kindern, sondern Erwachsene, die nach ihrer Niederlage geflehmt hatten, Tequila!\n\n[[Totos_Quest_12.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_12.2",
+            "link": "Totos_Quest_12.2",
+            "pid": "38"
+          }
+        ],
+        "name": "Totos_Quest_11.2",
+        "pid": "37",
+        "position": {
+          "x": "925",
+          "y": "1725"
+        }
+      },
+      {
+        "text": "Steve: Natürlich\n\n[[Totos_Quest_13.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_13.2",
+            "link": "Totos_Quest_13.2",
+            "pid": "39"
+          }
+        ],
+        "name": "Totos_Quest_12.2",
+        "pid": "38",
+        "position": {
+          "x": "925",
+          "y": "1850"
+        }
+      },
+      {
+        "text": "Iris: Anscheinend möchtest du nicht gegen mich verlieren. Darum werde ich mir jemanden anderen suchen, Tequila!\n\n[[Totos_Quest_14.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_14.2",
+            "link": "Totos_Quest_14.2",
+            "pid": "40"
+          }
+        ],
+        "name": "Totos_Quest_13.2",
+        "pid": "39",
+        "position": {
+          "x": "925",
+          "y": "1975"
+        }
+      },
+      {
+        "text": "Steve: Nein warte!\n\n[[Totos_Quest_15.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_15.2",
+            "link": "Totos_Quest_15.2",
+            "pid": "41"
+          }
+        ],
+        "name": "Totos_Quest_14.2",
+        "pid": "40",
+        "position": {
+          "x": "925",
+          "y": "2100"
+        }
+      },
+      {
+        "text": "Iris: Warum? Anscheinend möchtest du nicht gegen mich spielen!\n\n[[Totos_Quest_16.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_16.2",
+            "link": "Totos_Quest_16.2",
+            "pid": "42"
+          }
+        ],
+        "name": "Totos_Quest_15.2",
+        "pid": "41",
+        "position": {
+          "x": "925",
+          "y": "2225"
+        }
+      },
+      {
+        "text": "Spieler: Doch, aber lass uns eine kleine Wette daraus machen.\n\n[[Totos_Quest_17.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_17.2",
+            "link": "Totos_Quest_17.2",
+            "pid": "43"
+          }
+        ],
+        "name": "Totos_Quest_16.2",
+        "pid": "42",
+        "position": {
+          "x": "925",
+          "y": "2350"
+        }
+      },
+      {
+        "text": "Iris: Eine Wette?\n\n[[Totos_Quest_18.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_18.2",
+            "link": "Totos_Quest_18.2",
+            "pid": "44"
+          }
+        ],
+        "name": "Totos_Quest_17.2",
+        "pid": "43",
+        "position": {
+          "x": "925",
+          "y": "2475"
+        }
+      },
+      {
+        "text": "Steve: Genau. Wenn einer von uns nach drei Runden gewinnt, darf er sich vom Verlierer etwas wünschen.\n\n[[Totos_Quest_19.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_19.2",
+            "link": "Totos_Quest_19.2",
+            "pid": "45"
+          }
+        ],
+        "name": "Totos_Quest_18.2",
+        "pid": "44",
+        "position": {
+          "x": "925",
+          "y": "2600"
+        }
+      },
+      {
+        "text": "Iris: Etwas wünschen? Egal was es ist?\n\n[[Totos_Quest_20.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_20.2",
+            "link": "Totos_Quest_20.2",
+            "pid": "46"
+          }
+        ],
+        "name": "Totos_Quest_19.2",
+        "pid": "45",
+        "position": {
+          "x": "925",
+          "y": "2725"
+        }
+      },
+      {
+        "text": "Steve: Natürlich!\n\n[[Totos_Quest_21.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_21.2",
+            "link": "Totos_Quest_21.2",
+            "pid": "47"
+          }
+        ],
+        "name": "Totos_Quest_20.2",
+        "pid": "46",
+        "position": {
+          "x": "925",
+          "y": "2850"
+        }
+      },
+      {
+        "text": "Iris: Okay! Dann wünsche ich mir, dass du meine Mutter wieder findest!\n\n[[Totos_Quest_22.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_22.2",
+            "link": "Totos_Quest_22.2",
+            "pid": "48"
+          }
+        ],
+        "name": "Totos_Quest_21.2",
+        "pid": "47",
+        "position": {
+          "x": "925",
+          "y": "2975"
+        }
+      },
+      {
+        "text": "Steve: Einverstanden! Von dir wünsche ich mir, dass du mir eine Unterkunft findest, wo ich einige Tage ruhen kann!\n\n[[Totos_Quest_23.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_23.2",
+            "link": "Totos_Quest_23.2",
+            "pid": "49"
+          }
+        ],
+        "name": "Totos_Quest_22.2",
+        "pid": "48",
+        "position": {
+          "x": "925",
+          "y": "3100"
+        }
+      },
+      {
+        "text": "Iris: Was ist dass denn für ein langweiliger Wunsch?\n\n[[Totos_Quest_24.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_24.2",
+            "link": "Totos_Quest_24.2",
+            "pid": "50"
+          }
+        ],
+        "name": "Totos_Quest_23.2",
+        "pid": "49",
+        "position": {
+          "x": "925",
+          "y": "3225"
+        }
+      },
+      {
+        "text": "Steve: Es ist zwar nicht so aufregend, wie deiner, aber es reicht vollkommen aus!\n\n[[Totos_Quest_25.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_25.2",
+            "link": "Totos_Quest_25.2",
+            "pid": "51"
+          }
+        ],
+        "name": "Totos_Quest_24.2",
+        "pid": "50",
+        "position": {
+          "x": "925",
+          "y": "3350"
+        }
+      },
+      {
+        "text": "Iris: Warum wünscht du dir nicht etwas, was dich glücklich macht?\n\n[[Totos_Quest_26.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_26.2",
+            "link": "Totos_Quest_26.2",
+            "pid": "52"
+          }
+        ],
+        "name": "Totos_Quest_25.2",
+        "pid": "51",
+        "position": {
+          "x": "925",
+          "y": "3475"
+        }
+      },
+      {
+        "text": "Steve: Sowas bräuchte ich gar nicht, da mich das Abenteuer glücklich macht!\n\n[[Totos_Quest_27.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_27.2",
+            "link": "Totos_Quest_27.2",
+            "pid": "53"
+          }
+        ],
+        "name": "Totos_Quest_26.2",
+        "pid": "52",
+        "position": {
+          "x": "925",
+          "y": "3600"
+        }
+      },
+      {
+        "text": "Iris: Also trinkst du während deiner Reise Tequila?\n\n[[Totos_Quest_28.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_28.2",
+            "link": "Totos_Quest_28.2",
+            "pid": "54"
+          }
+        ],
+        "name": "Totos_Quest_27.2",
+        "pid": "53",
+        "position": {
+          "x": "925",
+          "y": "3725"
+        }
+      },
+      {
+        "text": "Steve: …\n\n[[Totos_Quest_29.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_29.2",
+            "link": "Totos_Quest_29.2",
+            "pid": "55"
+          }
+        ],
+        "name": "Totos_Quest_28.2",
+        "pid": "54",
+        "position": {
+          "x": "925",
+          "y": "3850"
+        }
+      },
+      {
+        "text": "Steve: Wie bitte?\n\n[[Totots_Quest_30.2]]",
+        "links": [
+          {
+            "name": "Totots_Quest_30.2",
+            "link": "Totots_Quest_30.2",
+            "pid": "56"
+          }
+        ],
+        "name": "Totos_Quest_29.2",
+        "pid": "55",
+        "position": {
+          "x": "925",
+          "y": "3975"
+        }
+      },
+      {
+        "text": "Iris: Meine Mutter sagte mir einst, dass, wenn ich mal traurig sein sollte, dass mich Tequila aufmuntern würde.\n\n[[Totos_Quest_31.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_31.2",
+            "link": "Totos_Quest_31.2",
+            "pid": "57"
+          }
+        ],
+        "name": "Totots_Quest_30.2",
+        "pid": "56",
+        "position": {
+          "x": "925",
+          "y": "4100"
+        }
+      },
+      {
+        "text": "Steve: Sagst du deswegen immer Tequila? Weil es dich an deine Mutter erinnert?\n\n[[Totos_Quest_32.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_32.2",
+            "link": "Totos_Quest_32.2",
+            "pid": "58"
+          }
+        ],
+        "name": "Totos_Quest_31.2",
+        "pid": "57",
+        "position": {
+          "x": "925",
+          "y": "4225"
+        }
+      },
+      {
+        "text": "Iris: Ja! Dadurch bin ich immer glücklich, genau, wie es meine Mutter mir damals gesagt hatte!\n\n[[Totos_Quest_33.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_33.2",
+            "link": "Totos_Quest_33.2",
+            "pid": "59"
+          }
+        ],
+        "name": "Totos_Quest_32.2",
+        "pid": "58",
+        "position": {
+          "x": "925",
+          "y": "4350"
+        }
+      },
+      {
+        "text": "Steve: Verstehe.\n\n[[Totos_Quest_34.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_34.2",
+            "link": "Totos_Quest_34.2",
+            "pid": "60"
+          }
+        ],
+        "name": "Totos_Quest_33.2",
+        "pid": "59",
+        "position": {
+          "x": "925",
+          "y": "4475"
+        }
+      },
+      {
+        "text": "Iris: Also bist du bereit zu verlieren, Abenteurer?\n\n[[Totos_Quest_35.2]]",
+        "links": [
+          {
+            "name": "Totos_Quest_35.2",
+            "link": "Totos_Quest_35.2",
+            "pid": "61"
+          }
+        ],
+        "name": "Totos_Quest_34.2",
+        "pid": "60",
+        "position": {
+          "x": "925",
+          "y": "4600"
+        }
+      },
+      {
+        "text": "Steve: Dass wollte ich dich gerade fragen!",
+        "name": "Totos_Quest_35.2",
+        "pid": "61",
+        "position": {
+          "x": "925",
+          "y": "4725"
+        }
+      }
+    ],
+    "name": "Totos_Quest",
+    "startnode": "1",
+    "creator": "Twine",
+    "creator-version": "2.6.2",
+    "ifid": "4E9F16B4-0E24-4C34-8072-9F9D34EFA18E"
+  }
