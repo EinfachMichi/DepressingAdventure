@@ -106,7 +106,7 @@ public class Quest_01ButtonInput : MonoBehaviour
             Button[i].GetComponent<Button>().interactable = false;
         }
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Don");
     }
 
     void pointCheck()
