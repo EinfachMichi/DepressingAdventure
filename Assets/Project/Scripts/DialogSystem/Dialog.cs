@@ -1,20 +1,39 @@
-﻿using UnityEngine;
+using System;
+using System.Collections.Generic;
 
-namespace DialogSystem
+public class Dialog
 {
-    [CreateAssetMenu(menuName = "Dialog/New Dialog")]
-    public class Dialog : ScriptableObject
+    public List<Passage> passages;
+
+    public Passage GetPassage(int pid)
     {
-        public Sentence[] Sentences;
-
-        public string Text(int index)
+        Passage passage = new Passage();
+        foreach (Passage dialogPassage in passages)
         {
-            return Sentences[index].Line;
+            if (dialogPassage.pid == pid)
+            {
+                passage = dialogPassage;
+                break;
+            }
         }
-
-        public Speaker Speaker(int index)
-        {
-            return Sentences[index].Speaker;
-        }
+        return passage;
     }
+}
+
+[Serializable]
+public struct Passage
+{
+    public string text;
+    public List<Link> links;
+    public int pid;
+    public List<string> tags;
+
+    public int GetLinkPassageID(int index) => links[index].pid;
+}
+
+[Serializable]
+public struct Link
+{
+    public string name;
+    public int pid;
 }

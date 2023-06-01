@@ -12,21 +12,23 @@ namespace DialogSystem
         public TextMeshProUGUI Line;
 
         public Animator anim;
-        
+
         private void Start()
         {
             DialogManager.Instance.OnDialogStart += OnDialogStart;
-            DialogManager.Instance.OnTextChanged += OnTextChanged;
             DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+            DialogManager.Instance.OnTextChanged += OnTextChanged;
+            DialogManager.Instance.OnSpeakerChanged += OnSpeakerChanged;
         }
 
         private void OnDialogStart()
         {
             anim.SetTrigger("FadeIn");
+        }
 
-            DialogManager manager = DialogManager.Instance;
-            IconImage.sprite = manager.Dialog.Speaker(manager.SentenceIndex).Icon;
-            SpeakerName.text = manager.Dialog.Speaker(manager.SentenceIndex).Name;
+        private void OnSpeakerChanged(string speaker)
+        {
+            SpeakerName.text = speaker;
         }
         
         private void OnTextChanged(string text)
