@@ -10,8 +10,9 @@ namespace DialogSystem
         public Image IconImage;
         public TextMeshProUGUI SpeakerName;
         public TextMeshProUGUI Line;
-
+        public TextMeshProUGUI TestLine;
         public Animator anim;
+        
 
         private void Start()
         {
