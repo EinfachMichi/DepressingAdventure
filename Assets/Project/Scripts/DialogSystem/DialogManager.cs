@@ -7,7 +7,7 @@ namespace DialogSystem
 {
     public class DialogManager : Singleton<DialogManager>
     {
-        public const int MaxCharacters = 80;
+        public const int MaxCharacters = 100;
         
         public event Action<string> OnSpeakerChanged;
         public event Action<string> OnTextChanged;
@@ -18,17 +18,10 @@ namespace DialogSystem
 
         private TextAsset[] stories;
         private Dialog dialog;
-        
-        private Passage currentPassage;
-        private bool lineFinished;
-        private bool dialogFinished;
+        private Passage passage;
 
-        private string passageText;
-        private string passageSpeaker;
-        private int textIndex;
-        private int speakerLength;
-        private bool knowSpeaker;
-        private int sentenceLoop;
+        private string speakerName;
+        private bool finishedLine;
 
         protected override void Awake()
         {
@@ -38,121 +31,84 @@ namespace DialogSystem
 
         private void Update()
         {
-            if (!lineFinished) return;
-
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F) && finishedLine)
             {
-                Next();
+                NextPassage();
             }
         }
-        
-        
+
         public void StartDialog(int pid)
         {
             OnDialogStart?.Invoke();
-            StartTyping(pid);
-        }
-
-        private void StartTyping(int pid)
-        {
             CompilePassage(pid);
         }
-        
+
         private void CompilePassage(int pid)
         {
+            finishedLine = false;
+            
+            // Get Data
             dialog = JsonUtility.FromJson<Dialog>(stories[GameManager.Instance.CurrentRegion].text);
-            currentPassage = dialog.GetPassage(pid);
+            passage = dialog.GetPassage(pid);
+            string text = passage.text;
 
-            if (sentenceLoop == 0)
-            {
-                passageSpeaker = "";
-                while (currentPassage.text[speakerLength] != ':')
-                {
-                    passageSpeaker += currentPassage.text[speakerLength];
-                    speakerLength++;
-                }
-
-                speakerLength += 2;
-                textIndex += speakerLength;
-            }
-            OnSpeakerChanged?.Invoke(passageSpeaker);
-
-            int index = textIndex;
-            string text = "";
-            while (index < MaxCharacters + textIndex)
-            {
-                if (currentPassage.text.Length <= index) break;
-
-                if (currentPassage.links.Count == 1)
-                {
-                    if (currentPassage.text[index] == '[' || currentPassage.text[index] == ']')
-                    {
-                        break;
-                    }
-                }
-                
-                if (currentPassage.links.Count == 2)
-                {
-                    if (currentPassage.text[index] == '[' || currentPassage.text[index] == ']')
-                    {
-                        index++;
-                        continue;
-                    }
-                }
-                
-                text += currentPassage.text[index];
-                index++;
-            }
-            textIndex = index;
-
-            if (text.Length >= MaxCharacters)
-            {
-                sentenceLoop++;
-            }
-            else
-            {
-                textIndex = 0;
-                sentenceLoop = 0;
-                speakerLength = 0;
-            }
-
-            StartCoroutine(Type(text));
-        }
-
-        private IEnumerator Type(string text)
-        {
-            lineFinished = false;
-
-            string typedText = "";
+            // Handle Speaker Name
+            int charsToDelete = 0;
+            speakerName = "";
             for (int i = 0; i < text.Length; i++)
             {
-                typedText += text[i];
-                OnTextChanged?.Invoke(typedText);
-                yield return new WaitForSeconds(1 / CharactersPerSecond);
+                charsToDelete++;
+                if (text[i] == ':') break;
+                speakerName += text[i];
+            }
+            text = text.Remove(0, charsToDelete + 1);
+            OnSpeakerChanged?.Invoke(speakerName);
+            
+            /*
+             * Handle Main Text
+             */
+            string result = "";
+            
+            // Case: 2 Links
+            if (passage.links.Count == 2)
+            {
+                
+            }
+            
+            // Case: 1 Link
+            if (passage.links.Count == 1)
+            {
+                for (int i = 0; i < text.Length; i++)
+                {
+                    if (text[i] == '[') break;
+                    result += text[i];
+                }
             }
 
-            lineFinished = true;
+            StartCoroutine(Write(result, passage.links.Count > 1));
         }
 
-        private void Next()
+        private IEnumerator Write(string result, bool choices)
         {
-            if (currentPassage.links.Count == 0)
+            string text = "";
+            if (!choices)
             {
-                OnDialogEnd?.Invoke();
-                dialogFinished = true;
-                return;
+                for (int i = 0; i < result.Length; i++)
+                {
+                    text += result[i];
+                    OnTextChanged?.Invoke(text);
+                    yield return new WaitForSeconds(1 / CharactersPerSecond);
+                }
             }
 
-            if (currentPassage.links.Count == 1)
+            finishedLine = true;
+        }
+
+        private void NextPassage()
+        {
+            if (passage.links.Count == 1)
             {
-                if(sentenceLoop > 0)
-                {
-                    StartTyping(currentPassage.pid);
-                }
-                else
-                {
-                    StartTyping(currentPassage.links[0].pid);
-                }
+                CompilePassage(passage.links[0].pid);
             }
         }
     }
