@@ -3267,6 +3267,10 @@ PrefabInstance:
       value: Dialog UI
       objectReference: {fileID: 0}
     - target: {fileID: 4866085104684449067, guid: 782f91011e1078c42be1831ac343ccaa, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866085104684449067, guid: 782f91011e1078c42be1831ac343ccaa, type: 3}
       propertyPath: m_fontSize
       value: 60
       objectReference: {fileID: 0}

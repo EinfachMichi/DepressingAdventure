@@ -7,9 +7,10 @@ namespace DialogSystem
 {
     public class DialogManager : Singleton<DialogManager>
     {
+        public const int MaxCharacters = 80;
+        
         public event Action<string> OnSpeakerChanged;
         public event Action<string> OnTextChanged;
-        public event Action<string> OnCompilingEnd;
         public event Action OnDialogStart;
         public event Action OnDialogEnd;
 
@@ -17,11 +18,17 @@ namespace DialogSystem
 
         private TextAsset[] stories;
         private Dialog dialog;
-
-        [HideInInspector] public bool compileDone;
+        
         private Passage currentPassage;
         private bool lineFinished;
         private bool dialogFinished;
+
+        private string passageText;
+        private string passageSpeaker;
+        private int textIndex;
+        private int speakerLength;
+        private bool knowSpeaker;
+        private int sentenceLoop;
 
         protected override void Awake()
         {
@@ -48,45 +55,67 @@ namespace DialogSystem
 
         private void StartTyping(int pid)
         {
-            StartCoroutine(CompilePassage(pid));
+            CompilePassage(pid);
         }
         
-        private IEnumerator CompilePassage(int pid)
+        private void CompilePassage(int pid)
         {
             dialog = JsonUtility.FromJson<Dialog>(stories[GameManager.Instance.CurrentRegion].text);
             currentPassage = dialog.GetPassage(pid);
-            compileDone = false;
-            
-            bool knowSpeaker = false;
-            string speaker = "";
-            string text = "";            
-            for (int i = 0; i < currentPassage.text.Length; i++)
+
+            if (sentenceLoop == 0)
             {
-                if (!knowSpeaker)
+                passageSpeaker = "";
+                while (currentPassage.text[speakerLength] != ':')
                 {
-                    if (currentPassage.text[i] == ':')
-                    {
-                        knowSpeaker = true;
-                        continue;
-                    }
-                    speaker += currentPassage.text[i];
+                    passageSpeaker += currentPassage.text[speakerLength];
+                    speakerLength++;
                 }
 
-                if(currentPassage.links.Count == 1) 
-                    if(currentPassage.text[i] == '[' || currentPassage.text[i] == ']') 
-                        break;
-                if (currentPassage.links.Count == 2) 
-                    if(currentPassage.text[i] == '[' || currentPassage.text[i] == ']') 
-                        continue;
+                speakerLength += 2;
+                textIndex += speakerLength;
+            }
+            OnSpeakerChanged?.Invoke(passageSpeaker);
 
-                text += currentPassage.text[i];
+            int index = textIndex;
+            string text = "";
+            while (index < MaxCharacters + textIndex)
+            {
+                if (currentPassage.text.Length <= index) break;
+
+                if (currentPassage.links.Count == 1)
+                {
+                    if (currentPassage.text[index] == '[' || currentPassage.text[index] == ']')
+                    {
+                        break;
+                    }
+                }
+                
+                if (currentPassage.links.Count == 2)
+                {
+                    if (currentPassage.text[index] == '[' || currentPassage.text[index] == ']')
+                    {
+                        index++;
+                        continue;
+                    }
+                }
+                
+                text += currentPassage.text[index];
+                index++;
+            }
+            textIndex = index;
+
+            if (text.Length >= MaxCharacters)
+            {
+                sentenceLoop++;
+            }
+            else
+            {
+                textIndex = 0;
+                sentenceLoop = 0;
+                speakerLength = 0;
             }
 
-            lineFinished = true;
-            OnSpeakerChanged?.Invoke(speaker);
-            OnCompilingEnd?.Invoke(text);
-            yield return new WaitUntil(() => compileDone);
-            
             StartCoroutine(Type(text));
         }
 
@@ -116,7 +145,14 @@ namespace DialogSystem
 
             if (currentPassage.links.Count == 1)
             {
-                StartDialog(currentPassage.links[0].pid);
+                if(sentenceLoop > 0)
+                {
+                    StartTyping(currentPassage.pid);
+                }
+                else
+                {
+                    StartTyping(currentPassage.links[0].pid);
+                }
             }
         }
     }
