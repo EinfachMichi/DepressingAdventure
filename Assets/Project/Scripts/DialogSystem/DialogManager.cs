@@ -7,12 +7,12 @@ namespace DialogSystem
 {
     public class DialogManager : Singleton<DialogManager>
     {
-        public const int MaxCharacters = 100;
-        
         public event Action<string> OnSpeakerChanged;
         public event Action<string> OnTextChanged;
         public event Action OnDialogStart;
         public event Action OnDialogEnd;
+        public event Action<string, string> OnChoice;
+        public event Action OnChoiceOver; 
 
         public float CharactersPerSecond = 40;
 
@@ -22,6 +22,8 @@ namespace DialogSystem
 
         private string speakerName;
         private bool finishedLine;
+        private string choice1;
+        private string choice2;
 
         protected override void Awake()
         {
@@ -69,14 +71,46 @@ namespace DialogSystem
              */
             string result = "";
             
-            // Case: 2 Links
+            // Case: Choices
             if (passage.links.Count == 2)
             {
+                choice1 = "";
+                choice2 = "";
                 
+                int index = 0;
+                for (int i = 0; i < text.Length; i++)
+                {
+                    if (text[i] == '[')
+                    {
+                        index = i;
+                        break;
+                    }
+                    result += text[i];
+                }
+
+                int openBracketsCount = 0;
+                int closedBracketsCount = 0;
+                for (int i = index; i < text.Length; i++)
+                {
+                    if(text[i] == '[')
+                    {
+                        openBracketsCount++;
+                        continue;
+                    }
+
+                    if (text[i] == ']')
+                    {
+                        closedBracketsCount++;
+                        continue;
+                    }
+
+                    if (openBracketsCount == 2 && closedBracketsCount == 0) choice1 += text[i];
+                    if (openBracketsCount == 4 && closedBracketsCount == 2) choice2 += text[i];
+                }
             }
             
-            // Case: 1 Link
-            if (passage.links.Count == 1)
+            // Case: No Choices
+            if (passage.links.Count <= 1)
             {
                 for (int i = 0; i < text.Length; i++)
                 {
@@ -91,25 +125,38 @@ namespace DialogSystem
         private IEnumerator Write(string result, bool choices)
         {
             string text = "";
-            if (!choices)
+            for (int i = 0; i < result.Length; i++)
             {
-                for (int i = 0; i < result.Length; i++)
-                {
-                    text += result[i];
-                    OnTextChanged?.Invoke(text);
-                    yield return new WaitForSeconds(1 / CharactersPerSecond);
-                }
+                text += result[i];
+                OnTextChanged?.Invoke(text);
+                yield return new WaitForSeconds(1 / CharactersPerSecond);
             }
+            
+            if(choices) OnChoice?.Invoke(choice1, choice2);
 
             finishedLine = true;
         }
 
-        private void NextPassage()
+        private void NextPassage(int linkID = 0)
         {
-            if (passage.links.Count == 1)
+            if (passage.links.Count == 0)
+            {
+                OnDialogEnd.Invoke();
+            }
+            else if (passage.links.Count == 1)
             {
                 CompilePassage(passage.links[0].pid);
             }
+            else if (passage.links.Count == 2)
+            {
+                CompilePassage(passage.links[linkID].pid);
+            }
+        }
+
+        public void Choose(int choose)
+        {   
+            OnChoiceOver?.Invoke();
+            NextPassage(choose);
         }
     }
 }

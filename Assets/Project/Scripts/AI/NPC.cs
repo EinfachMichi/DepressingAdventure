@@ -9,6 +9,11 @@ public class NPC : MonoBehaviour, IInteractable
     private bool canInteract = true;
     public int pid;
 
+    private void Start()
+    {
+        DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+    }
+
     public void Interact()
     {
         if (!canInteract) return;
