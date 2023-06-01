@@ -6,22 +6,19 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour, IInteractable
 {
-    public Dialog Dialog;
-
     private bool canInteract = true;
+    public int pid;
 
     public void Interact()
     {
         if (!canInteract) return;
         
+        DialogManager.Instance.StartDialog(pid);
         canInteract = false;
-        DialogManager.Instance.StartDialog(Dialog);
-        DialogManager.Instance.OnDialogEnd += OnDialogEnd;
     }
 
     private void OnDialogEnd()
     {
-        DialogManager.Instance.OnDialogEnd -= OnDialogEnd;
         StartCoroutine(InteractionCooldown());
     }
 

@@ -2,82 +2,104 @@ using System;
 using System.Collections;
 using Main;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace DialogSystem
 {
     public class DialogManager : Singleton<DialogManager>
     {
+        public event Action<string> OnSpeakerChanged;
         public event Action<string> OnTextChanged;
-        public event Action OnDialogStart; 
-        public event Action OnDialogEnd; 
-        
-        public float CharactersPerSecond;
-        [HideInInspector] public int SentenceIndex;
-        [HideInInspector] public Dialog Dialog;
-        
-        private float charsPerSec;
-        private bool lineFinished;
-        private bool dialogFinished = true;
-        private bool isClosed;
+        public event Action<string> OnPreCalculationResults;
+        public event Action OnDialogStart;
+        public event Action OnDialogEnd;
 
-        private void Start()
+        public float CharactersPerSecond = 40;
+
+        private TextAsset[] stories;
+        private Dialog dialog;
+
+        private Passage currentPassage;
+        private bool lineFinished;
+        private bool dialogFinished;
+
+        protected override void Awake()
         {
-            charsPerSec = CharactersPerSecond;
+            base.Awake();
+            stories = Resources.LoadAll<TextAsset>("Dialogs");
         }
 
         private void Update()
         {
-            if (Input.GetMouseButton(0)) charsPerSec = CharactersPerSecond * 2;
-            else charsPerSec = CharactersPerSecond;
-            
-            if(Input.GetKeyDown(KeyCode.F) && lineFinished && !isClosed) NextLine();
-        }
+            if (!lineFinished) return;
 
-        public void StartDialog(Dialog dialog)
-        {
-            if (!dialogFinished) return;
-            
-            Dialog = dialog;
-            SentenceIndex = 0;
-            lineFinished = false;
-            dialogFinished = false;
-            isClosed = false;
-            OnDialogStart?.Invoke();
-
-            StartCoroutine(Type());
-        }
-
-        private IEnumerator Type()
-        {
-            string text = Dialog.Text(SentenceIndex);
-            string sentence = "";
-            lineFinished = false;
-            for (int i = 0; i < text.Length; i++)
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                sentence += text[i];
-                OnTextChanged?.Invoke(sentence);
-                yield return new WaitForSeconds(1 / charsPerSec);
+                Next();
+            }
+        }
+
+        public void StartDialog(int pid)
+        {
+            OnDialogStart?.Invoke();
+            StartPassage(pid);
+        }
+        
+        public void StartPassage(int pid)
+        {
+            dialog = JsonUtility.FromJson<Dialog>(stories[GameManager.Instance.CurrentRegion].text);
+            Passage passage = dialog.GetPassage(pid);
+            
+            StartCoroutine(Type(passage));
+        }
+
+        private IEnumerator Type(Passage passage)
+        {
+            lineFinished = false;
+            currentPassage = passage;
+            
+            bool knowSpeaker = false;
+            
+            string speaker = "";
+            string text = "";
+
+            for (int i = 0; i < passage.text.Length; i++)
+            {
+                if (!knowSpeaker)
+                {
+                    speaker += passage.text[i];
+                    if (passage.text[i] == ':')
+                    {
+                        knowSpeaker = true;
+                        continue;
+                    }
+                    OnSpeakerChanged?.Invoke(speaker);
+                    continue;
+                }
+
+                if(passage.links.Count == 1) if(passage.text[i] == '[' || passage.text[i] == ']') break;
+                if (passage.links.Count == 2) if(passage.text[i] == '[' || passage.text[i] == ']') continue;
+
+                text += passage.text[i];
+                OnTextChanged?.Invoke(text);
+                yield return new WaitForSeconds(1 / CharactersPerSecond);
             }
 
             lineFinished = true;
-            if (Dialog.Sentences.Length <= SentenceIndex + 1)
-            {
-                dialogFinished = true;
-            }
         }
 
-        private void NextLine()
+        private void Next()
         {
-            if (dialogFinished)
+            if (currentPassage.links.Count == 0)
             {
                 OnDialogEnd?.Invoke();
-                isClosed = true;
+                dialogFinished = true;
                 return;
             }
 
-            SentenceIndex++;
-            StartCoroutine(Type());
+            if (currentPassage.links.Count == 1)
+            {
+                StartPassage(currentPassage.links[0].pid);
+            }
         }
     }
 }
