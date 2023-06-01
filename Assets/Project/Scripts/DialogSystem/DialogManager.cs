@@ -9,7 +9,7 @@ namespace DialogSystem
     {
         public event Action<string> OnSpeakerChanged;
         public event Action<string> OnTextChanged;
-        public event Action<string> OnPreCalculationResults;
+        public event Action<string> OnCompilingEnd;
         public event Action OnDialogStart;
         public event Action OnDialogEnd;
 
@@ -18,6 +18,7 @@ namespace DialogSystem
         private TextAsset[] stories;
         private Dialog dialog;
 
+        [HideInInspector] public bool compileDone;
         private Passage currentPassage;
         private bool lineFinished;
         private bool dialogFinished;
@@ -37,50 +38,67 @@ namespace DialogSystem
                 Next();
             }
         }
-
+        
+        
         public void StartDialog(int pid)
         {
             OnDialogStart?.Invoke();
-            StartPassage(pid);
+            StartTyping(pid);
+        }
+
+        private void StartTyping(int pid)
+        {
+            StartCoroutine(CompilePassage(pid));
         }
         
-        public void StartPassage(int pid)
+        private IEnumerator CompilePassage(int pid)
         {
             dialog = JsonUtility.FromJson<Dialog>(stories[GameManager.Instance.CurrentRegion].text);
-            Passage passage = dialog.GetPassage(pid);
-            
-            StartCoroutine(Type(passage));
-        }
-
-        private IEnumerator Type(Passage passage)
-        {
-            lineFinished = false;
-            currentPassage = passage;
+            currentPassage = dialog.GetPassage(pid);
+            compileDone = false;
             
             bool knowSpeaker = false;
-            
             string speaker = "";
-            string text = "";
-
-            for (int i = 0; i < passage.text.Length; i++)
+            string text = "";            
+            for (int i = 0; i < currentPassage.text.Length; i++)
             {
                 if (!knowSpeaker)
                 {
-                    speaker += passage.text[i];
-                    if (passage.text[i] == ':')
+                    if (currentPassage.text[i] == ':')
                     {
                         knowSpeaker = true;
                         continue;
                     }
-                    OnSpeakerChanged?.Invoke(speaker);
-                    continue;
+                    speaker += currentPassage.text[i];
                 }
 
-                if(passage.links.Count == 1) if(passage.text[i] == '[' || passage.text[i] == ']') break;
-                if (passage.links.Count == 2) if(passage.text[i] == '[' || passage.text[i] == ']') continue;
+                if(currentPassage.links.Count == 1) 
+                    if(currentPassage.text[i] == '[' || currentPassage.text[i] == ']') 
+                        break;
+                if (currentPassage.links.Count == 2) 
+                    if(currentPassage.text[i] == '[' || currentPassage.text[i] == ']') 
+                        continue;
 
-                text += passage.text[i];
-                OnTextChanged?.Invoke(text);
+                text += currentPassage.text[i];
+            }
+
+            lineFinished = true;
+            OnSpeakerChanged?.Invoke(speaker);
+            OnCompilingEnd?.Invoke(text);
+            yield return new WaitUntil(() => compileDone);
+            
+            StartCoroutine(Type(text));
+        }
+
+        private IEnumerator Type(string text)
+        {
+            lineFinished = false;
+
+            string typedText = "";
+            for (int i = 0; i < text.Length; i++)
+            {
+                typedText += text[i];
+                OnTextChanged?.Invoke(typedText);
                 yield return new WaitForSeconds(1 / CharactersPerSecond);
             }
 
@@ -98,7 +116,7 @@ namespace DialogSystem
 
             if (currentPassage.links.Count == 1)
             {
-                StartPassage(currentPassage.links[0].pid);
+                StartDialog(currentPassage.links[0].pid);
             }
         }
     }
