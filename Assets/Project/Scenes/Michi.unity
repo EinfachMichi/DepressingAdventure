@@ -553,6 +553,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4781220160259862629, guid: c7eb0df2eb1a5de40b4d847e26ef72cc, type: 3}
   m_PrefabInstance: {fileID: 178180215}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &462731719 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4059082664521966652, guid: aaa17485862bedb46b7239e1378c8bed, type: 3}
+  m_PrefabInstance: {fileID: 1072663953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785952f8335640cba22d2b159b8c3945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &479532607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,7 +1366,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f218e372025d5d043bafc3f7d7c0ba50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pid: 1
+  OnDialogOver:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 462731719}
+        m_TargetAssemblyTypeName: Main.EventManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Quest_01
+          m_BoolArgument: 0
+        m_CallState: 2
+  pid: 30
 --- !u!212 &1237560515
 SpriteRenderer:
   m_ObjectHideFlags: 0
