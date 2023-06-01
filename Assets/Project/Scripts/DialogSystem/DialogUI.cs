@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,6 @@ namespace DialogSystem
         public Image IconImage;
         public TextMeshProUGUI SpeakerName;
         public TextMeshProUGUI Line;
-        public TextMeshProUGUI TestLine;
         public Animator anim;
         
 
