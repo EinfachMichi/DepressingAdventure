@@ -1,0 +1,34 @@
+{
+    "passages": [
+      {
+        "text": "Spieler: Das Dorf scheint eher kleiner zu sein, als die Dörfer die ich bisher auf meiner Reise gesehen hatte.\n\n\n[[Zweiter Satz]]\n\n\n\n",
+        "links": [
+          {
+            "name": "Zweiter Satz",
+            "link": "Zweiter Satz",
+            "pid": "2"
+          }
+        ],
+        "name": "Erster Abschnitt",
+        "pid": "1",
+        "position": {
+          "x": "800",
+          "y": "350"
+        }
+      },
+      {
+        "text": "Spieler: „Doch würde mir dieses kleine Dorf als Zwischenstopp genügen. Dort kann ich sicherlich einige Tage ruhen und meine Vorräte auffüllen.",
+        "name": "Zweiter Satz",
+        "pid": "2",
+        "position": {
+          "x": "800",
+          "y": "475"
+        }
+      }
+    ],
+    "name": "Test",
+    "startnode": "1",
+    "creator": "Twine",
+    "creator-version": "2.6.2",
+    "ifid": "A682972C-031B-4285-B587-C490A47CB3E5"
+  }
