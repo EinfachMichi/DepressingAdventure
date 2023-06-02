@@ -1334,16 +1334,16 @@
       }
     },
     {
-      "text": "Fronicka: Aber genau! Sie könnten für mich gehen!\n\n[[Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.]]\n[[Steve: Ein Abenteuer in den Wald?Da bin ich dabei!]]",
+      "text": "Fronicka: Aber genau! Sie könnten für mich gehen!\n\n[[Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.]]\n[[Ein Abenteuer in den Wald?Da bin ich dabei!]]",
       "links": [
         {
-          "name": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
-          "link": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+          "name": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+          "link": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
           "pid": "86"
         },
         {
-          "name": "Steve: Ein Abenteuer in den Wald?Da bin ich dabei!",
-          "link": "Steve: Ein Abenteuer in den Wald?Da bin ich dabei!",
+          "name": "Ein Abenteuer in den Wald?Da bin ich dabei!",
+          "link": "Ein Abenteuer in den Wald?Da bin ich dabei!",
           "pid": "87"
         }
       ],
@@ -1363,7 +1363,7 @@
           "pid": "88"
         }
       ],
-      "name": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+      "name": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
       "pid": "86",
       "position": {
         "x": "1475",
@@ -1379,7 +1379,7 @@
           "pid": "106"
         }
       ],
-      "name": "Steve: Ein Abenteuer in den Wald?Da bin ich dabei!",
+      "name": "Ein Abenteuer in den Wald?Da bin ich dabei!",
       "pid": "87",
       "position": {
         "x": "1600",
@@ -1956,7 +1956,7 @@
       }
     },
     {
-      "text": "Steve: „Dass werde ich!“ \n\n",
+      "text": "Steve: „Das werde ich!“ \n\n",
       "name": "Fronicka_Quest_b_19",
       "pid": "124",
       "position": {
@@ -2218,17 +2218,17 @@
       ]
     },
     {
-      "text": "Iris: Aber meine Mutter musst du trotzdem finden!\n\n[[Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!]]\n[[Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.]]",
+      "text": "Iris: Aber meine Mutter musst du trotzdem finden!\n\n[[Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!]]\n[[Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.]]",
       "links": [
         {
-          "name": "Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
-          "link": "Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
-          "pid": "142"
+          "name": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+          "link": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+          "pid": "154"
         },
         {
-          "name": "Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
-          "link": "Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
-          "pid": "143"
+          "name": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+          "link": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+          "pid": "155"
         }
       ],
       "name": "Iris_Quest_Failed_01",
@@ -2239,34 +2239,16 @@
       }
     },
     {
-      "text": "",
-      "name": "Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
-      "pid": "142",
-      "position": {
-        "x": "1075",
-        "y": "600"
-      }
-    },
-    {
-      "text": "",
-      "name": "Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
-      "pid": "143",
-      "position": {
-        "x": "1200",
-        "y": "600"
-      }
-    },
-    {
       "text": "Steve: Was ist denn hier los? \n\n[[Ludmilla_Quest_End_01]]",
       "links": [
         {
           "name": "Ludmilla_Quest_End_01",
           "link": "Ludmilla_Quest_End_01",
-          "pid": "145"
+          "pid": "143"
         }
       ],
       "name": "Ludmilla_Quest_End",
-      "pid": "144",
+      "pid": "142",
       "position": {
         "x": "1950",
         "y": "350"
@@ -2282,11 +2264,11 @@
         {
           "name": "Ludmilla_Quest_End_02",
           "link": "Ludmilla_Quest_End_02",
-          "pid": "146"
+          "pid": "144"
         }
       ],
       "name": "Ludmilla_Quest_End_01",
-      "pid": "145",
+      "pid": "143",
       "position": {
         "x": "1950",
         "y": "475"
@@ -2298,11 +2280,11 @@
         {
           "name": "Ludmilla_Quest_End_03",
           "link": "Ludmilla_Quest_End_03",
-          "pid": "147"
+          "pid": "145"
         }
       ],
       "name": "Ludmilla_Quest_End_02",
-      "pid": "146",
+      "pid": "144",
       "position": {
         "x": "1950",
         "y": "600"
@@ -2314,11 +2296,11 @@
         {
           "name": "Ludmilla_Quest_End_04",
           "link": "Ludmilla_Quest_End_04",
-          "pid": "148"
+          "pid": "146"
         }
       ],
       "name": "Ludmilla_Quest_End_03",
-      "pid": "147",
+      "pid": "145",
       "position": {
         "x": "1950",
         "y": "725"
@@ -2330,11 +2312,11 @@
         {
           "name": "Ludmilla_Quest_End_05",
           "link": "Ludmilla_Quest_End_05",
-          "pid": "149"
+          "pid": "147"
         }
       ],
       "name": "Ludmilla_Quest_End_04",
-      "pid": "148",
+      "pid": "146",
       "position": {
         "x": "1950",
         "y": "850"
@@ -2346,11 +2328,11 @@
         {
           "name": "Ludmilla_Quest_End_06",
           "link": "Ludmilla_Quest_End_06",
-          "pid": "150"
+          "pid": "148"
         }
       ],
       "name": "Ludmilla_Quest_End_05",
-      "pid": "149",
+      "pid": "147",
       "position": {
         "x": "1950",
         "y": "975"
@@ -2362,11 +2344,11 @@
         {
           "name": "Ludmilla_Quest_End_07",
           "link": "Ludmilla_Quest_End_07",
-          "pid": "151"
+          "pid": "149"
         }
       ],
       "name": "Ludmilla_Quest_End_06",
-      "pid": "150",
+      "pid": "148",
       "position": {
         "x": "1950",
         "y": "1100"
@@ -2378,11 +2360,11 @@
         {
           "name": "Ludmilla_Quest_End_08",
           "link": "Ludmilla_Quest_End_08",
-          "pid": "152"
+          "pid": "150"
         }
       ],
       "name": "Ludmilla_Quest_End_07",
-      "pid": "151",
+      "pid": "149",
       "position": {
         "x": "1950",
         "y": "1225"
@@ -2394,11 +2376,11 @@
         {
           "name": "Ludmilla_Quest_End_09",
           "link": "Ludmilla_Quest_End_09",
-          "pid": "153"
+          "pid": "151"
         }
       ],
       "name": "Ludmilla_Quest_End_08",
-      "pid": "152",
+      "pid": "150",
       "position": {
         "x": "1950",
         "y": "1350"
@@ -2410,11 +2392,11 @@
         {
           "name": "Ludmilla_Quest_End_10",
           "link": "Ludmilla_Quest_End_10",
-          "pid": "154"
+          "pid": "152"
         }
       ],
       "name": "Ludmilla_Quest_End_09",
-      "pid": "153",
+      "pid": "151",
       "position": {
         "x": "1950",
         "y": "1475"
@@ -2426,11 +2408,11 @@
         {
           "name": "Ludmilla_Quest_End_11",
           "link": "Ludmilla_Quest_End_11",
-          "pid": "155"
+          "pid": "153"
         }
       ],
       "name": "Ludmilla_Quest_End_10",
-      "pid": "154",
+      "pid": "152",
       "position": {
         "x": "1950",
         "y": "1600"
@@ -2439,10 +2421,28 @@
     {
       "text": "Nikolaus: Dass habe ich mir bereits gedacht. ",
       "name": "Ludmilla_Quest_End_11",
-      "pid": "155",
+      "pid": "153",
       "position": {
         "x": "1950",
         "y": "1725"
+      }
+    },
+    {
+      "text": "",
+      "name": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+      "pid": "154",
+      "position": {
+        "x": "1075",
+        "y": "600"
+      }
+    },
+    {
+      "text": "",
+      "name": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+      "pid": "155",
+      "position": {
+        "x": "1200",
+        "y": "600"
       }
     }
   ],
