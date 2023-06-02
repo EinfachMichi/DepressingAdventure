@@ -20,6 +20,7 @@ public class Quest_01ButtonInput : MonoBehaviour
     public TMP_Text RoundCounterText;
     public TMP_Text PlayerPointsText;
     public TMP_Text EnemyPointsText;
+    public string SceneName;
 
     public void Start()
     {
@@ -106,7 +107,7 @@ public class Quest_01ButtonInput : MonoBehaviour
             Button[i].GetComponent<Button>().interactable = false;
         }
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Don");
+        SceneManager.LoadScene(SceneName);
     }
 
     void pointCheck()

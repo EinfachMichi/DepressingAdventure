@@ -288,6 +288,7 @@ MonoBehaviour:
   RoundCounterText: {fileID: 573022704}
   PlayerPointsText: {fileID: 1880204389}
   EnemyPointsText: {fileID: 1233758810}
+  SceneName: Michi
 --- !u!95 &428820855
 Animator:
   serializedVersion: 3

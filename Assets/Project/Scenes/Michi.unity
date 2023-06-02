@@ -1381,7 +1381,7 @@ MonoBehaviour:
           m_StringArgument: Quest_01
           m_BoolArgument: 0
         m_CallState: 2
-  pid: 30
+  pid: 1
 --- !u!212 &1237560515
 SpriteRenderer:
   m_ObjectHideFlags: 0

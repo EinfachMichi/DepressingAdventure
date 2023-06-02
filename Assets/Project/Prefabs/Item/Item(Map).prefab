@@ -96,11 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d6a7ec6459e1c42832871ebad555f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnityEvent:
-    m_PersistentCalls:
-      m_Calls: []
   ItemTyp: 4
   Icon: {fileID: 21300000, guid: f9161c6c9e06dc445ada3ee16d991f90, type: 3}
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &4466937097475765345
 CircleCollider2D:
   m_ObjectHideFlags: 0
