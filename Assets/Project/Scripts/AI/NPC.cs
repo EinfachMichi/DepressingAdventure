@@ -3,11 +3,19 @@ using System.Collections;
 using DialogSystem;
 using Main;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPC : MonoBehaviour, IInteractable
 {
+    public UnityEvent OnDialogOver;
     private bool canInteract = true;
     public int pid;
+    
+    private void Start()
+    {
+        DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+        
+    }
 
     public void Interact()
     {
@@ -20,6 +28,7 @@ public class NPC : MonoBehaviour, IInteractable
     private void OnDialogEnd()
     {
         StartCoroutine(InteractionCooldown());
+        OnDialogOver?.Invoke();
     }
 
     private IEnumerator InteractionCooldown()
