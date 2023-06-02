@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Main;
 using UnityEngine;
 
@@ -153,6 +154,16 @@ namespace DialogSystem
             }
         }
 
+        public List<Passage> GetConversation(string name, params string[] tags)
+        {
+            dialog = JsonUtility.FromJson<Dialog>(stories[GameManager.Instance.CurrentRegion].text);
+            List<Passage> list = new List<Passage>();
+            
+            //list = dialog.GetPassagesWithTag(name, tags);
+            
+            return list;
+        }
+        
         public void Choose(int choose)
         {   
             OnChoiceOver?.Invoke();

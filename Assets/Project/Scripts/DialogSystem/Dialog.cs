@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DialogSystem;
 
 public class Dialog
 {
@@ -7,23 +8,65 @@ public class Dialog
 
     public Passage GetPassage(int pid)
     {
-        Passage passage = new Passage();
+        Passage passageObject = new Passage();
         foreach (Passage dialogPassage in passages)
         {
             if (dialogPassage.pid == pid)
             {
-                passage = dialogPassage;
+                passageObject = dialogPassage;
                 break;
             }
         }
-        return passage;
+        return passageObject;
     }
+
+    public Conversation GetConversation(string name)
+    {
+        Conversation conv = new Conversation();
+        foreach (Passage dialogPassage in passages)
+        {
+            if (dialogPassage.name.StartsWith(name))
+            {
+                if (dialogPassage.tags.Contains("Start"))
+                {
+                    //list.Add(dialogPassage);
+                }
+                break;
+            }
+        }
+        return conv;
+    }
+
+    public void FromToEnd(Passage passage, List<Passage> list)
+    {
+        if(passage.links.Count == 0)
+        {
+            list.Add(passage);
+            return;
+        }
+    }
+
+    // public List<Passage> GetPassagesWithTag(string name, params string[] tags)
+    // {
+    //     List<Passage> list = GetPassages(name);
+    //     for (int i = 0; i < passages.Count; i++)
+    //     {
+    //         int tagCount = 0;
+    //         for (int j = 0; j < tags.Length; j++)
+    //         {
+    //             if (passages[i].tags[j] == tags[j]) tagCount++;
+    //         }
+    //         if(tagCount == tags.Length) list.Add(passages[i]);
+    //     }
+    //     return list;
+    // }
 }
 
 [Serializable]
 public struct Passage
 {
     public string text;
+    public string name;
     public List<Link> links;
     public int pid;
     public List<string> tags;
