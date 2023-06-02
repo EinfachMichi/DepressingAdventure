@@ -10,10 +10,11 @@ public class NPC : MonoBehaviour, IInteractable
     public UnityEvent OnDialogOver;
     private bool canInteract = true;
     public int pid;
-
+    
     private void Start()
     {
         DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+        
     }
 
     public void Interact()
