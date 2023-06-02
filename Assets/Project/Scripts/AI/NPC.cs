@@ -12,22 +12,17 @@ public class NPC : MonoBehaviour, IInteractable
     public string Name;
     public UnityEvent OnDialogOver;
     private bool canInteract = true;
-
-    private List<Conversation> casualConversations = new List<Conversation>();
-    private List<Conversation> quests = new List<Conversation>();
-    private List<Conversation> questsDone = new List<Conversation>();
+    public int pid;
 
     private void Start()
     {
         DialogManager.Instance.OnDialogEnd += OnDialogEnd;
-
-        DialogManager.Instance.GetConversation(Name, "Start");
     }
 
     public void Interact()
     {
         if (!canInteract) return;
-        
+        DialogManager.Instance.StartDialog(pid);
         canInteract = false;
     }
 

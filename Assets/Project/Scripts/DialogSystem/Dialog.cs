@@ -19,47 +19,6 @@ public class Dialog
         }
         return passageObject;
     }
-
-    public Conversation GetConversation(string name)
-    {
-        Conversation conv = new Conversation();
-        foreach (Passage dialogPassage in passages)
-        {
-            if (dialogPassage.name.StartsWith(name))
-            {
-                if (dialogPassage.tags.Contains("Start"))
-                {
-                    //list.Add(dialogPassage);
-                }
-                break;
-            }
-        }
-        return conv;
-    }
-
-    public void FromToEnd(Passage passage, List<Passage> list)
-    {
-        if(passage.links.Count == 0)
-        {
-            list.Add(passage);
-            return;
-        }
-    }
-
-    // public List<Passage> GetPassagesWithTag(string name, params string[] tags)
-    // {
-    //     List<Passage> list = GetPassages(name);
-    //     for (int i = 0; i < passages.Count; i++)
-    //     {
-    //         int tagCount = 0;
-    //         for (int j = 0; j < tags.Length; j++)
-    //         {
-    //             if (passages[i].tags[j] == tags[j]) tagCount++;
-    //         }
-    //         if(tagCount == tags.Length) list.Add(passages[i]);
-    //     }
-    //     return list;
-    // }
 }
 
 [Serializable]
