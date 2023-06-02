@@ -1,0 +1,380 @@
+{
+  "passages": [
+    {
+      "text": "Steve: Das Dorf scheint eher kleiner zu sein, als die Dörfer die ich bisher auf meiner Reise gesehen hatte. \n\n[[Spawn_01]]\n",
+      "links": [
+        {
+          "name": "Spawn_01",
+          "link": "Spawn_01",
+          "pid": "2"
+        }
+      ],
+      "name": "Spawn",
+      "pid": "1",
+      "position": {
+        "x": "900",
+        "y": "400"
+      },
+      "tags": [
+        "Start"
+      ]
+    },
+    {
+      "text": "Steve: Doch würde mir dieses kleine Dorf als Zwischenstopp genügen. Dort kann ich sicherlich einige Tage ruhen und meine Vorräte auffüllen. ",
+      "name": "Spawn_01",
+      "pid": "2",
+      "position": {
+        "x": "900",
+        "y": "525"
+      }
+    },
+    {
+      "text": "Steve: Hallo alter Mann. Gehören Sie zu diesem kleinen Dorf hier?\n\n[[Harald_01]]",
+      "links": [
+        {
+          "name": "Harald_01",
+          "link": "Harald_01",
+          "pid": "4"
+        }
+      ],
+      "name": "Harald",
+      "pid": "3",
+      "position": {
+        "x": "1100",
+        "y": "400"
+      },
+      "tags": [
+        "Start",
+        "Quest"
+      ]
+    },
+    {
+      "text": "Harald: Flieh!\n\n[[Harald_02]]",
+      "links": [
+        {
+          "name": "Harald_02",
+          "link": "Harald_02",
+          "pid": "5"
+        }
+      ],
+      "name": "Harald_01",
+      "pid": "4",
+      "position": {
+        "x": "1100",
+        "y": "525"
+      }
+    },
+    {
+      "text": "Steven: Wie bitte?\n\n[[Harald_03]]",
+      "links": [
+        {
+          "name": "Harald_03",
+          "link": "Harald_03",
+          "pid": "6"
+        }
+      ],
+      "name": "Harald_02",
+      "pid": "5",
+      "position": {
+        "x": "1100",
+        "y": "650"
+      }
+    },
+    {
+      "text": "Harald: Flieh!\n\n[[Harald_04]]",
+      "links": [
+        {
+          "name": "Harald_04",
+          "link": "Harald_04",
+          "pid": "7"
+        }
+      ],
+      "name": "Harald_03",
+      "pid": "6",
+      "position": {
+        "x": "1100",
+        "y": "775"
+      }
+    },
+    {
+      "text": "Steven: Ich verstehe nicht ganz. Warum sollte ich fliehen? Erwartet mich etwas grausames in diesem Dorf?\n\n[[Harald_05]]",
+      "links": [
+        {
+          "name": "Harald_05",
+          "link": "Harald_05",
+          "pid": "8"
+        }
+      ],
+      "name": "Harald_04",
+      "pid": "7",
+      "position": {
+        "x": "1100",
+        "y": "900"
+      }
+    },
+    {
+      "text": "Harald: Tod! Verderben! Fliehen!\n\n[[Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?]]\n[[Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.]]",
+      "links": [
+        {
+          "name": "Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
+          "link": "Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
+          "pid": "9"
+        },
+        {
+          "name": "Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
+          "link": "Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
+          "pid": "10"
+        }
+      ],
+      "name": "Harald_05",
+      "pid": "8",
+      "position": {
+        "x": "1100",
+        "y": "1025"
+      }
+    },
+    {
+      "text": "Harald: Nein! Nein!\n\n[[Harald_a_01]]",
+      "links": [
+        {
+          "name": "Harald_a_01",
+          "link": "Harald_a_01",
+          "pid": "11"
+        }
+      ],
+      "name": "Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
+      "pid": "9",
+      "position": {
+        "x": "1100",
+        "y": "1150"
+      }
+    },
+    {
+      "text": "Harald: Flieh! Verderben! Dorf!\n\n[[Harald_b_01]]",
+      "links": [
+        {
+          "name": "Harald_b_01",
+          "link": "Harald_b_01",
+          "pid": "17"
+        }
+      ],
+      "name": "Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
+      "pid": "10",
+      "position": {
+        "x": "1225",
+        "y": "1150"
+      }
+    },
+    {
+      "text": "Steve: Können sie nur so kurze Antwortmöglichkeiten nennen?\n\n[[Harald_a_02]]",
+      "links": [
+        {
+          "name": "Harald_a_02",
+          "link": "Harald_a_02",
+          "pid": "12"
+        }
+      ],
+      "name": "Harald_a_01",
+      "pid": "11",
+      "position": {
+        "x": "1100",
+        "y": "1275"
+      }
+    },
+    {
+      "text": "Harald: ...\n\n[[Harald_a_03]]",
+      "links": [
+        {
+          "name": "Harald_a_03",
+          "link": "Harald_a_03",
+          "pid": "13"
+        }
+      ],
+      "name": "Harald_a_02",
+      "pid": "12",
+      "position": {
+        "x": "1100",
+        "y": "1400"
+      }
+    },
+    {
+      "text": "Steve: Also können Sie so viel sprechen, wie es normalerweise ein Baby tun könnte?\n\n[[Harald_a_04]]",
+      "links": [
+        {
+          "name": "Harald_a_04",
+          "link": "Harald_a_04",
+          "pid": "14"
+        }
+      ],
+      "name": "Harald_a_03",
+      "pid": "13",
+      "position": {
+        "x": "1100",
+        "y": "1525"
+      }
+    },
+    {
+      "text": "Harald: ...\n\n[[Harald_a_05]]",
+      "links": [
+        {
+          "name": "Harald_a_05",
+          "link": "Harald_a_05",
+          "pid": "15"
+        }
+      ],
+      "name": "Harald_a_04",
+      "pid": "14",
+      "position": {
+        "x": "1100",
+        "y": "1650"
+      }
+    },
+    {
+      "text": "Harald: Flieh!\n\n[[Harald_a_06]]",
+      "links": [
+        {
+          "name": "Harald_a_06",
+          "link": "Harald_a_06",
+          "pid": "16"
+        }
+      ],
+      "name": "Harald_a_05",
+      "pid": "15",
+      "position": {
+        "x": "1100",
+        "y": "1775"
+      }
+    },
+    {
+      "text": "Steve: Ich danke Ihnen für diese Antwort. Dies hat mir meine Frage beantwortet...",
+      "name": "Harald_a_06",
+      "pid": "16",
+      "position": {
+        "x": "1100",
+        "y": "1900"
+      }
+    },
+    {
+      "text": "Steve: Beschreiben Sie doch bitte etwas genauer, warum ich ausgerechnet dieses Dorf nicht bestreiten sollte?\n[[Harald_b_02]]",
+      "links": [
+        {
+          "name": "Harald_b_02",
+          "link": "Harald_b_02",
+          "pid": "18"
+        }
+      ],
+      "name": "Harald_b_01",
+      "pid": "17",
+      "position": {
+        "x": "1225",
+        "y": "1275"
+      }
+    },
+    {
+      "text": "Harald: ...\n\n[[Harald_b_03]]",
+      "links": [
+        {
+          "name": "Harald_b_03",
+          "link": "Harald_b_03",
+          "pid": "19"
+        }
+      ],
+      "name": "Harald_b_02",
+      "pid": "18",
+      "position": {
+        "x": "1225",
+        "y": "1400"
+      }
+    },
+    {
+      "text": "Harald: Flieh!\n\n[[Harald_b_04]]",
+      "links": [
+        {
+          "name": "Harald_b_04",
+          "link": "Harald_b_04",
+          "pid": "20"
+        }
+      ],
+      "name": "Harald_b_03",
+      "pid": "19",
+      "position": {
+        "x": "1225",
+        "y": "1525"
+      }
+    },
+    {
+      "text": "Steve: Anscheinend nicht. Dann tut es mir leid. Wenn Sie mir keinen richtigen Grund nennen können, warum ich dieses kleine, unscheinbare Dorf nicht betreten darf, werde ich ihren Wunsch nicht folge leisten.",
+      "name": "Harald_b_04",
+      "pid": "20",
+      "position": {
+        "x": "1225",
+        "y": "1650"
+      }
+    },
+    {
+      "text": "Harald: Tod und Verderben!\n\n[[Harald_after_01]]",
+      "links": [
+        {
+          "name": "Harald_after_01",
+          "link": "Harald_after_01",
+          "pid": "22"
+        }
+      ],
+      "name": "Harald_after",
+      "pid": "21",
+      "position": {
+        "x": "1475",
+        "y": "400"
+      },
+      "tags": [
+        "Start"
+      ]
+    },
+    {
+      "text": "Steve: Wow... Sie haben also ein neues Wort gelernt!\n\n[[Harald_after_02]]",
+      "links": [
+        {
+          "name": "Harald_after_02",
+          "link": "Harald_after_02",
+          "pid": "23"
+        }
+      ],
+      "name": "Harald_after_01",
+      "pid": "22",
+      "position": {
+        "x": "1475",
+        "y": "525"
+      }
+    },
+    {
+      "text": "Harald: Fliehen! Tod! Verderben!\n\n[[Harald_after_03]]",
+      "links": [
+        {
+          "name": "Harald_after_03",
+          "link": "Harald_after_03",
+          "pid": "24"
+        }
+      ],
+      "name": "Harald_after_02",
+      "pid": "23",
+      "position": {
+        "x": "1475",
+        "y": "650"
+      }
+    },
+    {
+      "text": "Steve: Da ist das neue Wort auch wieder weg...",
+      "name": "Harald_after_03",
+      "pid": "24",
+      "position": {
+        "x": "1475",
+        "y": "775"
+      }
+    }
+  ],
+  "name": "Tutorial",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.6.2",
+  "ifid": "37FE4309-4B20-4D6F-A4B7-438424EDEB39"
+}
