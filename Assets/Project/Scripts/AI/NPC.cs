@@ -1,27 +1,33 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using DialogSystem;
 using Main;
+using QuestSystem;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class NPC : MonoBehaviour, IInteractable
 {
+    public string Name;
     public UnityEvent OnDialogOver;
     private bool canInteract = true;
-    public int pid;
-    
+
+    private List<Conversation> casualConversations = new List<Conversation>();
+    private List<Conversation> quests = new List<Conversation>();
+    private List<Conversation> questsDone = new List<Conversation>();
+
     private void Start()
     {
         DialogManager.Instance.OnDialogEnd += OnDialogEnd;
-        
+
+        DialogManager.Instance.GetConversation(Name, "Start");
     }
 
     public void Interact()
     {
         if (!canInteract) return;
         
-        DialogManager.Instance.StartDialog(pid);
         canInteract = false;
     }
 
