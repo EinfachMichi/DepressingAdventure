@@ -18,8 +18,13 @@ namespace Environment
             player = GameObject.FindWithTag("Player").transform;
             border = GetComponentInChildren<PolygonCollider2D>();
             mainCam = MainCamera.Instance;
-            houseInTeleportPoint = GameObject.FindWithTag("InTeleport").transform;
-            houseOutTeleportPoint = GameObject.FindWithTag("OutTeleport").transform;
+
+            Transform[] trans = GetComponentsInChildren<Transform>();
+            foreach (Transform tran in trans)
+            {
+                if (tran.gameObject.CompareTag("InTeleport")) houseInTeleportPoint = tran;
+                if (tran.gameObject.CompareTag("OutTeleport")) houseOutTeleportPoint = tran;
+            }
         }
 
         public void Teleport(DoorType type)

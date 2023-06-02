@@ -56,8 +56,12 @@ namespace Environment
                  );
              }
          }
-         
-         public void StartTeleportation() => StartCoroutine(TeleportCooldown());
+
+         public void StartTeleportation()
+         {
+             if (!isTeleporting) return;
+             StartCoroutine(TeleportCooldown());
+         }
          private IEnumerator TeleportCooldown()
          {
              OnTeleportAnimationStart?.Invoke();

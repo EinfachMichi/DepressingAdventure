@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Main;
 using UnityEngine;
 
@@ -9,18 +10,21 @@ namespace DialogSystem
     {
         public event Action<string> OnSpeakerChanged;
         public event Action<string> OnTextChanged;
-        public event Action<string> OnPreCalculationResults;
         public event Action OnDialogStart;
         public event Action OnDialogEnd;
+        public event Action<string, string> OnChoice;
+        public event Action OnChoiceOver; 
 
         public float CharactersPerSecond = 40;
 
         private TextAsset[] stories;
         private Dialog dialog;
+        private Passage passage;
 
-        private Passage currentPassage;
-        private bool lineFinished;
-        private bool dialogFinished;
+        private string speakerName;
+        private bool finishedLine;
+        private string choice1;
+        private string choice2;
 
         protected override void Awake()
         {
@@ -30,76 +34,130 @@ namespace DialogSystem
 
         private void Update()
         {
-            if (!lineFinished) return;
-
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F) && finishedLine)
             {
-                Next();
+                NextPassage();
             }
         }
 
         public void StartDialog(int pid)
         {
             OnDialogStart?.Invoke();
-            StartPassage(pid);
+            CompilePassage(pid);
         }
-        
-        public void StartPassage(int pid)
+
+        private void CompilePassage(int pid)
         {
+            finishedLine = false;
+            
+            // Get Data
             dialog = JsonUtility.FromJson<Dialog>(stories[GameManager.Instance.CurrentRegion].text);
-            Passage passage = dialog.GetPassage(pid);
-            
-            StartCoroutine(Type(passage));
-        }
+            passage = dialog.GetPassage(pid);
+            string text = passage.text;
 
-        private IEnumerator Type(Passage passage)
-        {
-            lineFinished = false;
-            currentPassage = passage;
-            
-            bool knowSpeaker = false;
-            
-            string speaker = "";
-            string text = "";
-
-            for (int i = 0; i < passage.text.Length; i++)
+            // Handle Speaker Name
+            int charsToDelete = 0;
+            speakerName = "";
+            for (int i = 0; i < text.Length; i++)
             {
-                if (!knowSpeaker)
+                charsToDelete++;
+                if (text[i] == ':') break;
+                speakerName += text[i];
+            }
+            text = text.Remove(0, charsToDelete + 1);
+            OnSpeakerChanged?.Invoke(speakerName);
+            
+            /*
+             * Handle Main Text
+             */
+            string result = "";
+            
+            // Case: Choices
+            if (passage.links.Count == 2)
+            {
+                choice1 = "";
+                choice2 = "";
+                
+                int index = 0;
+                for (int i = 0; i < text.Length; i++)
                 {
-                    speaker += passage.text[i];
-                    if (passage.text[i] == ':')
+                    if (text[i] == '[')
                     {
-                        knowSpeaker = true;
-                        continue;
+                        index = i;
+                        break;
                     }
-                    OnSpeakerChanged?.Invoke(speaker);
-                    continue;
+                    result += text[i];
                 }
 
-                if(passage.links.Count == 1) if(passage.text[i] == '[' || passage.text[i] == ']') break;
-                if (passage.links.Count == 2) if(passage.text[i] == '[' || passage.text[i] == ']') continue;
+                int openBracketsCount = 0;
+                int closedBracketsCount = 0;
+                for (int i = index; i < text.Length; i++)
+                {
+                    if(text[i] == '[')
+                    {
+                        openBracketsCount++;
+                        continue;
+                    }
 
-                text += passage.text[i];
+                    if (text[i] == ']')
+                    {
+                        closedBracketsCount++;
+                        continue;
+                    }
+
+                    if (openBracketsCount == 2 && closedBracketsCount == 0) choice1 += text[i];
+                    if (openBracketsCount == 4 && closedBracketsCount == 2) choice2 += text[i];
+                }
+            }
+            
+            // Case: No Choices
+            if (passage.links.Count <= 1)
+            {
+                for (int i = 0; i < text.Length; i++)
+                {
+                    if (text[i] == '[') break;
+                    result += text[i];
+                }
+            }
+
+            StartCoroutine(Write(result, passage.links.Count > 1));
+        }
+
+        private IEnumerator Write(string result, bool choices)
+        {
+            string text = "";
+            for (int i = 0; i < result.Length; i++)
+            {
+                text += result[i];
                 OnTextChanged?.Invoke(text);
                 yield return new WaitForSeconds(1 / CharactersPerSecond);
             }
+            
+            if(choices) OnChoice?.Invoke(choice1, choice2);
 
-            lineFinished = true;
+            finishedLine = true;
         }
 
-        private void Next()
+        private void NextPassage(int linkID = 0)
         {
-            if (currentPassage.links.Count == 0)
+            if (passage.links.Count == 0)
             {
-                OnDialogEnd?.Invoke();
-                dialogFinished = true;
-                return;
+                OnDialogEnd.Invoke();
             }
+            else if (passage.links.Count == 1)
+            {
+                CompilePassage(passage.links[0].pid);
+            }
+            else if (passage.links.Count == 2)
+            {
+                CompilePassage(passage.links[linkID].pid);
+            }
+        }
 
-            if (currentPassage.links.Count == 1)
-            {
-                StartPassage(currentPassage.links[0].pid);
-            }
+        public void Choose(int choose)
+        {   
+            OnChoiceOver?.Invoke();
+            NextPassage(choose);
         }
     }
 }

@@ -8,14 +8,21 @@ using UnityEngine.SceneManagement;
 public class Quest_01ButtonInput : MonoBehaviour
 {
     private int round;
-    private int choose;
-    private int enemychoose;
+    [SerializeField] private int choose;
+    [SerializeField] private int enemychoose=0;
+    private int playerpoints=0;
+    private int enemypoints;
     public GameObject[] Button;
     public GameObject Player;
     public GameObject Enemy;
     public Sprite[] ChoosenItem;
 
     public TMP_Text RoundCounterText;
+    public TMP_Text PlayerPointsText;
+    public TMP_Text EnemyPointsText;
+    public string SceneName;
+
+    public Animator Ani;
 
     public void Start()
     {
@@ -23,10 +30,16 @@ public class Quest_01ButtonInput : MonoBehaviour
         Enemy.GetComponent<Image>().sprite = ChoosenItem[1];
         round = 1;
         RoundCounterText.text = null;
+        EnemyPointsText.text = enemypoints.ToString();
+        PlayerPointsText.text = playerpoints.ToString();
+        
     }
 
     public void PlayerChoose(int choose)
     {
+        Player.GetComponent<Image>().sprite = ChoosenItem[1];
+        Enemy.GetComponent<Image>().sprite = ChoosenItem[1];
+        Ani.SetTrigger("OnClick");
         if (round == 1 || round == 3)
         {
             if (choose == 3)
@@ -40,7 +53,7 @@ public class Quest_01ButtonInput : MonoBehaviour
         }
         else
         {
-            int index = Random.Range(0, ChoosenItem.Length);
+            int index = Random.Range(1, ChoosenItem.Length+1);
             enemychoose = index;
             print(index);
         }
@@ -49,6 +62,13 @@ public class Quest_01ButtonInput : MonoBehaviour
 
         //none=0, schere=1, Stein=2, Papier=3
 
+       
+        this.choose = choose;
+        
+    }
+
+    public void StartRound()
+    {
         switch (choose)
         {
             case 0:
@@ -79,22 +99,12 @@ public class Quest_01ButtonInput : MonoBehaviour
                 Enemy.GetComponent<Image>().sprite = ChoosenItem[2];
                 break;
         }
-        this.choose = choose;
-        StartRound();
-    }
-
-    private void StartRound()
-    {
-        for (int i = 0; i < Button.Length; i++)
-        {
-            //Button[i].GetComponent<Button>().interactable = false;
-        }
         round++;
+        pointCheck();
         if (round > 3)
         {
             StartCoroutine(GoScene());
         }
-
     }
 
     IEnumerator GoScene()
@@ -104,6 +114,21 @@ public class Quest_01ButtonInput : MonoBehaviour
             Button[i].GetComponent<Button>().interactable = false;
         }
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene(SceneName);
+    }
+
+    void pointCheck()
+    {
+        if (choose < enemychoose||enemychoose==1&&choose==3)
+        {
+            enemypoints++;
+            EnemyPointsText.text = enemypoints.ToString();
+        }
+        else if (choose > enemychoose || enemychoose == 3 && choose == 1)
+        {
+            playerpoints++;
+            PlayerPointsText.text = playerpoints.ToString();
+        }
+
     }
 }
