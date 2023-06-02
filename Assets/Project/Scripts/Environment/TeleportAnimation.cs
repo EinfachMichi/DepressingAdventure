@@ -59,7 +59,7 @@ namespace Environment
 
          public void StartTeleportation()
          {
-             if (!isTeleporting) return;
+             if (isTeleporting) return;
              StartCoroutine(TeleportCooldown());
          }
          private IEnumerator TeleportCooldown()
