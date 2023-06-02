@@ -22,6 +22,8 @@ public class Quest_01ButtonInput : MonoBehaviour
     public TMP_Text EnemyPointsText;
     public string SceneName;
 
+    public Animator Ani;
+
     public void Start()
     {
         Player.GetComponent<Image>().sprite = ChoosenItem[1];
@@ -30,10 +32,14 @@ public class Quest_01ButtonInput : MonoBehaviour
         RoundCounterText.text = null;
         EnemyPointsText.text = enemypoints.ToString();
         PlayerPointsText.text = playerpoints.ToString();
+        
     }
 
     public void PlayerChoose(int choose)
     {
+        Player.GetComponent<Image>().sprite = ChoosenItem[1];
+        Enemy.GetComponent<Image>().sprite = ChoosenItem[1];
+        Ani.SetTrigger("OnClick");
         if (round == 1 || round == 3)
         {
             if (choose == 3)
@@ -56,6 +62,13 @@ public class Quest_01ButtonInput : MonoBehaviour
 
         //none=0, schere=1, Stein=2, Papier=3
 
+       
+        this.choose = choose;
+        
+    }
+
+    public void StartRound()
+    {
         switch (choose)
         {
             case 0:
@@ -86,14 +99,8 @@ public class Quest_01ButtonInput : MonoBehaviour
                 Enemy.GetComponent<Image>().sprite = ChoosenItem[2];
                 break;
         }
-        this.choose = choose;
-        pointCheck();
-        StartRound();
-    }
-
-    private void StartRound()
-    {
         round++;
+        pointCheck();
         if (round > 3)
         {
             StartCoroutine(GoScene());
