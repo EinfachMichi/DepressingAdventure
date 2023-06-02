@@ -20,6 +20,8 @@ namespace Environment
 
         public void Interact()
         {
+            if (TeleportAnimation.Instance.isTeleporting) return;
+            
             TeleportAnimation.Instance.StartTeleportation();
             TeleportAnimation.Instance.OnTeleport += Teleport;
         }

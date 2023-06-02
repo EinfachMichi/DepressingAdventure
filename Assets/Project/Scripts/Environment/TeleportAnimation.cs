@@ -16,7 +16,7 @@ namespace Environment
          public float DarkTime = 0.5f;
          public Image FadeImage;
          
-         private bool isTeleporting;
+         [HideInInspector] public bool isTeleporting;
          private FadeMode mode = FadeMode.FadeIn;
          private float alpha;
          
