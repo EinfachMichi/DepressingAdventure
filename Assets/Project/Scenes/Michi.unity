@@ -1366,6 +1366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f218e372025d5d043bafc3f7d7c0ba50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: 
   OnDialogOver:
     m_PersistentCalls:
       m_Calls:
