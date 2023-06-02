@@ -113,16 +113,16 @@
       }
     },
     {
-      "text": "Harald: Tod! Verderben! Fliehen!\n\n[[Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?]]\n[[Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.]]",
+      "text": "Harald: Tod! Verderben! Fliehen!\n\n[[Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?]]\n[[Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.]]",
       "links": [
         {
-          "name": "Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
-          "link": "Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
+          "name": "Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
+          "link": "Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
           "pid": "9"
         },
         {
-          "name": "Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
-          "link": "Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
+          "name": "Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
+          "link": "Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
           "pid": "10"
         }
       ],
@@ -142,7 +142,7 @@
           "pid": "11"
         }
       ],
-      "name": "Steve: Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
+      "name": "Können Sie nicht normal reden oder fehlt Ihnen diese Fähigkeit?",
       "pid": "9",
       "position": {
         "x": "1100",
@@ -158,7 +158,7 @@
           "pid": "17"
         }
       ],
-      "name": "Steve: Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
+      "name": "Was redest du denn da für einen Stuss? Tod und Verderben soll mich in diesen kleinen Dorf erwarten? Wohl kaum.",
       "pid": "10",
       "position": {
         "x": "1225",
