@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4980173625509699405}
-  - component: {fileID: 17271091010795576}
+  - component: {fileID: 8979094147433859940}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -336,7 +336,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &17271091010795576
+--- !u!114 &8979094147433859940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,9 +345,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4980173625509699407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0898bbb6f7fe52343a3a224c65467983, type: 3}
+  m_Script: {fileID: 11500000, guid: 3711dc62010380d40894dda892413972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PassageList:
+    passages: []
   CharactersPerSecond: 100
 --- !u!1 &5011275778730284283
 GameObject:
@@ -470,7 +472,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 17271091010795576}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogSystem.DialogManager, Assembly-CSharp
         m_MethodName: Choose
         m_Mode: 3
@@ -603,7 +605,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 17271091010795576}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogSystem.DialogManager, Assembly-CSharp
         m_MethodName: Choose
         m_Mode: 3
@@ -663,7 +665,6 @@ GameObject:
   - component: {fileID: 8692418952111986888}
   - component: {fileID: 8692418952111986889}
   - component: {fileID: 8692418952111986886}
-  - component: {fileID: 8692418952111986887}
   m_Layer: 5
   m_Name: Dialog UI
   m_TagString: Untagged
@@ -708,7 +709,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -752,25 +753,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8692418952111986887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8692418952111986884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24f9d3628185404c8531a9f841532d35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IconImage: {fileID: 8692418952907390272}
-  SpeakerName: {fileID: 8692418952274848184}
-  Line: {fileID: 8692418952688043253}
-  Choices: {fileID: 9009387317658805704}
-  Choice1Text: {fileID: 9069588444559262311}
-  Choice2Text: {fileID: 4090292533754670070}
-  anim: {fileID: 8692418952924077331}
 --- !u!1 &8692418952274848183
 GameObject:
   m_ObjectHideFlags: 0

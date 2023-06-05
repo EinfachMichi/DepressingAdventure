@@ -1,7 +1,6 @@
-using System;
-using DialogSystem;
 using Environment;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player
 {
@@ -42,9 +41,10 @@ namespace Player
                 return;
             }
 
-            movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            //movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-            speed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : WalkSpeed;
+            //speed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : WalkSpeed;
+            speed = Keyboard.current.leftShiftKey.isPressed ? RunSpeed : WalkSpeed;
 
             rb.velocity = speed * movementInput.normalized;
         }

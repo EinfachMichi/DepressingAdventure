@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using DialogSystem;
+using DefaultNamespace;
 using Main;
-using QuestSystem;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,26 +9,34 @@ public class NPC : MonoBehaviour, IInteractable
     public string Name;
     public UnityEvent OnDialogOver;
     private bool canInteract = true;
-    public int pid;
-
+    private Story story;
+    
     private void Start()
     {
-        DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+        story = new Story(Name); 
+        
+        StoryManager.Instance.OnStoryEnd += OnStoryEnd;
     }
-
+    
     public void Interact()
     {
         if (!canInteract) return;
-        DialogManager.Instance.StartDialog(pid);
+        
+        StoryManager.Instance.RunStory(story.GetStory());
         canInteract = false;
     }
 
-    private void OnDialogEnd()
+    private void OnStoryEnd()
     {
         StartCoroutine(InteractionCooldown());
         OnDialogOver?.Invoke();
     }
 
+    public void NextStory()
+    {
+        story.Next();
+    }
+    
     private IEnumerator InteractionCooldown()
     {
         canInteract = false;

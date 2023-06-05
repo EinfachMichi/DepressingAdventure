@@ -11,7 +11,7 @@ namespace Player
 
         private void Update()
         {
-            if(Input.GetKeyDown(KeyCode.F)) Interaction();
+            
         }
 
         private void Interaction()
