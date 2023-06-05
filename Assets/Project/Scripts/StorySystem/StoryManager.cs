@@ -54,7 +54,9 @@ namespace StorySystem
     
     public void NextPassage(InputAction.CallbackContext value)
     {
-        if (!lineFinished || !hasChoosen) return;
+        if (!value.started) return;
+        
+        if (!lineFinished || !hasChoosen || storyFinished) return;
         
         if (currentPassage.links.Count == 0)
         {
