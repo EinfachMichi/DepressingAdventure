@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Main;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-namespace DefaultNamespace
+namespace StorySystem
 {
     public class StoryManager : Singleton<StoryManager>
 {
@@ -34,22 +35,12 @@ namespace DefaultNamespace
         base.Awake();
         stories = Resources.LoadAll<TextAsset>("Dialogs");
 
-        UpdateStory();
+        UpdateStory(1);
     }
 
     public void UpdateStory(int storyIndex = 0)
     {
         PassageList = JsonUtility.FromJson<PassageList>(stories[storyIndex].text);
-    }
-
-    private void Update()
-    {
-        if (!lineFinished || isBreak) return;
-        
-        // if (Input.GetKeyDown(KeyCode.F) && hasChoosen)
-        // {
-        //     NextPassage();
-        // }
     }
 
     public void RunStory(Passage passage)
@@ -61,8 +52,10 @@ namespace DefaultNamespace
         StartCoroutine(WriteStory(passage));
     }
     
-    public void NextPassage()
+    public void NextPassage(InputAction.CallbackContext value)
     {
+        if (!lineFinished || !hasChoosen) return;
+        
         if (currentPassage.links.Count == 0)
         {
             OnStoryEnd?.Invoke();
@@ -87,7 +80,8 @@ namespace DefaultNamespace
     {
         choose = ans;
         hasChoosen = true;
-        NextPassage();
+        StartCoroutine(WriteStory(GetPassage(currentPassage.links[choose].pid)));
+        OnChoiceOver?.Invoke();
     }
 
     private IEnumerator WriteStory(Passage passage)

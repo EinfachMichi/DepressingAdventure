@@ -65,14 +65,14 @@ namespace Environment
          
          private IEnumerator TeleportCooldown()
          {
-             OnTeleportAnimationStart?.Invoke();
              isTeleporting = true;
+             OnTeleportAnimationStart?.Invoke();
              mode = FadeMode.FadeIn;
              yield return new WaitForSeconds(FadeDuration);
              OnTeleport?.Invoke();
              yield return new WaitForSeconds(DarkTime);
              mode = FadeMode.FadeOut;
-             yield return new WaitForSeconds(FadeDuration);
+             yield return new WaitForSeconds(FadeDuration + 0.5f);
              isTeleporting = false;
              OnTeleportAnimationDone?.Invoke();
          }
