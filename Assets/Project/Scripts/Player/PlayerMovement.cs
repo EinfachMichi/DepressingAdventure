@@ -1,3 +1,4 @@
+using System;
 using Environment;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,7 +14,9 @@ namespace Player
         private Rigidbody2D rb;
         private bool canMove = true;
         private float speed;
-        private Vector2 movementInput;
+        private Vector2 movementVector;
+
+        #region Startup
 
         private void Awake()
         {
@@ -28,25 +31,27 @@ namespace Player
             speed = WalkSpeed;
         }
 
-        private void Update()
+        #endregion
+
+        private void FixedUpdate()
         {
-            Move();
+            rb.velocity = speed * movementVector;
         }
 
-        private void Move()
+        public void Move(InputAction.CallbackContext value)
         {
             if (!canMove)
             {
-                rb.velocity = Vector2.zero;
+                movementVector = Vector2.zero;
                 return;
             }
 
-            //movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            movementVector = value.ReadValue<Vector2>();
+        }
 
-            //speed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : WalkSpeed;
-            speed = Keyboard.current.leftShiftKey.isPressed ? RunSpeed : WalkSpeed;
-
-            rb.velocity = speed * movementInput.normalized;
+        public void Sprint(InputAction.CallbackContext value)
+        {
+            speed = value.performed ? RunSpeed : WalkSpeed;
         }
 
         public void Freeze() => canMove = false;
