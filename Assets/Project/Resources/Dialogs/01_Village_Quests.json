@@ -1,0 +1,2454 @@
+{
+  "passages": [
+    {
+      "text": "Iris: Hey! Du da!\n\n[[Iris_Quest_01]]",
+      "links": [
+        {
+          "name": "Iris_Quest_01",
+          "link": "Iris_Quest_01",
+          "pid": "2"
+        }
+      ],
+      "name": "Iris_Quest",
+      "pid": "1",
+      "position": {
+        "x": "800",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "Quest"
+      ]
+    },
+    {
+      "text": "Steve: Sprichst du mit mir kleines Mädchen?\n\n[[Iris_Quest_02]]",
+      "links": [
+        {
+          "name": "Iris_Quest_02",
+          "link": "Iris_Quest_02",
+          "pid": "3"
+        }
+      ],
+      "name": "Iris_Quest_01",
+      "pid": "2",
+      "position": {
+        "x": "800",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Iris: Gut erkannt!\n\n[[Iris_Quest_03]]",
+      "links": [
+        {
+          "name": "Iris_Quest_03",
+          "link": "Iris_Quest_03",
+          "pid": "4"
+        }
+      ],
+      "name": "Iris_Quest_02",
+      "pid": "3",
+      "position": {
+        "x": "800",
+        "y": "600"
+      }
+    },
+    {
+      "text": "Steve: Hat dir deine Mutter nicht beigebracht, dass du fremde Leute nicht einfach so ansprechen kannst?\n\n[[Iris_Quest_04]]",
+      "links": [
+        {
+          "name": "Iris_Quest_04",
+          "link": "Iris_Quest_04",
+          "pid": "5"
+        }
+      ],
+      "name": "Iris_Quest_03",
+      "pid": "4",
+      "position": {
+        "x": "800",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Iris: Sie ist nie da, da sie andere Dinge zu tun hat, Tequila\n\n[[Iris_Quest_05]]",
+      "links": [
+        {
+          "name": "Iris_Quest_05",
+          "link": "Iris_Quest_05",
+          "pid": "6"
+        }
+      ],
+      "name": "Iris_Quest_04",
+      "pid": "5",
+      "position": {
+        "x": "800",
+        "y": "850"
+      }
+    },
+    {
+      "text": "Steve: Das tut mir leid, kleines Mädchen. Kann ich dir irgendwie helfen?\n\n[[Iris_Quest_06]]",
+      "links": [
+        {
+          "name": "Iris_Quest_06",
+          "link": "Iris_Quest_06",
+          "pid": "7"
+        }
+      ],
+      "name": "Iris_Quest_05",
+      "pid": "6",
+      "position": {
+        "x": "800",
+        "y": "975"
+      }
+    },
+    {
+      "text": "Iris: Ja, dass kannst du! Indem du gegen mich antrittst, Tequila!\n\n[[Iris_Quest_07]]",
+      "links": [
+        {
+          "name": "Iris_Quest_07",
+          "link": "Iris_Quest_07",
+          "pid": "8"
+        }
+      ],
+      "name": "Iris_Quest_06",
+      "pid": "7",
+      "position": {
+        "x": "800",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "Steve: Gegen dich antrete?\n\n[[Iris_Quest_08]]",
+      "links": [
+        {
+          "name": "Iris_Quest_08",
+          "link": "Iris_Quest_08",
+          "pid": "9"
+        }
+      ],
+      "name": "Iris_Quest_07",
+      "pid": "8",
+      "position": {
+        "x": "800",
+        "y": "1225"
+      }
+    },
+    {
+      "text": "Iris: Ganz genau! Trete gegen mich in Schere, Stein, Papier an!\n\n[[Steve: Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?]]\n[[Steve: Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig sein.]]",
+      "links": [
+        {
+          "name": "Steve: Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?",
+          "link": "Steve: Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?",
+          "pid": "10"
+        },
+        {
+          "name": "Steve: Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig sein.",
+          "link": "Steve: Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig sein.",
+          "pid": "11"
+        }
+      ],
+      "name": "Iris_Quest_08",
+      "pid": "9",
+      "position": {
+        "x": "800",
+        "y": "1350"
+      }
+    },
+    {
+      "text": "Iris: Nenn mich nicht immer so! Schließlich sagt meine Mutter, dass ich mich schon sehr erwachsen benehme!\n\n[[Iris_Quest_a_01]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_01",
+          "link": "Iris_Quest_a_01",
+          "pid": "12"
+        }
+      ],
+      "name": "Steve: Warum sollte ich gegen ein kleines Mädchen wie dich antreten? Was hätte ich denn davon?",
+      "pid": "10",
+      "position": {
+        "x": "800",
+        "y": "1475"
+      }
+    },
+    {
+      "text": "Iris: Da unterschätzt du mich, denn in diesem Dorf hat mich bisher niemand geschlagen!\n\n[[Iris_Quest_b_01]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_01",
+          "link": "Iris_Quest_b_01",
+          "pid": "36"
+        }
+      ],
+      "name": "Steve: Gegen ein kleines Mädchen zu verlieren sollte nicht allzu schwierig sein.",
+      "pid": "11",
+      "position": {
+        "x": "925",
+        "y": "1475"
+      }
+    },
+    {
+      "text": "Steve: Die, die nie für dich da ist?\n\n[[Iris_Quest_a_02]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_02",
+          "link": "Iris_Quest_a_02",
+          "pid": "13"
+        }
+      ],
+      "name": "Iris_Quest_a_01",
+      "pid": "12",
+      "position": {
+        "x": "800",
+        "y": "1600"
+      }
+    },
+    {
+      "text": "Iris: …\n\n[[Iris_Quest_a_03]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_03",
+          "link": "Iris_Quest_a_03",
+          "pid": "14"
+        }
+      ],
+      "name": "Iris_Quest_a_02",
+      "pid": "13",
+      "position": {
+        "x": "800",
+        "y": "1725"
+      }
+    },
+    {
+      "text": "Iris: Willst du nun gegen mich antreten, oder nicht?\n\n[[Iris_Quest_a_04]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_04",
+          "link": "Iris_Quest_a_04",
+          "pid": "15"
+        }
+      ],
+      "name": "Iris_Quest_a_03",
+      "pid": "14",
+      "position": {
+        "x": "800",
+        "y": "1850"
+      }
+    },
+    {
+      "text": "Steve: An sich sollte es nicht zu schwer sein dich zu besiegen, doch hast du meine Frage nicht beantwortet, warum ich es tun sollte.\n\n[[Iris_Quest_a_05]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_05",
+          "link": "Iris_Quest_a_05",
+          "pid": "16"
+        }
+      ],
+      "name": "Iris_Quest_a_04",
+      "pid": "15",
+      "position": {
+        "x": "800",
+        "y": "1975"
+      }
+    },
+    {
+      "text": "Iris: Der Gewinner darf sich etwas vom Verlierer wünschen, Tequila.\n\n[[Iris_Quest_a_06]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_06",
+          "link": "Iris_Quest_a_06",
+          "pid": "17"
+        }
+      ],
+      "name": "Iris_Quest_a_05",
+      "pid": "16",
+      "position": {
+        "x": "800",
+        "y": "2100"
+      }
+    },
+    {
+      "text": "Steve: sich etwas von dem anderen wünschen?\n\n[[Iris_Quest_a_07]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_07",
+          "link": "Iris_Quest_a_07",
+          "pid": "18"
+        }
+      ],
+      "name": "Iris_Quest_a_06",
+      "pid": "17",
+      "position": {
+        "x": "800",
+        "y": "2225"
+      }
+    },
+    {
+      "text": "Iris: Ganz genau!\n\n[[Iris_Quest_a_08]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_08",
+          "link": "Iris_Quest_a_08",
+          "pid": "19"
+        }
+      ],
+      "name": "Iris_Quest_a_07",
+      "pid": "18",
+      "position": {
+        "x": "800",
+        "y": "2350"
+      }
+    },
+    {
+      "text": "Steve: Klingt gar nicht mal so schlecht.\n\n[[Iris_Quest_a_09]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_09",
+          "link": "Iris_Quest_a_09",
+          "pid": "20"
+        }
+      ],
+      "name": "Iris_Quest_a_08",
+      "pid": "19",
+      "position": {
+        "x": "800",
+        "y": "2475"
+      }
+    },
+    {
+      "text": "Steve: Okay. Ich bin dabei. Wenn ich gewinne, hilfst du mir eine passende Unterkunft zu finden, wo ich einige Tage ruhen kann!\n\n[[Iris_Quest_a_10]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_10",
+          "link": "Iris_Quest_a_10",
+          "pid": "21"
+        }
+      ],
+      "name": "Iris_Quest_a_09",
+      "pid": "20",
+      "position": {
+        "x": "800",
+        "y": "2600"
+      }
+    },
+    {
+      "text": "Steve: Lass mich raten, wenn du gewinnst, dann wünschst du von mir eine Flasche Tequila?\n\n[[Iris_Quest_a_11]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_11",
+          "link": "Iris_Quest_a_11",
+          "pid": "22"
+        }
+      ],
+      "name": "Iris_Quest_a_10",
+      "pid": "21",
+      "position": {
+        "x": "800",
+        "y": "2725"
+      }
+    },
+    {
+      "text": "Iris: Hmm, darüber habe ich gar nicht nachgedacht. Ich bräuchte einen kleinen Moment, um darüber nachzudenken!\n\n[[Iris_Quest_a_12]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_12",
+          "link": "Iris_Quest_a_12",
+          "pid": "23"
+        }
+      ],
+      "name": "Iris_Quest_a_11",
+      "pid": "22",
+      "position": {
+        "x": "800",
+        "y": "2850"
+      }
+    },
+    {
+      "text": "Iris: Hmm…\n\n[[Iris_Quest_a_13]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_13",
+          "link": "Iris_Quest_a_13",
+          "pid": "24"
+        }
+      ],
+      "name": "Iris_Quest_a_12",
+      "pid": "23",
+      "position": {
+        "x": "800",
+        "y": "2975"
+      }
+    },
+    {
+      "text": "Iris: …\n\n[[Iris_Quest_a_14]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_14",
+          "link": "Iris_Quest_a_14",
+          "pid": "25"
+        }
+      ],
+      "name": "Iris_Quest_a_13",
+      "pid": "24",
+      "position": {
+        "x": "800",
+        "y": "3100"
+      }
+    },
+    {
+      "text": "Iris: Okay! Wenn ich gewinne, wirst du meine Mutter finden, Tequila!\n\n[[Iris_Quest_a_15]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_15",
+          "link": "Iris_Quest_a_15",
+          "pid": "26"
+        }
+      ],
+      "name": "Iris_Quest_a_14",
+      "pid": "25",
+      "position": {
+        "x": "800",
+        "y": "3225"
+      }
+    },
+    {
+      "text": "Steve:  Einverstanden! Aber bevor ich dich in dem Spiel besiege hätte ich eine weitere Frage an dich.\n\n[[Iris_Quest_a_16]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_16",
+          "link": "Iris_Quest_a_16",
+          "pid": "27"
+        }
+      ],
+      "name": "Iris_Quest_a_15",
+      "pid": "26",
+      "position": {
+        "x": "800",
+        "y": "3350"
+      }
+    },
+    {
+      "text": "Iris: Die wäre?\n\n[[Iris_Quest_a_17]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_17",
+          "link": "Iris_Quest_a_17",
+          "pid": "28"
+        }
+      ],
+      "name": "Iris_Quest_a_16",
+      "pid": "27",
+      "position": {
+        "x": "800",
+        "y": "3475"
+      }
+    },
+    {
+      "text": "Steve: Warum sagst du nach fast jeden Satz ´Tequila´?\n\n[[Iris_Quest_a_18]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_18",
+          "link": "Iris_Quest_a_18",
+          "pid": "29"
+        }
+      ],
+      "name": "Iris_Quest_a_17",
+      "pid": "28",
+      "position": {
+        "x": "800",
+        "y": "3600"
+      }
+    },
+    {
+      "text": "Iris: Meine Mutter sagte einst zu mir, dass es ein Wunder Trank wäre und es Menschen glücklich macht!\n\n[[Iris_Quest_a_19]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_19",
+          "link": "Iris_Quest_a_19",
+          "pid": "30"
+        }
+      ],
+      "name": "Iris_Quest_a_18",
+      "pid": "29",
+      "position": {
+        "x": "800",
+        "y": "3725"
+      }
+    },
+    {
+      "text": "Steve: …\n\n[[Iris_Quest_a_20]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_20",
+          "link": "Iris_Quest_a_20",
+          "pid": "31"
+        }
+      ],
+      "name": "Iris_Quest_a_19",
+      "pid": "30",
+      "position": {
+        "x": "800",
+        "y": "3850"
+      }
+    },
+    {
+      "text": "Steve: Unrecht hat sie nicht.\n\n[[Iris_Quest_a_21]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_21",
+          "link": "Iris_Quest_a_21",
+          "pid": "32"
+        }
+      ],
+      "name": "Iris_Quest_a_20",
+      "pid": "31",
+      "position": {
+        "x": "800",
+        "y": "3975"
+      }
+    },
+    {
+      "text": "Iris: Meine Mutter hätte nie Unrecht!\n\n[[Iris_Quest_a_22]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_22",
+          "link": "Iris_Quest_a_22",
+          "pid": "33"
+        }
+      ],
+      "name": "Iris_Quest_a_21",
+      "pid": "32",
+      "position": {
+        "x": "800",
+        "y": "4100"
+      }
+    },
+    {
+      "text": "Iris: Also können wir jetzt endlich spielen?\n\n[[Iris_Quest_a_23]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_23",
+          "link": "Iris_Quest_a_23",
+          "pid": "34"
+        }
+      ],
+      "name": "Iris_Quest_a_22",
+      "pid": "33",
+      "position": {
+        "x": "800",
+        "y": "4225"
+      }
+    },
+    {
+      "text": "Steve: Natürlich! Lass uns beginnen!\n\n[[Iris_Quest_a_24]]",
+      "links": [
+        {
+          "name": "Iris_Quest_a_24",
+          "link": "Iris_Quest_a_24",
+          "pid": "35"
+        }
+      ],
+      "name": "Iris_Quest_a_23",
+      "pid": "34",
+      "position": {
+        "x": "800",
+        "y": "4350"
+      }
+    },
+    {
+      "text": "Iris: Wir spielen drei Runden. Wer die meisten Runden gewonnen hat, gewinnt auch das Spiel!",
+      "name": "Iris_Quest_a_24",
+      "pid": "35",
+      "position": {
+        "x": "800",
+        "y": "4475"
+      }
+    },
+    {
+      "text": "Steve: Gegen wie viele Kinder bist du denn angetreten?\n\n[[Iris_Quest_b_02]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_02",
+          "link": "Iris_Quest_b_02",
+          "pid": "37"
+        }
+      ],
+      "name": "Iris_Quest_b_01",
+      "pid": "36",
+      "position": {
+        "x": "925",
+        "y": "1600"
+      }
+    },
+    {
+      "text": "Iris: Ich rede hier nicht von Kindern, sondern Erwachsene, die nach ihrer Niederlage geflehmt hatten, Tequila!\n\n[[Iris_Quest_b_03]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_03",
+          "link": "Iris_Quest_b_03",
+          "pid": "38"
+        }
+      ],
+      "name": "Iris_Quest_b_02",
+      "pid": "37",
+      "position": {
+        "x": "925",
+        "y": "1725"
+      }
+    },
+    {
+      "text": "Steve: Natürlich.\n\n[[Iris_Quest_b_04]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_04",
+          "link": "Iris_Quest_b_04",
+          "pid": "39"
+        }
+      ],
+      "name": "Iris_Quest_b_03",
+      "pid": "38",
+      "position": {
+        "x": "925",
+        "y": "1850"
+      }
+    },
+    {
+      "text": "Iris: Anscheinend möchtest du nicht gegen mich verlieren. Darum werde ich mir jemanden anderen suchen, Tequila!\n\n[[Iris_Quest_b_05]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_05",
+          "link": "Iris_Quest_b_05",
+          "pid": "40"
+        }
+      ],
+      "name": "Iris_Quest_b_04",
+      "pid": "39",
+      "position": {
+        "x": "925",
+        "y": "1975"
+      }
+    },
+    {
+      "text": "Steve: Nein warte!\n\n[[Iris_Quest_b_06]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_06",
+          "link": "Iris_Quest_b_06",
+          "pid": "41"
+        }
+      ],
+      "name": "Iris_Quest_b_05",
+      "pid": "40",
+      "position": {
+        "x": "925",
+        "y": "2100"
+      }
+    },
+    {
+      "text": "Iris: Warum? Anscheinend möchtest du nicht gegen mich spielen!\n\n[[Iris_Quest_b_07]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_07",
+          "link": "Iris_Quest_b_07",
+          "pid": "42"
+        }
+      ],
+      "name": "Iris_Quest_b_06",
+      "pid": "41",
+      "position": {
+        "x": "925",
+        "y": "2225"
+      }
+    },
+    {
+      "text": "Steve: Doch, aber lass uns eine kleine Wette daraus machen\n\n[[Iris_Quest_b_08]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_08",
+          "link": "Iris_Quest_b_08",
+          "pid": "43"
+        }
+      ],
+      "name": "Iris_Quest_b_07",
+      "pid": "42",
+      "position": {
+        "x": "925",
+        "y": "2350"
+      }
+    },
+    {
+      "text": "Iris: Eine Wette?\n\n[[Iris_Quest_b_09]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_09",
+          "link": "Iris_Quest_b_09",
+          "pid": "44"
+        }
+      ],
+      "name": "Iris_Quest_b_08",
+      "pid": "43",
+      "position": {
+        "x": "925",
+        "y": "2475"
+      }
+    },
+    {
+      "text": "Steve: Genau. Wenn einer von uns nach drei Runden gewinnt, darf er sich vom Verlierer etwas wünschen.\n\n[[Iris_Quest_b_10]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_10",
+          "link": "Iris_Quest_b_10",
+          "pid": "45"
+        }
+      ],
+      "name": "Iris_Quest_b_09",
+      "pid": "44",
+      "position": {
+        "x": "925",
+        "y": "2600"
+      }
+    },
+    {
+      "text": "Iris: Etwas wünschen? Egal was es ist?\n\n[[Iris_Quest_b_11]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_11",
+          "link": "Iris_Quest_b_11",
+          "pid": "46"
+        }
+      ],
+      "name": "Iris_Quest_b_10",
+      "pid": "45",
+      "position": {
+        "x": "925",
+        "y": "2725"
+      }
+    },
+    {
+      "text": "Steve: Natürlich!\n\n[[Iris_Quest_b_12]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_12",
+          "link": "Iris_Quest_b_12",
+          "pid": "47"
+        }
+      ],
+      "name": "Iris_Quest_b_11",
+      "pid": "46",
+      "position": {
+        "x": "925",
+        "y": "2850"
+      }
+    },
+    {
+      "text": "Iris: Okay! Dann wünsche ich mir, dass du meine Mutter wieder findest!\n\n[[Iris_Quest_b_13]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_13",
+          "link": "Iris_Quest_b_13",
+          "pid": "48"
+        }
+      ],
+      "name": "Iris_Quest_b_12",
+      "pid": "47",
+      "position": {
+        "x": "925",
+        "y": "2975"
+      }
+    },
+    {
+      "text": "Steve: Einverstanden! Von dir wünsche ich mir, dass du mir eine Unterkunft findest, wo ich einige Tage ruhen kann!\n\n[[Iris_Quest_b_14]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_14",
+          "link": "Iris_Quest_b_14",
+          "pid": "49"
+        }
+      ],
+      "name": "Iris_Quest_b_13",
+      "pid": "48",
+      "position": {
+        "x": "925",
+        "y": "3100"
+      }
+    },
+    {
+      "text": "Iris: Was ist dass denn für ein langweiliger Wunsch?\n\n[[Iris_Quest_b_15]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_15",
+          "link": "Iris_Quest_b_15",
+          "pid": "50"
+        }
+      ],
+      "name": "Iris_Quest_b_14",
+      "pid": "49",
+      "position": {
+        "x": "925",
+        "y": "3225"
+      }
+    },
+    {
+      "text": "Steve: Es ist zwar nicht so aufregend, wie deiner, aber es reicht vollkommen aus!\n\n[[Iris_Quest_b_16]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_16",
+          "link": "Iris_Quest_b_16",
+          "pid": "51"
+        }
+      ],
+      "name": "Iris_Quest_b_15",
+      "pid": "50",
+      "position": {
+        "x": "925",
+        "y": "3350"
+      }
+    },
+    {
+      "text": "Iris: Warum wünscht du dir nicht etwas, was dich glücklich macht?\n\n[[Iris_Quest_b_17]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_17",
+          "link": "Iris_Quest_b_17",
+          "pid": "52"
+        }
+      ],
+      "name": "Iris_Quest_b_16",
+      "pid": "51",
+      "position": {
+        "x": "925",
+        "y": "3475"
+      }
+    },
+    {
+      "text": "Steve: Sowas bräuchte ich gar nicht, da mich das Abenteuer glücklich macht!\n\n[[Iris_Quest_b_18]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_18",
+          "link": "Iris_Quest_b_18",
+          "pid": "53"
+        }
+      ],
+      "name": "Iris_Quest_b_17",
+      "pid": "52",
+      "position": {
+        "x": "925",
+        "y": "3600"
+      }
+    },
+    {
+      "text": "Iris: Also trinkst du während deiner Reise Tequila?\n\n[[Iris_Quest_b_19]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_19",
+          "link": "Iris_Quest_b_19",
+          "pid": "54"
+        }
+      ],
+      "name": "Iris_Quest_b_18",
+      "pid": "53",
+      "position": {
+        "x": "925",
+        "y": "3725"
+      }
+    },
+    {
+      "text": "Steve: …\n\n[[Iris_Quest_b_20]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_20",
+          "link": "Iris_Quest_b_20",
+          "pid": "55"
+        }
+      ],
+      "name": "Iris_Quest_b_19",
+      "pid": "54",
+      "position": {
+        "x": "925",
+        "y": "3850"
+      }
+    },
+    {
+      "text": "Steve: Wie bitte?\n\n[[Iris_Quest_b_21]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_21",
+          "link": "Iris_Quest_b_21",
+          "pid": "56"
+        }
+      ],
+      "name": "Iris_Quest_b_20",
+      "pid": "55",
+      "position": {
+        "x": "925",
+        "y": "3975"
+      }
+    },
+    {
+      "text": "Iris: Meine Mutter sagte mir einst, dass, wenn ich mal traurig sein sollte, dass mich Tequila aufmuntern würde.\n\n[[Iris_Quest_b_22]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_22",
+          "link": "Iris_Quest_b_22",
+          "pid": "57"
+        }
+      ],
+      "name": "Iris_Quest_b_21",
+      "pid": "56",
+      "position": {
+        "x": "925",
+        "y": "4100"
+      }
+    },
+    {
+      "text": "Spieler: Sagst du deswegen immer Tequila? Weil es dich an deine Mutter erinnert?\n\n[[Iris_Quest_b_23]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_23",
+          "link": "Iris_Quest_b_23",
+          "pid": "58"
+        }
+      ],
+      "name": "Iris_Quest_b_22",
+      "pid": "57",
+      "position": {
+        "x": "925",
+        "y": "4225"
+      }
+    },
+    {
+      "text": "Iris: Ja! Dadurch bin ich immer glücklich, genau, wie es meine Mutter mir damals gesagt hatte!\n\n[[Iris_Quest_b_24]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_24",
+          "link": "Iris_Quest_b_24",
+          "pid": "59"
+        }
+      ],
+      "name": "Iris_Quest_b_23",
+      "pid": "58",
+      "position": {
+        "x": "925",
+        "y": "4350"
+      }
+    },
+    {
+      "text": "Steve: Verstehe.\n\n[[Iris_Quest_b_25]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_25",
+          "link": "Iris_Quest_b_25",
+          "pid": "60"
+        }
+      ],
+      "name": "Iris_Quest_b_24",
+      "pid": "59",
+      "position": {
+        "x": "925",
+        "y": "4475"
+      }
+    },
+    {
+      "text": "Iris: Also bist du bereit zu verlieren, Abenteurer?\n\n[[Iris_Quest_b_26]]",
+      "links": [
+        {
+          "name": "Iris_Quest_b_26",
+          "link": "Iris_Quest_b_26",
+          "pid": "61"
+        }
+      ],
+      "name": "Iris_Quest_b_25",
+      "pid": "60",
+      "position": {
+        "x": "925",
+        "y": "4600"
+      }
+    },
+    {
+      "text": "Steve: Dass wollte ich dich gerade fragen!",
+      "name": "Iris_Quest_b_26",
+      "pid": "61",
+      "position": {
+        "x": "925",
+        "y": "4725"
+      }
+    },
+    {
+      "text": "Iris: Ja! Ich habe gewonnen!\n\n[[Iris_Quest_Ende_01]]",
+      "links": [
+        {
+          "name": "Iris_Quest_Ende_01",
+          "link": "Iris_Quest_Ende_01",
+          "pid": "63"
+        }
+      ],
+      "name": "Iris_Quest_Ende",
+      "pid": "62",
+      "position": {
+        "x": "950",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "QuestDone",
+        "failed"
+      ]
+    },
+    {
+      "text": "Steve: Wie konnte ich denn nur gegen dich verlieren?\n\n[[Iris_Quest_Ende_02]]",
+      "links": [
+        {
+          "name": "Iris_Quest_Ende_02",
+          "link": "Iris_Quest_Ende_02",
+          "pid": "64"
+        }
+      ],
+      "name": "Iris_Quest_Ende_01",
+      "pid": "63",
+      "position": {
+        "x": "950",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Iris: Ich bin einfach viel besser als du, Tequila!\n\n[[Iris_Quest_Ende_03]]",
+      "links": [
+        {
+          "name": "Iris_Quest_Ende_03",
+          "link": "Iris_Quest_Ende_03",
+          "pid": "65"
+        }
+      ],
+      "name": "Iris_Quest_Ende_02",
+      "pid": "64",
+      "position": {
+        "x": "950",
+        "y": "600"
+      }
+    },
+    {
+      "text": "Steve: Da hast du wohl Recht. Ich werde mich an unsere Abmachung halten und deine Mutter finden.",
+      "name": "Iris_Quest_Ende_03",
+      "pid": "65",
+      "position": {
+        "x": "950",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Fronicka: Mein Geschäft ist vollkommen ruiniert!\n\n[[Fronicka_Quest_01]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_01",
+          "link": "Fronicka_Quest_01",
+          "pid": "69"
+        }
+      ],
+      "name": "Fronicka_Quest",
+      "pid": "66",
+      "position": {
+        "x": "1475",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "Quest"
+      ]
+    },
+    {
+      "text": "Ha ha! Ich habe gewonnen!",
+      "name": "Iris_Quest_1_2",
+      "pid": "67",
+      "position": {
+        "x": "1200",
+        "y": "350"
+      },
+      "tags": [
+        "Start"
+      ]
+    },
+    {
+      "text": "Iris: Lass mich in Ruhe. Ich möchte nicht reden.",
+      "name": "Iris_after_Quest_3",
+      "pid": "68",
+      "position": {
+        "x": "1325",
+        "y": "350"
+      },
+      "tags": [
+        "Start"
+      ]
+    },
+    {
+      "text": "Fronicka: Wie soll ich denn nun überleben, wenn ich nichts verdienen kann?\n\n[[Fronicka_Quest_02]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_02",
+          "link": "Fronicka_Quest_02",
+          "pid": "70"
+        }
+      ],
+      "name": "Fronicka_Quest_01",
+      "pid": "69",
+      "position": {
+        "x": "1475",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Steve: Einen wunderschönen guten Tag Fräulein. Kann ich Ihnen irgendwie weiterhelfen?\n\n[[Fronicka_Quest_03]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_03",
+          "link": "Fronicka_Quest_03",
+          "pid": "71"
+        }
+      ],
+      "name": "Fronicka_Quest_02",
+      "pid": "70",
+      "position": {
+        "x": "1475",
+        "y": "600"
+      }
+    },
+    {
+      "text": "Fronicka: Wie soll ein junger Knabe mir bei meinem Problem weiterhelfen können?\n\n[[Fronicka_Quest_04]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_04",
+          "link": "Fronicka_Quest_04",
+          "pid": "72"
+        }
+      ],
+      "name": "Fronicka_Quest_03",
+      "pid": "71",
+      "position": {
+        "x": "1475",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Steve: Sie könnten es mir ja erst einmal schildern und dann könnte ich schauen, ob ich es kann, oder nicht\n\n[[Fronicka_Quest_05]]\n",
+      "links": [
+        {
+          "name": "Fronicka_Quest_05",
+          "link": "Fronicka_Quest_05",
+          "pid": "73"
+        }
+      ],
+      "name": "Fronicka_Quest_04",
+      "pid": "72",
+      "position": {
+        "x": "1475",
+        "y": "850"
+      }
+    },
+    {
+      "text": "Fronicka: Sie drängen sich mir wirklich auf, aber vielleicht könnten Sie mir da wirklich helfen\n\n[[Fronicka_Quest_06]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_06",
+          "link": "Fronicka_Quest_06",
+          "pid": "74"
+        }
+      ],
+      "name": "Fronicka_Quest_05",
+      "pid": "73",
+      "position": {
+        "x": "1475",
+        "y": "975"
+      }
+    },
+    {
+      "text": "Fronicka: Also gut. Mein Wagen, der heute früh geliefert werden sollte, ist leider nie angekommen\n\n[[Fronicka_Quest_07]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_07",
+          "link": "Fronicka_Quest_07",
+          "pid": "75"
+        }
+      ],
+      "name": "Fronicka_Quest_06",
+      "pid": "74",
+      "position": {
+        "x": "1475",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "Steve: Und was denken Sie was passiert ist?\n\n[[Fronicka_Quest_08]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_08",
+          "link": "Fronicka_Quest_08",
+          "pid": "76"
+        }
+      ],
+      "name": "Fronicka_Quest_07",
+      "pid": "75",
+      "position": {
+        "x": "1475",
+        "y": "1225"
+      }
+    },
+    {
+      "text": "Fronicka: Ich denke, dass jemand den Wagen zerstört hat!\n\n[[Fronicka_Quest_09]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_09",
+          "link": "Fronicka_Quest_09",
+          "pid": "77"
+        }
+      ],
+      "name": "Fronicka_Quest_08",
+      "pid": "76",
+      "position": {
+        "x": "1475",
+        "y": "1350"
+      }
+    },
+    {
+      "text": "Steve: Warum nehmen Sie das denn an?\n\n[[Fronicka_Quest_10]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_10",
+          "link": "Fronicka_Quest_10",
+          "pid": "78"
+        }
+      ],
+      "name": "Fronicka_Quest_09",
+      "pid": "77",
+      "position": {
+        "x": "1475",
+        "y": "1475"
+      }
+    },
+    {
+      "text": "Fronicka: Wollen Sie mich verurteilen, oder mir helfen?\n\n[[Fronicka_Quest_11]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_11",
+          "link": "Fronicka_Quest_11",
+          "pid": "79"
+        }
+      ],
+      "name": "Fronicka_Quest_10",
+      "pid": "78",
+      "position": {
+        "x": "1475",
+        "y": "1600"
+      }
+    },
+    {
+      "text": "Steve: Natürlich möchte ich ihnen helfen. Also verdächtigen Sie denn irgendjemanden aus diesem Dorf?\n\n[[Fronicka_Quest_12]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_12",
+          "link": "Fronicka_Quest_12",
+          "pid": "80"
+        }
+      ],
+      "name": "Fronicka_Quest_11",
+      "pid": "79",
+      "position": {
+        "x": "1475",
+        "y": "1725"
+      }
+    },
+    {
+      "text": "Fronicka: Tatsächlich schon. Die Bäckerin namens Elisabeth! \n\n[[Fronicka_Quest_13]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_13",
+          "link": "Fronicka_Quest_13",
+          "pid": "81"
+        }
+      ],
+      "name": "Fronicka_Quest_12",
+      "pid": "80",
+      "position": {
+        "x": "1475",
+        "y": "1850"
+      }
+    },
+    {
+      "text": "Fronicka: Sie müssen wissen, mein Geschäft war schon immer besser als ihres, weswegen sie es mir heimzahlen möchte!\n\n[[Fronicka_Quest_14]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_14",
+          "link": "Fronicka_Quest_14",
+          "pid": "82"
+        }
+      ],
+      "name": "Fronicka_Quest_13",
+      "pid": "81",
+      "position": {
+        "x": "1475",
+        "y": "1975"
+      }
+    },
+    {
+      "text": "Fronicka: Sie muss wissen, wo mein Wagen entlanggefahren ist.\n\n[[Fronicka_Quest_15]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_15",
+          "link": "Fronicka_Quest_15",
+          "pid": "83"
+        }
+      ],
+      "name": "Fronicka_Quest_14",
+      "pid": "82",
+      "position": {
+        "x": "1475",
+        "y": "2100"
+      }
+    },
+    {
+      "text": "Steve: Warum gehen Sie denn nicht selber in den Wald und schauen nach? Oder wollen sie, dass ich gehe?\n\n[[Fronicka_Quest_16]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_16",
+          "link": "Fronicka_Quest_16",
+          "pid": "84"
+        }
+      ],
+      "name": "Fronicka_Quest_15",
+      "pid": "83",
+      "position": {
+        "x": "1475",
+        "y": "2225"
+      }
+    },
+    {
+      "text": "Fronicka: Und dann passiert mir etwas im Wald. Nein, danke!\n\n[[Fronicka_Quest_17]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_17",
+          "link": "Fronicka_Quest_17",
+          "pid": "85"
+        }
+      ],
+      "name": "Fronicka_Quest_16",
+      "pid": "84",
+      "position": {
+        "x": "1475",
+        "y": "2350"
+      }
+    },
+    {
+      "text": "Fronicka: Aber genau! Sie könnten für mich gehen!\n\n[[Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.]]\n[[Ein Abenteuer in den Wald?Da bin ich dabei!]]",
+      "links": [
+        {
+          "name": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+          "link": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+          "pid": "86"
+        },
+        {
+          "name": "Ein Abenteuer in den Wald?Da bin ich dabei!",
+          "link": "Ein Abenteuer in den Wald?Da bin ich dabei!",
+          "pid": "87"
+        }
+      ],
+      "name": "Fronicka_Quest_17",
+      "pid": "85",
+      "position": {
+        "x": "1475",
+        "y": "2475"
+      }
+    },
+    {
+      "text": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.\n\n[[Fronicka_Quest_a_01]]\n",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_01",
+          "link": "Fronicka_Quest_a_01",
+          "pid": "88"
+        }
+      ],
+      "name": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+      "pid": "86",
+      "position": {
+        "x": "1475",
+        "y": "2600"
+      }
+    },
+    {
+      "text": "Fronicka: Es ist kein Abenteuer! Sie sollen ein Verbrechen aufklären!\n\n[[Fronicka_Quest_b_01]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_01",
+          "link": "Fronicka_Quest_b_01",
+          "pid": "106"
+        }
+      ],
+      "name": "Ein Abenteuer in den Wald?Da bin ich dabei!",
+      "pid": "87",
+      "position": {
+        "x": "1600",
+        "y": "2600"
+      }
+    },
+    {
+      "text": "Fronicka: Dann hätten Sie mir nicht ihre Hilfe anbieten sollen!\n\n[[Fronicka_Quest_a_02]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_02",
+          "link": "Fronicka_Quest_a_02",
+          "pid": "89"
+        }
+      ],
+      "name": "Fronicka_Quest_a_01",
+      "pid": "88",
+      "position": {
+        "x": "1475",
+        "y": "2725"
+      }
+    },
+    {
+      "text": "Steve: …\n\n[[Fronicka_Quest_a_03]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_03",
+          "link": "Fronicka_Quest_a_03",
+          "pid": "90"
+        }
+      ],
+      "name": "Fronicka_Quest_a_02",
+      "pid": "89",
+      "position": {
+        "x": "1475",
+        "y": "2850"
+      }
+    },
+    {
+      "text": "Steve: Okay. Lassen Sie es uns es so machen. Ich werde in den Wald gehen und ihren Wagen finden. Doch, wenn ich diese Aufgabe erfüllt habe, verlange ich etwas von Ihnen.\n\n[[Fronicka_Quest_a_04]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_04",
+          "link": "Fronicka_Quest_a_04",
+          "pid": "91"
+        }
+      ],
+      "name": "Fronicka_Quest_a_03",
+      "pid": "90",
+      "position": {
+        "x": "1475",
+        "y": "2975"
+      }
+    },
+    {
+      "text": "Fronicka: Und dass wäre?\n\n[[Fronicka_Quest_a_05]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_05",
+          "link": "Fronicka_Quest_a_05",
+          "pid": "92"
+        }
+      ],
+      "name": "Fronicka_Quest_a_04",
+      "pid": "91",
+      "position": {
+        "x": "1475",
+        "y": "3100"
+      }
+    },
+    {
+      "text": "Steve: Kennen Sie dieses kleine Mädchen mit den wilden locken?\n\n\n[[Fronicka_Quest_a_06]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_06",
+          "link": "Fronicka_Quest_a_06",
+          "pid": "93"
+        }
+      ],
+      "name": "Fronicka_Quest_a_05",
+      "pid": "92",
+      "position": {
+        "x": "1475",
+        "y": "3225"
+      }
+    },
+    {
+      "text": "Fronicka: Hmm…\n\n[[Fronicka_Quest_a_07]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_07",
+          "link": "Fronicka_Quest_a_07",
+          "pid": "94"
+        }
+      ],
+      "name": "Fronicka_Quest_a_06",
+      "pid": "93",
+      "position": {
+        "x": "1475",
+        "y": "3350"
+      }
+    },
+    {
+      "text": "Steve: In dem Kartoffelsack?\n\n[[Fronicka_Quest_a_08]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_08",
+          "link": "Fronicka_Quest_a_08",
+          "pid": "95"
+        }
+      ],
+      "name": "Fronicka_Quest_a_07",
+      "pid": "94",
+      "position": {
+        "x": "1475",
+        "y": "3475"
+      }
+    },
+    {
+      "text": "Fronicka: Zu ungenau\n\n[[Fronicka_Quest_a_09]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_09",
+          "link": "Fronicka_Quest_a_09",
+          "pid": "96"
+        }
+      ],
+      "name": "Fronicka_Quest_a_08",
+      "pid": "95",
+      "position": {
+        "x": "1475",
+        "y": "3600"
+      }
+    },
+    {
+      "text": "Steve: Die immer wieder ´Tequila´ sagt\n\n[[Fronicka_Quest_a_10]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_10",
+          "link": "Fronicka_Quest_a_10",
+          "pid": "97"
+        }
+      ],
+      "name": "Fronicka_Quest_a_09",
+      "pid": "96",
+      "position": {
+        "x": "1475",
+        "y": "3725"
+      }
+    },
+    {
+      "text": "Fronicka: Ach dieses kleine freche Gör! Natürlich kenne ich Sie! Jeder aus diesem verfluchten Dorf kennt sie!\n\n[[Fronicka_Quest_a_11]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_11",
+          "link": "Fronicka_Quest_a_11",
+          "pid": "98"
+        }
+      ],
+      "name": "Fronicka_Quest_a_10",
+      "pid": "97",
+      "position": {
+        "x": "1475",
+        "y": "3850"
+      }
+    },
+    {
+      "text": "Fronicka: Also was ist mit ihr?\n\n[[Fronicka_Quest_a_12]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_12",
+          "link": "Fronicka_Quest_a_12",
+          "pid": "99"
+        }
+      ],
+      "name": "Fronicka_Quest_a_11",
+      "pid": "98",
+      "position": {
+        "x": "1475",
+        "y": "3975"
+      }
+    },
+    {
+      "text": "Steve: Ich habe gegen Sie verloren, weswegen ich ihr versprochen habe, dass ich ihre Mutter finden werde\n\n[[Fronicka_Quest_a_13]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_13",
+          "link": "Fronicka_Quest_a_13",
+          "pid": "100"
+        }
+      ],
+      "name": "Fronicka_Quest_a_12",
+      "pid": "99",
+      "position": {
+        "x": "1475",
+        "y": "4100"
+      }
+    },
+    {
+      "text": "Steve: Darum wollte ich Sie fragen, ob Sie irgendetwas über ihre Mutter wüssten?\n\n[[Fronicka_Quest_a_14]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_14",
+          "link": "Fronicka_Quest_a_14",
+          "pid": "101"
+        }
+      ],
+      "name": "Fronicka_Quest_a_13",
+      "pid": "100",
+      "position": {
+        "x": "1475",
+        "y": "4225"
+      }
+    },
+    {
+      "text": "Fronicka: Hmm\n\n[[Fronicka_Quest_a_15]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_15",
+          "link": "Fronicka_Quest_a_15",
+          "pid": "102"
+        }
+      ],
+      "name": "Fronicka_Quest_a_14",
+      "pid": "101",
+      "position": {
+        "x": "1475",
+        "y": "4350"
+      }
+    },
+    {
+      "text": "Fronicka: Wenn sie in dem Wald waren. Dann könnte ich ihnen vielleicht mehr erzählen\n\n[[Fronicka_Quest_a_16]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_16",
+          "link": "Fronicka_Quest_a_16",
+          "pid": "103"
+        }
+      ],
+      "name": "Fronicka_Quest_a_15",
+      "pid": "102",
+      "position": {
+        "x": "1475",
+        "y": "4475"
+      }
+    },
+    {
+      "text": "Steve: Dann sollte ich nicht mehr lange zögern und los gehen!\n\n[[Fronicka_Quest_a_17]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_17",
+          "link": "Fronicka_Quest_a_17",
+          "pid": "104"
+        }
+      ],
+      "name": "Fronicka_Quest_a_16",
+      "pid": "103",
+      "position": {
+        "x": "1475",
+        "y": "4600"
+      }
+    },
+    {
+      "text": "Fronicka: Bevor Sie gehen, möchte ich Ihnen einen Zettel geben, auf dem meine Ware aufgelistet ist! Somit können Sie nachschauen, ob auch alles vorhanden ist.\n\n[[Fronicka_Quest_a_18]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_a_18",
+          "link": "Fronicka_Quest_a_18",
+          "pid": "105"
+        }
+      ],
+      "name": "Fronicka_Quest_a_17",
+      "pid": "104",
+      "position": {
+        "x": "1475",
+        "y": "4725"
+      }
+    },
+    {
+      "text": "Steve: Ich danke Ihnen!\n",
+      "name": "Fronicka_Quest_a_18",
+      "pid": "105",
+      "position": {
+        "x": "1475",
+        "y": "4850"
+      }
+    },
+    {
+      "text": "Steve: Ein Verbrechen ist doch fast wie ein Abenteuer!\n\n[[Fronicka_Quest_b_02]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_02",
+          "link": "Fronicka_Quest_b_02",
+          "pid": "107"
+        }
+      ],
+      "name": "Fronicka_Quest_b_01",
+      "pid": "106",
+      "position": {
+        "x": "1600",
+        "y": "2725"
+      }
+    },
+    {
+      "text": "Fronicka: Wieso das denn?\n\n[[Fronicka_Quest_b_03]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_03",
+          "link": "Fronicka_Quest_b_03",
+          "pid": "108"
+        }
+      ],
+      "name": "Fronicka_Quest_b_02",
+      "pid": "107",
+      "position": {
+        "x": "1600",
+        "y": "2850"
+      }
+    },
+    {
+      "text": "Steve: Beides ist aufregend!\n\n[[Fronicka_Quest_b_04]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_04",
+          "link": "Fronicka_Quest_b_04",
+          "pid": "109"
+        }
+      ],
+      "name": "Fronicka_Quest_b_03",
+      "pid": "108",
+      "position": {
+        "x": "1600",
+        "y": "2975"
+      }
+    },
+    {
+      "text": "Fronicka: Dann sind Sie froh in diesen Wald zu stolzieren und mein Wagen zu finden?\n\n[[Fronicka_Quest_b_05]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_05",
+          "link": "Fronicka_Quest_b_05",
+          "pid": "110"
+        }
+      ],
+      "name": "Fronicka_Quest_b_04",
+      "pid": "109",
+      "position": {
+        "x": "1600",
+        "y": "3100"
+      }
+    },
+    {
+      "text": "Steve: Ja und Nein\n\n[[Fronicka_Quest_b_06]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_06",
+          "link": "Fronicka_Quest_b_06",
+          "pid": "111"
+        }
+      ],
+      "name": "Fronicka_Quest_b_05",
+      "pid": "110",
+      "position": {
+        "x": "1600",
+        "y": "3225"
+      }
+    },
+    {
+      "text": "Fronicka: huh? sonderbar...\n\n[[Fronicka_Quest_b_07]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_07",
+          "link": "Fronicka_Quest_b_07",
+          "pid": "112"
+        }
+      ],
+      "name": "Fronicka_Quest_b_06",
+      "pid": "111",
+      "position": {
+        "x": "1600",
+        "y": "3350"
+      }
+    },
+    {
+      "text": "Fronicka: Wie dem auch sei. Gehen sie dann endlich los? \n\n[[Fronicka_Quest_b_08]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_08",
+          "link": "Fronicka_Quest_b_08",
+          "pid": "113"
+        }
+      ],
+      "name": "Fronicka_Quest_b_07",
+      "pid": "112",
+      "position": {
+        "x": "1600",
+        "y": "3475"
+      }
+    },
+    {
+      "text": "Steve: Ich hatte mir erhofft ich könne eine kleine Pause einlegen und mich ausruhen bevor ich aufbreche.\n\n[[Fronicka_Quest_b_09]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_09",
+          "link": "Fronicka_Quest_b_09",
+          "pid": "114"
+        }
+      ],
+      "name": "Fronicka_Quest_b_08",
+      "pid": "113",
+      "position": {
+        "x": "1600",
+        "y": "3600"
+      }
+    },
+    {
+      "text": "Fronicka: das können sie auch tun, wenn sie zurückkehren \n\n[[Fronicka_Quest_b_10]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_10",
+          "link": "Fronicka_Quest_b_10",
+          "pid": "115"
+        }
+      ],
+      "name": "Fronicka_Quest_b_09",
+      "pid": "114",
+      "position": {
+        "x": "1600",
+        "y": "3725"
+      }
+    },
+    {
+      "text": "Steve: Da gebe ich Ihnen Recht!\n\n[[Fronicka_Quest_b_11]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_11",
+          "link": "Fronicka_Quest_b_11",
+          "pid": "116"
+        }
+      ],
+      "name": "Fronicka_Quest_b_10",
+      "pid": "115",
+      "position": {
+        "x": "1600",
+        "y": "3850"
+      }
+    },
+    {
+      "text": "Steve: Doch bevor ich gehe hätte ich eine Bitte an Sie\n\n[[Fronicka_Quest_b_12]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_12",
+          "link": "Fronicka_Quest_b_12",
+          "pid": "117"
+        }
+      ],
+      "name": "Fronicka_Quest_b_11",
+      "pid": "116",
+      "position": {
+        "x": "1600",
+        "y": "3975"
+      }
+    },
+    {
+      "text": "Fronicka: Und die wäre?\n\n[[Fronicka_Quest_b_13]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_13",
+          "link": "Fronicka_Quest_b_13",
+          "pid": "118"
+        }
+      ],
+      "name": "Fronicka_Quest_b_12",
+      "pid": "117",
+      "position": {
+        "x": "1600",
+        "y": "4100"
+      }
+    },
+    {
+      "text": "Steve: Das kleine Mädchen, dass des Öfteren ´Tequila´ sagt sucht ihre Mutter. Darum wollte ich fragen, ob Sie etwas über ihre Mutter wüssten\n\n[[Fronicka_Quest_b_14]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_14",
+          "link": "Fronicka_Quest_b_14",
+          "pid": "119"
+        }
+      ],
+      "name": "Fronicka_Quest_b_13",
+      "pid": "118",
+      "position": {
+        "x": "1600",
+        "y": "4225"
+      }
+    },
+    {
+      "text": "Fronicka: Das kann ich ihnen weiter erläutern, wenn Sie zurückkehren. \n[[Fronicka_Quest_b_15]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_15",
+          "link": "Fronicka_Quest_b_15",
+          "pid": "120"
+        }
+      ],
+      "name": "Fronicka_Quest_b_14",
+      "pid": "119",
+      "position": {
+        "x": "1600",
+        "y": "4350"
+      }
+    },
+    {
+      "text": "Steve: Dann werde ich nun in den Wald stolzieren!\n\n[[Fronicka_Quest_b_16]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_16",
+          "link": "Fronicka_Quest_b_16",
+          "pid": "121"
+        }
+      ],
+      "name": "Fronicka_Quest_b_15",
+      "pid": "120",
+      "position": {
+        "x": "1600",
+        "y": "4475"
+      }
+    },
+    {
+      "text": "Fronicka: Bevor Sie gehen möchte ich Ihnen einen Zettel geben, wo meine Ware aufgelistet ist! Somit können Sie nachschauen, ob auch alles vorhanden ist.\n\n[[Fronicka_Quest_b_17]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_17",
+          "link": "Fronicka_Quest_b_17",
+          "pid": "122"
+        }
+      ],
+      "name": "Fronicka_Quest_b_16",
+      "pid": "121",
+      "position": {
+        "x": "1600",
+        "y": "4600"
+      }
+    },
+    {
+      "text": "Steve: Ich danke Ihnen!\n\n[[Fronicka_Quest_b_18]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_18",
+          "link": "Fronicka_Quest_b_18",
+          "pid": "123"
+        }
+      ],
+      "name": "Fronicka_Quest_b_17",
+      "pid": "122",
+      "position": {
+        "x": "1600",
+        "y": "4725"
+      }
+    },
+    {
+      "text": "Fronicka: Seien Sie vorsichtig!“\n\n[[Fronicka_Quest_b_19]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_b_19",
+          "link": "Fronicka_Quest_b_19",
+          "pid": "124"
+        }
+      ],
+      "name": "Fronicka_Quest_b_18",
+      "pid": "123",
+      "position": {
+        "x": "1600",
+        "y": "4850"
+      }
+    },
+    {
+      "text": "Steve: „Das werde ich!“ \n\n",
+      "name": "Fronicka_Quest_b_19",
+      "pid": "124",
+      "position": {
+        "x": "1600",
+        "y": "4975"
+      }
+    },
+    {
+      "text": "Fronicka: Sie scheinen nicht besonders glücklich zu sein. Darum denke ich, dass Sie nicht besonders gute Nachrichten für mich bereit zu haben. \n\n[[Fronicka_Quest_Ende_01]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_01",
+          "link": "Fronicka_Quest_Ende_01",
+          "pid": "126"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende",
+      "pid": "125",
+      "position": {
+        "x": "1600",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "QuestDone"
+      ]
+    },
+    {
+      "text": "Steve: Ich wünschte es wäre anders, aber ich habe nur schlechte Nachrichten für Sie. \n\n[[Fronicka_Quest_Ende_02]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_02",
+          "link": "Fronicka_Quest_Ende_02",
+          "pid": "127"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_01",
+      "pid": "126",
+      "position": {
+        "x": "1600",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Fronicka: Bitte nenn Sie mir diese. \n\n[[Fronicka_Quest_Ende_03]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_03",
+          "link": "Fronicka_Quest_Ende_03",
+          "pid": "128"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_02",
+      "pid": "127",
+      "position": {
+        "x": "1600",
+        "y": "600"
+      }
+    },
+    {
+      "text": "Steve: erst einmal möchte ich, dass Sie mir mitteilen, was Sie über die Mutter des Kindes wissen. \n\n[[Fronicka_Quest_Ende_04]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_04",
+          "link": "Fronicka_Quest_Ende_04",
+          "pid": "129"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_03",
+      "pid": "128",
+      "position": {
+        "x": "1600",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Fronicka: Also gut. Solange sie nicht im Dorf ist, dürfen wir nicht über sie sprechen. Auch sie dürfte nicht über sie sprechen.\n\n[[Fronicka_Quest_Ende_05]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_05",
+          "link": "Fronicka_Quest_Ende_05",
+          "pid": "130"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_04",
+      "pid": "129",
+      "position": {
+        "x": "1600",
+        "y": "850"
+      }
+    },
+    {
+      "text": "Steve: Wieso dass denn? \n\n[[Fronicka_Quest_Ende_06]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_06",
+          "link": "Fronicka_Quest_Ende_06",
+          "pid": "131"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_05",
+      "pid": "130",
+      "position": {
+        "x": "1600",
+        "y": "975"
+      }
+    },
+    {
+      "text": "Fronicka: Darüber darf ich nicht sprechen. \n\n[[Fronicka_Quest_Ende_07]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_07",
+          "link": "Fronicka_Quest_Ende_07",
+          "pid": "132"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_06",
+      "pid": "131",
+      "position": {
+        "x": "1600",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "Steve: aber warum denn nicht? Was ist mit ihrer Mutter?\n\n[[Fronicka_Quest_Ende_08]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_08",
+          "link": "Fronicka_Quest_Ende_08",
+          "pid": "133"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_07",
+      "pid": "132",
+      "position": {
+        "x": "1600",
+        "y": "1225"
+      }
+    },
+    {
+      "text": "Fronicka: Seien Sie bitte nicht so hartnäckig und erzählen Sie mir endlich, was mit meinen Karren passiert ist!\n\n[[Fronicka_Quest_Ende_09]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_09",
+          "link": "Fronicka_Quest_Ende_09",
+          "pid": "134"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_08",
+      "pid": "133",
+      "position": {
+        "x": "1600",
+        "y": "1350"
+      }
+    },
+    {
+      "text": "Steve: Ich habe Ihren Wagen gefunden, der allerdings sehr zerstört wurde. Alle Waren, die mitgeführt wurden, wurden von den Banditen geklaut. Doch von den Banditen war keine Spur zu finden. Es tut mir leid. \n\n[[Fronicka_Quest_Ende_10]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_10",
+          "link": "Fronicka_Quest_Ende_10",
+          "pid": "135"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_09",
+      "pid": "134",
+      "position": {
+        "x": "1600",
+        "y": "1475"
+      }
+    },
+    {
+      "text": "Fronicka: Dass ist schlimm. Dass ist wirklich schlimm. Wie soll ich denn nun mein Geld verdienen? \n\n[[Fronicka_Quest_Ende_11]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_11",
+          "link": "Fronicka_Quest_Ende_11",
+          "pid": "136"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_10",
+      "pid": "135",
+      "position": {
+        "x": "1600",
+        "y": "1600"
+      }
+    },
+    {
+      "text": "Steve: Bitte beruhigen Sie sich. Es gibt bestimmt eine Lösung dafür. \n\n[[Fronicka_Quest_Ende_12]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_12",
+          "link": "Fronicka_Quest_Ende_12",
+          "pid": "137"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_11",
+      "pid": "136",
+      "position": {
+        "x": "1600",
+        "y": "1725"
+      }
+    },
+    {
+      "text": "Fronicka: Nein! Dafür gibt es keine Lösung! Mein Geschäft ist nun ruiniert! \n\n[[Fronicka_Quest_Ende_13]]",
+      "links": [
+        {
+          "name": "Fronicka_Quest_Ende_13",
+          "link": "Fronicka_Quest_Ende_13",
+          "pid": "138"
+        }
+      ],
+      "name": "Fronicka_Quest_Ende_12",
+      "pid": "137",
+      "position": {
+        "x": "1600",
+        "y": "1850"
+      }
+    },
+    {
+      "text": "Fronicka: Wäre ich doch lieber bei meinen gewalttätigen Mann geblieben. ",
+      "name": "Fronicka_Quest_Ende_13",
+      "pid": "138",
+      "position": {
+        "x": "1600",
+        "y": "1975"
+      }
+    },
+    {
+      "text": "Ob mein ehemaliger Mann, Mannfred, zu Hause ist?",
+      "name": "Fronicka_after_Quest",
+      "pid": "139",
+      "position": {
+        "x": "1725",
+        "y": "350"
+      },
+      "tags": [
+        "Start"
+      ]
+    },
+    {
+      "text": "Iris: haha! Du darfst es gerne nochmal versuchen! \n\n[[Iris_Quest_Failed_01]]",
+      "links": [
+        {
+          "name": "Iris_Quest_Failed_01",
+          "link": "Iris_Quest_Failed_01",
+          "pid": "141"
+        }
+      ],
+      "name": "Iris_Quest_Failed",
+      "pid": "140",
+      "position": {
+        "x": "1075",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "failed"
+      ]
+    },
+    {
+      "text": "Iris: Aber meine Mutter musst du trotzdem finden!\n\n[[Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!]]\n[[Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.]]",
+      "links": [
+        {
+          "name": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+          "link": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+          "pid": "154"
+        },
+        {
+          "name": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+          "link": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+          "pid": "155"
+        }
+      ],
+      "name": "Iris_Quest_Failed_01",
+      "pid": "141",
+      "position": {
+        "x": "1075",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Steve: Was ist denn hier los? \n\n[[Ludmilla_Quest_End_01]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_01",
+          "link": "Ludmilla_Quest_End_01",
+          "pid": "143"
+        }
+      ],
+      "name": "Ludmilla_Quest_End",
+      "pid": "142",
+      "position": {
+        "x": "1950",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "QuestDone"
+      ]
+    },
+    {
+      "text": "Nikolaus: Haben Sie es noch nicht mitbekommen? \n\n[[Ludmilla_Quest_End_02]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_02",
+          "link": "Ludmilla_Quest_End_02",
+          "pid": "144"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_01",
+      "pid": "143",
+      "position": {
+        "x": "1950",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Steve: Was nicht mitbekommen? \n\n[[Ludmilla_Quest_End_03]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_03",
+          "link": "Ludmilla_Quest_End_03",
+          "pid": "145"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_02",
+      "pid": "144",
+      "position": {
+        "x": "1950",
+        "y": "600"
+      }
+    },
+    {
+      "text": "Nikolaus: Die Dorfbewohner haben endlich die Hexe gefunden, die sich im Wald versteckt hatte. \n\n[[Ludmilla_Quest_End_04]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_04",
+          "link": "Ludmilla_Quest_End_04",
+          "pid": "146"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_03",
+      "pid": "145",
+      "position": {
+        "x": "1950",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Steve: Die Hexe? Meinen Sie damit Ludmilla? \n\n[[Ludmilla_Quest_End_05]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_05",
+          "link": "Ludmilla_Quest_End_05",
+          "pid": "147"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_04",
+      "pid": "146",
+      "position": {
+        "x": "1950",
+        "y": "850"
+      }
+    },
+    {
+      "text": "Nikolaus: Ja! Da sie ihre Unschuld nicht beweisen konnte, beschlossen wir, sie mit dem Tod zu bestrafen. \n\n[[Ludmilla_Quest_End_06]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_06",
+          "link": "Ludmilla_Quest_End_06",
+          "pid": "148"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_05",
+      "pid": "147",
+      "position": {
+        "x": "1950",
+        "y": "975"
+      }
+    },
+    {
+      "text": "Steve: Mit dem Tod?!\n\n[[Ludmilla_Quest_End_07]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_07",
+          "link": "Ludmilla_Quest_End_07",
+          "pid": "149"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_06",
+      "pid": "148",
+      "position": {
+        "x": "1950",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "Nikolaus: Natürlich. Schließlich ist sie eine Hexe. Mit den heißen Flammen hätte sie sich eigentlich auskennen müssen, da sie doch aus der Hölle stammt. \n\n[[Ludmilla_Quest_End_08]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_08",
+          "link": "Ludmilla_Quest_End_08",
+          "pid": "150"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_07",
+      "pid": "149",
+      "position": {
+        "x": "1950",
+        "y": "1225"
+      }
+    },
+    {
+      "text": "Steve: Wie können Sie nur so über Sie reden, wenn Sie sie gar nicht wirklich gekannt hatten?!\n\n[[Ludmilla_Quest_End_09]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_09",
+          "link": "Ludmilla_Quest_End_09",
+          "pid": "151"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_08",
+      "pid": "150",
+      "position": {
+        "x": "1950",
+        "y": "1350"
+      }
+    },
+    {
+      "text": "Nikolaus: Haben Sie sie gut gekannt?\n\n[[Ludmilla_Quest_End_10]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_10",
+          "link": "Ludmilla_Quest_End_10",
+          "pid": "152"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_09",
+      "pid": "151",
+      "position": {
+        "x": "1950",
+        "y": "1475"
+      }
+    },
+    {
+      "text": "Steve: ...\n\n[[Ludmilla_Quest_End_11]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_11",
+          "link": "Ludmilla_Quest_End_11",
+          "pid": "153"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_10",
+      "pid": "152",
+      "position": {
+        "x": "1950",
+        "y": "1600"
+      }
+    },
+    {
+      "text": "Nikolaus: Dass habe ich mir bereits gedacht. ",
+      "name": "Ludmilla_Quest_End_11",
+      "pid": "153",
+      "position": {
+        "x": "1950",
+        "y": "1725"
+      }
+    },
+    {
+      "text": "",
+      "name": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+      "pid": "154",
+      "position": {
+        "x": "1075",
+        "y": "600"
+      }
+    },
+    {
+      "text": "",
+      "name": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+      "pid": "155",
+      "position": {
+        "x": "1200",
+        "y": "600"
+      }
+    }
+  ],
+  "name": "Village_Quests_V.02",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.6.2",
+  "ifid": "9043A5E3-A67B-44AA-A37C-1DE716C048D2"
+}

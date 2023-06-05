@@ -1,16 +1,12 @@
-using System;
-using Camera;
 using Main;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Environment
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public class Door : MonoBehaviour, IInteractable
+    public class Door : Interactable
     {
         public DoorType Type;
-        
         private House house;
 
         private void Awake()
@@ -18,16 +14,20 @@ namespace Environment
             house = GetComponentInParent<House>();
         }
 
-        public void Interact()
+        public override void Interact()
         {
-            TeleportAnimation.Instance.StartTeleportation();
+            print("Test1");
+            if (!interactable) return;
+            print("Test2");
+            
             TeleportAnimation.Instance.OnTeleport += Teleport;
+            TeleportAnimation.Instance.StartTeleportation();
         }
 
         private void Teleport()
         {
-            house.Teleport(Type);
             TeleportAnimation.Instance.OnTeleport -= Teleport;
+            house.Teleport(Type);
         }
     }
 
