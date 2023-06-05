@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5508829618243940572}
-  - component: {fileID: 5508829618243940573}
-  - component: {fileID: 5508829618243940574}
   - component: {fileID: 5508829618243940575}
   - component: {fileID: 5508829618243940568}
+  - component: {fileID: 5508829618243940573}
+  - component: {fileID: 5508829618243940574}
+  - component: {fileID: 7833687988536010387}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -35,36 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5508829618243940573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5508829618243940569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9cafe4a7238a3c42969d2b2dbdf2920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkSpeed: 8
-  RunSpeed: 18
---- !u!114 &5508829618243940574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5508829618243940569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0dc4e82ac94d9880664e9b1989425a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionRadius: 1.5
-  InteractionLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &5508829618243940575
 Rigidbody2D:
   serializedVersion: 4
@@ -112,6 +83,134 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5508829618243940573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5508829618243940569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9cafe4a7238a3c42969d2b2dbdf2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WalkSpeed: 8
+  RunSpeed: 18
+--- !u!114 &5508829618243940574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5508829618243940569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0dc4e82ac94d9880664e9b1989425a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionRadius: 1.5
+  InteractionLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &7833687988536010387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5508829618243940569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 4fc507d0524cfe740b1bfdf706b4e9d6, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5508829618243940573}
+        m_TargetAssemblyTypeName: Player.PlayerMovement, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7172deec-5cad-45fb-98bb-366df21b9ddb
+    m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5508829618243940573}
+        m_TargetAssemblyTypeName: Player.PlayerMovement, Assembly-CSharp
+        m_MethodName: Sprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4ef3e0ae-6fb1-4209-a130-606dbcc752b6
+    m_ActionName: Player/Sprint[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5508829618243940574}
+        m_TargetAssemblyTypeName: Player.PlayerInteraction, Assembly-CSharp
+        m_MethodName: Interaction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9c860cc1-47e2-42cc-ace4-e2996f7647be
+    m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8562b1f8-88cb-4fe2-940a-7b4264cd0b31
+    m_ActionName: Inventory/Slot1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9208fc62-f65a-4ab4-90b8-e8309010b00a
+    m_ActionName: Inventory/Slot2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45299dc8-ef11-4ae2-87d3-47a708f12861
+    m_ActionName: Inventory/Slot3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 057d7baf-f92a-4bcc-a374-58c975a3dc0f
+    m_ActionName: Inventory/Slot4[/Keyboard/4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4ee916ea-fca5-417c-9656-566c4e6afdd8
+    m_ActionName: Inventory/Slot5[/Keyboard/5]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &5508829619092911950
 GameObject:
   m_ObjectHideFlags: 0

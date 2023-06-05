@@ -1,6 +1,7 @@
 ﻿using System;
 using Main;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player
 {
@@ -9,13 +10,10 @@ namespace Player
         public float InteractionRadius;
         public LayerMask InteractionLayer;
 
-        private void Update()
+        public void Interaction(InputAction.CallbackContext value)
         {
-            if(Input.GetKeyDown(KeyCode.F)) Interaction();
-        }
-
-        private void Interaction()
-        {
+            if (!value.started) return;
+            
             Collider2D[] cols = Physics2D.OverlapCircleAll(
                 transform.position,
                 InteractionRadius,
@@ -27,7 +25,7 @@ namespace Player
                 if(col.CompareTag("Player")) continue;
                 
                 col.GetComponent<IInteractable>().Interact();
-            }   
+            } 
         }
 
         private void OnDrawGizmos()
