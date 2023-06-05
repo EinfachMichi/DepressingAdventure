@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DialogSystem;
 
 public class Dialog
 {
@@ -7,16 +8,16 @@ public class Dialog
 
     public Passage GetPassage(int pid)
     {
-        Passage passage = new Passage();
+        Passage passageObject = new Passage();
         foreach (Passage dialogPassage in passages)
         {
             if (dialogPassage.pid == pid)
             {
-                passage = dialogPassage;
+                passageObject = dialogPassage;
                 break;
             }
         }
-        return passage;
+        return passageObject;
     }
 }
 
@@ -24,6 +25,7 @@ public class Dialog
 public struct Passage
 {
     public string text;
+    public string name;
     public List<Link> links;
     public int pid;
     public List<string> tags;
