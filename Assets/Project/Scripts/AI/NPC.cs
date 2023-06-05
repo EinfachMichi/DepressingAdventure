@@ -1,35 +1,34 @@
 using System.Collections;
-using DefaultNamespace;
 using Main;
+using StorySystem;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NPC : MonoBehaviour, IInteractable
+public class NPC : Interactable
 {
     public string Name;
-    public UnityEvent OnDialogOver;
+    public UnityEvent Event;
     private bool canInteract = true;
     private Story story;
     
     private void Start()
     {
-        story = new Story(Name); 
-        
+        story = new Story(Name);
+
         StoryManager.Instance.OnStoryEnd += OnStoryEnd;
     }
     
-    public void Interact()
+    public override void Interact()
     {
-        if (!canInteract) return;
+        if (!interactable) return;
         
+        interactable = false;
         StoryManager.Instance.RunStory(story.GetStory());
-        canInteract = false;
     }
 
     private void OnStoryEnd()
     {
         StartCoroutine(InteractionCooldown());
-        OnDialogOver?.Invoke();
     }
 
     public void NextStory()
@@ -39,8 +38,8 @@ public class NPC : MonoBehaviour, IInteractable
     
     private IEnumerator InteractionCooldown()
     {
-        canInteract = false;
+        interactable = false;
         yield return new WaitForSeconds(1.5f);
-        canInteract = true;
+        interactable = true;
     }
 }

@@ -4,13 +4,13 @@ using UnityEngine;
 using Main;
 using UnityEngine.Events;
 
-public class Item : MonoBehaviour,IInteractable
+public class Item : Interactable
 {
     public Items ItemTyp;
     public Sprite Icon;
     public UnityEvent OnInteract;
 
-    public void Interact()
+    public override void Interact()
     {
         if(Iventory.Instance.IsInvFull())
         {
