@@ -560,10 +560,7 @@
       "position": {
         "x": "800",
         "y": "4475"
-      },
-      "tags": [
-        "End"
-      ]
+      }
     },
     {
       "text": "Steve: Gegen wie viele Kinder bist du denn angetreten?\n\n[[Iris_Quest_b_02]]",
@@ -972,10 +969,7 @@
       "position": {
         "x": "925",
         "y": "4725"
-      },
-      "tags": [
-        "End"
-      ]
+      }
     },
     {
       "text": "Iris: Ja! Ich habe gewonnen!\n\n[[Iris_Quest_Ende_01]]",
@@ -1037,10 +1031,7 @@
       "position": {
         "x": "950",
         "y": "725"
-      },
-      "tags": [
-        "End"
-      ]
+      }
     },
     {
       "text": "Fronicka: Mein Geschäft ist vollkommen ruiniert!\n\n[[Fronicka_Quest_01]]",
@@ -1071,12 +1062,11 @@
         "y": "350"
       },
       "tags": [
-        "Start",
-        "End"
+        "Start"
       ]
     },
     {
-      "text": "",
+      "text": "Iris: Lass mich in Ruhe. Ich möchte nicht reden.",
       "name": "Iris_after_Quest_3",
       "pid": "68",
       "position": {
@@ -1084,8 +1074,7 @@
         "y": "350"
       },
       "tags": [
-        "Start",
-        "End"
+        "Start"
       ]
     },
     {
@@ -1345,16 +1334,16 @@
       }
     },
     {
-      "text": "Fronicka: Aber genau! Sie könnten für mich gehen!\n\n[[Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.]]\n[[Steve: Ein Abenteuer in den Wald?Da bin ich dabei!]]",
+      "text": "Fronicka: Aber genau! Sie könnten für mich gehen!\n\n[[Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.]]\n[[Ein Abenteuer in den Wald?Da bin ich dabei!]]",
       "links": [
         {
-          "name": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
-          "link": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+          "name": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+          "link": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
           "pid": "86"
         },
         {
-          "name": "Steve: Ein Abenteuer in den Wald?Da bin ich dabei!",
-          "link": "Steve: Ein Abenteuer in den Wald?Da bin ich dabei!",
+          "name": "Ein Abenteuer in den Wald?Da bin ich dabei!",
+          "link": "Ein Abenteuer in den Wald?Da bin ich dabei!",
           "pid": "87"
         }
       ],
@@ -1374,7 +1363,7 @@
           "pid": "88"
         }
       ],
-      "name": "Steve: Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
+      "name": "Natürlich möchte ich Ihnen helfen, aber ich sehe mich nicht als ihr Laufbursche.",
       "pid": "86",
       "position": {
         "x": "1475",
@@ -1390,7 +1379,7 @@
           "pid": "106"
         }
       ],
-      "name": "Steve: Ein Abenteuer in den Wald?Da bin ich dabei!",
+      "name": "Ein Abenteuer in den Wald?Da bin ich dabei!",
       "pid": "87",
       "position": {
         "x": "1600",
@@ -1676,10 +1665,7 @@
       "position": {
         "x": "1475",
         "y": "4850"
-      },
-      "tags": [
-        "End"
-      ]
+      }
     },
     {
       "text": "Steve: Ein Verbrechen ist doch fast wie ein Abenteuer!\n\n[[Fronicka_Quest_b_02]]",
@@ -1970,16 +1956,13 @@
       }
     },
     {
-      "text": "Steve: „Dass werde ich!“ \n\n",
+      "text": "Steve: „Das werde ich!“ \n\n",
       "name": "Fronicka_Quest_b_19",
       "pid": "124",
       "position": {
         "x": "1600",
         "y": "4975"
-      },
-      "tags": [
-        "End"
-      ]
+      }
     },
     {
       "text": "Fronicka: Sie scheinen nicht besonders glücklich zu sein. Darum denke ich, dass Sie nicht besonders gute Nachrichten für mich bereit zu haben. \n\n[[Fronicka_Quest_Ende_01]]",
@@ -2200,10 +2183,7 @@
       "position": {
         "x": "1600",
         "y": "1975"
-      },
-      "tags": [
-        "End"
-      ]
+      }
     },
     {
       "text": "Ob mein ehemaliger Mann, Mannfred, zu Hause ist?",
@@ -2214,210 +2194,8 @@
         "y": "350"
       },
       "tags": [
-        "Start",
-        "End"
+        "Start"
       ]
-    },
-    {
-      "text": "Steve: Entschuldigen Sie\n\n[[Ludmilla_Quest_01]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_01",
-          "link": "Ludmilla_Quest_01",
-          "pid": "141"
-        }
-      ],
-      "name": "Ludmilla_Quest",
-      "pid": "140",
-      "position": {
-        "x": "2000",
-        "y": "350"
-      },
-      "tags": [
-        "Start",
-        "Quest"
-      ]
-    },
-    {
-      "text": "Ludmilla: Wer sind Sie und was wollen Sie von mir?\n\n[[Ludmilla_Quest_02]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_02",
-          "link": "Ludmilla_Quest_02",
-          "pid": "142"
-        }
-      ],
-      "name": "Ludmilla_Quest_01",
-      "pid": "141",
-      "position": {
-        "x": "2000",
-        "y": "475"
-      }
-    },
-    {
-      "text": "Ludmilla: Hat Sie das Dorf geschickt?\n\n[[Ludmilla_Quest_03]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_03",
-          "link": "Ludmilla_Quest_03",
-          "pid": "143"
-        }
-      ],
-      "name": "Ludmilla_Quest_02",
-      "pid": "142",
-      "position": {
-        "x": "2000",
-        "y": "600"
-      }
-    },
-    {
-      "text": "Steve: Warum sollte mich das Dorf zu Ihnen schicken? Sind Sie etwa die Diebin? \n\n[[Ludmilla_Quest_04]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_04",
-          "link": "Ludmilla_Quest_04",
-          "pid": "144"
-        }
-      ],
-      "name": "Ludmilla_Quest_03",
-      "pid": "143",
-      "position": {
-        "x": "2000",
-        "y": "725"
-      }
-    },
-    {
-      "text": "Ludmilla: Diebin? Ich? \n\n[[Ludmilla_Quest_05]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_05",
-          "link": "Ludmilla_Quest_05",
-          "pid": "145"
-        }
-      ],
-      "name": "Ludmilla_Quest_04",
-      "pid": "144",
-      "position": {
-        "x": "2000",
-        "y": "850"
-      }
-    },
-    {
-      "text": "Steve: Ja. Die Fußspuren vom Wagen führen mich direkt zu Ihnen!\n\n[[Ludmilla_Quest_09]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_09",
-          "link": "Ludmilla_Quest_09",
-          "pid": "146"
-        }
-      ],
-      "name": "Ludmilla_Quest_05",
-      "pid": "145",
-      "position": {
-        "x": "2000",
-        "y": "975"
-      }
-    },
-    {
-      "text": "Ludmilla: Tatsächlich war ich es nicht. Sowas tue ich nicht. \n\n[[Ludmilla_Quest_10]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_10",
-          "link": "Ludmilla_Quest_10",
-          "pid": "147"
-        }
-      ],
-      "name": "Ludmilla_Quest_09",
-      "pid": "146",
-      "position": {
-        "x": "2000",
-        "y": "1100"
-      }
-    },
-    {
-      "text": "Steve: Können Sie es mir denn auch beweisen, dass Sie es nicht gewesen waren?\n\n[[Ludmilla_Quest_11]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_11",
-          "link": "Ludmilla_Quest_11",
-          "pid": "148"
-        }
-      ],
-      "name": "Ludmilla_Quest_10",
-      "pid": "147",
-      "position": {
-        "x": "2000",
-        "y": "1225"
-      }
-    },
-    {
-      "text": "Ludmilla: Nein. Denke eher weniger, dass ich Ihnen meine Unschuld beweisen kann.\n\n[[Steve: Verstehe. Da muss ich Ihnen wohl vertrauen.]]\n[[Steve: Ich wüsste da einen Weg, wie Sie es mir demonstrieren könnten!]]",
-      "links": [
-        {
-          "name": "Steve: Verstehe. Da muss ich Ihnen wohl vertrauen.",
-          "link": "Steve: Verstehe. Da muss ich Ihnen wohl vertrauen.",
-          "pid": "149"
-        },
-        {
-          "name": "Steve: Ich wüsste da einen Weg, wie Sie es mir demonstrieren könnten!",
-          "link": "Steve: Ich wüsste da einen Weg, wie Sie es mir demonstrieren könnten!",
-          "pid": "150"
-        }
-      ],
-      "name": "Ludmilla_Quest_11",
-      "pid": "148",
-      "position": {
-        "x": "2000",
-        "y": "1350"
-      }
-    },
-    {
-      "text": "Ludmilla: Also haben Sie mich nur gesucht, da Sie gedacht haben, dass ich eine Diebin sei? \n\n[[Ludmilla_Quest_a_01]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_01",
-          "link": "Ludmilla_Quest_a_01",
-          "pid": "151"
-        }
-      ],
-      "name": "Steve: Verstehe. Da muss ich Ihnen wohl vertrauen.",
-      "pid": "149",
-      "position": {
-        "x": "2000",
-        "y": "1475"
-      }
-    },
-    {
-      "text": "Ludmilla: Okay? Und wie? \n\n[[Ludmilla_Quest_b_01]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_b_01",
-          "link": "Ludmilla_Quest_b_01",
-          "pid": "186"
-        }
-      ],
-      "name": "Steve: Ich wüsste da einen Weg, wie Sie es mir demonstrieren könnten!",
-      "pid": "150",
-      "position": {
-        "x": "2125",
-        "y": "1475"
-      }
-    },
-    {
-      "text": "Steve: So ist es\n\n[[Ludmilla_Quest_a_02]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_02",
-          "link": "Ludmilla_Quest_a_02",
-          "pid": "156"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_01",
-      "pid": "151",
-      "position": {
-        "x": "2000",
-        "y": "1600"
-      }
     },
     {
       "text": "Iris: haha! Du darfst es gerne nochmal versuchen! \n\n[[Iris_Quest_Failed_01]]",
@@ -2425,11 +2203,11 @@
         {
           "name": "Iris_Quest_Failed_01",
           "link": "Iris_Quest_Failed_01",
-          "pid": "153"
+          "pid": "141"
         }
       ],
       "name": "Iris_Quest_Failed",
-      "pid": "152",
+      "pid": "140",
       "position": {
         "x": "1075",
         "y": "350"
@@ -2440,29 +2218,218 @@
       ]
     },
     {
-      "text": "Iris: Aber meine Mutter musst du trotzdem finden!\n\n[[Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!]]\n[[Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.]]",
+      "text": "Iris: Aber meine Mutter musst du trotzdem finden!\n\n[[Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!]]\n[[Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.]]",
       "links": [
         {
-          "name": "Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
-          "link": "Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+          "name": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+          "link": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
           "pid": "154"
         },
         {
-          "name": "Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
-          "link": "Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+          "name": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+          "link": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
           "pid": "155"
         }
       ],
       "name": "Iris_Quest_Failed_01",
-      "pid": "153",
+      "pid": "141",
       "position": {
         "x": "1075",
         "y": "475"
       }
     },
     {
+      "text": "Steve: Was ist denn hier los? \n\n[[Ludmilla_Quest_End_01]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_01",
+          "link": "Ludmilla_Quest_End_01",
+          "pid": "143"
+        }
+      ],
+      "name": "Ludmilla_Quest_End",
+      "pid": "142",
+      "position": {
+        "x": "1950",
+        "y": "350"
+      },
+      "tags": [
+        "Start",
+        "QuestDone"
+      ]
+    },
+    {
+      "text": "Nikolaus: Haben Sie es noch nicht mitbekommen? \n\n[[Ludmilla_Quest_End_02]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_02",
+          "link": "Ludmilla_Quest_End_02",
+          "pid": "144"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_01",
+      "pid": "143",
+      "position": {
+        "x": "1950",
+        "y": "475"
+      }
+    },
+    {
+      "text": "Steve: Was nicht mitbekommen? \n\n[[Ludmilla_Quest_End_03]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_03",
+          "link": "Ludmilla_Quest_End_03",
+          "pid": "145"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_02",
+      "pid": "144",
+      "position": {
+        "x": "1950",
+        "y": "600"
+      }
+    },
+    {
+      "text": "Nikolaus: Die Dorfbewohner haben endlich die Hexe gefunden, die sich im Wald versteckt hatte. \n\n[[Ludmilla_Quest_End_04]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_04",
+          "link": "Ludmilla_Quest_End_04",
+          "pid": "146"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_03",
+      "pid": "145",
+      "position": {
+        "x": "1950",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Steve: Die Hexe? Meinen Sie damit Ludmilla? \n\n[[Ludmilla_Quest_End_05]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_05",
+          "link": "Ludmilla_Quest_End_05",
+          "pid": "147"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_04",
+      "pid": "146",
+      "position": {
+        "x": "1950",
+        "y": "850"
+      }
+    },
+    {
+      "text": "Nikolaus: Ja! Da sie ihre Unschuld nicht beweisen konnte, beschlossen wir, sie mit dem Tod zu bestrafen. \n\n[[Ludmilla_Quest_End_06]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_06",
+          "link": "Ludmilla_Quest_End_06",
+          "pid": "148"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_05",
+      "pid": "147",
+      "position": {
+        "x": "1950",
+        "y": "975"
+      }
+    },
+    {
+      "text": "Steve: Mit dem Tod?!\n\n[[Ludmilla_Quest_End_07]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_07",
+          "link": "Ludmilla_Quest_End_07",
+          "pid": "149"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_06",
+      "pid": "148",
+      "position": {
+        "x": "1950",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "Nikolaus: Natürlich. Schließlich ist sie eine Hexe. Mit den heißen Flammen hätte sie sich eigentlich auskennen müssen, da sie doch aus der Hölle stammt. \n\n[[Ludmilla_Quest_End_08]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_08",
+          "link": "Ludmilla_Quest_End_08",
+          "pid": "150"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_07",
+      "pid": "149",
+      "position": {
+        "x": "1950",
+        "y": "1225"
+      }
+    },
+    {
+      "text": "Steve: Wie können Sie nur so über Sie reden, wenn Sie sie gar nicht wirklich gekannt hatten?!\n\n[[Ludmilla_Quest_End_09]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_09",
+          "link": "Ludmilla_Quest_End_09",
+          "pid": "151"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_08",
+      "pid": "150",
+      "position": {
+        "x": "1950",
+        "y": "1350"
+      }
+    },
+    {
+      "text": "Nikolaus: Haben Sie sie gut gekannt?\n\n[[Ludmilla_Quest_End_10]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_10",
+          "link": "Ludmilla_Quest_End_10",
+          "pid": "152"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_09",
+      "pid": "151",
+      "position": {
+        "x": "1950",
+        "y": "1475"
+      }
+    },
+    {
+      "text": "Steve: ...\n\n[[Ludmilla_Quest_End_11]]",
+      "links": [
+        {
+          "name": "Ludmilla_Quest_End_11",
+          "link": "Ludmilla_Quest_End_11",
+          "pid": "153"
+        }
+      ],
+      "name": "Ludmilla_Quest_End_10",
+      "pid": "152",
+      "position": {
+        "x": "1950",
+        "y": "1600"
+      }
+    },
+    {
+      "text": "Nikolaus: Dass habe ich mir bereits gedacht. ",
+      "name": "Ludmilla_Quest_End_11",
+      "pid": "153",
+      "position": {
+        "x": "1950",
+        "y": "1725"
+      }
+    },
+    {
       "text": "",
-      "name": "Steve: Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
+      "name": "Das lasse ich mir nicht gefallen! Ich möchte noch eine Runde gegen dich spielen!",
       "pid": "154",
       "position": {
         "x": "1075",
@@ -2471,548 +2438,12 @@
     },
     {
       "text": "",
-      "name": "Steve: Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
+      "name": "Ich denke, du hast den Sieg gerecht gewonnen. Ich werde mich auf den Weg machen.",
       "pid": "155",
       "position": {
         "x": "1200",
         "y": "600"
       }
-    },
-    {
-      "text": "Ludmilla: Also hat Sie das Dorf nicht geschickt? \n\n[[Ludmilla_Quest_a_03]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_03",
-          "link": "Ludmilla_Quest_a_03",
-          "pid": "157"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_02",
-      "pid": "156",
-      "position": {
-        "x": "2000",
-        "y": "1725"
-      }
-    },
-    {
-      "text": "Steve: Warum sollte mich das Dorf denn zu Ihnen senden? Haben Sie denn etwas verbrochen?\n\n[[Ludmilla_Quest_a_04]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_04",
-          "link": "Ludmilla_Quest_a_04",
-          "pid": "158"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_03",
-      "pid": "157",
-      "position": {
-        "x": "2000",
-        "y": "1850"
-      }
-    },
-    {
-      "text": "Ludmilla: Nein!\n\n[[Ludmilla_Quest_a_05]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_05",
-          "link": "Ludmilla_Quest_a_05",
-          "pid": "159"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_04",
-      "pid": "158",
-      "position": {
-        "x": "2000",
-        "y": "1975"
-      }
-    },
-    {
-      "text": "Ludmilla: Ich? Bestimmt nicht. Nein. \n\n[[Ludmilla_Quest_a_06]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_06",
-          "link": "Ludmilla_Quest_a_06",
-          "pid": "160"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_05",
-      "pid": "159",
-      "position": {
-        "x": "2000",
-        "y": "2100"
-      }
-    },
-    {
-      "text": "Steve: Sie haben es jetzt ziemlich oft verneint. Darum weiß ich nicht wirklich, ob ich Ihnen in diesem Punkt vertrauen kann. \n\n[[Ludmilla_Quest_a_07]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_07",
-          "link": "Ludmilla_Quest_a_07",
-          "pid": "161"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_06",
-      "pid": "160",
-      "position": {
-        "x": "2000",
-        "y": "2225"
-      }
-    },
-    {
-      "text": "Ludmilla: Mir? Vertrauen? Doch. Doch, Doch! Ja.\n\n[[Ludmilla_Quest_a_08]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_08",
-          "link": "Ludmilla_Quest_a_08",
-          "pid": "162"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_07",
-      "pid": "161",
-      "position": {
-        "x": "2000",
-        "y": "2350"
-      }
-    },
-    {
-      "text": "Steve: Sicher? \n\n[[Ludmilla_Quest_a_09]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_09",
-          "link": "Ludmilla_Quest_a_09",
-          "pid": "163"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_08",
-      "pid": "162",
-      "position": {
-        "x": "2000",
-        "y": "2475"
-      }
-    },
-    {
-      "text": "Ludmilla: Ganz sicher. Sehr sicher. \n\n[[Ludmilla_Quest_a_10]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_10",
-          "link": "Ludmilla_Quest_a_10",
-          "pid": "164"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_09",
-      "pid": "163",
-      "position": {
-        "x": "2000",
-        "y": "2600"
-      }
-    },
-    {
-      "text": "Steve: Verstehe. Dürfte ich Sie denn noch etwas fragen?\n\n[[Ludmilla_Quest_a_11]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_11",
-          "link": "Ludmilla_Quest_a_11",
-          "pid": "165"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_10",
-      "pid": "164",
-      "position": {
-        "x": "2000",
-        "y": "2725"
-      }
-    },
-    {
-      "text": "Ludmilla: Wenn Sie wollen, aber müssen Sie natürlich nicht. \n\n[[Ludmilla_Quest_a_12]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_12",
-          "link": "Ludmilla_Quest_a_12",
-          "pid": "166"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_11",
-      "pid": "165",
-      "position": {
-        "x": "2000",
-        "y": "2850"
-      }
-    },
-    {
-      "text": "Steve: Wieso sind Sie hier im Wald? Hat es irgendetwas mit Ihren Dorf zu tun? \n\n[[Ludmilla_Quest_a_13]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_13",
-          "link": "Ludmilla_Quest_a_13",
-          "pid": "167"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_12",
-      "pid": "166",
-      "position": {
-        "x": "2000",
-        "y": "2975"
-      }
-    },
-    {
-      "text": "Ludmilla: Mit meinem Dorf? \n\n[[Ludmilla_Quest_a_14]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_14",
-          "link": "Ludmilla_Quest_a_14",
-          "pid": "168"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_13",
-      "pid": "167",
-      "position": {
-        "x": "2000",
-        "y": "3100"
-      }
-    },
-    {
-      "text": "Steve: Ja. Sie hatten es immer wieder erwähnt. \n\n[[Ludmilla_Quest_a_15]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_15",
-          "link": "Ludmilla_Quest_a_15",
-          "pid": "169"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_14",
-      "pid": "168",
-      "position": {
-        "x": "2000",
-        "y": "3225"
-      }
-    },
-    {
-      "text": "Ludmilla: Ja. Nein. Stimmt \n\n[[Ludmilla_Quest_a_16]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_16",
-          "link": "Ludmilla_Quest_a_16",
-          "pid": "170"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_15",
-      "pid": "169",
-      "position": {
-        "x": "2000",
-        "y": "3350"
-      }
-    },
-    {
-      "text": "Ludmilla: Also das Dorf hält mich für eine Hexe. \n\n[[Ludmilla_Quest_a_17]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_17",
-          "link": "Ludmilla_Quest_a_17",
-          "pid": "171"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_16",
-      "pid": "170",
-      "position": {
-        "x": "2000",
-        "y": "3475"
-      }
-    },
-    {
-      "text": "Steve: Sie halten Sie für eine Hexe? Warum dass denn? \n\n[[Ludmilla_Quest_a_18]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_18",
-          "link": "Ludmilla_Quest_a_18",
-          "pid": "172"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_17",
-      "pid": "171",
-      "position": {
-        "x": "2000",
-        "y": "3600"
-      }
-    },
-    {
-      "text": "Ludmilla: Ich interessiere mich für die Heilkunde. Und als es die Dorfbewohner herausgefunden haben, haben diese mich verurteilt. \n\n[[Ludmilla_Quest_a_19]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_19",
-          "link": "Ludmilla_Quest_a_19",
-          "pid": "173"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_18",
-      "pid": "172",
-      "position": {
-        "x": "2000",
-        "y": "3725"
-      }
-    },
-    {
-      "text": "Ludmilla: Seitdem darf ich das Dorf nicht betreten. \n\n[[Ludmilla_Quest_a_20]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_20",
-          "link": "Ludmilla_Quest_a_20",
-          "pid": "174"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_19",
-      "pid": "173",
-      "position": {
-        "x": "2000",
-        "y": "3850"
-      }
-    },
-    {
-      "text": "Steve: Besitzen Sie denn auch Tränke bei sich, dass deren These, dass Sie eine Hexe seien, bestätigt?\n\n[[Ludmilla_Quest_a_21]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_21",
-          "link": "Ludmilla_Quest_a_21",
-          "pid": "175"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_20",
-      "pid": "174",
-      "position": {
-        "x": "2000",
-        "y": "3975"
-      }
-    },
-    {
-      "text": "Ludmilla: Natürlich nicht. \n\n[[Ludmilla_Quest_a_22]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_22",
-          "link": "Ludmilla_Quest_a_22",
-          "pid": "176"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_21",
-      "pid": "175",
-      "position": {
-        "x": "2000",
-        "y": "4100"
-      }
-    },
-    {
-      "text": "Steve. Verstehe. Haben Sie denn versucht mit den Dorfbewohnern zu sprechen? \n\n[[Ludmilla_Quest_a_23]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_23",
-          "link": "Ludmilla_Quest_a_23",
-          "pid": "177"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_22",
-      "pid": "176",
-      "position": {
-        "x": "2000",
-        "y": "4225"
-      }
-    },
-    {
-      "text": "Ludmilla: Es war schwierig, da Sie keine weitere Meinung, als die Ihre akzeptieren. Sie sagten nur zu mir, dass ich eine seltene weiße Rose, die sich in unsere Nähe befände, finden und diese zu ihnen bringen müsse. Somit könnte ich dann meine Unschuld vorweisen. \n\n[[Ludmilla_Quest_a_24]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_24",
-          "link": "Ludmilla_Quest_a_24",
-          "pid": "178"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_23",
-      "pid": "177",
-      "position": {
-        "x": "2000",
-        "y": "4350"
-      }
-    },
-    {
-      "text": "Steve: Eine einzelne Rose soll Ihre Unschuld beweisen können? \n\n[[Ludmilla_Quest_a_25]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_25",
-          "link": "Ludmilla_Quest_a_25",
-          "pid": "179"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_24",
-      "pid": "178",
-      "position": {
-        "x": "2000",
-        "y": "4475"
-      }
-    },
-    {
-      "text": "Ludmilla: Genau! Darum irre ich seit einigen Monaten in diesem Wald umher, um wieder ein Teil dieses Dorf zu werden. \n\n[[Ludmilla_Quest_a_26]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_26",
-          "link": "Ludmilla_Quest_a_26",
-          "pid": "180"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_25",
-      "pid": "179",
-      "position": {
-        "x": "2000",
-        "y": "4600"
-      }
-    },
-    {
-      "text": "Steve: Kann ich Ihnen meine Hilfe anbieten?“\n\n[[Ludmilla_Quest_a_27]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_27",
-          "link": "Ludmilla_Quest_a_27",
-          "pid": "181"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_26",
-      "pid": "180",
-      "position": {
-        "x": "2000",
-        "y": "4725"
-      }
-    },
-    {
-      "text": "Ludmilla: Sie wollen mir helfen? Aber warum? Wieso denken Sie nicht, dass ich eine Hexe sei? \n\n[[Ludmilla_Quest_a_28]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_28",
-          "link": "Ludmilla_Quest_a_28",
-          "pid": "182"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_27",
-      "pid": "181",
-      "position": {
-        "x": "2000",
-        "y": "4850"
-      }
-    },
-    {
-      "text": "Steve: Da Sie mich am Anfang hätten verzaubern können, als ich Sie als Diebin betitelt hatte. \n\n[[Ludmilla_Quest_a_29]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_29",
-          "link": "Ludmilla_Quest_a_29",
-          "pid": "183"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_28",
-      "pid": "182",
-      "position": {
-        "x": "2000",
-        "y": "4975"
-      }
-    },
-    {
-      "text": "Ludmilla: Verstehe. Vielen Dank für Ihre Hilfe! \n\n[[Ludmilla_Quest_a_30]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_30",
-          "link": "Ludmilla_Quest_a_30",
-          "pid": "184"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_29",
-      "pid": "183",
-      "position": {
-        "x": "2000",
-        "y": "5100"
-      }
-    },
-    {
-      "text": "Steve: Sehr gerne! Doch ehe ich damit beginnen kann, muss ich zurück zum Dorf und einer Dame etwas mitteilen. Danach widme ich meine volle Zeit Ihnen und ihr Problem!\n\n[[Ludmilla_Quest_a_31]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_a_31",
-          "link": "Ludmilla_Quest_a_31",
-          "pid": "185"
-        }
-      ],
-      "name": "Ludmilla_Quest_a_30",
-      "pid": "184",
-      "position": {
-        "x": "2000",
-        "y": "5225"
-      }
-    },
-    {
-      "text": "Ludmilla: Habt vielen Dank, Fremder! Ich werde hier auf Sie warten! ",
-      "name": "Ludmilla_Quest_a_31",
-      "pid": "185",
-      "position": {
-        "x": "2000",
-        "y": "5350"
-      },
-      "tags": [
-        "End"
-      ]
-    },
-    {
-      "text": "Steve: Ich habe einen Zettel, der alle Ware, die auf dem Karren vorzufinden sein sollte erhalten. Anhand diesen werde nachschauen, ob Sie etwas von dieser Liste besitzen, oder nicht.\n\n[[Ludmilla_Quest_b_02]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_b_02",
-          "link": "Ludmilla_Quest_b_02",
-          "pid": "187"
-        }
-      ],
-      "name": "Ludmilla_Quest_b_01",
-      "pid": "186",
-      "position": {
-        "x": "2125",
-        "y": "1600"
-      }
-    },
-    {
-      "text": "Ludmilla: Also wollen Sie meine Sachen durchsuchen, um festzustellen, ob ich die Diebin bin, die Sie suchen? \n\n[[Ludmilla_Quest_b_03]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_b_03",
-          "link": "Ludmilla_Quest_b_03",
-          "pid": "188"
-        }
-      ],
-      "name": "Ludmilla_Quest_b_02",
-      "pid": "187",
-      "position": {
-        "x": "2125",
-        "y": "1725"
-      }
-    },
-    {
-      "text": "Steve: Dass haben Sie gut zusammengefasst. \n\n[[Ludmilla_Quest_b_04]]",
-      "links": [
-        {
-          "name": "Ludmilla_Quest_b_04",
-          "link": "Ludmilla_Quest_b_04",
-          "pid": "189"
-        }
-      ],
-      "name": "Ludmilla_Quest_b_03",
-      "pid": "188",
-      "position": {
-        "x": "2125",
-        "y": "1850"
-      }
-    },
-    {
-      "text": "*Steve durchsucht die Tasche und vergleicht diese mit dem Zettel, den er von Fronicka erhalten hat*\n",
-      "name": "Ludmilla_Quest_b_04",
-      "pid": "189",
-      "position": {
-        "x": "2125",
-        "y": "1975"
-      },
-      "tags": [
-        "break"
-      ]
     }
   ],
   "name": "Village_Quests_V.02",
