@@ -33,6 +33,14 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""9c860cc1-47e2-42cc-ace4-e2996f7647be"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -211,6 +219,131 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c4307f12-df25-4393-974d-7a83226787ee"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d572c876-2e2e-4fd6-8ca5-6befe88d29da"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Inventory"",
+            ""id"": ""20231b5e-ef84-4a53-be2f-ba6dce631159"",
+            ""actions"": [
+                {
+                    ""name"": ""Slot1"",
+                    ""type"": ""Button"",
+                    ""id"": ""8562b1f8-88cb-4fe2-940a-7b4264cd0b31"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Slot2"",
+                    ""type"": ""Button"",
+                    ""id"": ""9208fc62-f65a-4ab4-90b8-e8309010b00a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Slot3"",
+                    ""type"": ""Button"",
+                    ""id"": ""45299dc8-ef11-4ae2-87d3-47a708f12861"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Slot4"",
+                    ""type"": ""Button"",
+                    ""id"": ""057d7baf-f92a-4bcc-a374-58c975a3dc0f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Slot5"",
+                    ""type"": ""Button"",
+                    ""id"": ""4ee916ea-fca5-417c-9656-566c4e6afdd8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""d0042276-b08d-400c-aa0a-07d52090f686"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Slot1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a8bba80-c9af-4521-be97-698d51aa36b4"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Slot2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec21f079-d8df-48ed-a04c-8863f2e56ad7"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Slot3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6cae9a0-346c-4212-abfd-87d0357fb494"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Slot4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""00f067f4-4736-4b85-bdd5-968abffdefb5"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Slot5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -221,6 +354,14 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
+        m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_Slot1 = m_Inventory.FindAction("Slot1", throwIfNotFound: true);
+        m_Inventory_Slot2 = m_Inventory.FindAction("Slot2", throwIfNotFound: true);
+        m_Inventory_Slot3 = m_Inventory.FindAction("Slot3", throwIfNotFound: true);
+        m_Inventory_Slot4 = m_Inventory.FindAction("Slot4", throwIfNotFound: true);
+        m_Inventory_Slot5 = m_Inventory.FindAction("Slot5", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -272,12 +413,14 @@ public class @GameInput : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Sprint;
+    private readonly InputAction m_Player_Interact;
     public struct PlayerActions
     {
         private @GameInput m_Wrapper;
         public PlayerActions(@GameInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
+        public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -293,6 +436,9 @@ public class @GameInput : IInputActionCollection, IDisposable
                 @Sprint.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
                 @Sprint.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
                 @Sprint.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
+                @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -303,13 +449,90 @@ public class @GameInput : IInputActionCollection, IDisposable
                 @Sprint.started += instance.OnSprint;
                 @Sprint.performed += instance.OnSprint;
                 @Sprint.canceled += instance.OnSprint;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private IInventoryActions m_InventoryActionsCallbackInterface;
+    private readonly InputAction m_Inventory_Slot1;
+    private readonly InputAction m_Inventory_Slot2;
+    private readonly InputAction m_Inventory_Slot3;
+    private readonly InputAction m_Inventory_Slot4;
+    private readonly InputAction m_Inventory_Slot5;
+    public struct InventoryActions
+    {
+        private @GameInput m_Wrapper;
+        public InventoryActions(@GameInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Slot1 => m_Wrapper.m_Inventory_Slot1;
+        public InputAction @Slot2 => m_Wrapper.m_Inventory_Slot2;
+        public InputAction @Slot3 => m_Wrapper.m_Inventory_Slot3;
+        public InputAction @Slot4 => m_Wrapper.m_Inventory_Slot4;
+        public InputAction @Slot5 => m_Wrapper.m_Inventory_Slot5;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterface != null)
+            {
+                @Slot1.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot1;
+                @Slot1.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot1;
+                @Slot1.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot1;
+                @Slot2.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot2;
+                @Slot2.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot2;
+                @Slot2.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot2;
+                @Slot3.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot3;
+                @Slot3.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot3;
+                @Slot3.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot3;
+                @Slot4.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot4;
+                @Slot4.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot4;
+                @Slot4.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot4;
+                @Slot5.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot5;
+                @Slot5.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot5;
+                @Slot5.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnSlot5;
+            }
+            m_Wrapper.m_InventoryActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Slot1.started += instance.OnSlot1;
+                @Slot1.performed += instance.OnSlot1;
+                @Slot1.canceled += instance.OnSlot1;
+                @Slot2.started += instance.OnSlot2;
+                @Slot2.performed += instance.OnSlot2;
+                @Slot2.canceled += instance.OnSlot2;
+                @Slot3.started += instance.OnSlot3;
+                @Slot3.performed += instance.OnSlot3;
+                @Slot3.canceled += instance.OnSlot3;
+                @Slot4.started += instance.OnSlot4;
+                @Slot4.performed += instance.OnSlot4;
+                @Slot4.canceled += instance.OnSlot4;
+                @Slot5.started += instance.OnSlot5;
+                @Slot5.performed += instance.OnSlot5;
+                @Slot5.canceled += instance.OnSlot5;
+            }
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnSlot1(InputAction.CallbackContext context);
+        void OnSlot2(InputAction.CallbackContext context);
+        void OnSlot3(InputAction.CallbackContext context);
+        void OnSlot4(InputAction.CallbackContext context);
+        void OnSlot5(InputAction.CallbackContext context);
     }
 }

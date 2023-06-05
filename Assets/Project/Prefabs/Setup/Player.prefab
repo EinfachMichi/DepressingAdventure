@@ -170,6 +170,42 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4ef3e0ae-6fb1-4209-a130-606dbcc752b6
     m_ActionName: Player/Sprint[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5508829618243940574}
+        m_TargetAssemblyTypeName: Player.PlayerInteraction, Assembly-CSharp
+        m_MethodName: Interaction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9c860cc1-47e2-42cc-ace4-e2996f7647be
+    m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8562b1f8-88cb-4fe2-940a-7b4264cd0b31
+    m_ActionName: Inventory/Slot1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9208fc62-f65a-4ab4-90b8-e8309010b00a
+    m_ActionName: Inventory/Slot2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45299dc8-ef11-4ae2-87d3-47a708f12861
+    m_ActionName: Inventory/Slot3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 057d7baf-f92a-4bcc-a374-58c975a3dc0f
+    m_ActionName: Inventory/Slot4[/Keyboard/4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4ee916ea-fca5-417c-9656-566c4e6afdd8
+    m_ActionName: Inventory/Slot5[/Keyboard/5]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
