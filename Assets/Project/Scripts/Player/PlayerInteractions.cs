@@ -40,27 +40,16 @@ namespace Player
         {
             if (context.started)
             {
-                float smallestDistance = Single.MaxValue;
-                IInteractable closestInteractable = default;
                 foreach (Collider2D other in GetCollidersInRadius(InteractionRadius))
                 {
                     if (other.TryGetComponent(out IInteractable interactable))
                     {
                         if (interactable.interactable)
                         {
-                            float distance = Vector3.Distance(other.transform.position, transform.position);
-                            if (distance < smallestDistance)
-                            {
-                                smallestDistance = distance;
-                                closestInteractable = interactable;
-                            }
+                            interactable.Interaction();
                         }
                     }
                 }
-
-                if (closestInteractable == null) return;
-                
-                closestInteractable.Interaction();
             }
         }
 
