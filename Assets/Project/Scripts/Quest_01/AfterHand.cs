@@ -9,5 +9,11 @@ public class AfterHand : MonoBehaviour
     public void AfterAnimation()
     {
         Q1.StartRound();
+
+        if(Q1.round<4)
+        { 
+            Q1.Buttons(); 
+        }
+        
     }
 }
