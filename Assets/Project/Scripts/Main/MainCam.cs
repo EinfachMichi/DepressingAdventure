@@ -1,3 +1,4 @@
+using System;
 using Cinemachine;
 using UnityEngine;
 
@@ -11,14 +12,13 @@ namespace Main
 
         private void Awake()
         {
-            confiner = GetComponentInChildren<CinemachineConfiner>();
             cam = GetComponentInChildren<CinemachineVirtualCamera>();
+            confiner = GetComponentInChildren<CinemachineConfiner>();
             player = GameObject.FindWithTag("Player").transform;
 
+            confiner.m_BoundingShape2D = GameObject.FindWithTag("MapBorder").GetComponent<PolygonCollider2D>();
+            
             cam.Follow = player;
-
-            PolygonCollider2D col = GameObject.FindWithTag("MapBorder").GetComponent<PolygonCollider2D>();
-            confiner.m_BoundingShape2D = col;
         }
     }
 }
