@@ -4,7 +4,7 @@ namespace Main
 {
     public abstract class Interactable : MonoBehaviour
     {
-        protected bool interactable = true;
+        public bool interactable { get; protected set; } = true;
         public abstract void Interact();
     }
 }

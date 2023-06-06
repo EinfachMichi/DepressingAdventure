@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Quest_01ButtonInput : MonoBehaviour
 {
-    private int round;
+    public int round;
     [SerializeField] private int choose;
     [SerializeField] private int enemychoose=0;
     private int playerpoints=0;
@@ -35,8 +35,23 @@ public class Quest_01ButtonInput : MonoBehaviour
         
     }
 
+    public void Buttons()
+    {
+        for (int i = 0; i <= 2; i++)
+        {
+            Button[i].GetComponent<Button>().interactable = true;
+        }
+    }
+
     public void PlayerChoose(int choose)
     {
+        print("Test");
+        for (int i = 0; i < 3; i++)
+        {
+            Button[i].GetComponent<Button>().interactable = false;
+            print("Test");
+        }
+
         Player.GetComponent<Image>().sprite = ChoosenItem[1];
         Enemy.GetComponent<Image>().sprite = ChoosenItem[1];
         Ani.SetTrigger("OnClick");
