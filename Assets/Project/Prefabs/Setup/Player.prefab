@@ -110,9 +110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionRadius: 1.5
-  InteractionLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!114 &7833687988536010387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +278,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

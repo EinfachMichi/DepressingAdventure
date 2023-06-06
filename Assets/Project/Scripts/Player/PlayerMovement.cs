@@ -1,5 +1,6 @@
 using System;
 using Environment;
+using StorySystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -27,6 +28,8 @@ namespace Player
         {
             TeleportAnimation.Instance.OnTeleportAnimationStart += Freeze;
             TeleportAnimation.Instance.OnTeleportAnimationDone += UnFreeze;
+            StoryManager.Instance.OnStoryBegin += Freeze;
+            StoryManager.Instance.OnStoryEnd += UnFreeze;
 
             speed = WalkSpeed;
         }

@@ -223,6 +223,7 @@ namespace StorySystem
         }
 
         private Passage GetStory() => passageList.passages[storyIndex];
+        public bool HasStory() => storyIndex < passageList.passages.Count;
         public void Next() => storyIndex++;
     }
 

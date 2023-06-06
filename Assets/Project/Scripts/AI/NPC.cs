@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Main;
 using StorySystem;
@@ -8,22 +9,25 @@ public class NPC : Interactable
 {
     public Speaker speaker;
     public UnityEvent OnStoryEndEvent;
-    private bool canInteract = true;
     private Story story;
-    
-    private void Start()
+
+    private void Awake()
     {
         story = new Story(speaker);
+    }
 
+    private void Start()
+    {
         StoryManager.Instance.OnStoryEnd += OnStoryEnd;
     }
     
     public override void Interact()
     {
-        if (!interactable) return;
-        
-        interactable = false;
-        StoryManager.Instance.RunStory(story);
+        if (story.HasStory())
+        {
+            StoryManager.Instance.RunStory(story);
+            interactable = false;
+        }
     }
 
     private void OnStoryEnd()
