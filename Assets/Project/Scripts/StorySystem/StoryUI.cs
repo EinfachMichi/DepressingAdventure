@@ -36,9 +36,10 @@ namespace StorySystem
             anim.SetTrigger("FadeIn");
         }
 
-        private void OnSpeakerChanged(string speaker)
+        private void OnSpeakerChanged(Speaker speaker)
         {
-            SpeakerName.text = speaker;
+            SpeakerName.text = speaker.Name;
+            IconImage.sprite = speaker.Portrait;
         }
         
         private void OnTextChanged(string text)
