@@ -14,7 +14,7 @@ namespace Camera
             base.Awake();
             confiner = GetComponent<CinemachineConfiner>();
 
-            PolygonCollider2D col = GameObject.FindWithTag("StartBorder").GetComponent<PolygonCollider2D>();;
+            PolygonCollider2D col = GameObject.FindWithTag("StartBorder").GetComponent<PolygonCollider2D>();
 
             if(col) confiner.m_BoundingShape2D = col;
         }
