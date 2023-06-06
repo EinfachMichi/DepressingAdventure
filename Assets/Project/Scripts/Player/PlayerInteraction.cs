@@ -9,7 +9,6 @@ namespace Player
     public class PlayerInteraction : MonoBehaviour
     {
         public float InteractionRadius;
-        public LayerMask InteractionLayer;
 
         private bool canInteract = true;
         
@@ -28,15 +27,18 @@ namespace Player
             
             Collider2D[] cols = Physics2D.OverlapCircleAll(
                 transform.position,
-                InteractionRadius,
-                InteractionLayer
+                InteractionRadius
             );
-
+            
             foreach (Collider2D col in cols)
             {
-                if(col.CompareTag("Player")) continue;
-                
-                col.GetComponent<Interactable>().Interact();
+                if (col.TryGetComponent(out Interactable interactable))
+                {
+                    if (interactable.interactable)
+                    {
+                        interactable.Interact();
+                    }
+                }
             } 
         }
 
