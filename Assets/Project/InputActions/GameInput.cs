@@ -41,6 +41,22 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Choice1"",
+                    ""type"": ""Button"",
+                    ""id"": ""f71ea347-c90c-4554-a597-954240b5f4b5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Choice2"",
+                    ""type"": ""Button"",
+                    ""id"": ""0ad55235-4605-4a52-a83a-3b15cfbb322e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -241,6 +257,28 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2994c27e-c7f7-4f40-a96a-5e29cee75abf"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Choice1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""226115d4-7498-42b0-9ab0-2b97a7d34757"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Choice2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -437,6 +475,8 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_Choice1 = m_Player.FindAction("Choice1", throwIfNotFound: true);
+        m_Player_Choice2 = m_Player.FindAction("Choice2", throwIfNotFound: true);
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_Slot1 = m_Inventory.FindAction("Slot1", throwIfNotFound: true);
@@ -499,6 +539,8 @@ public class @GameInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_Choice1;
+    private readonly InputAction m_Player_Choice2;
     public struct PlayerActions
     {
         private @GameInput m_Wrapper;
@@ -506,6 +548,8 @@ public class @GameInput : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @Choice1 => m_Wrapper.m_Player_Choice1;
+        public InputAction @Choice2 => m_Wrapper.m_Player_Choice2;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -524,6 +568,12 @@ public class @GameInput : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @Choice1.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoice1;
+                @Choice1.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoice1;
+                @Choice1.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoice1;
+                @Choice2.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoice2;
+                @Choice2.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoice2;
+                @Choice2.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoice2;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -537,6 +587,12 @@ public class @GameInput : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Choice1.started += instance.OnChoice1;
+                @Choice1.performed += instance.OnChoice1;
+                @Choice1.canceled += instance.OnChoice1;
+                @Choice2.started += instance.OnChoice2;
+                @Choice2.performed += instance.OnChoice2;
+                @Choice2.canceled += instance.OnChoice2;
             }
         }
     }
@@ -644,6 +700,8 @@ public class @GameInput : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnChoice1(InputAction.CallbackContext context);
+        void OnChoice2(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {

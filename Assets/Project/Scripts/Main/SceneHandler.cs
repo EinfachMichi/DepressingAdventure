@@ -29,24 +29,14 @@ namespace Main
         private void Play(FadeMode mode = FadeMode.FadeOut)
         {
             if(mode == FadeMode.FadeOut) anim.SetTrigger("FadeOut");
-            else
-            {
-                DisablePlayer();
-                anim.SetTrigger("FadeIn");
-            }
+            else anim.SetTrigger("FadeIn");
         }
 
-        private void DisablePlayer()
-        {
-            GameObject player = GameObject.FindWithTag("Player");
-            player.GetComponent<PlayerMovement>().enabled = false;
-            player.GetComponent<PlayerInteractions>().enabled = false;
-        }
-        
         public void EnterNewScene(string sceneName)
         {
             this.sceneName = sceneName;
             PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+            GameStateManager.Instance.ChangeState(GameState.InTeleportation);
             Play(FadeMode.FadeIn);
         }
 
