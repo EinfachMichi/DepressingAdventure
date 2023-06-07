@@ -9,9 +9,10 @@ namespace Environment
         private void Awake()
         {
             House[] houses = Resources.LoadAll<House>("Prefabs/LevelDesign/Interiors");
+            string id = PlayerPrefs.GetString("HouseID");
             foreach (House house in houses)
             {
-                if (house.HouseID == PlayerPrefs.GetString("HouseID"))
+                if (house.HouseID == id)
                 {
                     this.house = house;
                     break;

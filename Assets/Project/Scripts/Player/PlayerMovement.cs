@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using Main;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Player
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : Freezer
     {
         public float WalkSpeed;
         public float RunSpeed;
@@ -19,7 +21,28 @@ namespace Player
             speed = WalkSpeed;
         }
 
-        
+        private void Start()
+        {
+            GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        }
+
+        private void OnGameStateChanged(GameState state)
+        {
+            if(state == GameState.Playing)
+            {
+                UnFreeze();
+                return;
+            }
+            
+            Freeze();
+        }
+
+        public override void Freeze()
+        {
+            base.Freeze();
+            moveVector = Vector2.zero;
+        }
+
         private void OnDisable()
         {
             rb.velocity = Vector2.zero;
@@ -38,6 +61,8 @@ namespace Player
         
         public void MoveInput(InputAction.CallbackContext context)
         {
+            if (isFreezed) return;
+            
             if (context.performed)
             {
                 moveVector = context.ReadValue<Vector2>();

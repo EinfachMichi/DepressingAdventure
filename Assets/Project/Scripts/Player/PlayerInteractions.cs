@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Player
 {
-    public class PlayerInteractions : MonoBehaviour
+    public class PlayerInteractions : Freezer
     {
         public float InteractionRadius;
 
@@ -14,6 +14,11 @@ namespace Player
         private void Awake()
         {
             collider = GetComponent<CapsuleCollider2D>();
+        }
+
+        private void Start()
+        {
+            GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
         }
 
         private void FixedUpdate()
@@ -30,6 +35,17 @@ namespace Player
                     interactable.ShowInteraction();
                 }
             }
+        }
+
+        private void OnGameStateChanged(GameState state)
+        {
+            if(state == GameState.Playing)
+            {
+                UnFreeze();
+                return;
+            }
+            
+            Freeze();
         }
 
         /*
