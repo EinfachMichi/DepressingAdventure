@@ -22,6 +22,11 @@ namespace DialogSystem
             return Sentences[index].Speaker;
         }
 
+        public Sentence GetSentence(int index)
+        {
+            return Sentences[index];
+        }
+        
         public bool HasChoices(int index, out Choice choice)
         {
             choice = Sentences[index].Choice;
