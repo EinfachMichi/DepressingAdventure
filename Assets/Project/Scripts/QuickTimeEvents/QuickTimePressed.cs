@@ -5,37 +5,63 @@ using UnityEngine.InputSystem;
 
 public class QuickTimePressed : MonoBehaviour
 {
-
-    //2Parameter schauen oder fragen
-
-    public void PressA(InputAction.CallbackContext value)
+    char Letter;
+    private void Awake()
     {
         
-        print("a");
     }
 
-    public void PressS(InputAction.CallbackContext value)
+    public void PressA(InputAction.CallbackContext context)
     {
-
+        if (context.performed)
+        {
+            test(Letter = 'A');
+        }
     }
 
-    public void PressD(InputAction.CallbackContext value)
+    public void PressS(InputAction.CallbackContext context)
     {
-
+        if (context.started)
+        {
+            test(Letter = 'S');
+        }
     }
 
-    public void PressQ(InputAction.CallbackContext value)
+    public void PressD(InputAction.CallbackContext context)
     {
-
+        if (context.started)
+        {
+            test(Letter = 'D');
+        }
     }
 
-    public void PressW(InputAction.CallbackContext value)
+    public void PressQ(InputAction.CallbackContext context)
     {
-
+        if (context.started)
+        {
+            test(Letter = 'Q');
+        }
     }
 
-    public void PressE(InputAction.CallbackContext value)
+    public void PressW(InputAction.CallbackContext context)
     {
+        if (context.started)
+        {
+            test(Letter = 'W');
+        }
+    }
 
+    public void PressE(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            test(Letter = 'E');
+        }
+    }
+
+    void test(char presseLetter)
+    {
+        //if presseLetter==CurrentLetter / true und eingabe blockieren
+        //else / false und eingabe blockieren
     }
 }
