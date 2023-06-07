@@ -6,57 +6,52 @@ namespace DialogSystem
 {
     public class DialogUI : MonoBehaviour
     {
-        // Main
-        public Image IconImage;
+        public GameObject DialogBox;
+        public TextMeshProUGUI Text;
         public TextMeshProUGUI SpeakerName;
-        public TextMeshProUGUI Line;
-        
-        // Choices
+        public TextMeshProUGUI Answer1;
+        public TextMeshProUGUI Answer2;
         public GameObject Choices;
-        public TextMeshProUGUI Choice1Text;
-        public TextMeshProUGUI Choice2Text;
-        
-        // Animations
-        public Animator anim;
-        
+        public Image SpeakerImage;
+
         private void Start()
         {
-            DialogManager.Instance.OnStoryBegin += OnDialogStart;
-            DialogManager.Instance.OnStoryEnd += OnDialogEnd;
             DialogManager.Instance.OnTextChanged += OnTextChanged;
             DialogManager.Instance.OnSpeakerChanged += OnSpeakerChanged;
             DialogManager.Instance.OnChoice += OnChoice;
             DialogManager.Instance.OnChoiceOver += OnChoiceOver;
+            DialogManager.Instance.OnDialogStart += OnDialogStart;
+            DialogManager.Instance.OnDialogEnd += OnDialogEnd;
             
-            Choices.SetActive(false);
+            DialogBox.SetActive(false);
         }
 
         private void OnDialogStart()
         {
-            anim.SetTrigger("FadeIn");
+            DialogBox.SetActive(true);
+        }
+
+        private void OnDialogEnd()
+        {
+            DialogBox.SetActive(false);
+        }
+        
+        private void OnTextChanged(string text)
+        {
+            Text.text = text;
         }
 
         private void OnSpeakerChanged(Speaker speaker)
         {
             SpeakerName.text = speaker.Name;
-            IconImage.sprite = speaker.Portrait;
-        }
-        
-        private void OnTextChanged(string text)
-        {
-            Line.text = text;
+            SpeakerImage.sprite = speaker.Icon;
         }
 
-        private void OnDialogEnd()
-        {
-            anim.SetTrigger("FadeOut");
-        }
-
-        private void OnChoice(string c1, string c2)
+        private void OnChoice(Choice chocie)
         {
             Choices.SetActive(true);
-            Choice1Text.text = c1;
-            Choice2Text.text = c2;
+            Answer1.text = chocie.Answers[0].Text;
+            Answer2.text = chocie.Answers[1].Text;
         }
 
         private void OnChoiceOver()

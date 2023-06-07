@@ -131,9 +131,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +151,10 @@ TextureImporter:
       name: Asset_Spritesheet_Trees_001_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,9 +173,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 32
-        width: 32
-        height: 32
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: Asset_Spritesheet_Trees_001_3
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,174 +206,6 @@ TextureImporter:
       bones: []
       spriteID: 2ef8d9c4d538b9a50800000000000000
       internalID: 6528956521544257506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e8d8d49ab5b7b0c0800000000000000
-      internalID: -4559976284723554080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bf87dc894cbb3560800000000000000
-      internalID: 7294631045538222005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce96c4d5f1fdbcfe0800000000000000
-      internalID: -1167594352570242580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56da82586809dbdf0800000000000000
-      internalID: -162815104081416859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1846d210e829a2a0800000000000000
-      internalID: -6725799625647306726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3600bbe02f7ec15d0800000000000000
-      internalID: -3090340217467764637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_10
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70ab7784b74351510800000000000000
-      internalID: 1519178153408838151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_11
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 950bb88834ad9b970800000000000000
-      internalID: 8771281732869271641
       vertices: []
       indices: 
       edges: []

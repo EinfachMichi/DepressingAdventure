@@ -28,6 +28,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Choice1",
+                    "type": "Button",
+                    "id": "f71ea347-c90c-4554-a597-954240b5f4b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Choice2",
+                    "type": "Button",
+                    "id": "0ad55235-4605-4a52-a83a-3b15cfbb322e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -226,6 +242,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2994c27e-c7f7-4f40-a96a-5e29cee75abf",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Choice1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "226115d4-7498-42b0-9ab0-2b97a7d34757",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Choice2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

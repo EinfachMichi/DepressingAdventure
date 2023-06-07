@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Iris_Dialog_01_Choice_01
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Warum sollte ich gegen ein kleines M\xE4dchen wie dich antreten? Was h\xE4tte
+      ich denn davon?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Nenn mich nicht immer so! Schlie\xDFlich sagt meine Mutter, dass ich mich
+      schon sehr erwachsen benehme!"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Die, die nie f\xFCr dich da ist?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "\u2026"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: Willst du nun gegen mich antreten, oder nicht?
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: An sich sollte es nicht zu schwer sein dich zu besiegen, doch hast du meine
+      Frage nicht beantwortet, warum ich es tun sollte.
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Der Gewinner darf sich etwas vom Verlierer w\xFCnschen, Tequila."
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sich etwas von dem anderen w\xFCnschen?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: Ganz genau!
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Klingt gar nicht mal so schlecht
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Okay. Ich bin dabei. Wenn ich gewinne, hilfst du mir eine passende Unterkunft
+      zu finden, wo ich einige Tage ruhen kann!
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Lass mich raten, wenn du gewinnst, dann w\xFCnschst du von mir eine Flasche
+      Tequila?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Hmm, dar\xFCber habe ich gar nicht nachgedacht. Ich br\xE4uchte einen
+      kleinen Moment, um dar\xFCber nachzudenken!"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Hmm\u2026"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: ...
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: Okay! Wenn ich gewinne, wirst du meine Mutter finden, Tequila!
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Einverstanden! Aber bevor ich dich in dem Spiel besiege h\xE4tte ich eine
+      weitere Frage an dich."
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Die w\xE4re?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Warum sagst du nach fast jeden Satz \xB4Tequila\xB4?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Meine Mutter sagte einst zu mir, dass es ein Wunder Trank w\xE4re und
+      es Menschen gl\xFCcklich macht!"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: ...
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Unrecht hat sie nicht
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Meine Mutter h\xE4tte nie Unrecht"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: "Also k\xF6nnen wir jetzt endlich spielen?"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Nat\xFCrlich! Lass uns beginnen!"
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: Wir spielen drei Runden. Wer die meisten Runden gewonnen hat, gewinnt auch
+      das Spiel!
+    Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8698804202774783619, guid: 73e6d416ced883f41b4b89073e916de5, type: 3}
+          m_TargetAssemblyTypeName: Main.SceneHandler, Assembly-CSharp
+          m_MethodName: EnterNewScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Quest_01
+            m_BoolArgument: 0
+          m_CallState: 2
+    Choice:
+      Answers: []

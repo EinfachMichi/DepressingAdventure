@@ -2,27 +2,40 @@ using System;
 using DialogSystem;
 using Main;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace AI
 {
     public class NPC : MonoBehaviour, IInteractable
     {
-        public bool interactable { get; set; }
-        public Speaker speaker;
+        [SerializeField] private new string name;   
+        
+        public Dialog[] Dialogs;
+        public UnityEvent[] DialogOverEvent;
+        public string Name => name;
+        public bool interactable { get; set; } = true;
 
-        private void Start()
+        private int dialogIndex;
+
+        public void Interaction()
         {
-            interactable = true;
+            if (Dialogs.Length == 0) return;
+            
+            DialogManager.Instance.StartDialog(Dialogs[dialogIndex]);
+            interactable = false;
+            DialogManager.Instance.OnDialogEnd += OnDialogEnd;
         }
 
         public void ShowInteraction()
         {
-        
+            
         }
 
-        public void Interaction()
+        private void OnDialogEnd()
         {
-            print($"You interacted with {speaker.Name}.");
+            interactable = true;
+            DialogOverEvent[dialogIndex].Invoke();
+            dialogIndex++;
         }
     }
 }
