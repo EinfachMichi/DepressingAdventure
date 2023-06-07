@@ -1,5 +1,4 @@
-﻿using System;
-using Main;
+﻿using Main;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -54,6 +53,8 @@ namespace Player
         
         public void Interact(InputAction.CallbackContext context)
         {
+            if (isFreezed) return;
+            
             if (context.started)
             {
                 foreach (Collider2D other in GetCollidersInRadius(InteractionRadius))

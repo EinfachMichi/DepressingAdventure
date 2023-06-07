@@ -201,6 +201,18 @@ MonoBehaviour:
       das Spiel!
     Event:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 8698804202774783619, guid: 73e6d416ced883f41b4b89073e916de5, type: 3}
+          m_TargetAssemblyTypeName: Main.SceneHandler, Assembly-CSharp
+          m_MethodName: EnterNewScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Quest_01
+            m_BoolArgument: 0
+          m_CallState: 2
     Choice:
       Answers: []

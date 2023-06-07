@@ -25100,6 +25100,17 @@ PrefabInstance:
     - {fileID: 3447886740754108736, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
     - {fileID: 1516044233849191515, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+--- !u!114 &1367682601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4302514732283375146, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+  m_PrefabInstance: {fileID: 1367682600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a270d43adee8845ae6f737c253a990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1560351667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25236,5 +25247,41 @@ PrefabInstance:
       propertyPath: Dialogs.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: c354884a410128142a4e139dcb4a1bbc, type: 2}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1367682601}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnterNewScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Main.SceneHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Quest_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 121196032553175497, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}
+      propertyPath: DialogOverEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 243311fda3bb2ff43847e18c6c7d4ef0, type: 3}

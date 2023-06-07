@@ -9,7 +9,6 @@ namespace DialogSystem
     {
         public Speaker Speaker;
         [TextArea(3, 5)] public string Text;
-        public UnityEvent Event;
         public Choice Choice;
     }
 }
