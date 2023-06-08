@@ -377,9 +377,57 @@
             "id": "2d83343a-5faa-4043-b269-af3e8411c8c1",
             "actions": [
                 {
-                    "name": "AllButtonEvents",
+                    "name": "InputA",
+                    "type": "Button",
+                    "id": "a3fc01b1-1418-4112-b3c8-f6515c43a593",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "InputS",
+                    "type": "Button",
+                    "id": "80e0b1f7-e032-4630-9302-fccee38c42b9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "InputD",
+                    "type": "Button",
+                    "id": "1b37de04-5b41-4889-91b7-907f92b50cbe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "InputQ",
+                    "type": "Button",
+                    "id": "f8e8eba1-fbdf-4637-91c0-08a5d5efd1b7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "InputW",
+                    "type": "Button",
+                    "id": "c2c7a0cf-59a2-487e-a4a6-9b5c023a1deb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "InputE",
                     "type": "Button",
                     "id": "ebc4bab8-8b70-4493-be53-c2136066bf51",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "InputSpace",
+                    "type": "Button",
+                    "id": "bf4caafb-2c80-466f-8d94-d43c85cddad0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -393,7 +441,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AllButtonEvents",
+                    "action": "InputA",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -404,7 +452,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AllButtonEvents",
+                    "action": "InputS",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -415,7 +463,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AllButtonEvents",
+                    "action": "InputD",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -426,7 +474,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AllButtonEvents",
+                    "action": "InputQ",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -437,7 +485,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AllButtonEvents",
+                    "action": "InputW",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -448,7 +496,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AllButtonEvents",
+                    "action": "InputE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0036ce89-0ca5-4239-9d7a-c09b383fb740",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputSpace",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

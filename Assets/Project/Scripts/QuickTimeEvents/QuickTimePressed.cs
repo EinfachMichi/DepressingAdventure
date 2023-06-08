@@ -2,20 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEngine.UI;
 
 public class QuickTimePressed : MonoBehaviour
 {
-    char Letter;
+    char pressedLetter;
+    char eventLetter;
+
+    int gameRound;
+
+    public TMP_Text QuicktimeLetter;
+
     private void Awake()
     {
-        
+        newQuicktime();
+    } 
+
+    public void PressSpace(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            test(pressedLetter = ' ');
+        }
     }
 
     public void PressA(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            test(Letter = 'A');
+            test(pressedLetter = 'A');
         }
     }
 
@@ -23,7 +39,7 @@ public class QuickTimePressed : MonoBehaviour
     {
         if (context.started)
         {
-            test(Letter = 'S');
+            test(pressedLetter = 'S');
         }
     }
 
@@ -31,7 +47,7 @@ public class QuickTimePressed : MonoBehaviour
     {
         if (context.started)
         {
-            test(Letter = 'D');
+            test(pressedLetter = 'D');
         }
     }
 
@@ -39,7 +55,7 @@ public class QuickTimePressed : MonoBehaviour
     {
         if (context.started)
         {
-            test(Letter = 'Q');
+            test(pressedLetter = 'Q');
         }
     }
 
@@ -47,7 +63,7 @@ public class QuickTimePressed : MonoBehaviour
     {
         if (context.started)
         {
-            test(Letter = 'W');
+            test(pressedLetter = 'W');
         }
     }
 
@@ -55,7 +71,7 @@ public class QuickTimePressed : MonoBehaviour
     {
         if (context.started)
         {
-            test(Letter = 'E');
+            test(pressedLetter = 'E');
         }
     }
 
@@ -63,5 +79,42 @@ public class QuickTimePressed : MonoBehaviour
     {
         //if presseLetter==CurrentLetter / true und eingabe blockieren
         //else / false und eingabe blockieren
+        if(presseLetter ==eventLetter)
+        {
+
+        }
+        else
+        {
+
+        }
+            newQuicktime();
     }
+
+    void newQuicktime()
+    {
+        int index = Random.Range(0, 6);
+
+        switch (index)
+        {
+            case 0:
+                eventLetter = 'A';
+                break;
+            case 1:
+                eventLetter = 'S';
+                break;
+            case 2:
+                eventLetter = 'D';
+                break;
+            case 3:
+                eventLetter = 'Q';
+                break;
+            case 4:
+                eventLetter = 'W';
+                break;
+            case 5:
+                eventLetter = 'E';
+                break;
+        }
+        QuicktimeLetter.text= eventLetter.ToString();
+    } 
 }
