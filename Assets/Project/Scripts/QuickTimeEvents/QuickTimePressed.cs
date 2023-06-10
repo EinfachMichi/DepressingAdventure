@@ -10,20 +10,31 @@ public class QuickTimePressed : MonoBehaviour
     char pressedLetter;
     char eventLetter;
 
-    int gameRound;
+    bool blocked;
+
+    int gameRound=1;
+    int lastRoundletter;
+    int wrongEvents;
+
+    public int Playerhealth = 100;
+    public int Enemyhealth = 100;
 
     public TMP_Text QuicktimeLetter;
+    public TMP_Text PlayerHealthText;
+    public TMP_Text EnemyHealthText;
 
     private void Awake()
     {
         newQuicktime();
+        PlayerHealthText.text=Playerhealth.ToString();
+        EnemyHealthText.text=Enemyhealth.ToString();
     } 
 
     public void PressSpace(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            test(pressedLetter = ' ');
+            test(pressedLetter = '.');
         }
     }
 
@@ -79,20 +90,73 @@ public class QuickTimePressed : MonoBehaviour
     {
         //if presseLetter==CurrentLetter / true und eingabe blockieren
         //else / false und eingabe blockieren
-        if(presseLetter ==eventLetter)
+        if (blocked==true)
         {
+            return;
+        }
 
+        if(presseLetter == eventLetter)
+        {
+            StartCoroutine(rightLetter());
         }
         else
         {
-
+            StartCoroutine(falseLetter());
         }
+            
+    }
+
+    IEnumerator rightLetter()
+    {
+        blocked = true;
+        QuicktimeLetter.GetComponent<TMP_Text>().color = Color.green;
+        yield return new WaitForSeconds(0.3f);
+        QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
+        print("true");
+        blocked = false;
+        checkRounds();
+    }
+
+    IEnumerator falseLetter()
+    {
+        blocked = true;
+        QuicktimeLetter.GetComponent<TMP_Text>().color = Color.red;
+        yield return new WaitForSeconds(0.3f);
+        QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
+        print(false);
+        blocked = false;
+        wrongEvents++;
+        checkRounds();
+    }
+
+    void checkRounds()
+    {
+        if(gameRound<=3)
+        {
             newQuicktime();
+        }
+        else
+        {
+            eventLetter = ' ';
+            QuicktimeLetter.text = eventLetter.ToString();
+            blocked = true;
+            //play Animation ig
+            dmgDealer();
+        }
     }
 
     void newQuicktime()
     {
+        
         int index = Random.Range(0, 6);
+
+        if (lastRoundletter == index)
+        {
+            newQuicktime();
+            return;
+        }
+        lastRoundletter = index;
+        gameRound++;
 
         switch (index)
         {
@@ -117,4 +181,29 @@ public class QuickTimePressed : MonoBehaviour
         }
         QuicktimeLetter.text= eventLetter.ToString();
     } 
+
+    void dmgDealer()
+    {
+        if (wrongEvents==0)
+        {
+            Enemyhealth -=20;
+            EnemyHealthText.text = Enemyhealth.ToString();
+        }
+        else
+        {
+            int enemydmg= wrongEvents * 5;
+            Playerhealth-=enemydmg;
+            PlayerHealthText.text=Playerhealth.ToString();
+            wrongEvents = 0;
+        }
+        StartCoroutine(wait());
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(2);
+        gameRound = 1;
+        blocked = false;
+        checkRounds();
+    }
 }
