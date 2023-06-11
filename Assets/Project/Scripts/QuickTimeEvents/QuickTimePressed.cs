@@ -11,10 +11,14 @@ public class QuickTimePressed : MonoBehaviour
     char eventLetter;
 
     bool blocked;
+    bool timerBlocked;
 
     int gameRound=1;
     int lastRoundletter;
     int wrongEvents;
+
+    [SerializeField] float startTimer = 1f;
+    float timer;
 
     public int Playerhealth = 100;
     public int Enemyhealth = 100;
@@ -22,13 +26,31 @@ public class QuickTimePressed : MonoBehaviour
     public TMP_Text QuicktimeLetter;
     public TMP_Text PlayerHealthText;
     public TMP_Text EnemyHealthText;
+    public TMP_Text TimerText;
 
     private void Awake()
     {
         newQuicktime();
         PlayerHealthText.text=Playerhealth.ToString();
         EnemyHealthText.text=Enemyhealth.ToString();
-    } 
+        timer = startTimer;
+    }
+
+    private void Update()
+    {
+        if (timerBlocked == false)
+        {
+            timer -= Time.deltaTime;
+        }
+        
+        TimerText.text = timer.ToString("0.00");
+
+        if( timer < 0 )
+        {
+            StartCoroutine(falseLetter());
+            timer = startTimer;
+        }
+    }
 
     public void PressSpace(InputAction.CallbackContext context)
     {
@@ -103,28 +125,32 @@ public class QuickTimePressed : MonoBehaviour
         {
             StartCoroutine(falseLetter());
         }
-            
+        timer = startTimer;   
     }
 
     IEnumerator rightLetter()
     {
         blocked = true;
+        timerBlocked = true;
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.green;
         yield return new WaitForSeconds(0.3f);
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
         print("true");
         blocked = false;
+        timerBlocked=false;
         checkRounds();
     }
 
     IEnumerator falseLetter()
     {
         blocked = true;
+        timerBlocked = true;
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.red;
         yield return new WaitForSeconds(0.3f);
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
         print(false);
         blocked = false;
+        timerBlocked=false;
         wrongEvents++;
         checkRounds();
     }
@@ -184,6 +210,7 @@ public class QuickTimePressed : MonoBehaviour
 
     void dmgDealer()
     {
+        timerBlocked = true;
         if (wrongEvents==0)
         {
             Enemyhealth -=20;
@@ -204,6 +231,7 @@ public class QuickTimePressed : MonoBehaviour
         yield return new WaitForSeconds(2);
         gameRound = 1;
         blocked = false;
+        timerBlocked = false;
         checkRounds();
     }
 }
