@@ -77,7 +77,7 @@ public class QuickTimePressed : MonoBehaviour
 
     public void PressSpace(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
             startRound();
         }
@@ -96,7 +96,7 @@ public class QuickTimePressed : MonoBehaviour
 
     public void PressA(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
             test(pressedLetter = 'A');
         }
