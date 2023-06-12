@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 402.08}
+  m_SizeDelta: {x: 896.64, y: 402.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112971552
 MonoBehaviour:
@@ -1161,7 +1161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae5c8d2ba2e3ee449998d7a5db3b423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimer: 0.66
+  blocked: 0
+  timerBlocked: 0
+  inRound: 0
+  startTimer: 0.7
   Playerhealth: 100
   Enemyhealth: 100
   QuicktimeLetter: {fileID: 112971552}

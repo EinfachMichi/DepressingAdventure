@@ -10,8 +10,9 @@ public class QuickTimePressed : MonoBehaviour
     char pressedLetter;
     char eventLetter;
 
-    bool blocked;
-    bool timerBlocked;
+    [SerializeField]  bool blocked;
+    [SerializeField] bool timerBlocked;
+    [SerializeField]  bool inRound;
 
     int gameRound=1;
     int lastRoundletter;
@@ -30,10 +31,18 @@ public class QuickTimePressed : MonoBehaviour
 
     private void Awake()
     {
-        newQuicktime();
         PlayerHealthText.text=Playerhealth.ToString();
         EnemyHealthText.text=Enemyhealth.ToString();
+        resetRound();
+    }
+
+    private void resetRound()
+    {
         timer = startTimer;
+        timerBlocked = true;
+        blocked = true;
+        inRound = false;
+        QuicktimeLetter.text = "[Space]";
     }
 
     private void Update()
@@ -47,17 +56,42 @@ public class QuickTimePressed : MonoBehaviour
 
         if( timer < 0 )
         {
-            StartCoroutine(falseLetter());
+            StartCoroutine(timeUp());
             timer = startTimer;
         }
+    }
+
+    IEnumerator timeUp()
+    {
+        blocked = true;
+        timerBlocked = true;
+        QuicktimeLetter.GetComponent<TMP_Text>().color = Color.yellow;
+        yield return new WaitForSeconds(0.3f);
+        QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
+        print("Time Up");
+        blocked = false;
+        timerBlocked = false;
+        wrongEvents++;
+        checkRounds();
     }
 
     public void PressSpace(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            test(pressedLetter = '.');
+            startRound();
         }
+    }
+
+    void startRound()
+    {
+        if (inRound == false)
+        {
+            timerBlocked = false;
+            blocked = false;
+            inRound = true;
+            newQuicktime();
+        }     
     }
 
     public void PressA(InputAction.CallbackContext context)
@@ -110,8 +144,6 @@ public class QuickTimePressed : MonoBehaviour
 
     void test(char presseLetter)
     {
-        //if presseLetter==CurrentLetter / true und eingabe blockieren
-        //else / false und eingabe blockieren
         if (blocked==true)
         {
             return;
@@ -163,18 +195,18 @@ public class QuickTimePressed : MonoBehaviour
         }
         else
         {
-            eventLetter = ' ';
             QuicktimeLetter.text = eventLetter.ToString();
-            blocked = true;
             //play Animation ig
             dmgDealer();
+            resetRound();
+            eventLetter = ' ';
         }
     }
 
     void newQuicktime()
     {
         
-        int index = Random.Range(0, 6);
+        int index = Random.Range(0, 4);
 
         if (lastRoundletter == index)
         {
@@ -196,10 +228,10 @@ public class QuickTimePressed : MonoBehaviour
                 eventLetter = 'D';
                 break;
             case 3:
-                eventLetter = 'Q';
+                eventLetter = 'W';
                 break;
             case 4:
-                eventLetter = 'W';
+                eventLetter = 'Q';
                 break;
             case 5:
                 eventLetter = 'E';
@@ -223,15 +255,6 @@ public class QuickTimePressed : MonoBehaviour
             PlayerHealthText.text=Playerhealth.ToString();
             wrongEvents = 0;
         }
-        StartCoroutine(wait());
-    }
-
-    IEnumerator wait()
-    {
-        yield return new WaitForSeconds(2);
         gameRound = 1;
-        blocked = false;
-        timerBlocked = false;
-        checkRounds();
     }
 }
