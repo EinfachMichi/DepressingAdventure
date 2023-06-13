@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!61 &3229529195894138953
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2196476684603946867}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.14569622, y: -0.03516805}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.70860755, y: 1.0100479}
-  m_EdgeRadius: 0
 --- !u!1001 &2137063090530851324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33,9 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188990039434353455, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.904
+      objectReference: {fileID: 0}
     - target: {fileID: 199306321223140402, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
       propertyPath: m_Name
       value: Pyre Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256259774477655312, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.677
       objectReference: {fileID: 0}
     - target: {fileID: 5164987074591138194, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
       propertyPath: m_RootOrder
@@ -83,24 +65,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265649305461127714, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
       propertyPath: m_Size.x
-      value: 0.7744707
+      value: 0.5400001
       objectReference: {fileID: 0}
     - target: {fileID: 6265649305461127714, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
       propertyPath: m_Size.y
-      value: 1.9204221
+      value: 1.920423
       objectReference: {fileID: 0}
     - target: {fileID: 6265649305461127714, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
       propertyPath: m_Offset.x
-      value: -0.3995887
+      value: -0.48934367
       objectReference: {fileID: 0}
     - target: {fileID: 6265649305461127714, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
       propertyPath: m_Offset.y
-      value: 0.004989802
+      value: 0.0753256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
---- !u!1 &2196476684603946867 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 275612822464786063, guid: 9bf3f91ca8fa7e040af4cc60125daebe, type: 3}
-  m_PrefabInstance: {fileID: 2137063090530851324}
-  m_PrefabAsset: {fileID: 0}

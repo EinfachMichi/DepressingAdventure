@@ -428,6 +428,30 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0ad55235-4605-4a52-a83a-3b15cfbb322e
     m_ActionName: Player/Choice2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a3fc01b1-1418-4112-b3c8-f6515c43a593
+    m_ActionName: QuickTime/InputA[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 80e0b1f7-e032-4630-9302-fccee38c42b9
+    m_ActionName: QuickTime/InputS[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1b37de04-5b41-4889-91b7-907f92b50cbe
+    m_ActionName: QuickTime/InputD[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f8e8eba1-fbdf-4637-91c0-08a5d5efd1b7
+    m_ActionName: QuickTime/InputQ[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c2c7a0cf-59a2-487e-a4a6-9b5c023a1deb
+    m_ActionName: QuickTime/InputW[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bf4caafb-2c80-466f-8d94-d43c85cddad0
+    m_ActionName: QuickTime/InputSpace[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -471,6 +495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2384709735522757880}
   - component: {fileID: 2384709735522757883}
+  - component: {fileID: 1878077543256144082}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -532,7 +557,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 89ab8408664c9bb419ff144a25d4a933, type: 3}
+  m_Sprite: {fileID: -3568935440098090577, guid: fbbebac01829447458cebf64a3a10332, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -542,7 +567,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
+--- !u!95 &1878077543256144082
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384709735522757881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d764397b5956d9c418c6f34d3d6cc4ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2384709735574272140
 GameObject:
   m_ObjectHideFlags: 0

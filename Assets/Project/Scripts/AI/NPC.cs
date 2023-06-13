@@ -1,29 +1,17 @@
-using System;
-using DialogSystem;
+﻿using System;
 using Main;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace AI
 {
-    public class NPC : MonoBehaviour, IInteractable
+    public abstract class NPC : MonoBehaviour, IInteractable
     {
-        [SerializeField] private new string name;   
-        
-        public Dialog[] Dialogs;
-        public UnityEvent[] DialogOverEvent;
-        public string Name => name;
-        public bool interactable { get; set; } = true;
+        protected Animator anim;
+        public bool interactable { get; set; }
 
-        private int dialogIndex;
-
-        public void Interaction()
+        private void Awake()
         {
-            if (Dialogs.Length == 0) return;
-            
-            DialogManager.Instance.StartDialog(Dialogs[dialogIndex]);
-            interactable = false;
-            DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+            anim = GetComponent<Animator>();
         }
 
         public void ShowInteraction()
@@ -31,11 +19,6 @@ namespace AI
             
         }
 
-        private void OnDialogEnd()
-        {
-            interactable = true;
-            DialogOverEvent[dialogIndex].Invoke();
-            dialogIndex++;
-        }
+        public abstract void Interaction();
     }
 }
