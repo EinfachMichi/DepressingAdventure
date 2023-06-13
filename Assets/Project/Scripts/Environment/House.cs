@@ -1,46 +1,31 @@
-using System;
-using Camera;
+using Main;
 using UnityEngine;
 
 namespace Environment
 {
     public class House : MonoBehaviour
     {
-        private Transform houseInTeleportPoint;
-        private Transform houseOutTeleportPoint;
-        private Transform player;
-        private PolygonCollider2D border;
-        private PolygonCollider2D defaultBorder;
-        private MainCamera mainCam;
+        public string HouseID;
 
-        private void Start()
+        private InteractableObject door;
+
+        private void Awake()
         {
-            player = GameObject.FindWithTag("Player").transform;
-            border = GetComponentInChildren<PolygonCollider2D>();
-            mainCam = MainCamera.Instance;
-
-            Transform[] trans = GetComponentsInChildren<Transform>();
-            foreach (Transform tran in trans)
-            {
-                if (tran.gameObject.CompareTag("InTeleport")) houseInTeleportPoint = tran;
-                if (tran.gameObject.CompareTag("OutTeleport")) houseOutTeleportPoint = tran;
-            }
+            door = GetComponentInChildren<InteractableObject>();
         }
 
-        public void Teleport(DoorType type)
+        public void OnEnterHouse()
         {
-            switch (type)
-            {
-                case DoorType.Out:
-                    player.position = houseInTeleportPoint.position;
-                    defaultBorder = (PolygonCollider2D) mainCam.Border();
-                    mainCam.SetBorder(border);
-                    break;
-                case DoorType.In:
-                    player.position = houseOutTeleportPoint.position;
-                    mainCam.SetBorder(defaultBorder);
-                    break;
-            }
+            door.interactable = false;
+            PlayerPrefs.SetString("HouseID", HouseID);
+            SceneHandler.Instance.EnterNewScene("House");
+        }
+
+        public void OnExitHouse()
+        {
+            door.interactable = false;
+            string sceneName = PlayerPrefs.GetString("LastScene");
+            SceneHandler.Instance.EnterNewScene(sceneName);
         }
     }
 }
