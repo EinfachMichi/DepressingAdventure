@@ -58,14 +58,6 @@ public class QuickTimePiano : MonoBehaviour
         }
     }
 
-    public void PressSpace(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-
-        }
-    }
-
     void check(char pressedletter)
     {
         //if(pressedletter==currentletter)
