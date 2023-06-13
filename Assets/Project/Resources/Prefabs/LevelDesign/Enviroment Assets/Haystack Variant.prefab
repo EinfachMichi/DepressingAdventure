@@ -51,21 +51,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2369112508171473660, guid: dc51a144953918f4e9fa1d57441f43fc, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4981055769860692784, guid: dc51a144953918f4e9fa1d57441f43fc, type: 3}
       propertyPath: m_Name
-      value: Haystack Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 5006659935985484845, guid: dc51a144953918f4e9fa1d57441f43fc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.904
-      objectReference: {fileID: 0}
-    - target: {fileID: 9004123272925430290, guid: dc51a144953918f4e9fa1d57441f43fc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.626
+      value: Haystack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc51a144953918f4e9fa1d57441f43fc, type: 3}

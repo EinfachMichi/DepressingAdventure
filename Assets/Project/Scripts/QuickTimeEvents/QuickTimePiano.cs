@@ -9,14 +9,14 @@ using UnityEngine.UI;
 public class QuickTimePiano : MonoBehaviour
 {
     [SerializeField] GameObject[] pianoTail;
-    [SerializeField] GameObject finishLine;
     [SerializeField] GameObject startLine;
+    [SerializeField] GameObject finishLine;
 
     char pressedLetter;
 
+    [SerializeField] int speed;
+
     int tail = 0;
-    public int Reihenfolge=0;
-    int lastReihenfolge;
 
     Vector3 position;
     Vector3 start;
@@ -27,19 +27,10 @@ public class QuickTimePiano : MonoBehaviour
     {
         tail = 0;
         nextTails();
-        start.x = startLine.transform.position.x;
         start.y = startLine.transform.position.y;
+        start.x = startLine.transform.position.x;
         pianoTail[0].transform.position = new Vector3(start.x, start.y, 0);
         tp=true;
-    }
-
-    private void Update()
-    {
-        if (Reihenfolge != lastReihenfolge)
-        {
-            lastReihenfolge = Reihenfolge;
-            pianoTail[Reihenfolge].transform.position = new Vector3(start.x, start.y, 0);
-        }
     }
 
     public void PressA(InputAction.CallbackContext context)
@@ -67,14 +58,6 @@ public class QuickTimePiano : MonoBehaviour
         }
     }
 
-    public void PressSpace(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-
-        }
-    }
-
     void check(char pressedletter)
     {
         //if(pressedletter==currentletter)
@@ -84,5 +67,7 @@ public class QuickTimePiano : MonoBehaviour
     {
         //1 bis 10 
         //1 * 5
+        
+
     }
 }
