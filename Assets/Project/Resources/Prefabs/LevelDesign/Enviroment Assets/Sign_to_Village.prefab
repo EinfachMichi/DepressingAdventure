@@ -7,10 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7197264181201303260, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.41
-      objectReference: {fileID: 0}
     - target: {fileID: 7197264181314587726, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7197264181314587727, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
       propertyPath: m_Name
-      value: Sign_to_Village
+      value: Sign
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}

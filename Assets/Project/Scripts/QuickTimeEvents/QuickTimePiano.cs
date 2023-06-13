@@ -33,21 +33,12 @@ public class QuickTimePiano : MonoBehaviour
         tp=true;
     }
 
-    private void Update()
-    {
-        //if (tp==true)
-        {
-            position.y = Time.deltaTime * speed;
-            pianoTail[0].transform.Translate(position);
-        }
-         
-    }
-
     public void PressA(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             check(pressedLetter = 'A');
+            print(1);
         }
     }
 
@@ -64,14 +55,6 @@ public class QuickTimePiano : MonoBehaviour
         if (context.performed)
         {
             check(pressedLetter = 'D');
-        }
-    }
-
-    public void PressSpace(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-
         }
     }
 
