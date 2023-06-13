@@ -14,6 +14,5 @@ public class AfterHand : MonoBehaviour
         { 
             Q1.Buttons(); 
         }
-        
     }
 }
