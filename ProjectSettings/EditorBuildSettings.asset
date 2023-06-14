@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/Village.unity
     guid: 931f600e11661f548bb5854eba19322f
   - enabled: 1
-    path: Assets/Project/Scenes/Michi.unity
-    guid: b760aaf8f82590b468565f6e34cf40d4
-  - enabled: 1
     path: Assets/Project/Scenes/Quest_01.unity
     guid: f34ab7427a625d0448bae2bc7d7d3da5
+  - enabled: 1
+    path: Assets/Project/Scenes/Forest.unity
+    guid: aca6519c8844efc4182b9c8460eaef35
   m_configObjects: {}

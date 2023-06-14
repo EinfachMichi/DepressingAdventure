@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Xml.Serialization;
-using InventorySystem;
 using UnityEngine;
 
 namespace Main
@@ -20,6 +19,7 @@ namespace Main
 
         public static void Load(out SaveData data)
         {
+            Debug.Log(Path);
             if (File.Exists(Path))
             {
                 var serializer = new XmlSerializer(typeof(SaveData));
@@ -38,20 +38,21 @@ namespace Main
     [Serializable]
     public class SaveData
     {
-        public NPCData[] NpcDatas;
-        public PlayerData PlayerData;
+        public bool FirstLoaded;
+        public SceneInfo LastSceneInfo;
+        public bool LastSceneLoaded;
+        public SceneInfo[] SceneInfos;
+
+        public SaveData()
+        {
+            FirstLoaded = true;
+            SceneInfos = new SceneInfo[3];
+        }
     }
 
-    [Serializable]
-    public class NPCData
+    public class SceneInfo
     {
-                
-    }
-
-    [Serializable]
-    public class PlayerData
-    {
-        public Vector2 Position;
-        public Inventory Inventory;
+        public string name;
+        public Vector2 playerPos;
     }
 }
