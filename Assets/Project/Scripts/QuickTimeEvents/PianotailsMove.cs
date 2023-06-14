@@ -8,6 +8,8 @@ public class PianotailsMove : MonoBehaviour
     [SerializeField] GameObject startLine;
     [SerializeField] GameObject finishLine;
 
+    public QuickTimePiano Piano;
+
     Vector3 position;
     Vector3 finish;
     Vector3 start;
@@ -23,7 +25,6 @@ public class PianotailsMove : MonoBehaviour
         {
             position.y = Time.deltaTime * speed;
             gameObject.transform.Translate(position);
-        }
-        
+        }   
     }
 }
