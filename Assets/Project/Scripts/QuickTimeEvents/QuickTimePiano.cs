@@ -12,6 +12,10 @@ public class QuickTimePiano : MonoBehaviour
     [SerializeField] GameObject startLine;
     [SerializeField] GameObject finishLine;
 
+    [SerializeField] GameObject A;
+    [SerializeField] GameObject S;
+    [SerializeField] GameObject D;
+
     char pressedLetter;
 
     [SerializeField] int speed;
@@ -21,6 +25,10 @@ public class QuickTimePiano : MonoBehaviour
     Vector3 position;
     Vector3 start;
     Vector3 finish;
+
+    Vector3 aPosition;
+    Vector3 sPosition;
+    Vector3 dPosition;
 
     bool tp=false;
 
@@ -33,7 +41,12 @@ public class QuickTimePiano : MonoBehaviour
         start.y = startLine.transform.position.y;
         start.x = startLine.transform.position.x;
         finish.y = finishLine.transform.position.y;
-        pianoTail[0].transform.position = new Vector3(start.x, start.y, 0);
+
+        aPosition.x = A.transform.position.x;
+        sPosition.x = S.transform.position.x;
+        dPosition.x = D.transform.position.x;
+
+        pianoTail[0].transform.position = new Vector3(start.x, positionoftp, 0);
         tp=true;
     }
 
@@ -43,7 +56,26 @@ public class QuickTimePiano : MonoBehaviour
         {
             tail++;
             print(tail);
-            pianoTail[tail].transform.position = new Vector3(start.x, positionoftp, 0);
+            if (tail == pianoTail.Length)
+            {
+                tail = 0;
+            }
+
+            int index = Random.Range(0, 3);
+            Vector3 spawnPosition = new Vector3(0, 0, 0);
+            switch (index)
+            {
+                case 0:
+                    spawnPosition.x = aPosition.x;
+                    break;
+                case 1:
+                    spawnPosition.x = sPosition.x;
+                    break;
+                case 2:
+                    spawnPosition.x = dPosition.x;
+                    break;
+            }
+            pianoTail[tail].transform.position = new Vector3(spawnPosition.x, positionoftp, 0);
         }
     }
 
