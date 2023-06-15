@@ -25,7 +25,6 @@ namespace Player
         {
             if (other.TryGetComponent(out IInteractable interactable))
             {
-                print("TEst");
                 interactable.ShowInteraction();
             }
         }

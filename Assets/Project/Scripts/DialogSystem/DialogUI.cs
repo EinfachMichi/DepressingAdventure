@@ -24,6 +24,7 @@ namespace DialogSystem
             DialogManager.Instance.OnDialogEnd += OnDialogEnd;
             
             DialogBox.SetActive(false);
+            Choices.SetActive(false);
         }
 
         private void OnDialogStart()
