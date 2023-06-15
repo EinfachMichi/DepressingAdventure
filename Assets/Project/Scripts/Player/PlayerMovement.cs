@@ -11,12 +11,14 @@ namespace Player
         public float RunSpeed;
 
         private Rigidbody2D rb;
+        private Animator anim;
         private Vector2 moveVector;
         private float speed;
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
+            anim = GetComponentInChildren<Animator>();
 
             speed = WalkSpeed;
         }
@@ -51,6 +53,12 @@ namespace Player
         private void FixedUpdate()
         {
             SetVelocity();
+            anim.SetFloat("Speed", rb.velocity.magnitude);
+            if (moveVector != Vector2.zero)
+            {
+                anim.SetFloat("Horizontal", moveVector.x);
+                anim.SetFloat("Vertical", moveVector.y);
+            }
         }
 
         private void SetVelocity() => rb.velocity = speed * moveVector;
