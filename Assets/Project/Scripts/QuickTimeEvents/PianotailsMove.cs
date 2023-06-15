@@ -21,7 +21,7 @@ public class PianotailsMove : MonoBehaviour
     }
     void Update()
     {
-        if(gameObject.transform.position.y > finish.y-55)
+        if(gameObject.transform.position.y > finish.y-1000)
         {
             position.y = Time.deltaTime * speed;
             gameObject.transform.Translate(position);

@@ -998,7 +998,7 @@ MonoBehaviour:
   blocked: 0
   timerBlocked: 0
   inRound: 0
-  startTimer: 1
+  startTimer: 0.66
   Playerhealth: 100
   Enemyhealth: 100
   QuicktimeLetter: {fileID: 1608027694}
