@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3812886470084184857, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
       propertyPath: m_Name
-      value: Spruce
+      value: Spruce Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725660507335454312, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8688843922688098686, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
       propertyPath: m_RootOrder
