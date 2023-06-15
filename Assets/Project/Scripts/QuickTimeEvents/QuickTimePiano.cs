@@ -9,6 +9,8 @@ public class QuickTimePiano : MonoBehaviour
     public TMP_Text LetterS;
     public TMP_Text LetterD;
 
+    public TMP_Text PointsText;
+
     public Color standard;
 
     [SerializeField] GameObject[] pianoTail;
@@ -23,14 +25,17 @@ public class QuickTimePiano : MonoBehaviour
     [SerializeField] int minTailHeight;
     [SerializeField] int maxTailHeight;
 
+    [SerializeField] int abstand;
+
+    [SerializeField] float score;
+    [SerializeField] float pointsPerSec;
+
     char pressedLetter;
 
-    [SerializeField] int speed;
+    [SerializeField] int tail = 0;
 
-    int tail = 0;
-
-    int firstTail = 0;
-    int currentTail;
+    [SerializeField] int firstTail = 0;
+    [SerializeField] int TailLast;
 
     int lastSlot=1;
 
@@ -44,9 +49,15 @@ public class QuickTimePiano : MonoBehaviour
     Vector3 sPosition;
     Vector3 dPosition;
 
-    bool aPress=false;
-    bool sPress = false;
-    bool dPress = false;
+    [SerializeField] bool aPress=false;
+    [SerializeField] bool sPress = false;
+    [SerializeField] bool dPress = false;
+
+    [SerializeField] bool tailIsA = false;
+    [SerializeField] bool tailIsS = false;
+    [SerializeField] bool tailIsD = false;
+
+    bool tailPlayes = true;
 
     //reihenfolge der tail,firtsttail,currenttail in den funktionen verfolgen und korregieren!
 
@@ -71,38 +82,82 @@ public class QuickTimePiano : MonoBehaviour
         tailscale[firstTail].y = tailscale[tail].y;
 
         pianoTail[0].transform.localScale = new Vector3(tailscale[tail].x, tailscale[tail].y, tailscale[tail].z);
-
-        nextTails();
     }
 
     private void Update()
     {
-        if (pianoTail[tail].transform.position.y <= start.y - (tailscale[tail].y+0.2) * 10)//(start.y - (tailscale.localscale))
+        PointsText.text = score.ToString("0,0");
+        if (tailIsA && aPress)
+        {
+            score = score+Time.deltaTime * pointsPerSec;
+        }
+        else if (tailIsA && aPress)
+        {
+
+        }
+
+        if (tailIsS && sPress)
+        {
+            score = score + Time.deltaTime * pointsPerSec;
+        }
+
+        if(tailIsD && dPress)
+        {
+            score = score+Time.deltaTime * pointsPerSec;
+        }
+
+        if ((tailIsA==true && (aPress==false||sPress==true||dPress==true))|| (tailIsS == true && (sPress == false || aPress == true || dPress == true)) || (tailIsD == true && (dPress == false || aPress == true || sPress == true)))
+        {
+            score -= Time.deltaTime * pointsPerSec;
+            print("wrong");
+        }
+
+
+
+        if (pianoTail[tail].transform.position.y <= start.y - (tailscale[tail].y+0.2) * abstand)//(start.y - (tailscale.localscale))
         {
             tailsFunktion();
         }
 
         if (pianoTail[firstTail].transform.position.y <= finish.y)
         {
-            tailscale[firstTail].y = tailscale[tail].y;
-            print(firstTail+ ". Tail started");
-            currentTail = firstTail;
+            //print(firstTail+ ". Tail started");
+
             firstTail++;
             if (firstTail >= pianoTail.Length)
             {
                 firstTail = 0;
             }
+            tailPlayes = true;
+            if (pianoTail[TailLast].transform.position.x == aPosition.x)
+            {
+                tailIsA = true;
+            }
+            if (pianoTail[TailLast].transform.position.x == sPosition.x)
+            {
+                tailIsS = true;
+            }
+            if (pianoTail[TailLast].transform.position.x == dPosition.x)
+            {
+                tailIsD = true;
+            }
         }
 
-        if (pianoTail[currentTail].transform.position.y <= finish.y + (tailscale[currentTail].y + 0.2) * 10)
+        if (pianoTail[TailLast].transform.position.y <= finish.y - pianoTail[TailLast].transform.localScale.y*10 )
         {
-            tailscale[currentTail].y = tailscale[firstTail].y;
-            print(currentTail + ". Tail finished");
-            currentTail++;
-            if (currentTail >= pianoTail.Length)
+            //print(TailLast + ". Tail finished");
+            TailLast++;
+            if (TailLast >= pianoTail.Length)
             {
-                currentTail = 0;
+                TailLast = 0;
             }
+            tailPlayes = false;
+
+            tailIsA = false;
+            tailIsS = false;
+            tailIsD = false;
+
+            TailLast = firstTail;
         }
     }
 
@@ -123,8 +178,9 @@ public class QuickTimePiano : MonoBehaviour
 
             int lenght = Random.Range(minTailHeight, maxTailHeight);
             tailscale[tail].y = lenght;
+            tailscale[firstTail].y = tailscale[tail].y;
 
-            pianoTail[tail].transform.localScale = new Vector3(pianoTail[tail].transform.localScale.x, lenght, tailscale[currentTail].z);
+            pianoTail[tail].transform.localScale = new Vector3(pianoTail[tail].transform.localScale.x, lenght, tailscale[TailLast].z);
 
             lastSlot = slotIndex;
             Vector3 spawnPosition = new Vector3(0, 0, 0);
@@ -153,7 +209,6 @@ public class QuickTimePiano : MonoBehaviour
     {
         if (context.started)
         {
-            check(pressedLetter = 'A');
             aPress = true;
             LetterA.GetComponent<TMP_Text>().color = standard;
         }
@@ -169,7 +224,6 @@ public class QuickTimePiano : MonoBehaviour
     {
         if (context.started)
         {
-            check(pressedLetter = 'S');
             sPress = true;
             LetterS.GetComponent<TMP_Text>().color = standard;
         }
@@ -185,7 +239,6 @@ public class QuickTimePiano : MonoBehaviour
     {
         if (context.started)
         {
-            check(pressedLetter = 'D');
             dPress = true;
             LetterD.GetComponent<TMP_Text>().color = standard;
         }
@@ -194,17 +247,5 @@ public class QuickTimePiano : MonoBehaviour
             dPress = false;
             LetterD.GetComponent<TMP_Text>().color = Color.white;
         }
-    }
-
-
-    void check(char pressedletter)
-    {
-        //if(pressedletter==currentletter)
-    }
-
-    void nextTails()
-    {
-        //1 bis 10 
-        //1 * 5
     }
 }
