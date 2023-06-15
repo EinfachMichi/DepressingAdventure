@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Environment
@@ -5,6 +6,8 @@ namespace Environment
     public class InteriorLoader : MonoBehaviour
     {
         private House house;
+        private Transform player;
+        private Transform spawnpoint;
         
         private void Awake()
         {
@@ -20,6 +23,14 @@ namespace Environment
             }
 
             Instantiate(house);
+        }
+
+        private void Start()
+        {
+            player = GameObject.FindWithTag("Player").transform;
+            spawnpoint = GameObject.FindWithTag("Spawnpoint").transform;
+
+            player.position = spawnpoint.position;
         }
     }
 }
