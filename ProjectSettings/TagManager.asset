@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MapBorder
   - Spawnpoint
+  - HouseBorder
   layers:
   - Default
   - TransparentFX
