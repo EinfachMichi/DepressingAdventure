@@ -1,44 +1,76 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TMPro;
-using UnityEngine.UI;
 
 public class QuickTimePiano : MonoBehaviour
 {
     [SerializeField] GameObject[] pianoTail;
-    [SerializeField] GameObject finishLine;
     [SerializeField] GameObject startLine;
+    [SerializeField] GameObject finishLine;
+
+    [SerializeField] GameObject A;
+    [SerializeField] GameObject S;
+    [SerializeField] GameObject D;
 
     char pressedLetter;
 
+    [SerializeField] int speed;
+
     int tail = 0;
-    public int Reihenfolge=0;
-    int lastReihenfolge;
 
     Vector3 position;
     Vector3 start;
+    Vector3 finish;
+
+    Vector3 aPosition;
+    Vector3 sPosition;
+    Vector3 dPosition;
 
     bool tp=false;
+
+    [SerializeField] float positionoftp = 0;
 
     private void Start()
     {
         tail = 0;
         nextTails();
-        start.x = startLine.transform.position.x;
         start.y = startLine.transform.position.y;
-        pianoTail[0].transform.position = new Vector3(start.x, start.y, 0);
+        start.x = startLine.transform.position.x;
+        finish.y = finishLine.transform.position.y;
+
+        aPosition.x = A.transform.position.x;
+        sPosition.x = S.transform.position.x;
+        dPosition.x = D.transform.position.x;
+
+        pianoTail[0].transform.position = new Vector3(start.x, positionoftp, 0);
         tp=true;
     }
 
     private void Update()
     {
-        if (Reihenfolge != lastReihenfolge)
+        if(pianoTail[tail].transform.position.y<= start.y&& pianoTail[tail].transform.position.y>=finish.y)
         {
-            lastReihenfolge = Reihenfolge;
-            pianoTail[Reihenfolge].transform.position = new Vector3(start.x, start.y, 0);
+            tail++;
+            print(tail);
+            if (tail == pianoTail.Length)
+            {
+                tail = 0;
+            }
+
+            int index = Random.Range(0, 3);
+            Vector3 spawnPosition = new Vector3(0, 0, 0);
+            switch (index)
+            {
+                case 0:
+                    spawnPosition.x = aPosition.x;
+                    break;
+                case 1:
+                    spawnPosition.x = sPosition.x;
+                    break;
+                case 2:
+                    spawnPosition.x = dPosition.x;
+                    break;
+            }
+            pianoTail[tail].transform.position = new Vector3(spawnPosition.x, positionoftp, 0);
         }
     }
 
@@ -67,14 +99,6 @@ public class QuickTimePiano : MonoBehaviour
         }
     }
 
-    public void PressSpace(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-
-        }
-    }
-
     void check(char pressedletter)
     {
         //if(pressedletter==currentletter)
@@ -84,5 +108,7 @@ public class QuickTimePiano : MonoBehaviour
     {
         //1 bis 10 
         //1 * 5
+        
+
     }
 }

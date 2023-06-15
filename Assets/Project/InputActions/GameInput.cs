@@ -390,9 +390,41 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""id"": ""2d83343a-5faa-4043-b269-af3e8411c8c1"",
             ""actions"": [
                 {
-                    ""name"": ""AllButtonEvents"",
+                    ""name"": ""A"",
                     ""type"": ""Button"",
-                    ""id"": ""ebc4bab8-8b70-4493-be53-c2136066bf51"",
+                    ""id"": ""fb54080b-6769-4fee-94c7-523b57ebf3a2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""S"",
+                    ""type"": ""Button"",
+                    ""id"": ""07d5e48e-0017-43d5-add1-379656d3b6c7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""D"",
+                    ""type"": ""Button"",
+                    ""id"": ""92914e6a-8e40-45c7-9559-2b50696e44c0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""W"",
+                    ""type"": ""Button"",
+                    ""id"": ""ceffd327-0b78-4e6e-9699-b907bdf28e5e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Space"",
+                    ""type"": ""Button"",
+                    ""id"": ""5ab2b51e-e097-46bd-9e2b-485e72dd107b"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -406,7 +438,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AllButtonEvents"",
+                    ""action"": ""A"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -417,7 +449,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AllButtonEvents"",
+                    ""action"": ""S"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -428,18 +460,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AllButtonEvents"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""fbc4881f-11fa-42c7-b241-8ee94042329a"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""AllButtonEvents"",
+                    ""action"": ""D"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -450,18 +471,18 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AllButtonEvents"",
+                    ""action"": ""W"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b2d14c7f-511b-4c65-b14a-82a7f165c6e4"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""id"": ""d0e661bd-d097-4177-b203-d2305801b153"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AllButtonEvents"",
+                    ""action"": ""Space"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -486,7 +507,11 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_Inventory_Slot5 = m_Inventory.FindAction("Slot5", throwIfNotFound: true);
         // QuickTime
         m_QuickTime = asset.FindActionMap("QuickTime", throwIfNotFound: true);
-        m_QuickTime_AllButtonEvents = m_QuickTime.FindAction("AllButtonEvents", throwIfNotFound: true);
+        m_QuickTime_A = m_QuickTime.FindAction("A", throwIfNotFound: true);
+        m_QuickTime_S = m_QuickTime.FindAction("S", throwIfNotFound: true);
+        m_QuickTime_D = m_QuickTime.FindAction("D", throwIfNotFound: true);
+        m_QuickTime_W = m_QuickTime.FindAction("W", throwIfNotFound: true);
+        m_QuickTime_Space = m_QuickTime.FindAction("Space", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -666,12 +691,20 @@ public class @GameInput : IInputActionCollection, IDisposable
     // QuickTime
     private readonly InputActionMap m_QuickTime;
     private IQuickTimeActions m_QuickTimeActionsCallbackInterface;
-    private readonly InputAction m_QuickTime_AllButtonEvents;
+    private readonly InputAction m_QuickTime_A;
+    private readonly InputAction m_QuickTime_S;
+    private readonly InputAction m_QuickTime_D;
+    private readonly InputAction m_QuickTime_W;
+    private readonly InputAction m_QuickTime_Space;
     public struct QuickTimeActions
     {
         private @GameInput m_Wrapper;
         public QuickTimeActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @AllButtonEvents => m_Wrapper.m_QuickTime_AllButtonEvents;
+        public InputAction @A => m_Wrapper.m_QuickTime_A;
+        public InputAction @S => m_Wrapper.m_QuickTime_S;
+        public InputAction @D => m_Wrapper.m_QuickTime_D;
+        public InputAction @W => m_Wrapper.m_QuickTime_W;
+        public InputAction @Space => m_Wrapper.m_QuickTime_Space;
         public InputActionMap Get() { return m_Wrapper.m_QuickTime; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -681,16 +714,40 @@ public class @GameInput : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_QuickTimeActionsCallbackInterface != null)
             {
-                @AllButtonEvents.started -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnAllButtonEvents;
-                @AllButtonEvents.performed -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnAllButtonEvents;
-                @AllButtonEvents.canceled -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnAllButtonEvents;
+                @A.started -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnA;
+                @A.performed -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnA;
+                @A.canceled -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnA;
+                @S.started -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnS;
+                @S.performed -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnS;
+                @S.canceled -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnS;
+                @D.started -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnD;
+                @D.performed -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnD;
+                @D.canceled -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnD;
+                @W.started -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnW;
+                @W.performed -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnW;
+                @W.canceled -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnW;
+                @Space.started -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnSpace;
+                @Space.performed -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnSpace;
+                @Space.canceled -= m_Wrapper.m_QuickTimeActionsCallbackInterface.OnSpace;
             }
             m_Wrapper.m_QuickTimeActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @AllButtonEvents.started += instance.OnAllButtonEvents;
-                @AllButtonEvents.performed += instance.OnAllButtonEvents;
-                @AllButtonEvents.canceled += instance.OnAllButtonEvents;
+                @A.started += instance.OnA;
+                @A.performed += instance.OnA;
+                @A.canceled += instance.OnA;
+                @S.started += instance.OnS;
+                @S.performed += instance.OnS;
+                @S.canceled += instance.OnS;
+                @D.started += instance.OnD;
+                @D.performed += instance.OnD;
+                @D.canceled += instance.OnD;
+                @W.started += instance.OnW;
+                @W.performed += instance.OnW;
+                @W.canceled += instance.OnW;
+                @Space.started += instance.OnSpace;
+                @Space.performed += instance.OnSpace;
+                @Space.canceled += instance.OnSpace;
             }
         }
     }
@@ -713,6 +770,10 @@ public class @GameInput : IInputActionCollection, IDisposable
     }
     public interface IQuickTimeActions
     {
-        void OnAllButtonEvents(InputAction.CallbackContext context);
+        void OnA(InputAction.CallbackContext context);
+        void OnS(InputAction.CallbackContext context);
+        void OnD(InputAction.CallbackContext context);
+        void OnW(InputAction.CallbackContext context);
+        void OnSpace(InputAction.CallbackContext context);
     }
 }
