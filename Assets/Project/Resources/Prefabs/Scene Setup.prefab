@@ -614,9 +614,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2384709735522757881}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86bc0e1273383d849bd59684dc4a3762, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6a23b8628d4243d4492abe1274a0ae3b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1148,7 +1148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2491600260890998702}
   - component: {fileID: 2491600260890998707}
-  - component: {fileID: 2491600260890998700}
+  - component: {fileID: 3453624041977256138}
   m_Layer: 0
   m_Name: Player Cam
   m_TagString: Untagged
@@ -1206,7 +1206,7 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2491600259046729072}
---- !u!114 &2491600260890998700
+--- !u!114 &3453624041977256138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
