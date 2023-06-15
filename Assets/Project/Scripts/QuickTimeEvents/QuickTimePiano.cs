@@ -1,8 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEngine.UI;
 
 public class QuickTimePiano : MonoBehaviour
 {
+    public TMP_Text LetterA;
+    public TMP_Text LetterS;
+    public TMP_Text LetterD;
+
+    public Color standard;
+
     [SerializeField] GameObject[] pianoTail;
     [SerializeField] GameObject startLine;
     [SerializeField] GameObject finishLine;
@@ -21,11 +29,16 @@ public class QuickTimePiano : MonoBehaviour
     Vector3 start;
     Vector3 finish;
 
+    Vector3 tailscale;
+
     Vector3 aPosition;
     Vector3 sPosition;
     Vector3 dPosition;
 
-    bool tp=false;
+    bool aPress=false;
+    bool sPress = false;
+    bool dPress = false;
+
 
     [SerializeField] float positionoftp = 0;
 
@@ -42,15 +55,17 @@ public class QuickTimePiano : MonoBehaviour
         dPosition.x = D.transform.position.x;
 
         pianoTail[0].transform.position = new Vector3(start.x, positionoftp, 0);
-        tp=true;
+
+        tailscale = pianoTail[0].transform.localScale;
+
+        pianoTail[0].transform.localScale = new Vector3(tailscale.x, tailscale.y, tailscale.z);
     }
 
     private void Update()
     {
-        if(pianoTail[tail].transform.position.y<= start.y&& pianoTail[tail].transform.position.y>=finish.y)
+        if(pianoTail[tail].transform.position.y<= start.y-50&& pianoTail[tail].transform.position.y>=finish.y)//(start.y - (lasttail.scale))
         {
             tail++;
-            print(tail);
             if (tail == pianoTail.Length)
             {
                 tail = 0;
@@ -70,34 +85,61 @@ public class QuickTimePiano : MonoBehaviour
                     spawnPosition.x = dPosition.x;
                     break;
             }
-            pianoTail[tail].transform.position = new Vector3(spawnPosition.x, positionoftp, 0);
+            pianoTail[tail].transform.position = new Vector3(spawnPosition.x, start.y, 0);
         }
     }
 
     public void PressA(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
             check(pressedLetter = 'A');
             print(1);
+            aPress = true;
+            LetterA.GetComponent<TMP_Text>().color = standard;
+        }
+        else if (context.canceled)
+        {
+            print(0);
+            aPress = false;
+            LetterA.GetComponent<TMP_Text>().color = Color.white;
         }
     }
+
 
     public void PressS(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
             check(pressedLetter = 'S');
+            sPress = true;
+            LetterS.GetComponent<TMP_Text>().color = standard;
+        }
+        else if (context.canceled)
+        {
+            print(0);
+            sPress = false;
+            LetterS.GetComponent<TMP_Text>().color = Color.white;
         }
     }
 
+
     public void PressD(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
             check(pressedLetter = 'D');
+            dPress = true;
+            LetterD.GetComponent<TMP_Text>().color = standard;
+        }
+        else if (context.canceled)
+        {
+            print(0);
+            dPress = false;
+            LetterD.GetComponent<TMP_Text>().color = Color.white;
         }
     }
+
 
     void check(char pressedletter)
     {
@@ -108,7 +150,5 @@ public class QuickTimePiano : MonoBehaviour
     {
         //1 bis 10 
         //1 * 5
-        
-
     }
 }
