@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     FirstLoaded: 0
+    LastSceneLoaded: 0
 --- !u!1 &1588972303528510686
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,10 +439,6 @@ MonoBehaviour:
     m_ActionId: 4ee916ea-fca5-417c-9656-566c4e6afdd8
     m_ActionName: Inventory/Slot5[/Keyboard/5]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ebc4bab8-8b70-4493-be53-c2136066bf51
-    m_ActionName: QuickTime/AllButtonEvents[/Keyboard/a,/Keyboard/s,/Keyboard/d,/Keyboard/q,/Keyboard/w,/Keyboard/e]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7799278636842407470}
         m_TargetAssemblyTypeName: DialogSystem.DialogManager, Assembly-CSharp
@@ -473,6 +470,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0ad55235-4605-4a52-a83a-3b15cfbb322e
     m_ActionName: Player/Choice2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fb54080b-6769-4fee-94c7-523b57ebf3a2
+    m_ActionName: QuickTime/A[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 07d5e48e-0017-43d5-add1-379656d3b6c7
+    m_ActionName: QuickTime/S[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 92914e6a-8e40-45c7-9559-2b50696e44c0
+    m_ActionName: QuickTime/D[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ceffd327-0b78-4e6e-9699-b907bdf28e5e
+    m_ActionName: QuickTime/W[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5ab2b51e-e097-46bd-9e2b-485e72dd107b
+    m_ActionName: QuickTime/Space[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -516,6 +533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2384709735522757880}
   - component: {fileID: 2384709735522757883}
+  - component: {fileID: 7171962352579518126}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -588,6 +606,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7171962352579518126
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384709735522757881}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86bc0e1273383d849bd59684dc4a3762, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2384709735574272140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2491600260387720701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -1.2, y: -7.31, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2491600259395365221}
@@ -1153,7 +1190,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 2384709735186061469}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5

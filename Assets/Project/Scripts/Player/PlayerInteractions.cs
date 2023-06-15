@@ -1,4 +1,5 @@
-﻿using Main;
+﻿using System;
+using Main;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,19 +21,19 @@ namespace Player
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
         }
 
-        private void FixedUpdate()
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            CheckForInteractions();
+            if (other.TryGetComponent(out IInteractable interactable))
+            {
+                interactable.ShowInteraction();
+            }
         }
 
-        private void CheckForInteractions()
+        private void OnTriggerExit2D(Collider2D other)
         {
-            foreach (Collider2D interact in GetCollidersInRadius(InteractionRadius))
+            if (other.TryGetComponent(out IInteractable interactable))
             {
-                if (interact.TryGetComponent(out InteractableObject interactable))
-                {
-                    interactable.ShowInteraction();
-                }
+                interactable.EndInteraction();
             }
         }
 

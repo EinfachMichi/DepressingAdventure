@@ -26,6 +26,11 @@ namespace AI
             DialogManager.Instance.OnDialogEnd += OnDialogEnd;
         }
 
+        public void EndInteraction()
+        {
+            
+        }
+
         public void ShowInteraction()
         {
             
