@@ -1896,6 +1896,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8130171150221135336, guid: 5f6af3483b5476f4d8e5a91fe5d9ddba, type: 3}
   m_PrefabInstance: {fileID: 1081237044}
   m_PrefabAsset: {fileID: 0}
+--- !u!60 &1092207777 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2384709735574272142, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+  m_PrefabInstance: {fileID: 2095841889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1118271386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24734,10 +24739,6 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 2384709735186061469, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2384709735574272142, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
       value: 5
@@ -24830,6 +24831,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3453624041977256138, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 1092207777}
     - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_Points.Array.size
       value: 5
