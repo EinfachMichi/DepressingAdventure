@@ -6,5 +6,6 @@
         
         public void ShowInteraction();
         public void Interaction();
+        public void EndInteraction();
     }
 }
