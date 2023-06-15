@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spruce Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4107920300853331067, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.485
+      objectReference: {fileID: 0}
     - target: {fileID: 6725660507335454312, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
