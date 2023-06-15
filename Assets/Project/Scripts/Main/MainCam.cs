@@ -1,6 +1,7 @@
 using System;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Main
 {
@@ -16,7 +17,14 @@ namespace Main
             confiner = GetComponentInChildren<CinemachineConfiner>();
             player = GameObject.FindWithTag("Player").transform;
 
-            confiner.m_BoundingShape2D = GameObject.FindWithTag("MapBorder").GetComponent<PolygonCollider2D>();
+            if (SceneManager.GetActiveScene().name == "House")
+            {
+                confiner.m_BoundingShape2D = GameObject.FindWithTag("HouseBorder").GetComponent<PolygonCollider2D>();
+            }
+            else
+            {
+                confiner.m_BoundingShape2D = GameObject.FindWithTag("MapBorder").GetComponent<PolygonCollider2D>();
+            }
             
             cam.Follow = player;
         }
