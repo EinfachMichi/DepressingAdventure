@@ -11,7 +11,7 @@ namespace Main
         private CinemachineVirtualCamera cam;
         private Transform player;
 
-        private void Awake()
+        private void Start()
         {
             cam = GetComponentInChildren<CinemachineVirtualCamera>();
             confiner = GetComponentInChildren<CinemachineConfiner>();
