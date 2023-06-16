@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Magnus_Magnus_Siegt
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Ich habe gewonnen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Ich meine\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Nat\xFCrlich habe ich das! Ich habe nie daran gezweifelt!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ihr Sieg war Ihnen sicher, da Sie ein gro\xDFartiger Schmied sind! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Sie schmeicheln mir.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Aber da haben sie recht. Nein doch. Ich bin ein gro\xDFer Schmied. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Von jetzt an werde ich nur noch Waffen schmieden!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Nur noch Waffen? Wieso denn? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Da ich in der Waffenkunst unbesiegbar bin!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "\u2026 "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Sie haben es mit eigenen Augen erblicken k\xF6nnen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Wenn Sie meinen\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Aber gut. Ich bin kein schlechter Sieger. Ich kann ihnen, f\xFCr ihre
+      weiteren Reisen, ihre Waffe wieder auf Vordermann bringen, wenn sie dies denn
+      m\xF6chten. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Ihre Waffe wird die Beste im Umkreis von mehreren W\xE4ldern sein! Vertrauen
+      sie mir da nur!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Nein Danke. Ich verzichte, dankend. Ich m\xF6chte gerne meine selbst geschmiedete
+      Waffe in Ehren halten."
+    Choice:
+      Answers: []
