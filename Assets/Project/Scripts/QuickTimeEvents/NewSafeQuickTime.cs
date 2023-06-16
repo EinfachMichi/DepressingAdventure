@@ -10,6 +10,8 @@ public class NewSafeQuickTime : MonoBehaviour
     char pressedLetter;
     char eventLetter;
 
+    public Healthbar HB;
+
     [SerializeField] bool blocked;
     [SerializeField] bool timerBlocked;
     [SerializeField] bool inRound;
@@ -29,11 +31,15 @@ public class NewSafeQuickTime : MonoBehaviour
     public TMP_Text EnemyHealthText;
     public TMP_Text TimerText;
 
+    [SerializeField] Slider TimeSlider;
+
     private void Awake()
     {
         PlayerHealthText.text = Playerhealth.ToString();
         EnemyHealthText.text = Enemyhealth.ToString();
         resetRound();
+        TimeSlider.maxValue = startTimer;
+        TimeSlider.value = startTimer;
     }
 
     private void resetRound()
@@ -50,6 +56,7 @@ public class NewSafeQuickTime : MonoBehaviour
         if (timerBlocked == false)
         {
             timer -= Time.deltaTime;
+            TimeSlider.value = timer;
         }
 
         TimerText.text = timer.ToString("0.00");
@@ -65,6 +72,7 @@ public class NewSafeQuickTime : MonoBehaviour
     {
         blocked = true;
         timerBlocked = true;
+        TimeSlider.value = startTimer;
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.yellow;
         yield return new WaitForSeconds(0.3f);
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
@@ -164,6 +172,7 @@ public class NewSafeQuickTime : MonoBehaviour
     {
         blocked = true;
         timerBlocked = true;
+        TimeSlider.value = startTimer;
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.green;
         yield return new WaitForSeconds(0.3f);
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
@@ -177,6 +186,7 @@ public class NewSafeQuickTime : MonoBehaviour
     {
         blocked = true;
         timerBlocked = true;
+        TimeSlider.value = startTimer;
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.red;
         yield return new WaitForSeconds(0.3f);
         QuicktimeLetter.GetComponent<TMP_Text>().color = Color.white;
@@ -255,6 +265,7 @@ public class NewSafeQuickTime : MonoBehaviour
             PlayerHealthText.text = Playerhealth.ToString();
             wrongEvents = 0;
         }
+        HB.PlayerOrEnemyGetDmg();
         gameRound = 1;
     }
 }
