@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Map
   m_EditorClassIdentifier: 
   Name: Map
-  Icon: {fileID: -5788612159209986343, guid: 67c5eba92d1ba6f4d886601ff260694c, type: 3}
+  Icon: {fileID: 21300000, guid: c9ebe977c2d7cd448adac10dad632620, type: 3}
   ID: 1
