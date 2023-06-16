@@ -378,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1541630984997933026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56eb970240f446bbe628dbdba888556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Delete: 1
+  Delete: 0
   Data:
     FirstLoad: 0
     FirstSpawn: 0
@@ -2291,7 +2291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 0}
+  m_BoundingShape2D: {fileID: 2384709735574272142}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &1857529715
