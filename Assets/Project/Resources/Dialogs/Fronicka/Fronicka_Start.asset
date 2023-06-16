@@ -100,6 +100,6 @@ MonoBehaviour:
       Answers:
       - Text: "Nat\xFCrlich m\xF6chte ich Ihnen helfen, aber ich sehe mich nicht
           als ihr Laufbursche."
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: a7640382e11a9f14cba14cb3422aeb1f, type: 2}
       - Text: Ein Abenteuer in dem Wald? Da bin ich dabei!
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: ff845d00f7ee3d74ca04de5f7bc3de7c, type: 2}
