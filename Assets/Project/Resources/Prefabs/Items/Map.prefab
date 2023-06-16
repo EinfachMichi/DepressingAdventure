@@ -103,5 +103,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
+    - target: {fileID: 6041235702783311051, guid: 28fd3064933891148be7cbd9ad0f1db8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28fd3064933891148be7cbd9ad0f1db8, type: 3}

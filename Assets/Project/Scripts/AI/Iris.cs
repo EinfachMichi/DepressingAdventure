@@ -16,11 +16,6 @@ namespace AI
             }
         }
 
-        public override void ShowInteraction()
-        {
-            
-        }
-
         public override void Interaction()
         {
             if (!interactable) return;
@@ -37,10 +32,6 @@ namespace AI
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
                 DialogManager.Instance.StartDialog(Dialogs[DialogIndex]);
             }
-        }
-
-        public override void EndInteraction()
-        {
         }
 
         private void OnDialogEnd()

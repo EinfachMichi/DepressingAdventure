@@ -8,11 +8,6 @@ namespace AI
     public class Fronicka : NPC
     {
         public ItemData List;
-        
-        public override void ShowInteraction()
-        {
-        
-        }
 
         public override void Interaction()
         {
@@ -35,11 +30,6 @@ namespace AI
             }
             
             Invoke("ResetInteractable", 1f);
-        }
-
-        public override void EndInteraction()
-        {
-            
         }
     }
 }

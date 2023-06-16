@@ -1,17 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using DialogSystem;
-using UnityEngine;
 
 namespace AI
 {
     public class Ludmilla : NPC
     {
-        public override void ShowInteraction()
-        {
-            
-        }
-
         public override void Interaction()
         {
             if (!interactable) return;
@@ -28,11 +20,6 @@ namespace AI
             
             
             Invoke("ResetInteractable", 1f);
-        }
-
-        public override void EndInteraction()
-        {
-            
         }
     }
 }

@@ -1,11 +1,9 @@
-using System;
 using DialogSystem;
 using Main;
-using UnityEngine;
 
 namespace AI
 {
-    public abstract class NPC : MonoBehaviour, IInteractable
+    public abstract class NPC : InteractableObject
     {
         public string Name;
         public Dialog[] Dialogs;
@@ -19,16 +17,13 @@ namespace AI
 
         protected virtual void Start()
         {
+            base.Start();
             if (GameManager.Instance.GetNPCInfo(Name, out NPCInfo info))
             {
                 this.info = info;
             }
         }
-
         public bool interactable { get; set; } = true;
-        public abstract void ShowInteraction();
-        public abstract void Interaction();
-        public abstract void EndInteraction();
         protected void ResetInteractable() => interactable = true;
     }
 }

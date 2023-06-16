@@ -6,6 +6,9 @@ namespace Main
 {
     public class InteractableObject : MonoBehaviour, IInteractable
     {
+        public UnityEvent startEvent;
+        [Space]
+        
         public List<UnityEvent> ShowInteractionEvents;
         public List<UnityEvent> InteractionEvents;
         public List<UnityEvent> EndInteractionEvents;
@@ -15,9 +18,10 @@ namespace Main
         protected virtual void Start()
         {
             interactable = true;
+            startEvent.Invoke();
         }
 
-        public void ShowInteraction()
+        public virtual void ShowInteraction()
         {
             foreach (UnityEvent unityEvent in ShowInteractionEvents)
             {
@@ -25,7 +29,7 @@ namespace Main
             }
         }
 
-        public void Interaction()
+        public virtual void Interaction()
         {
             foreach (UnityEvent unityEvent in InteractionEvents)
             {
@@ -33,12 +37,22 @@ namespace Main
             }
         }
 
-        public void EndInteraction()
+        public virtual void EndInteraction()
         {
             foreach (UnityEvent unityEvent in EndInteractionEvents)
             {
                 unityEvent?.Invoke();
             }
+        }
+        
+        public void DisableObject(GameObject gameObject)
+        {
+            gameObject.SetActive(false);
+        }
+
+        public void EnableObject(GameObject gameObject)
+        {
+            gameObject.SetActive(true);
         }
     }
 }

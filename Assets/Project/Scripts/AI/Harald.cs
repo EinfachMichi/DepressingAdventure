@@ -3,11 +3,6 @@ using DialogSystem;
 
 public class Harald : NPC
 {
-    public override void ShowInteraction()
-    {
-        
-    }
-
     public override void Interaction()
     {
         if (!interactable) return;
@@ -27,10 +22,5 @@ public class Harald : NPC
         }
         
         Invoke("ResetInteractable", 1f);
-    }
-
-    public override void EndInteraction()
-    {
-        
     }
 }
