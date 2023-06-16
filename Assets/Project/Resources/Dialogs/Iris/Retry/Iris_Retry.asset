@@ -21,8 +21,8 @@ MonoBehaviour:
     Text: Aber meine Mutter musst du trotzdem finden!
     Choice:
       Answers:
+      - Text: Ich denke, du hast den Sieg gerecht gewonnen.
+        Dialog: {fileID: 0}
       - Text: "Das lasse ich mir nicht gefallen! Ich m\xF6chte noch eine Runde gegen
           dich spielen!"
-        Dialog: {fileID: 0}
-      - Text: Ich denke, du hast den Sieg gerecht gewonnen.
         Dialog: {fileID: 0}

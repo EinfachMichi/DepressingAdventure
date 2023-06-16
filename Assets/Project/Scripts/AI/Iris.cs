@@ -46,7 +46,6 @@ namespace AI
 
         public override void EndInteraction()
         {
-            
         }
 
         private void OnDialogEnd()
@@ -73,6 +72,7 @@ namespace AI
             else
             {
                 info.DialogIndex++;
+                Invoke("ResetInteractable", 1f);
             }
         }
         

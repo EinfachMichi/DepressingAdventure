@@ -39,6 +39,7 @@ namespace Main
         private void Start()
         {
             Vector2 offset = new Vector2();
+            if (Data == null) return;
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Tutorial":
