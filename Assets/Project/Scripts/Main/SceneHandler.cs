@@ -40,22 +40,13 @@ namespace Main
             PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
             GameStateManager.Instance.ChangeState(GameState.InTeleportation);
             Play(FadeMode.FadeIn);
-            SaveCurrentSceneInfo();
+            GameManager.Instance.SaveLastSceneInfo();
+            GameManager.Instance.SaveCurrentSceneInfo();
         }
 
         public void LoadScene()
         {
             SceneManager.LoadScene(sceneName);
-        }
-
-        private void SaveCurrentSceneInfo()
-        {
-            if (SceneManager.GetActiveScene().name == "House") return;
-            
-            SceneInfo info = new SceneInfo();
-            info.name = SceneManager.GetActiveScene().name;
-            info.playerPos = player.position;
-            GameManager.Instance.SaveSceneInfo(info);
         }
     }
 
