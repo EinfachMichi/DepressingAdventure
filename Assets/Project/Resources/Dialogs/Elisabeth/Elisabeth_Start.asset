@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Elisabeth_Start
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: 'Elisabeth: Entschuldigen Sie, junger Abenteurer!'
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Was gibt es denn die Dame?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Ich habe geh\xF6rt, dass Sie verschiedene Erledigungen f\xFCr die Dorfbewohner
+      ausf\xFChren. Stimmt das?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: In der Tat. Wieso fragen Sie?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Ich wollte Sie fragen, ob Sie etwas f\xFCr mich erledigen k\xF6nnten?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Und das w\xE4re?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Ich wollte dem kleinen M\xE4dchen, das immer mal wieder \xB4Tequila\xB4
+      sagt, eine Freude machen und ihr Brot schenken."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie meinen das kleine M\xE4dchen, Iris, beim Brunnen, oder?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Ah, genau. Sie hatten wohl schon das Vergn\xFCgen. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Und die Auslieferung soll ich dann f\xFCr Sie erledigen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Ja, bitte! Das w\xE4re sehr nett, wenn sie das Brot abliefern k\xF6nnten."
+    Choice:
+      Answers:
+      - Text: Warum machen Sie es denn nicht selbst?
+        Dialog: {fileID: 0}
+      - Text: "Nat\xFCrlich kann ich es f\xFCr Sie \xFCbernehmen! Vielleicht kann
+          ich Sie auf eine weitere Runde \xB4Schere, Stein, Papier\xB4 einladen!"
+        Dialog: {fileID: 0}

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Elisabeth_End
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Da sind Sie ja schon wieder! Konnten Sie ihr das Brot \xFCberreichen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Iris wollte es erst nicht. Da habe ich ihr dieses neben sie gelegt.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Das arme Kind.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Ich werde nicht ruhen, bevor sie nicht ein zu Hause habe.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Eventuell sollten Sie sie erst in Ruhe trauern lassen.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Trauern?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Anscheinend habe das ganze Dorf ihre Mutter gefunden und das vor ihr.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Das ganze Dorf?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Aber wann habe denn das ganze Dorf\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Nein\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Oder?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Doch. Sie wurde verbrannt\u2026 "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Sind Sie sich da auch wirklich sicher?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Leider ja. Iris sagte es mir.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Um Gottes willen! Sie braucht mich dringender denn je! Schlie\xDFlich
+      k\xF6nnte ich mich auch um sie k\xFCmmern!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie hatte mich ebenfalls weggeschickt. Darum bin ich mir sicher, dass
+      sie momentan niemanden sehen m\xF6chte."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: "Na gut. Ich verstehe\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Dennoch. Sie muss essen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
+    Text: Na ja, danke ihnen. Ich muss nun weiter backen!
+    Choice:
+      Answers: []
