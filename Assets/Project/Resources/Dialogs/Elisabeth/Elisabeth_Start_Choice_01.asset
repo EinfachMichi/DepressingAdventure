@@ -13,55 +13,15 @@ MonoBehaviour:
   m_Name: Elisabeth_Start_Choice_01
   m_EditorClassIdentifier: 
   Sentences:
-  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: "Ich denke nicht, dass Sie mich sehen m\xF6chte."
-    Choice:
-      Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Warum das denn nicht? Haben Sie etwas angestellt?
+    Text: ' Es tut mir leid. Gerade habe ich keine Zeit dazu.'
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: "Nat\xFCrlich nicht! Allerdings hatte ich ihr des \xD6fteren etwas angeboten,
-      was sie stets abgelehnt hatte. Darum denke ich, dass sie weiterhin meine Geste
-      ablehnen wird."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Verstehe.
+    Text: 'Schade.. '
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: "Darum wollte ich Sie fragen, ob Sie m\xF6glicherweise ihr das Brot \xFCberreichen
-      m\xF6chten. Vielleicht nimmt sie es von Ihnen an."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Hmm\u2026"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Also gut. Ich kann es gerne mal probieren!
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: Habt vielen Dank!
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: Ich hoffe doch, das heitert sie etwas auf. Seit der Hexenverbrennung scheint
-      es ihr nicht so gut ergangen zu sein
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Meinen sie, Ludmilla und Iris kannten sich?
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: "Dies bef\xFCrchte ich, ja."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: 'Vielen lieben Dank. Wirklich. '
+    Text: Was soll ich denn jetzt nur tun?
     Choice:
       Answers: []

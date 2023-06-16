@@ -13,86 +13,14 @@ MonoBehaviour:
   m_Name: Fronicka_Start_Choice_01
   m_EditorClassIdentifier: 
   Sentences:
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Dann h\xE4tten Sie mir nicht ihre Hilfe anbieten sollen!"
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Vorerst m\xF6chte ich mich noch ausruhen. Danach werde ich zu Ihnen kommen
+      und Ihnen helfen!"
     Choice:
       Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: '...
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: 'Bitte beeilen Sie sich!
 
 '
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: 'Okay. Lassen Sie es uns es so machen. Ich werde in den Wald gehen und
-      ihren Karren finden. '
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Doch, wenn ich diese Aufgabe erf\xFCllt habe, verlange ich etwas von Ihnen."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Und das w\xE4re?"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Kennen Sie dieses kleine M\xE4dchen mit den wilden Locken?"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Hmm\u2026"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: In dem Kartoffelsack?
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: Zu ungenau.
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Die immer wieder \xB4Tequila\xB4 sagt."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Ach dieses kleine freche G\xF6r, Iris! Nat\xFCrlich kenne ich Sie! Jeder
-      aus diesem verfluchten Dorf kennt sie!"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: Also was ist mit ihr?
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Ich habe gegen Sie verloren, weswegen ich ihr versprochen habe, dass ich
-      ihre Mutter finden werde.
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Darum wollte ich Sie fragen, ob Sie irgendetwas \xFCber ihre Mutter w\xFCssten?"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Hmm\u2026"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Wenn sie in dem Wald waren. Dann k\xF6nnte ich ihnen vielleicht mehr erz\xE4hlen."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Dann sollte ich nicht mehr lange z\xF6gern und losgehen!"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Bevor Sie gehen, m\xF6chte ich Ihnen einen Zettel geben, auf dem meine
-      Ware aufgelistet ist! Somit k\xF6nnen Sie nachschauen, ob auch alles vorhanden
-      ist."
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Ich danke Ihnen!
     Choice:
       Answers: []
