@@ -7,13 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7197264181201303259, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7197264181245067190, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7197264181245067191, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.437
+      value: -0.498
       objectReference: {fileID: 0}
     - target: {fileID: 7197264181314587726, guid: 6740e2dda9426344083eeb4a67b10427, type: 3}
       propertyPath: m_RootOrder

@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.459
       objectReference: {fileID: 0}
+    - target: {fileID: 3991974086714822257, guid: 3a67ce0df193e1141864c4f71e163b8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644198514866451606, guid: 3a67ce0df193e1141864c4f71e163b8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5547654297681769938, guid: 3a67ce0df193e1141864c4f71e163b8d, type: 3}
       propertyPath: m_Name
       value: Fence Variant
