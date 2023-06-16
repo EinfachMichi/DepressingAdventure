@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Magnus_MC_Siegt
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Meine Waffe...
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Oh nein! Ich wollte Ihre Waffe nicht zerst\xF6ren! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Das wollten Sie doch so!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Oder\u2026?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Liegt es wohl doch an mir?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Sollen die Jahre, die ich mich der Arbeit gewidmet habe, umsonst gewesen
+      sein?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Nein. Sie sind ein gro\xDFartiger Schmied! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Der gr\xF6\xDFte, der beste. Haben sie das etwa vergessen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: 'Seien Sie doch still! '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Sie haben klar bewiesen, dass ich als Schmied nicht geeignet bin!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Nie wieder werde ich etwas schmieden! Die Zeit ist nun vorbei!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Nein. Bitte h\xF6ren Sie mich an\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Genug.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Bitte verschwinden Sie. Ich muss meine Schmiede schlie\xDFen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Nehmen Sie ihre Waffe und gehen Sie bitte einfach\u2026"
+    Choice:
+      Answers: []

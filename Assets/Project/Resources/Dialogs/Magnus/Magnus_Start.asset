@@ -101,8 +101,8 @@ MonoBehaviour:
     Text: "Indem wir gegeneinander k\xE4mpfen!"
     Choice:
       Answers:
-      - Text: "Wir sollen gegeneinander antreten? Ist das nicht gef\xE4hrlich?"
-        Dialog: {fileID: 0}
+      - Text: "Sowas ist doch viel zu gef\xE4hrlich!"
+        Dialog: {fileID: 11400000, guid: 85ea93bc0507f24479bc5370e180841a, type: 2}
       - Text: Bei einem Kampf bin ich dabei! Ich wollte schon immer einen Schwertkampf
           gewinnen!
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: 5448c1c470561924db1bb537d2f44002, type: 2}

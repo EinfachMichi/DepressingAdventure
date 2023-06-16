@@ -55,5 +55,20 @@ namespace Inventory_Items
             Slots[slotIndex].Clear();
             GameManager.Instance.SaveInventory(Slots);
         }
+
+        public bool HasItem(string name)
+        {
+            foreach (Slot slot in Slots)
+            {
+                if (slot.ItemData != null)
+                {
+                    if (slot.ItemData.Name == name)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
     }
 }

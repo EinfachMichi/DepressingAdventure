@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
-  m_Name: Magnus_Start_Choice_01
+  m_Name: Magnus_After_Mc_Win
   m_EditorClassIdentifier: 
   Sentences:
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Sowas ist doch viel zu gef\xE4hrlich!"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: 'Entschuldigen Sie mein Herr, aber da muss ich vorerst ablehnen! '
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: verschwinde! Was willst du hier noch? Mir deinen Sieg unter die Nase reiben?
+      Pft!
     Choice:
       Answers: []

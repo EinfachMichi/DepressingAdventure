@@ -160,21 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HouseID: Template
-  startEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2098104023831206097}
-        m_TargetAssemblyTypeName: Environment.House, Assembly-CSharp
-        m_MethodName: DisableObject
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2677195143639002509}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2098104023995916598
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,11 +231,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fba8fe88b34bd0b99dc0e9edfd3524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2098104023995916592}
+        m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
+        m_MethodName: DisableObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2677195143639002509}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   ShowInteractionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2098104023831206097}
-        m_TargetAssemblyTypeName: Environment.House, Assembly-CSharp
+      - m_Target: {fileID: 2098104023995916592}
+        m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
         m_MethodName: EnableObject
         m_Mode: 2
         m_Arguments:
@@ -279,8 +279,8 @@ MonoBehaviour:
   EndInteractionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2098104023831206097}
-        m_TargetAssemblyTypeName: Environment.House, Assembly-CSharp
+      - m_Target: {fileID: 2098104023995916592}
+        m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
         m_MethodName: DisableObject
         m_Mode: 2
         m_Arguments:
@@ -573,11 +573,15 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.7790604, y: 0.817945}
-  - {x: 2.78862, y: 0.78284883}
-  - {x: 2.7908237, y: -1.9900935}
-  - {x: -2.8070853, y: -1.9951601}
-  - {x: -2.7875092, y: 0.8255298}
+  - {x: -3.4489563, y: 1.3612741}
+  - {x: -0.63466483, y: 1.3507284}
+  - {x: -0.6328965, y: 0.053743362}
+  - {x: 3.4444306, y: 0.05051604}
+  - {x: 3.4392412, y: -1.7635379}
+  - {x: -0.64830476, y: -1.7598672}
+  - {x: -0.6299446, y: -2.3398607}
+  - {x: -3.466186, y: -2.3301694}
+  - {x: -3.465313, y: 1.3321515}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
