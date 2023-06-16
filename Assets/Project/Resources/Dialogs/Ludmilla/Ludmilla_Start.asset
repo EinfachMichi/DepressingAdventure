@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Ludmilla_Start
   m_EditorClassIdentifier: 
   Sentences:
-  - Speaker: {fileID: 0}
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
     Text: Entschuldigen Sie
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Wer sind Sie und was wollen Sie von mir?
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
@@ -22,7 +26,9 @@ MonoBehaviour:
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: Warum sollte mich das Dorf zu Ihnen schicken? Sind Sie etwa die Diebin?
+    Text: 'Warum sollte mich das Dorf zu Ihnen schicken? Sind Sie etwa die Diebin?
+
+'
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
@@ -46,7 +52,11 @@ MonoBehaviour:
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
     Text: "K\xF6nnen Sie es mir denn auch beweisen, dass Sie es nicht gewesen waren?"
     Choice:
-      Answers: []
+      Answers:
+      - Text: Verstehe, da muss ich Ihnen wohl vertrauen.
+        Dialog: {fileID: 0}
+      - Text: "Ich w\xFCsste da einen Weg, wie Sie es mir demonstrieren k\xF6nnten!"
+        Dialog: {fileID: 0}
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
     Text: Nein. Ich denke eher weniger, dass ich Ihnen meine Unschuld beweisen kann.
     Choice:

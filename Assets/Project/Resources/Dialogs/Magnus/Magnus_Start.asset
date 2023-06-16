@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Magnus_Start
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Wieso will denn niemand meine Schwerter testen? Habe ich vielleicht den
+      falschen Beruf gew\xE4hlt?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Entschuldigen Sie, Herr Schmied!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Ein Kunde! Wie sch\xF6n! Bitte nenne mich doch Magnus."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: 'Willkommen in meinen Laden! Wie kann ich Ihnen helfen? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ich wollte Sie fragen, ob Sie mir etwas schmieden m\xF6gen, wollen? "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Aber nat\xFCrlich! Was wollen Sie denn haben? Ein Schwert? Eine Axt?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Eigentlich wollte ich nichts der Art haben. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Nat\xFCrlich. Wieso denn auch? Schlie\xDFlich bin ich nicht gut genug,
+      um eine Waffe schmieden zu k\xF6nnen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'So hatte ich es nicht gemeint, Herr Schmied! '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Ich wollte nur-
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: 'Wirklich? Sind Sie sich sicher? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Wie w\xE4re es dann mit einem Duell?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Wissen sie, ich kann mich auch beweisen! Das ist absolut kein Problem!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Warten sie mal. Ein Duell? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Genau! Um zu demonstrieren, dass ich ein fabelhafter Schmied bin.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Um ihnen allen zu zeigen, dass ICH, Magnus, der Schmied, es noch immer
+      drauf habe!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ah ja\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Und wie stellen Sie sich das vor? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: Ganz einfach! Jeder schmiedet eine bestimmte Waffe. Derjenige, der die
+      bessere Waffe geschmiedet hat, gewinnt!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Aber wie stellen wir sicher, wer die bessere Waffe hat? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 90d47ebf6757b234ea32271d5c988b64, type: 2}
+    Text: "Indem wir gegeneinander k\xE4mpfen!"
+    Choice:
+      Answers:
+      - Text: "Wir sollen gegeneinander antreten? Ist das nicht gef\xE4hrlich?"
+        Dialog: {fileID: 0}
+      - Text: Bei einem Kampf bin ich dabei! Ich wollte schon immer einen Schwertkampf
+          gewinnen!
+        Dialog: {fileID: 0}
