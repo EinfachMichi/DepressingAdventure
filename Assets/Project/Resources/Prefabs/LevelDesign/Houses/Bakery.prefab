@@ -33,6 +33,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1940223432430317528, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940223432430317528, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.398
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934046691919812096, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dfb27634a160a741957d5b9a4f98d5d, type: 3}
+    - target: {fileID: 2934046691919812096, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2934046691919812096, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756495051692749203, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.697
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756495051692749203, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223751553464211810, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ff1ba2e2b25301742852db2c39fea035, type: 3}
+    - target: {fileID: 5223751553464211810, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223751553464211810, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6514063347671144404, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -88,7 +128,11 @@ PrefabInstance:
     - target: {fileID: 6514063348153063540, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fc6b6200e64416a4d9f1564ebdd5f0e0, type: 3}
+      objectReference: {fileID: 21300000, guid: e80954f4dd6094345ba3bb3bc870c4cb, type: 3}
+    - target: {fileID: 6514063348153063540, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6514063348191164178, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_Size.x
       value: 0.25340676
@@ -106,8 +150,12 @@ PrefabInstance:
       value: -2.4092367
       objectReference: {fileID: 0}
     - target: {fileID: 6514063348191164179, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514063348191164179, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.47
+      value: 2.048
       objectReference: {fileID: 0}
     - target: {fileID: 6514063348191164204, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_Size.x
@@ -143,11 +191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514063348786911047, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.52
+      value: -1.443
       objectReference: {fileID: 0}
     - target: {fileID: 6514063348786911047, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: -0.856
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cada4f34ddaca3428e3ee0c48e2287a, type: 3}

@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2881197691441176046, guid: 8b7adf36596b3874cbf768ef94c4f8c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624080560719594717, guid: 8b7adf36596b3874cbf768ef94c4f8c2, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6072263851483881713, guid: 8b7adf36596b3874cbf768ef94c4f8c2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7318736317395346744, guid: 8b7adf36596b3874cbf768ef94c4f8c2, type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: Rock Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b7adf36596b3874cbf768ef94c4f8c2, type: 3}
