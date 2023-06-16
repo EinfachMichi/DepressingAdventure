@@ -5,16 +5,11 @@ namespace AI
 {
     public class Iris : NPC
     {
-        private NPCInfo info;
-        
-        private void Start()
+        protected override void Start()
         {
-            if (GameManager.Instance.GetNPCInfo(Name, out NPCInfo info))
-            {
-                this.info = info;
-            }
+            base.Start();
 
-            if (info.DialogIndex == 1)
+            if (DialogIndex == 1)
             {
                 DialogManager.Instance.OnChoiceResults += OnChoiceResults;
                 DialogManager.Instance.StartDialog(Dialogs[1]);
@@ -31,16 +26,16 @@ namespace AI
             if (!interactable) return;
             
             interactable = false;
-            if (info.DialogIndex == 0)
+            if (DialogIndex == 0)
             {
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
-                DialogManager.Instance.StartDialog(Dialogs[info.DialogIndex]);
+                DialogManager.Instance.StartDialog(Dialogs[DialogIndex]);
             }
 
-            if (info.DialogIndex == 2)
+            if (DialogIndex == 2)
             {
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
-                DialogManager.Instance.StartDialog(Dialogs[info.DialogIndex]);
+                DialogManager.Instance.StartDialog(Dialogs[DialogIndex]);
             }
         }
 
@@ -52,10 +47,10 @@ namespace AI
         {
             DialogManager.Instance.OnDialogEnd -= OnDialogEnd;
             
-            if (info.DialogIndex == 0)
+            if (DialogIndex == 0)
             {
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
-                info.DialogIndex++;
+                DialogIndex++;
                 SceneHandler.Instance.EnterNewScene("Quest_01");
             }
 
@@ -71,11 +66,9 @@ namespace AI
             }
             else
             {
-                info.DialogIndex++;
+                DialogIndex++;
                 Invoke("ResetInteractable", 1f);
             }
         }
-        
-        private void ResetInteractable() => interactable = true;
     }
 }

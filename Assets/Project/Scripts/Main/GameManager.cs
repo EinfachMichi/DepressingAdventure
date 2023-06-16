@@ -25,6 +25,7 @@ namespace Main
                 Data = new SaveData();
                 InitScenes();
                 InitNPCs();
+                InitBarriers();
                 Save();
             }
             
@@ -39,7 +40,7 @@ namespace Main
         private void Start()
         {
             Vector2 offset = new Vector2();
-            if (Data == null) return;
+            if (Data.LastScene == null) return;
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Tutorial":
@@ -127,6 +128,11 @@ namespace Main
             Data.NpcInfos[1] = iris;
         }
 
+        private void InitBarriers()
+        {
+            Data.Barriers = new [] {true, true, true, true, true};
+        }
+
         private SceneInfo GetCurrentSceneInfo()
         {
             for (int i = 0; i < Data.SceneInfos.Length; i++)
@@ -178,6 +184,7 @@ namespace Main
         public SceneInfo LastScene;
         public SceneInfo[] SceneInfos;
         public NPCInfo[] NpcInfos;
+        public bool[] Barriers;
     }
 
     [Serializable]
