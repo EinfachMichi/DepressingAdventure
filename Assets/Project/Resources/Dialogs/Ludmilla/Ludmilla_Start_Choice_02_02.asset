@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Ludmilla_Start_Choice_02_02
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie scheinen die Wahrheit zu erz\xE4hlen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Sagte ich doch.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Dann tut es mir leid, dass ich Sie als Diebin beschimpft hatte und ihre
+      Sachen durchsucht habe.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Also gehen Sie nun, oder wollen Sie noch etwas von mir?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Tats\xE4chlich h\xE4tte ich noch etwas, was ich Sie gerne fragen w\xFCrde."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Und das w\xE4re?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie klangen sehr ver\xE4ngstigt, als Sie das Dorf erw\xE4hnt haben. Darum
+      wollte ich Sie fragen, ob ein gewisser Hintergrund daf\xFCr existiert."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie klangen sehr ver\xE4ngstigt, als Sie das Dorf erw\xE4hnt haben. Darum
+      wollte ich Sie fragen, ob ein gewisser Hintergrund daf\xFCr existiert."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Nicht wirklich, nur dass sie mich aus ihrem Dorf verbannt haben.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Warum wurden sie denn verbannt?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Eine etwas l\xE4ngere Geschichte, die ich Ihnen nicht zumuten m\xF6chte."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Verstehe. Also d\xFCrfen Sie es nie wieder betreten?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Doch, aber nur unter einer Bedingung.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Und die w\xE4re?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Wenn ich eine wei\xDFe Rose finde und diese ihnen vorzeige."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Dies ist die einzige Bedingung? Warum ausgerechnet diese? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Eine wei\xDFe Rose zu finden, ist sehr selten. Dazu repr\xE4sentiert diese
+      die Unschuld."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Eine wei\xDFe Rose zu finden, ist sehr selten. Dazu repr\xE4sentiert diese
+      die Unschuld."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Und Sie haben diese bisher nicht finden k\xF6nnen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Nein. Darum lebe ich seit einigen Monaten in diesem Haus.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Nein. Darum lebe ich seit einigen Monaten in diesem Haus.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Vielleicht k\xF6nnte ich Ihnen helfen, diese Rose zu finden. Ich w\xFCrde
+      es f\xFCr eine Gegenleistung tun. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Sie meinten, dass Sie in dem Dorf gelebt haben, oder?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Genau.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "In diesem Dorf lebt ein kleines, freches M\xE4dchen, das nach ihrer Mutter
+      sucht. Darum wollte ich Sie fragen, ob es eine M\xF6glichkeit gibt, dass Sie
+      die Mutter kennen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Wie hei\xDFt das Kind und wie sieht es aus?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Sie besitzt wildes, lockiges Haar. Ihre Augenfarbe erinnert an dunkles
+      Holz. Ihr Name scheint Iris zu sein.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: ...
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Nein. So ein M\xE4dchen kenne ich nicht."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Sind Sie sich da auch wirklich sicher?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Ja.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Na gut, schade. Da kann man wohl nichts machen.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Dann werde ich nun aufbrechen! Doch ehe ich Ihnen Ihre Rose suchen kann,
+      muss ich zur\xFCck zu dem Dorf und einer Dame etwas mitteilen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Verstehe.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: " Ich danke Ihnen vielmals f\xFCr Ihre Hilfe, auch wenn ich Ihnen nicht
+      weiterhelfen konnte."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Wenn sie etwas brauchen, finden sie mich hier!
+    Choice:
+      Answers: []

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Fronicka_End
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Sie scheinen nicht besonders gl\xFCcklich zu sein. Darum denke ich, dass
+      Sie nicht besonders gute Nachrichten f\xFCr mich bereitzuhaben."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ich w\xFCnschte, es w\xE4re anders, aber ich habe nur schlechte Nachrichten
+      f\xFCr Sie."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: Bitte nennen Sie mir diese.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Erst einmal m\xF6chte ich, dass Sie mir mitteilen, was Sie \xFCber die
+      Mutter von Iris wissen"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Also gut. Solange sie nicht im Dorf ist, d\xFCrfen wir nicht \xFCber sie
+      sprechen. Selbst Iris nicht."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Wieso das denn?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Dar\xFCber darf ich nicht sprechen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Aber warum denn nicht? Was ist mit ihrer Mutter?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Seien Sie bitte nicht so hartn\xE4ckig und erz\xE4hlen Sie mir endlich,
+      was mit meinen Karren passiert ist!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Seien Sie bitte nicht so hartn\xE4ckig und erz\xE4hlen Sie mir endlich,
+      was mit meinen Karren passiert ist!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ich habe Ihren Karren gefunden, der allerdings sehr zerst\xF6rt wurde.  "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Alle Waren, die mitgef\xFChrt wurden, wurden von den Banditen gestohlen.
+      Doch von den Banditen war keine Spur zu finden. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Es war nur eine\u2026 uhm\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Eine Wanderin vor Ort. Diese konnte best\xE4tigen, dass es Banditen waren."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Es tut mir leid.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: 'Das ist schlimm. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: Das ist wirklich schlimm. Wie soll ich denn nun mein Geld verdienen?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Bitte beruhigen Sie sich. Es gibt bestimmt eine L\xF6sung daf\xFCr."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: 'Nein! '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Daf\xFCr gibt es keine L\xF6sung! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Mein Gesch\xE4ft ist jedoch ruiniert!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: '...
+
+'
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "W\xE4re ich doch lieber bei meinem gewaltt\xE4tigen Mann geblieben."
+    Choice:
+      Answers: []

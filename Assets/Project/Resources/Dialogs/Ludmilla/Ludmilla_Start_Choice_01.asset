@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Ludmilla_Start_Choice_01
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: 'Also haben Sie mich nur gesucht, da Sie gedacht haben, dass ich eine Diebin
+      sei?
+
+
+'
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: So ist es.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Also hat Sie das Dorf nicht geschickt?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Warum sollte mich das Dorf denn zu Ihnen senden? Haben Sie denn etwas verbrochen?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Nein!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Ich? Bestimmt nicht. Nein.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie haben es jetzt ziemlich oft verneint. Darum wei\xDF ich nicht wirklich,
+      ob ich Ihnen in diesem Punkt vertrauen kann."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Mir? Vertrauen? Doch. Doch, Doch! Ja.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Sicher?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Ganz sicher. Sehr sicher.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Verstehe. D\xFCrfte ich Sie denn noch etwas fragen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Wenn Sie wollen, aber m\xFCssen Sie nat\xFCrlich nicht."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Wieso sind Sie hier im Wald? Hat es irgendetwas mit Ihrem Dorf zu tun?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Mit meinem Dorf?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: ":Ja. Sie hatten es immer wieder erw\xE4hnt."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Ja. Nein. Doch. Stimmt. Da haben sie wohl recht
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Also, das Dorf h\xE4lt mich f\xFCr eine Hexe."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sie halten Sie f\xFCr eine Hexe? Warum das denn?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Ich interessiere mich f\xFCr die Heilkunde. Und als es die Dorfbewohner
+      herausgefunden haben, haben diese mich verurteilt."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Seitdem darf ich das Dorf nicht betreten.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Besitzen Sie denn auch Tr\xE4nke bei sich, dass deren These, dass Sie
+      eine Hexe seien, best\xE4tigt?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Nat\xFCrlich nicht."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Nur Tr\xE4nke, die sie heilen! Dies hat aber nichts mit Hexerei zu tun."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Verstehe. Haben Sie denn versucht, mit den Dorfbewohnern zu sprechen?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Verstehe. Haben Sie denn versucht, mit den Dorfbewohnern zu sprechen?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: 'Es war schwierig, da Sie keine weitere Meinung, als die Ihrer akzeptieren. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Sie sagten nur zu mir, dass ich eine seltene wei\xDFe Rose, die sich in
+      unsere N\xE4he bef\xE4nde, finden und diese zu ihnen bringen m\xFCsse. Somit
+      k\xF6nnte ich dann meine Unschuld vorweisen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Eine einzelne Rose soll Ihre Unschuld beweisen k\xF6nnen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Genau! Darum irre ich seit einigen Monaten in diesem Wald umher, um wieder
+      ein Teil dieses Dorf werden zu k\xF6nnen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Kann ich Ihnen meine Hilfe anbieten?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Sie wollen mir helfen? Aber warum? Wieso denken Sie nicht, dass ich eine
+      Hexe sei?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Sie wollen mir helfen? Aber warum? Wieso denken Sie nicht, dass ich eine
+      Hexe sei?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Da Sie mich am Anfang h\xE4tten verzaubern k\xF6nnen, als ich Sie als
+      Diebin betitelt hatte."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Dennoch h\xE4tte ich eine letzte Frage. Kennen sie ein kleines M\xE4dchen
+      im Dorf, Namens Iris? "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Denn wissen sie. Ich suche nach ihrer Mutter.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: ...
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Nein, nein. Da muss ich sie leider entt\xE4uschen. Man spricht nicht \xFCber
+      sie."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Warum denn nicht?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Das ist nun einmal so. Das m\xFCssen Sie bitte einfach verstehen."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Na gut. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: "Aber, vielen Dank noch einmal f\xFCr Ihre Hilfe!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Sehr gerne! Doch ehe ich damit beginnen kann, muss ich zur\xFCck zum Dorf
+      und einer Dame etwas mitteilen. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Danach widme ich meine volle Zeit Ihnen und ihr Problem!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
+    Text: Habt vielen Dank, Fremder! Ich werde hier auf Sie warten!
+    Choice:
+      Answers: []

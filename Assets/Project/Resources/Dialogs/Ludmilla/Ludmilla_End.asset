@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Ludmilla_End
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Was ist denn hier los?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Haben Sie es noch nicht mitbekommen?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Was nicht mitbekommen?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Die Dorfbewohner haben endlich die Hexe gefunden, die sich im Wald versteckt
+      hatte.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Die Hexe? Meinen Sie damit Ludmilla?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Ja! Da sie ihre Unschuld nicht beweisen konnte, beschlossen wir, sie mit
+      dem Tod zu bestrafen.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Mit dem Tod?!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "Nat\xFCrlich! Schlie\xDFlich ist sie eine Hexe! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "Mit den hei\xDFen Flammen h\xE4tte sie sich eigentlich auskennen m\xFCssen,
+      da sie doch aus der H\xF6lle stammt!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Wie k\xF6nnen Sie nur so \xFCber Sie reden, wenn Sie sie gar nicht wirklich
+      gekannt hatten?!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Haben Sie sie gut gekannt?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: ...
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Das habe ich mir bereits gedacht.
+    Choice:
+      Answers: []
