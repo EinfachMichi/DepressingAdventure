@@ -545,6 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baca5f1f8333ac840a073529f29bc12a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  round: 0
   choose: 0
   enemychoose: 0
   Button:
@@ -560,7 +561,7 @@ MonoBehaviour:
   RoundCounterText: {fileID: 573022704}
   PlayerPointsText: {fileID: 1880204389}
   EnemyPointsText: {fileID: 1233758810}
-  SceneName: Michi
+  SceneName: Village
   Ani: {fileID: 1773011262}
 --- !u!222 &428820856
 CanvasRenderer:

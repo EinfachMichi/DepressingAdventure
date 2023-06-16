@@ -5,22 +5,14 @@ using UnityEngine;
 
 namespace AI
 {
-    public class NPC : MonoBehaviour, IInteractable
+    public abstract class NPC : MonoBehaviour, IInteractable
     {
-        public bool interactable { get; set; }
-        public void ShowInteraction()
-        {
-            
-        }
+        public string Name;
+        public Dialog[] Dialogs;
 
-        public void Interaction()
-        {
-            
-        }
-
-        public void EndInteraction()
-        {
-            
-        }
+        public bool interactable { get; set; } = true;
+        public abstract void ShowInteraction();
+        public abstract void Interaction();
+        public abstract void EndInteraction();
     }
 }

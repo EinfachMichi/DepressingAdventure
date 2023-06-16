@@ -1,7 +1,5 @@
 ﻿using System;
-using System.IO.IsolatedStorage;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Main
@@ -9,7 +7,8 @@ namespace Main
     public class GameManager : Singleton<GameManager>
     {
         private const string saveDataPath = "SaveData";
-        
+
+        public bool Delete;
         public SaveData Data;
 
         private Transform playerTransform;
@@ -17,7 +16,7 @@ namespace Main
         protected override void Awake()
         {
             base.Awake();
-            
+
             playerTransform = GameObject.FindWithTag("Player").transform;
             
             Data = JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString(saveDataPath));
@@ -25,6 +24,8 @@ namespace Main
             {
                 Data = new SaveData();
                 InitScenes();
+                InitNPCs();
+                Save();
             }
             
             if (!Data.FirstLoad)
@@ -54,17 +55,9 @@ namespace Main
             playerTransform.position = GetCurrentSceneInfo().PlayerPosition + offset;
         }
 
-        private void Update()
-        {
-            if (Keyboard.current.eKey.isPressed)
-            {
-                PlayerPrefs.DeleteAll();
-            }
-        }
-
         private void LoadLastScene()
         {
-            if (Data.LastScene.Name != null)
+            if (Data.LastScene != null)
             {
                 if (Data.LastScene.Name == SceneManager.GetActiveScene().name) return;
                 
@@ -118,8 +111,19 @@ namespace Main
             SceneInfo house = new SceneInfo();
             house.Name = "House";
             Data.SceneInfos[3] = house;
+        }
+        
+        private void InitNPCs()
+        {
+            Data.NpcInfos = new NPCInfo[2];
+
+            NPCInfo harald = new NPCInfo();
+            harald.Name = "Harald";
+            Data.NpcInfos[0] = harald;
             
-            Save();
+            NPCInfo iris = new NPCInfo();
+            iris.Name = "Iris";
+            Data.NpcInfos[1] = iris;
         }
 
         private SceneInfo GetCurrentSceneInfo()
@@ -136,6 +140,12 @@ namespace Main
         
         private void OnApplicationQuit()
         {
+            if (Delete)
+            {
+                PlayerPrefs.DeleteAll();
+                return;
+            }
+            
             SceneInfo info = new SceneInfo();
             info.Name = SceneManager.GetActiveScene().name;
             info.PlayerPosition = playerTransform.position;
@@ -143,6 +153,20 @@ namespace Main
             Data.LastScene = info;
             SaveCurrentSceneInfo();
             Save();
+        }
+
+        public bool GetNPCInfo(string name, out NPCInfo info)
+        {
+            for (int i = 0; i < Data.NpcInfos.Length; i++)
+            {
+                if (name == Data.NpcInfos[i].Name)
+                {
+                    info = Data.NpcInfos[i];
+                    return true;
+                }
+            }
+            info = null;
+            return false;
         }
     }
 
@@ -152,6 +176,7 @@ namespace Main
         public bool FirstLoad;
         public SceneInfo LastScene;
         public SceneInfo[] SceneInfos;
+        public NPCInfo[] NpcInfos;
     }
 
     [Serializable]
@@ -159,5 +184,12 @@ namespace Main
     {
         public string Name;
         public Vector2 PlayerPosition;
+    }
+
+    [Serializable]
+    public class NPCInfo
+    {
+        public string Name;
+        public int DialogIndex;
     }
 }

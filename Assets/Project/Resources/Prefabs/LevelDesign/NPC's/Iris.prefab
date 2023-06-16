@@ -91,8 +91,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6760449305564380243}
-  - component: {fileID: 2940406423635964282}
   - component: {fileID: 805092898516552343}
+  - component: {fileID: 4552078343478784689}
   m_Layer: 0
   m_Name: Iris
   m_TagString: Untagged
@@ -115,19 +115,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2940406423635964282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7893295071994703706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9773d08c5b3c14c47933289eb401e5bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstDialog: {fileID: 11400000, guid: c354884a410128142a4e139dcb4a1bbc, type: 2}
 --- !u!58 &805092898516552343
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +131,18 @@ CircleCollider2D:
   m_Offset: {x: -0.014184937, y: -0.073759094}
   serializedVersion: 2
   m_Radius: 0.22482215
+--- !u!114 &4552078343478784689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7893295071994703706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd4e1e05fdd4870b70012ed1aedff79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Iris
+  Dialogs:
+  - {fileID: 11400000, guid: c354884a410128142a4e139dcb4a1bbc, type: 2}

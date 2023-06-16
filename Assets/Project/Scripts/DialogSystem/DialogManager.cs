@@ -13,7 +13,8 @@ namespace DialogSystem
         public event Action<string> OnTextChanged;
         public event Action<Speaker> OnSpeakerChanged;
         public event Action<Choice> OnChoice;
-        public event Action OnChoiceOver; 
+        public event Action OnChoiceOver;
+        public event Action<int> OnChoiceResults;
 
         public float CharactersPerSecond;
 
@@ -61,6 +62,7 @@ namespace DialogSystem
             if (context.started && !hasChoosen)
             {
                 dialog = dialog.GetDialogFromChoice(sentenceIndex, 0);
+                OnChoiceResults?.Invoke(1);
                 UpdateChoose();
             }
         }
@@ -70,6 +72,7 @@ namespace DialogSystem
             if (context.started && !hasChoosen)
             {
                 dialog = dialog.GetDialogFromChoice(sentenceIndex, 1);
+                OnChoiceResults?.Invoke(2);
                 UpdateChoose();
             }
         }
@@ -79,6 +82,13 @@ namespace DialogSystem
             sentenceIndex = 0;
             hasChoosen = true;
             OnChoiceOver?.Invoke();
+            if (dialog == null)
+            {
+                inDialog = false;
+                GameStateManager.Instance.ChangeState(GameState.Playing);
+                OnDialogEnd?.Invoke();
+                return;
+            }
             StartCoroutine(Type());
         }
         
