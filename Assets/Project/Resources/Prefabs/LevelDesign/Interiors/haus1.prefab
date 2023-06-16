@@ -106,17 +106,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: bed_red_senkrecht
       objectReference: {fileID: 0}
+    - target: {fileID: 4588043635596946926, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.29
+      objectReference: {fileID: 0}
     - target: {fileID: 9218884202339528867, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9218884202339528867, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.565
+      value: 0.539
       objectReference: {fileID: 0}
     - target: {fileID: 9218884202339528867, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.376
+      value: -0.297
       objectReference: {fileID: 0}
     - target: {fileID: 9218884202339528867, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -263,6 +267,10 @@ PrefabInstance:
     - target: {fileID: 6098873099698867179, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -2.56268
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654071380345824858, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_Points.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6654071380345824858, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
       propertyPath: m_Points.Array.data[0].x

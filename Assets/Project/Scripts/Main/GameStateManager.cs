@@ -25,6 +25,7 @@ namespace Main
     {
         Playing,
         InDialog,
+        InMap,
         InTeleportation
     }
 }

@@ -487,6 +487,33 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Map"",
+            ""id"": ""5e32b385-8c7c-4926-a24c-c6f25756fc3d"",
+            ""actions"": [
+                {
+                    ""name"": ""Toggle"",
+                    ""type"": ""Button"",
+                    ""id"": ""085f91d6-033e-4a11-a692-2e912a1a15de"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""b58b3837-521c-4027-a4a5-9f71299e9d37"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Toggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -512,6 +539,9 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_QuickTime_D = m_QuickTime.FindAction("D", throwIfNotFound: true);
         m_QuickTime_W = m_QuickTime.FindAction("W", throwIfNotFound: true);
         m_QuickTime_Space = m_QuickTime.FindAction("Space", throwIfNotFound: true);
+        // Map
+        m_Map = asset.FindActionMap("Map", throwIfNotFound: true);
+        m_Map_Toggle = m_Map.FindAction("Toggle", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -752,6 +782,39 @@ public class @GameInput : IInputActionCollection, IDisposable
         }
     }
     public QuickTimeActions @QuickTime => new QuickTimeActions(this);
+
+    // Map
+    private readonly InputActionMap m_Map;
+    private IMapActions m_MapActionsCallbackInterface;
+    private readonly InputAction m_Map_Toggle;
+    public struct MapActions
+    {
+        private @GameInput m_Wrapper;
+        public MapActions(@GameInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Toggle => m_Wrapper.m_Map_Toggle;
+        public InputActionMap Get() { return m_Wrapper.m_Map; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MapActions set) { return set.Get(); }
+        public void SetCallbacks(IMapActions instance)
+        {
+            if (m_Wrapper.m_MapActionsCallbackInterface != null)
+            {
+                @Toggle.started -= m_Wrapper.m_MapActionsCallbackInterface.OnToggle;
+                @Toggle.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnToggle;
+                @Toggle.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnToggle;
+            }
+            m_Wrapper.m_MapActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Toggle.started += instance.OnToggle;
+                @Toggle.performed += instance.OnToggle;
+                @Toggle.canceled += instance.OnToggle;
+            }
+        }
+    }
+    public MapActions @Map => new MapActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -775,5 +838,9 @@ public class @GameInput : IInputActionCollection, IDisposable
         void OnD(InputAction.CallbackContext context);
         void OnW(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
+    }
+    public interface IMapActions
+    {
+        void OnToggle(InputAction.CallbackContext context);
     }
 }
