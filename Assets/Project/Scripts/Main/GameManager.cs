@@ -1,4 +1,5 @@
 ﻿using System;
+using Inventory_Items;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,8 @@ namespace Main
                 InitScenes();
                 InitNPCs();
                 InitBarriers();
+                InitInventory();
+                InitItems();
                 Save();
             }
             
@@ -39,6 +42,12 @@ namespace Main
 
         private void Start()
         {
+            if(!Data.FirstSpawn)
+            {
+                Data.FirstSpawn = true;
+                Save();
+                return;
+            }
             Vector2 offset = new Vector2();
             if (Data.LastScene == null) return;
             switch (SceneManager.GetActiveScene().name)
@@ -133,6 +142,17 @@ namespace Main
             Data.Barriers = new [] {true, true, true, true, true};
         }
 
+        private void InitInventory()
+        {
+            Data.InventoryInfo = new InventoryInfo();
+            Data.InventoryInfo.ItemIDs = new int[5];
+        }
+
+        private void InitItems()
+        {
+            Data.ItemInfos = new ItemInfo[10];
+        }
+
         private SceneInfo GetCurrentSceneInfo()
         {
             for (int i = 0; i < Data.SceneInfos.Length; i++)
@@ -175,18 +195,54 @@ namespace Main
             info = null;
             return false;
         }
+
+        public void SaveItemInfo(ItemInfo info)
+        {
+            for (int i = 0; i < Data.ItemInfos.Length; i++)
+            {
+                if (Data.ItemInfos[i].ItemID == info.ItemID || Data.ItemInfos[i].ItemID == 0)
+                {
+                    Data.ItemInfos[i].ItemID = info.ItemID;
+                    Data.ItemInfos[i].Active = info.Active;
+                }
+            }
+        }
+        
+        public void SaveInventory(Slot[] slots)
+        {
+            for (int i = 0; i < slots.Length; i++)
+            {
+                Data.InventoryInfo.ItemIDs[i] = slots[i].GetItemID();
+            }
+        }
     }
 
     [Serializable]
     public class SaveData
     {
         public bool FirstLoad;
+        public bool FirstSpawn;
         public SceneInfo LastScene;
         public SceneInfo[] SceneInfos;
         public NPCInfo[] NpcInfos;
         public bool[] Barriers;
+        public InventoryInfo InventoryInfo;
+        public ItemInfo[] ItemInfos;
     }
 
+    [Serializable]
+    public class ItemInfo
+    {
+        public int ItemID;
+        public bool Active = true;
+    }
+
+    [Serializable]
+    public class InventoryInfo
+    {
+        public int[] ItemIDs;
+    }
+    
     [Serializable]
     public class SceneInfo
     {

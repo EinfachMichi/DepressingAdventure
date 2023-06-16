@@ -12,7 +12,7 @@ namespace Main
 
         public bool interactable { get; set; }
 
-        private void Start()
+        protected virtual void Start()
         {
             interactable = true;
         }

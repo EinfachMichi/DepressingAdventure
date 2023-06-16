@@ -37,6 +37,13 @@ namespace Environment
             }
         }
 
+        public void Disable()
+        {
+            gameObject.SetActive(false);
+            Active = false;
+            GameManager.Instance.Data.Barriers[ID] = false;
+        }
+        
         private void OnDialogEnd()
         {
             DialogManager.Instance.OnDialogEnd -= OnDialogEnd;
