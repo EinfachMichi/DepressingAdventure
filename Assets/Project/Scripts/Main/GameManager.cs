@@ -126,7 +126,7 @@ namespace Main
         
         private void InitNPCs()
         {
-            Data.NpcInfos = new NPCInfo[3];
+            Data.NpcInfos = new NPCInfo[4];
 
             NPCInfo harald = new NPCInfo();
             harald.Name = "Harald";
@@ -139,6 +139,10 @@ namespace Main
             NPCInfo fronicka = new NPCInfo();
             fronicka.Name = "Fronicka";
             Data.NpcInfos[2] = fronicka;
+            
+            NPCInfo ludmilla = new NPCInfo();
+            ludmilla.Name = "Ludmilla";
+            Data.NpcInfos[3] = ludmilla;
         }
 
         private void InitBarriers()
