@@ -30,6 +30,8 @@ public class QuickTimePiano : MonoBehaviour
     [SerializeField] float score;
     [SerializeField] float pointsPerSec;
 
+    [SerializeField] float timer;
+
     char pressedLetter;
 
     [SerializeField] int tail = 0;
@@ -57,11 +59,13 @@ public class QuickTimePiano : MonoBehaviour
     [SerializeField] bool tailIsS = false;
     [SerializeField] bool tailIsD = false;
 
+    bool gameEnd = false;
+
     bool tailPlayes = true;
 
     //reihenfolge der tail,firtsttail,currenttail in den funktionen verfolgen und korregieren!
 
-    private void Start()
+    private void Awake()
     {
         tail = 0;
         
@@ -87,13 +91,20 @@ public class QuickTimePiano : MonoBehaviour
     private void Update()
     {
         PointsText.text = score.ToString("0,0");
+
+
         if (tailIsA && aPress)
         {
             score = score+Time.deltaTime * pointsPerSec;
         }
-        else if (tailIsA && aPress)
-        {
 
+        if (timer > 0)
+        {
+            timer = timer - Time.deltaTime;
+        }
+        else
+        {
+            gameEnd = true;
         }
 
         if (tailIsS && sPress)
@@ -109,12 +120,23 @@ public class QuickTimePiano : MonoBehaviour
         if ((tailIsA==true && (aPress==false||sPress==true||dPress==true))|| (tailIsS == true && (sPress == false || aPress == true || dPress == true)) || (tailIsD == true && (dPress == false || aPress == true || sPress == true)))
         {
             score -= Time.deltaTime * pointsPerSec;
-            print("wrong");
+        }
+
+        if ((aPress == true) && (sPress == true || dPress == true))
+        {
+            score -= Time.deltaTime * pointsPerSec;
+            print(1);
+        }
+
+        if((sPress == true && dPress == true))
+        {
+            score -= Time.deltaTime * pointsPerSec;
+            print(2);
         }
 
 
 
-        if (pianoTail[tail].transform.position.y <= start.y - (tailscale[tail].y+0.2) * abstand)//(start.y - (tailscale.localscale))
+        if (pianoTail[tail].transform.position.y <= start.y - (tailscale[tail].y+0.2) * abstand&&gameEnd==false)//(start.y - (tailscale.localscale))
         {
             tailsFunktion();
         }
