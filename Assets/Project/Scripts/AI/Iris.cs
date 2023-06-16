@@ -5,15 +5,9 @@ namespace AI
 {
     public class Iris : NPC
     {
-        private NPCInfo info;
-        
-        private void Start()
+        protected override void Start()
         {
-            if (GameManager.Instance.GetNPCInfo(Name, out NPCInfo info))
-            {
-                this.info = info;
-            }
-
+            base.Start();
             if (info.DialogIndex == 1)
             {
                 DialogManager.Instance.OnChoiceResults += OnChoiceResults;
@@ -75,7 +69,5 @@ namespace AI
                 Invoke("ResetInteractable", 1f);
             }
         }
-        
-        private void ResetInteractable() => interactable = true;
     }
 }

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Harald_Start
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Hallo, alter Mann. Geh\xF6ren Sie zu diesem kleinen Dorf hier?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: deb5162d07e533b4cbcc18295e0666d9, type: 2}
+    Text: Flieh!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Wie bitte?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: deb5162d07e533b4cbcc18295e0666d9, type: 2}
+    Text: Flieh!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Ich verstehe nicht ganz. Warum sollte ich fliehen? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: deb5162d07e533b4cbcc18295e0666d9, type: 2}
+    Text: Tod! Verderben! Fliehen!
+    Choice:
+      Answers:
+      - Text: "K\xF6nnen Sie nicht normal reden oder fehlt Ihnen diese F\xE4higkeit?"
+        Dialog: {fileID: 11400000, guid: ed6784bfd0479d943b0201ab0ecba81e, type: 2}
+      - Text: "Was redest du denn da f\xFCr einen Stuss? Tod und Verderben soll mich
+          in diesem kleinen Dorf erwarten? Wohl kaum."
+        Dialog: {fileID: 11400000, guid: c270ac3c4280fef48ac015ad865a83b2, type: 2}
