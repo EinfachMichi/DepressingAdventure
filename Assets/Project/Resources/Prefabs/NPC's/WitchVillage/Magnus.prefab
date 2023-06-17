@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7100572621223957999
+--- !u!1001 &7758808272092973754
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -18,14 +18,14 @@ PrefabInstance:
     - target: {fileID: 1638358294894995773, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 502e95763fbc1654187f5edf1d9dcad9, type: 3}
+      objectReference: {fileID: 21300000, guid: b2851939db9479943b3d3cdd72870503, type: 3}
     - target: {fileID: 1638358294894995773, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485937108423355988, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
       propertyPath: m_Name
-      value: Fronicka
+      value: Magnus
       objectReference: {fileID: 0}
     - target: {fileID: 4507700824164181770, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
       propertyPath: m_RootOrder
