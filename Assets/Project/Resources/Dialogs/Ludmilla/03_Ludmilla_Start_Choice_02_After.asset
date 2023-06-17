@@ -43,11 +43,6 @@ MonoBehaviour:
       wollte ich Sie fragen, ob ein gewisser Hintergrund daf\xFCr existiert."
     Choice:
       Answers: []
-  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: "Sie klangen sehr ver\xE4ngstigt, als Sie das Dorf erw\xE4hnt haben. Darum
-      wollte ich Sie fragen, ob ein gewisser Hintergrund daf\xFCr existiert."
-    Choice:
-      Answers: []
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
     Text: Nicht wirklich, nur dass sie mich aus ihrem Dorf verbannt haben.
     Choice:
@@ -85,17 +80,8 @@ MonoBehaviour:
       die Unschuld."
     Choice:
       Answers: []
-  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
-    Text: "Eine wei\xDFe Rose zu finden, ist sehr selten. Dazu repr\xE4sentiert diese
-      die Unschuld."
-    Choice:
-      Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
     Text: "Und Sie haben diese bisher nicht finden k\xF6nnen?"
-    Choice:
-      Answers: []
-  - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
-    Text: Nein. Darum lebe ich seit einigen Monaten in diesem Haus.
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}

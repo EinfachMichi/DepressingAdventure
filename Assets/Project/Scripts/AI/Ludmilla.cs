@@ -1,16 +1,15 @@
 using DialogSystem;
 using Inventory_Items;
 using Main;
-using UnityEngine.Events;
+using UnityEngine;
 
 namespace AI
 {
     public class Ludmilla : NPC
     {
         private int choice;
-        public UnityEvent InspectLudmilla;
+        public GameObject listQuest;
         
-
         protected override void Start()
         {
             base.Start();
@@ -54,7 +53,7 @@ namespace AI
 
             if (DialogIndex == 0 && choice == 2)
             {
-                InspectLudmilla.Invoke();
+                Inspect();
             }
             else if (DialogIndex == 0 && choice == 1)
             {
@@ -64,9 +63,16 @@ namespace AI
             Invoke("ResetInteractable", 1f);
         }
 
+        public void Inspect()
+        {
+            listQuest.SetActive(true);
+            GameStateManager.Instance.ChangeState(GameState.InList);
+        }
+        
         public void OnInspectDone()
         {
             DialogIndex = 2;
+            listQuest.SetActive(false);
             Interaction();
         }
     }

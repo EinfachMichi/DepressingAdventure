@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4e2babb0d443228cc52508ae7ba348, type: 3}
   m_Name: Iris_sad
   m_EditorClassIdentifier: 
-  Name: 
-  Icon: {fileID: 0}
+  Name: Iris
+  Icon: {fileID: 21300000, guid: 2de5a588a6ce68247b782b765771891a, type: 3}
