@@ -7,13 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1241593984230335464, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.137
+      objectReference: {fileID: 0}
     - target: {fileID: 3812886470084184857, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
       propertyPath: m_Name
       value: Spruce Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4107920300853331067, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.485
+      value: -1.321
       objectReference: {fileID: 0}
     - target: {fileID: 6725660507335454312, guid: 98fb7974a8772ff49a29eb52e07f34cd, type: 3}
       propertyPath: m_SpriteSortPoint
