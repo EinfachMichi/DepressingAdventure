@@ -39,6 +39,7 @@ namespace Main
             this.sceneName = sceneName;
             PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
             GameStateManager.Instance.ChangeGameState(GameState.InTeleportation);
+            AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);
             Play(FadeMode.FadeIn);
             GameManager.Instance.SaveLastSceneInfo();
             GameManager.Instance.SaveCurrentSceneInfo();

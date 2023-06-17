@@ -55,6 +55,15 @@ public class AudioManager : Singleton<AudioManager>
         currentSound.source.Stop();
     }
 
+    public void StopAllSounds(AudioSound audioSound)
+    {
+        Sound[] sounds = _allSounds[(int)audioSound];
+        foreach (Sound sound in sounds)
+        {
+            sound.source.Stop();
+        }
+    }
+
     public enum AudioSound
     {
         EffectSounds = 0
