@@ -13020,11 +13020,6 @@ Transform:
   m_Father: {fileID: 1092462769}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1587589793 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2384709735574272142, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-  m_PrefabInstance: {fileID: 1857529712}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1672689403
 GameObject:
   m_ObjectHideFlags: 0
@@ -13181,10 +13176,6 @@ PrefabInstance:
     - target: {fileID: 3453624041977256138, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 1587589793}
-    - target: {fileID: 3790653169903883769, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: Delete
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4229486280550208487, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -13281,10 +13272,6 @@ PrefabInstance:
     - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7799278636842407470, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: CharactersPerSecond
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}

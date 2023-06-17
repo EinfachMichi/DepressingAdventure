@@ -253,8 +253,41 @@ namespace Main
         public bool WitchVillage;
         public bool LudmillaDead;
         public bool CanCollectRose;
+        public NarratorInfo[] NarratorInfos;
+        public bool NarratorLoaded;
+        
+        public bool Played(int ID)
+        {
+            foreach (NarratorInfo info in NarratorInfos)
+            {
+                if (info.ID == ID)
+                {
+                    return info.Played;
+                }
+            }
+            return false;
+        }
+
+        public void SetPlayed(int ID)
+        {
+            foreach (NarratorInfo info in NarratorInfos)
+            {
+                if (info.ID == ID)
+                {
+                    info.Played = true;
+                    break;
+                }
+            }
+        }
     }
 
+    [Serializable]
+    public class NarratorInfo
+    {
+        public int ID;
+        public bool Played;
+    }
+    
     [Serializable]
     public class ItemInfo
     {

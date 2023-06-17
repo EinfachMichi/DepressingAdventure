@@ -36,8 +36,8 @@ namespace Other
             if (context.started)
             {
                 mapUI.SetActive(!mapUI.activeSelf);
-                if(mapUI.activeSelf) GameStateManager.Instance.ChangeState(GameState.InMap);
-                else GameStateManager.Instance.ChangeState(GameState.Playing);
+                if(mapUI.activeSelf) GameStateManager.Instance.ChangeGameState(GameState.InMap);
+                else GameStateManager.Instance.ChangeGameState(GameState.Playing);
             }
         }
     }

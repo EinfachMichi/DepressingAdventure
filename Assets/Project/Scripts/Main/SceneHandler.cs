@@ -38,7 +38,7 @@ namespace Main
         {
             this.sceneName = sceneName;
             PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
-            GameStateManager.Instance.ChangeState(GameState.InTeleportation);
+            GameStateManager.Instance.ChangeGameState(GameState.InTeleportation);
             Play(FadeMode.FadeIn);
             GameManager.Instance.SaveLastSceneInfo();
             GameManager.Instance.SaveCurrentSceneInfo();

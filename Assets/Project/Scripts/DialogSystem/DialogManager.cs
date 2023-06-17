@@ -30,7 +30,7 @@ namespace DialogSystem
             this.dialog = dialog;
             sentenceIndex = 0;
             inDialog = true;
-            GameStateManager.Instance.ChangeState(GameState.InDialog);
+            GameStateManager.Instance.ChangeGameState(GameState.InDialog);
             OnDialogStart?.Invoke();
             typing = StartCoroutine(Type());
         }
@@ -86,7 +86,7 @@ namespace DialogSystem
             if (dialog == null)
             {
                 inDialog = false;
-                GameStateManager.Instance.ChangeState(GameState.Playing);
+                GameStateManager.Instance.ChangeGameState(GameState.Playing);
                 OnDialogEnd?.Invoke();
                 return;
             }
@@ -112,7 +112,7 @@ namespace DialogSystem
                 else
                 {
                     inDialog = false;
-                    GameStateManager.Instance.ChangeState(GameState.Playing);
+                    GameStateManager.Instance.ChangeGameState(GameState.Playing);
                     OnDialogEnd?.Invoke();
                 }
             }

@@ -68,7 +68,7 @@ namespace AI
         public void Inspect()
         {
             listQuest.SetActive(true);
-            GameStateManager.Instance.ChangeState(GameState.InList);
+            GameStateManager.Instance.ChangeGameState(GameState.InList);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }

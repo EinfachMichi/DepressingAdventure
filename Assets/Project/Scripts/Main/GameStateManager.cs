@@ -6,8 +6,10 @@ namespace Main
     public class GameStateManager : Singleton<GameStateManager>
     {
         public event Action<GameState> OnGameStateChanged;
+        public event Action<AudioState> OnAudioStateChanged;
         
-        private GameState state;
+        private GameState gameState;
+        private AudioState audioState;
 
         private void Start()
         {
@@ -16,13 +18,19 @@ namespace Main
 
         private void PlayingState()
         {
-            ChangeState(GameState.Playing);
+            ChangeGameState(GameState.Playing);
         }
 
-        public void ChangeState(GameState newState)
+        public void ChangeGameState(GameState newState)
         {
-            state = newState;
-            OnGameStateChanged?.Invoke(state);
+            gameState = newState;
+            OnGameStateChanged?.Invoke(gameState);
+        }
+
+        public void ChangeAudioState(AudioState newState)
+        {
+            audioState = newState;
+            OnAudioStateChanged?.Invoke(audioState);
         }
     }
 

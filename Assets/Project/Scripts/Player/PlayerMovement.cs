@@ -26,6 +26,19 @@ namespace Player
         private void Start()
         {
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+            GameStateManager.Instance.OnAudioStateChanged += OnAudioStateChanged;
+        }
+
+        private void OnAudioStateChanged(AudioState state)
+        {
+            print("test");
+            if (state == AudioState.None)
+            {
+                UnFreeze();
+                return;
+            }
+            
+            Freeze();
         }
 
         private void OnGameStateChanged(GameState state)
@@ -73,21 +86,36 @@ namespace Player
             
             if (context.performed)
             {
+                if (rb.velocity == Vector2.zero)
+                {
+                    AudioManager.Instance.Play("Walk", AudioManager.AudioSound.EffectSounds);
+                }
                 moveVector = context.ReadValue<Vector2>();
             }
             else if (context.canceled)
             {
                 moveVector = Vector2.zero;
+                AudioManager.Instance.Stop("Walk", AudioManager.AudioSound.EffectSounds);
             }
         }
         public void Run(InputAction.CallbackContext context)
         {
             if (context.performed)
             {
+                if (rb.velocity != Vector2.zero)
+                {
+                    AudioManager.Instance.Play("Run", AudioManager.AudioSound.EffectSounds);
+                    AudioManager.Instance.Stop("Walk", AudioManager.AudioSound.EffectSounds);
+                }
                 speed = RunSpeed;
             }
             else if (context.canceled)
             {
+                if (rb.velocity != Vector2.zero)
+                {
+                    AudioManager.Instance.Stop("Run", AudioManager.AudioSound.EffectSounds);
+                    AudioManager.Instance.Play("Walk", AudioManager.AudioSound.EffectSounds);
+                }
                 speed = WalkSpeed;
             }
         }
