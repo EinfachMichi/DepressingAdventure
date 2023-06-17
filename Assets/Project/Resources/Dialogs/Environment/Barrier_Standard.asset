@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Barrier_Standard
   m_EditorClassIdentifier: 
   Sentences:
-  - Speaker: {fileID: 11400000, guid: c0c31571f7f811d4e9fd46c6c8c304ad, type: 2}
+  - Speaker: {fileID: 11400000, guid: b095754831b1d4d48a79ad65ce7b134b, type: 2}
     Text: Hier kommst du nocht nicht weiter... Schau dich erstmal in Ruhe um.
     Choice:
       Answers: []
