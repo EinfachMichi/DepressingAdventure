@@ -19,6 +19,7 @@ namespace DialogSystem
         public float CharactersPerSecond = 150;
 
         private Dialog dialog;
+        private Coroutine typing;
         private bool lineFinished;
         private int sentenceIndex;
         private bool hasChoosen = true;
@@ -31,7 +32,7 @@ namespace DialogSystem
             inDialog = true;
             GameStateManager.Instance.ChangeState(GameState.InDialog);
             OnDialogStart?.Invoke();
-            StartCoroutine(Type());
+            typing = StartCoroutine(Type());
         }
 
         private IEnumerator Type()
@@ -89,7 +90,7 @@ namespace DialogSystem
                 OnDialogEnd?.Invoke();
                 return;
             }
-            StartCoroutine(Type());
+            typing = StartCoroutine(Type());
         }
         
         public void NextSentence(InputAction.CallbackContext context)
@@ -106,13 +107,26 @@ namespace DialogSystem
                 else if(dialog.CanReadNext(sentenceIndex))
                 {
                     sentenceIndex++;
-                    StartCoroutine(Type());
+                    typing = StartCoroutine(Type());
                 }
                 else
                 {
                     inDialog = false;
                     GameStateManager.Instance.ChangeState(GameState.Playing);
                     OnDialogEnd?.Invoke();
+                }
+            }
+        }
+
+        public void Skip(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                if (!lineFinished)
+                {
+                    StopCoroutine(typing);
+                    OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
+                    lineFinished = true;
                 }
             }
         }
