@@ -26,6 +26,9 @@ public class Quest_01ButtonInput : MonoBehaviour
 
     public void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        
         Player.GetComponent<Image>().sprite = ChoosenItem[1];
         Enemy.GetComponent<Image>().sprite = ChoosenItem[1];
         round = 1;

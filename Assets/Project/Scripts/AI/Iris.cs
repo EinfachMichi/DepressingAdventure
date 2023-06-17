@@ -64,6 +64,10 @@ namespace AI
                 GameManager.Instance.Data.NpcInfos[2].DialogIndex = 1;
                 DialogIndex = 3;
             }
+            else if (DialogIndex == 1 && choice == 1)
+            {
+                SceneHandler.Instance.EnterNewScene("Quest_01");
+            }
 
             Invoke("ResetInteractable", 1f);
         }

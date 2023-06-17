@@ -17,6 +17,8 @@ namespace Main
         protected override void Awake()
         {
             base.Awake();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
 
             playerTransform = GameObject.FindWithTag("Player").transform;
             

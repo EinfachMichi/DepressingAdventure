@@ -69,10 +69,14 @@ namespace AI
         {
             listQuest.SetActive(true);
             GameStateManager.Instance.ChangeState(GameState.InList);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         
         public void OnInspectDone()
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             DialogIndex = 2;
             listQuest.SetActive(false);
             Interaction();
