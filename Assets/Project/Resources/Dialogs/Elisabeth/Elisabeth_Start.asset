@@ -59,7 +59,7 @@ MonoBehaviour:
     Text: "Ja, bitte! Das w\xE4re sehr nett, wenn sie das Brot abliefern k\xF6nnten."
     Choice:
       Answers:
-      - Text: Es tut mir leid.
+      - Text: Es tut mir leid. Gerade habe ich keine Zeit dazu.
         Dialog: {fileID: 0}
       - Text: "Nat\xFCrlich kann ich es f\xFCr Sie \xFCbernehmen! Vielleicht kann
           ich Sie auf eine weitere Runde \xB4Schere, Stein, Papier\xB4 einladen!"

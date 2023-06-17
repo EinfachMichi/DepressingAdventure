@@ -75,7 +75,7 @@ MonoBehaviour:
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
-    Text: ":Ja. Sie hatten es immer wieder erw\xE4hnt."
+    Text: "Ja. Sie hatten es immer wieder erw\xE4hnt."
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}

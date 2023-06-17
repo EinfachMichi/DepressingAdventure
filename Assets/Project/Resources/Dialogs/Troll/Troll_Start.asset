@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Troll_Start
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: Es ist einfach schrecklich, was passiert ist!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "Ja. Doch wei\xDF ich nicht, was wir tun sollen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: 'Ich hoffe einfach, dass es meinem Bruder gut geht. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: Da bin ich mir sicher!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Entschuldigen Sie die Damen, doch habe ich ihr Gespr\xE4ch mitbekommen.
+      Darum wollte ich Sie fragen, ob ich Ihnen bei irgendetwas behilflich sein k\xF6nnte?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "Der junge Abenteurer, der durch unser Dorf streitet! Ich habe vieles von
+      Ihnen geh\xF6rt! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "In der Tat k\xF6nnten Sie uns helfen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: Sind Sie sich da sicher?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "Nat\xFCrlich! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: Wen willst du sonst losschicken, Fronicka?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Hm\u2026 "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: 'Oder was denkt der Abenteurer selbst? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Ich helfe da, wo ich nur kann! '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: Sehen Sie, Fronicka? Er wird uns helfen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Ich hoffe doch, er kann uns mehr helfen als mit meinem Laden\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "D\xFCrfte ich denn fragen, worum es geht?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "Seit kurzem verschwinden einige unserer Dorfbewohner, unter anderem auch
+      mein Bruder, der B\xFCrgermeister. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Einen B\xFCrgermeister? Sie haben einen?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: Ja, Alexander-
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Ich meine\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Der Bruder von Angela, erkl\xE4rte sich bereit sich um das Dorf k\xFCmmern
+      zu wollen. Allerdings verschwand er vor kurzem."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Verstehe.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Haben Sie denn eine Vermutung, warum sie verschwunden sind? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: 'Weil das Dorf schrecklich ist? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: 'Fronicka. Ich bitte dich. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Was hast du denn? Jeder w\xFCrde aus diesem Dorf fl\xFCchten, wenn er
+      die Gelegenheit h\xE4tte."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "Meine Vermutung ist, dass sich um ein Monster handle. Welches sich in
+      unserer N\xE4he befindet und unsere Bewohner entf\xFChrt. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Ein Monster? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Hier? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: "Ja. Doch wissen wir nicht, was es f\xFCr ein Monster ist. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Jedoch vermuten wir, dass ein Troll sich an den Dorfbewohnern vergriffen
+      habe. Schlie\xDFlich sind Menschen deren Leibspeise."
+    Choice:
+      Answers:
+      - Text: "F\xFCr diesen Kampf muss ich mich erst einmal vorbereiten, ehe ich
+          diesen antrete! "
+        Dialog: {fileID: 11400000, guid: 52f6dd65da78a064c8a59d66f754a8db, type: 2}
+      - Text: "Ein Troll? Klingt doch gro\xDFartig!"
+        Dialog: {fileID: 11400000, guid: 9d438eb648fb24241b8e4193a9cdf8c6, type: 2}

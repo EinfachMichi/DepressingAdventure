@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Troll_Nikolaus_Is_Safe
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Ich lebe! Gott sei Dank!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Ich danke Ihnen, dass Sie mich gerettet haben!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "Stellen Sie sich nur vor, was passiert w\xE4re, h\xE4tten Sie diese Heldentat
+      nicht vollbracht!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "Genau! Ich w\xE4re wie Alexander und die anderen geendet! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Bitte danken Sie mir nicht. Schlie\xDFlich konnte ich nur Sie retten.
+      Die anderen mussten dennoch ihr leben lassen\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Ja, ja. Da heben sie wohl recht.
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "Es ist eine Trag\xF6die. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "Jedoch k\xF6nnen wir, was geschehen ist, nicht mehr ver\xE4ndern. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Da haben Sie recht. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Wir k\xF6nnen nur deren Familien unser Beileid mitteilen. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: 'Da haben Sie recht. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: "\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: ...?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Und uns freuen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Sie und ich! Wir leben! Freuen Sie sich doch etwas! Einen Troll besiegt
+      man nicht alle Tage!
+    Choice:
+      Answers: []

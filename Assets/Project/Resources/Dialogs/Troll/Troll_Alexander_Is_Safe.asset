@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Troll_Alexander_Is_Safe
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: 'Ich danke Ihnen, dass Sie mich gerettet haben. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Bitte danken Sie mir nicht. Schlie\xDFlich konnte ich nur Sie retten.
+      Die Rettung war zu sp\xE4t f\xFCr ihre anderen B\xFCrger."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: "Da haben Sie recht. Das, was meinen Freunden zugesto\xDFen ist, war wirklich
+      eine Trag\xF6die."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: "Die, die ihr Leben hierlie\xDFen, werde ich stets in Ehren halten."
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Was ist eigentlich mit dem Rest passiert, die B\xFCrger, die ebenfalls
+      verschwanden? "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: 'Sie alle wurden bereits vom Troll verzehrt... '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Das ist wirklich grausam. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: 'Da stimme ich Ihnen zu. Ich werde ihre Familien meine tiefste Trauer aussprechen. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Sehr lieb von Ihnen. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: "Aber\u2026"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: Auch wenn es egoistisch klingt, bin ich froh, dass Sie mich gerettet haben.
+      Denn dadurch kann ich endlich meine Schwester wiedersehen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: "Schlie\xDFlich habe ich Sie seit einer Ewigkeit nicht mehr gesehen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Ihre Schwester? Meinen Sie Angela? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: 'Sie haben sie getroffen? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ja. Sie schien sich gro\xDFe Sorgen um Sie gemacht zu haben. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Darum bin ich froh, dass ich Sie retten konnte. '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ein weiterer Grund um schnell zur\xFCck zum Dorf gehen, damit Sie wieder
+      mit ihrer Schwester vereint sind. "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: "Da haben Sie recht! Also schnell zur\xFCck! Zur\xFCck zu meiner Familie! "
+    Choice:
+      Answers: []

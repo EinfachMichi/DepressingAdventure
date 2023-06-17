@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Troll_Start_Choice_02
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Ein Troll? Klingt doch gro\xDFartig!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8e9bdf97aa09dc147bb01411eba6cd59, type: 2}
+    Text: ...
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: 'Wie bitte? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Also es ist nicht gro\xDFartig, dass die Dorfbewohner verschwunden sind
+      und diese vermutlich gefressen wurden! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Dennoch finde ich es gro\xDFartig, da dies eine wunderbare M\xF6glichkeit
+      ist mein neues Schwert vorzuf\xFChren und unter Beweis zu stellen. Welch eine
+      perfekte Gelegenheit hierbei gegen ein Monster antreten zu k\xF6nnen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: "Verstehe. Also wollen Sie die Aufgabe \xFCbernehmen und Alexander- , den
+      B\xFCrgermeister, sowie die B\xFCrger unseres Dorfes zu finden und zu befreien?"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Nat\xFCrlich werde ich diese Aufgabe \xFCbernehmen! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "So eine M\xF6glichkeit lasse ich mir nicht entgehen! "
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
+    Text: 'Ich danke Ihnen vom ganzen Herzen! '
+    Choice:
+      Answers: []

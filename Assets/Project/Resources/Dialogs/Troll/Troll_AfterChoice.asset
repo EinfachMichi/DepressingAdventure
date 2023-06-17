@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Troll_AfterChoice
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: Lecker, Schmecker. Heute ist es ein Festmahl!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: Ich bitte Sie! Bitte fressen Sie uns nicht!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 13c043fdb38a35541b635c9de6f0d2b6, type: 2}
+    Text: "Wir werden garantiert nicht schmecken! Versuchen Sie\u2019s erst gar nicht!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: "Ganz genau! Wir Menschen sind sehr z\xE4h!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: "L\xFCge! Menschenfleisch ist lecker! Sogar sehr!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: Leckerer als alles andere!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: Darum fresse ich euch!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: 'Dies lasse ich nicht zu! '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: Ohhh!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: Hehe
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: "Noch mehr Fressen f\xFCr Papa!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: 'Ein Abenteurer? '
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Ein Held?
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8cbf0e970e2394e419550717b967cdce, type: 2}
+    Text: Egal. Wir sind gerettet!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 8a56f422392535a47ad17e891ae7daed, type: 2}
+    Text: Flieht, sonst wird er euch auch noch verzehren wollen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 7ca88d1d0acd67c418736aa03b9e3f92, type: 2}
+    Text: Ouh ja! Lecker Essen!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: 13c043fdb38a35541b635c9de6f0d2b6, type: 2}
+    Text: Nein! Bitte rettet uns vor diesem Monster!
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: Darum bin ich hier! Ich werde diesen Troll zu Fall bringen und Sie beide
+      retten!
+    Choice:
+      Answers: []

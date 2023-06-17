@@ -50,7 +50,8 @@ MonoBehaviour:
     Text: Ganz genau! Trete gegen mich in Schere, Stein, Papier an!
     Choice:
       Answers:
-      - Text: "Vielleicht sp\xE4ter, kleines!"
+      - Text: "Vielleicht sp\xE4ter, kleines! Erst einmal m\xF6chte ich dieses Dorf
+          erkundigen! "
         Dialog: {fileID: 11400000, guid: 3df39008e7215854da99afb8d2b53a0b, type: 2}
       - Text: "Gegen ein kleines M\xE4dchen zu verlieren sollte nicht allzu schwierig
           sein"
