@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4723121447096145267}
   - component: {fileID: 3593458523792329123}
   - component: {fileID: 2481570924825736023}
-  - component: {fileID: 7077753742641703371}
+  - component: {fileID: 4171677144351268515}
   m_Layer: 0
   m_Name: White Rose
   m_TagString: Untagged
@@ -101,7 +101,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000033630762, y: 0.21788482}
   m_Size: {x: 0.75025934, y: 0.43577603}
   m_Direction: 1
---- !u!114 &7077753742641703371
+--- !u!114 &4171677144351268515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,13 +110,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4723121447096145276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a843d51fc6c4a3fa2efd4f3b4873aa7, type: 3}
+  m_Script: {fileID: 11500000, guid: 65372ccb96e05214f9f42845a88b993c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7077753742641703371}
+      - m_Target: {fileID: 4171677144351268515}
         m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
         m_MethodName: DisableObject
         m_Mode: 2
@@ -131,7 +131,7 @@ MonoBehaviour:
   ShowInteractionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7077753742641703371}
+      - m_Target: {fileID: 4171677144351268515}
         m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
         m_MethodName: EnableObject
         m_Mode: 2
@@ -146,7 +146,7 @@ MonoBehaviour:
   InteractionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7077753742641703371}
+      - m_Target: {fileID: 4171677144351268515}
         m_TargetAssemblyTypeName: Inventory_Items.ItemObject, Assembly-CSharp
         m_MethodName: Interaction
         m_Mode: 1
@@ -161,7 +161,7 @@ MonoBehaviour:
   EndInteractionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7077753742641703371}
+      - m_Target: {fileID: 4171677144351268515}
         m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
         m_MethodName: DisableObject
         m_Mode: 2

@@ -250,6 +250,7 @@ namespace Main
         public ItemInfo[] ItemInfos;
         public bool WitchVillage;
         public bool LudmillaDead;
+        public bool CanCollectRose;
     }
 
     [Serializable]

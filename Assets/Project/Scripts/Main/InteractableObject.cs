@@ -23,6 +23,7 @@ namespace Main
 
         public virtual void ShowInteraction()
         {
+            if (!interactable) return;
             foreach (UnityEvent unityEvent in ShowInteractionEvents)
             {
                 unityEvent?.Invoke();
@@ -31,6 +32,7 @@ namespace Main
 
         public virtual void Interaction()
         {
+            if (!interactable) return;
             foreach (UnityEvent unityEvent in InteractionEvents)
             {
                 unityEvent?.Invoke();
@@ -39,6 +41,7 @@ namespace Main
 
         public virtual void EndInteraction()
         {
+            if (!interactable) return;
             foreach (UnityEvent unityEvent in EndInteractionEvents)
             {
                 unityEvent?.Invoke();

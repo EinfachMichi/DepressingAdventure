@@ -55,11 +55,13 @@ namespace AI
             {
                 Inspect();
             }
-            else if (DialogIndex == 0 && choice == 1)
+            else if (DialogIndex == 0 && choice == 1 || DialogIndex == 2)
             {
-                DialogIndex = 4;
+                DialogIndex = 3;
+                GameManager.Instance.Data.CanCollectRose = true;
+                GameManager.Instance.Save();
             }
-            
+
             Invoke("ResetInteractable", 1f);
         }
 
