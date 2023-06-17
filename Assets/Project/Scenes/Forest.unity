@@ -50131,30 +50131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ludmilla
       objectReference: {fileID: 0}
-    - target: {fileID: 8334385986454875670, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
-      propertyPath: Dialogs.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8334385986454875670, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
-      propertyPath: Dialogs.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: df0a934dc323a4747b01fece7812bad4, type: 2}
-    - target: {fileID: 8334385986454875670, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
-      propertyPath: Dialogs.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 45f378d5dabb5624cb375b5f4b743d2a, type: 2}
-    - target: {fileID: 8334385986454875670, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
-      propertyPath: Dialogs.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 14a71737c52e61742a14ca28d19c5ed9, type: 2}
-    - target: {fileID: 8334385986454875670, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
-      propertyPath: Dialogs.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8569e4eec8cfd944e8a663a436694381, type: 2}
-    - target: {fileID: 8334385986454875670, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
-      propertyPath: Dialogs.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: f1b9ae9170c3d1745858e1494ff6b63e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d5cbb7f8e018834eb54fe06391342c8, type: 3}
 --- !u!1001 &747372316
@@ -93493,7 +93469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2491600260387720700, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2491600260387720700, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -93541,7 +93517,7 @@ PrefabInstance:
       objectReference: {fileID: 2099369506}
     - target: {fileID: 3790653169903883769, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: Delete
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4229486280550208487, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchorMax.y

@@ -46,6 +46,14 @@ namespace Main
 
         public void LoadScene()
         {
+            if (sceneName == "Village" && GameManager.Instance.Data.WitchVillage)
+            {
+                SceneManager.LoadScene("WitchVillage");
+                GameManager.Instance.Data.WitchVillage = false;
+                GameManager.Instance.Data.NpcInfos[1].DialogIndex = 4;
+                GameManager.Instance.Save();
+                return;
+            }
             SceneManager.LoadScene(sceneName);
         }
     }

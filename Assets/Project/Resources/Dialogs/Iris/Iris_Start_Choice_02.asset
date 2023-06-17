@@ -29,7 +29,7 @@ MonoBehaviour:
       Answers: []
   - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
     Text: Ich rede hier nicht von Kindern, sondern Erwachsene, die nach ihrer Niederlage
-      geflehmt hatten, Tequila!
+      geflehnt hatten, Tequila!
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}

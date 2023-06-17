@@ -374,7 +374,15 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Name: Ludmilla
-  Dialogs: []
+  Dialogs:
+  - {fileID: 11400000, guid: df0a934dc323a4747b01fece7812bad4, type: 2}
+  - {fileID: 11400000, guid: 45f378d5dabb5624cb375b5f4b743d2a, type: 2}
+  - {fileID: 11400000, guid: 8569e4eec8cfd944e8a663a436694381, type: 2}
+  - {fileID: 11400000, guid: f1b9ae9170c3d1745858e1494ff6b63e, type: 2}
+  - {fileID: 11400000, guid: 877844b296d8d674b9c842f672f456c3, type: 2}
+  InspectLudmilla:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &9157674248767904981
 GameObject:
   m_ObjectHideFlags: 0

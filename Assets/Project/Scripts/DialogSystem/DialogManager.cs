@@ -16,7 +16,7 @@ namespace DialogSystem
         public event Action OnChoiceOver;
         public event Action<int> OnChoiceResults;
 
-        public float CharactersPerSecond;
+        public float CharactersPerSecond = 150;
 
         private Dialog dialog;
         private bool lineFinished;

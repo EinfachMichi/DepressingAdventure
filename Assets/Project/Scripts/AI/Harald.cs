@@ -6,7 +6,8 @@ public class Harald : NPC
     public override void Interaction()
     {
         if (!interactable) return;
-        
+        base.Interaction();
+
         interactable = false;
         DialogManager.Instance.OnDialogEnd += OnDialogEnd;
         DialogManager.Instance.StartDialog(Dialogs[DialogIndex]);

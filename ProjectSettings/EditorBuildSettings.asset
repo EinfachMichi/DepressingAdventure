@@ -20,4 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/Forest.unity
     guid: aca6519c8844efc4182b9c8460eaef35
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Project/Scenes/WitchVillage.unity
+    guid: 534b876252bf4874b851c38c3667031d
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: f3b7a3cff6513d24a9d0615a1d3b5eeb, type: 2}

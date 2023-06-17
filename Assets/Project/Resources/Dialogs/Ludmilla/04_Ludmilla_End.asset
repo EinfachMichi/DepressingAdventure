@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
-  m_Name: Ludmilla_End
+  m_Name: 04_Ludmilla_End
   m_EditorClassIdentifier: 
   Sentences:
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}

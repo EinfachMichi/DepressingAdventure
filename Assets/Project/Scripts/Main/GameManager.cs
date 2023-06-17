@@ -55,8 +55,12 @@ namespace Main
                 case "Tutorial":
                     if(Data.LastScene.Name == "Village") offset = Vector2.right;
                     else if(Data.LastScene.Name == "Forest") offset = Vector2.up;
+                    else if(Data.LastScene.Name == "WitchVillage") offset = Vector2.right;
                     break;
                 case "Village":
+                    if(Data.LastScene.Name == "Tutorial") offset = Vector2.left;
+                    break;
+                case "WitchVillage":
                     if(Data.LastScene.Name == "Tutorial") offset = Vector2.left;
                     break;
                 case "Forest":
@@ -105,7 +109,7 @@ namespace Main
 
         private void InitScenes()
         {
-            Data.SceneInfos = new SceneInfo[4];
+            Data.SceneInfos = new SceneInfo[5];
 
             SceneInfo tutorial = new SceneInfo();
             tutorial.Name = "Tutorial";
@@ -122,6 +126,10 @@ namespace Main
             SceneInfo house = new SceneInfo();
             house.Name = "House";
             Data.SceneInfos[3] = house;
+            
+            SceneInfo witchVillage = new SceneInfo();
+            witchVillage.Name = "WitchVillage";
+            Data.SceneInfos[4] = witchVillage;
         }
         
         private void InitNPCs()
@@ -236,6 +244,8 @@ namespace Main
         public bool[] Barriers;
         public InventoryInfo InventoryInfo;
         public ItemInfo[] ItemInfos;
+        public bool WitchVillage;
+        public bool LudmillaDead;
     }
 
     [Serializable]

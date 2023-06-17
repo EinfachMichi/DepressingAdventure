@@ -11,6 +11,11 @@ namespace Main
 
         private void Start()
         {
+            Invoke("PlayingState", 0.2f);
+        }
+
+        private void PlayingState()
+        {
             ChangeState(GameState.Playing);
         }
 

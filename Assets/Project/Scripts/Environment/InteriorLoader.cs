@@ -30,6 +30,11 @@ namespace Environment
             player = GameObject.FindWithTag("Player").transform;
             spawnpoint = GameObject.FindWithTag("Spawnpoint").transform;
 
+            Invoke("TPPlayer", 0.05f);
+        }
+
+        void TPPlayer()
+        {
             player.position = spawnpoint.position;
         }
     }

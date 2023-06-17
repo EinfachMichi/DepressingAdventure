@@ -102,6 +102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1766324831644876196}
     m_Modifications:
+    - target: {fileID: 1946949144881301752, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.005
+      objectReference: {fileID: 0}
     - target: {fileID: 2724914116070061588, guid: bdcf75f46aa922749bd8599f9eab1acd, type: 3}
       propertyPath: m_Name
       value: bed_red_senkrecht

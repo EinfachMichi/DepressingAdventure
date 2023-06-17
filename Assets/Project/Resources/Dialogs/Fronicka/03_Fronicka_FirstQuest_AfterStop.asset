@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
-  m_Name: Fronicka_After_Quest
+  m_Name: 03_Fronicka_FirstQuest_AfterStop
   m_EditorClassIdentifier: 
   Sentences:
   - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: Ob mein ehemaliger Mann, Manfred, zu Hause ist?
+    Text: Sind Sie endlich bereit?
     Choice:
-      Answers: []
+      Answers:
+      - Text: Nein, ich komme bald wieder!
+        Dialog: {fileID: 11400000, guid: f2523722a2923f640a10c45511d8d03d, type: 2}
+      - Text: "Ja, ich bin bereit f\xFCr das Abenteuer!"
+        Dialog: {fileID: 11400000, guid: ff845d00f7ee3d74ca04de5f7bc3de7c, type: 2}

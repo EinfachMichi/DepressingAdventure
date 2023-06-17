@@ -509,9 +509,13 @@ MonoBehaviour:
         m_CallState: 2
   Name: Fronicka
   Dialogs:
+  - {fileID: 11400000, guid: b726d3e36d139b8448460b957710407f, type: 2}
   - {fileID: 11400000, guid: 2956ec3a1566a3b4d8dd80eaf9fc3d26, type: 2}
+  - {fileID: 11400000, guid: a7640382e11a9f14cba14cb3422aeb1f, type: 2}
+  - {fileID: 11400000, guid: 09ff843bba106c845a11cc80026a7f99, type: 2}
+  - {fileID: 11400000, guid: f2523722a2923f640a10c45511d8d03d, type: 2}
+  - {fileID: 11400000, guid: ff845d00f7ee3d74ca04de5f7bc3de7c, type: 2}
   - {fileID: 11400000, guid: e79a1b2826b645841890623dc029b47e, type: 2}
   - {fileID: 11400000, guid: df38f0af9af5b38469aadebb3e1758a2, type: 2}
-  - {fileID: 11400000, guid: 270cc94a5723fb84981b1031c5a14391, type: 2}
   - {fileID: 11400000, guid: 270cc94a5723fb84981b1031c5a14391, type: 2}
   List: {fileID: 11400000, guid: 0bb3cfb0c9e176a49b50a393fe7dfacb, type: 2}

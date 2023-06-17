@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
-  m_Name: Ludmilla_Start
+  m_Name: 00_Ludmilla_Start
   m_EditorClassIdentifier: 
   Sentences:
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
@@ -52,16 +52,12 @@ MonoBehaviour:
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
     Text: "K\xF6nnen Sie es mir denn auch beweisen, dass Sie es nicht gewesen waren?"
     Choice:
-      Answers:
-      - Text: Verstehe, da muss ich Ihnen wohl vertrauen.
-        Dialog: {fileID: 0}
-      - Text: "Ich w\xFCsste da einen Weg, wie Sie es mir demonstrieren k\xF6nnten!"
-        Dialog: {fileID: 0}
+      Answers: []
   - Speaker: {fileID: 11400000, guid: e61b467aca49e3f42b097ea6b1830686, type: 2}
     Text: Nein. Ich denke eher weniger, dass ich Ihnen meine Unschuld beweisen kann.
     Choice:
       Answers:
       - Text: Verstehe, da muss ich Ihnen wohl vertrauen.
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: 45f378d5dabb5624cb375b5f4b743d2a, type: 2}
       - Text: "Ich w\xFCsste da einen Weg, wie Sie es mir demonstrieren k\xF6nnten!"
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: 14a71737c52e61742a14ca28d19c5ed9, type: 2}

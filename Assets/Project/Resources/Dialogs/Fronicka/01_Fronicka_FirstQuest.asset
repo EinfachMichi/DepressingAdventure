@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
-  m_Name: Fronicka_Start
+  m_Name: 01_Fronicka_FirstQuest
   m_EditorClassIdentifier: 
   Sentences:
   - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
@@ -101,5 +101,5 @@ MonoBehaviour:
       - Text: "Vorerst m\xF6chte ich mich noch ausruhen. Danach werde ich zu Ihnen
           kommen und Ihnen helfen!"
         Dialog: {fileID: 11400000, guid: a7640382e11a9f14cba14cb3422aeb1f, type: 2}
-      - Text: Ein Abenteuer in dem Wald? Da bin ich dabei!
+      - Text: "Ja, ich bin bereit f\xFCr das Abenteuer!"
         Dialog: {fileID: 11400000, guid: ff845d00f7ee3d74ca04de5f7bc3de7c, type: 2}
