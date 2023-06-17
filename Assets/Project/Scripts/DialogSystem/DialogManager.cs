@@ -31,6 +31,7 @@ namespace DialogSystem
             sentenceIndex = 0;
             inDialog = true;
             GameStateManager.Instance.ChangeGameState(GameState.InDialog);
+            AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);
             OnDialogStart?.Invoke();
             typing = StartCoroutine(Type());
         }
