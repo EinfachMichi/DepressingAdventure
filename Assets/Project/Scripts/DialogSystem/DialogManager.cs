@@ -24,7 +24,6 @@ namespace DialogSystem
         private int sentenceIndex;
         private bool hasChoosen = true;
         private bool inDialog = false;
-        private bool canSkip;
 
         public void StartDialog(Dialog dialog)
         {
@@ -39,8 +38,7 @@ namespace DialogSystem
         private IEnumerator Type()
         {
             lineFinished = false;
-            Invoke("WaitSkip", 0.1f);
-            
+
             Speaker speaker = dialog.GetSpeaker(sentenceIndex);
             OnSpeakerChanged?.Invoke(speaker);
             
@@ -56,11 +54,6 @@ namespace DialogSystem
             lineFinished = true;
         }
 
-        private void WaitSkip()
-        {
-            canSkip = true;
-        }
-        
         /*
          * These methods are called by an UnityEvent from the new InputSystem
          */
@@ -121,20 +114,6 @@ namespace DialogSystem
                     inDialog = false;
                     GameStateManager.Instance.ChangeState(GameState.Playing);
                     OnDialogEnd?.Invoke();
-                }
-            }
-        }
-
-        public void Skip(InputAction.CallbackContext context)
-        {
-            if (context.started && inDialog)
-            {
-                if (canSkip)
-                {
-                    StopCoroutine(typing);
-                    OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
-                    lineFinished = true;
-                    canSkip = false;
                 }
             }
         }
