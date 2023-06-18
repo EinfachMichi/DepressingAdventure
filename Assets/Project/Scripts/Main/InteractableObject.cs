@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Player;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -39,6 +37,7 @@ namespace Main
                 EndInteraction();
                 return;
             }
+            
             EndInteraction();
             foreach (UnityEvent unityEvent in InteractionEvents)
             {
@@ -51,29 +50,6 @@ namespace Main
             foreach (UnityEvent unityEvent in EndInteractionEvents)
             {
                 unityEvent?.Invoke();
-            }
-        }
-
-        private void FixedUpdate()
-        {
-            Collider2D[] cols = Physics2D.OverlapCircleAll(
-                transform.position,
-                1f
-            );
-
-            foreach (Collider2D col in cols)
-            {
-                if (col.CompareTag("Player"))
-                {
-                    if (PlayerInteractions.CanInteract)
-                    {
-                        ShowInteraction();
-                    }
-                    else
-                    {
-                        EndInteraction();
-                    }
-                }
             }
         }
 

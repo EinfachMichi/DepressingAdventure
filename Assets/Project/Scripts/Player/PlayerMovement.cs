@@ -82,7 +82,7 @@ namespace Player
             else if (context.canceled)
             {
                 moveVector = Vector2.zero;
-                AudioManager.Instance.Stop("Walk", AudioManager.AudioSound.EffectSounds);
+                AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);
             }
         }
         public void Run(InputAction.CallbackContext context)

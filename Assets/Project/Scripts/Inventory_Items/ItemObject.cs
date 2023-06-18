@@ -36,7 +36,7 @@ namespace Inventory_Items
             }
         }
 
-        public void Interaction()
+        public virtual void Interaction()
         {
             if (InventoryManager.Instance.AddItem(Data))
             {

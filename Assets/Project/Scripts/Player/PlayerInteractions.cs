@@ -1,4 +1,5 @@
-﻿using Main;
+﻿using System;
+using Main;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -29,23 +30,29 @@ namespace Player
             else CanInteract = true;
         }
 
-        // private void OnTriggerEnter2D(Collider2D other)
-        // {
-        //     if (!canInteract) return;
-        //     
-        //     if (other.TryGetComponent(out IInteractable interactable))
-        //     {
-        //         interactable.ShowInteraction();
-        //     }
-        // }
-        //
-        // private void OnTriggerExit2D(Collider2D other)
-        // {
-        //     if (other.TryGetComponent(out IInteractable interactable))
-        //     {
-        //         interactable.EndInteraction();
-        //     }
-        // }
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.TryGetComponent(out IInteractable interactable))
+            {
+                interactable.EndInteraction();
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            Collider2D[] cols = Physics2D.OverlapCircleAll(
+                transform.position,
+                InteractionRadius
+            );
+
+            foreach (Collider2D col in cols)
+            {
+                if (col.TryGetComponent(out IInteractable interactable))
+                {
+                    if(CanInteract) interactable.ShowInteraction();
+                }
+            }
+        }
 
         private void OnGameStateChanged(GameState state)
         {
