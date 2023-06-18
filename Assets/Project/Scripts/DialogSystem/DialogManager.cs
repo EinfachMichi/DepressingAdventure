@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Main;
+using Other;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,7 +26,47 @@ namespace DialogSystem
         private bool hasChoosen = true;
         private bool inDialog = false;
         private bool canSkip;
+        private bool paused;
 
+        public void Pause()
+        {
+            paused = true;
+        }
+
+        public void UnPause()
+        {
+            paused = false;
+            
+            if (!inDialog) return;
+
+            if (!lineFinished && canSkip)
+            {
+                StopCoroutine(typing);
+                canSkip = false;
+                OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
+                lineFinished = true;
+            }
+            else if (lineFinished && hasChoosen)
+            {
+                if (dialog.HasChoices(sentenceIndex, out Choice choice))
+                {
+                    hasChoosen = false;
+                    OnChoice?.Invoke(choice);
+                }
+                else if(dialog.CanReadNext(sentenceIndex))
+                {
+                    sentenceIndex++;
+                    typing = StartCoroutine(Type());
+                }
+                else
+                {
+                    inDialog = false;
+                    GameStateManager.Instance.ChangeGameState(GameState.Playing);
+                    OnDialogEnd?.Invoke();
+                }
+            }
+        }
+        
         public void StartDialog(Dialog dialog)
         {
             this.dialog = dialog;
@@ -55,6 +96,7 @@ namespace DialogSystem
             }
 
             lineFinished = true;
+            NarratorDialog.Instance.SayNarratorLine(dialog, sentenceIndex);
             canSkip = false;
         }
 
@@ -99,7 +141,7 @@ namespace DialogSystem
         
         public void NextSentence(InputAction.CallbackContext context)
         {
-            if (!inDialog) return;
+            if (!inDialog || paused) return;
 
             if (context.started)
             {
@@ -109,6 +151,7 @@ namespace DialogSystem
                     canSkip = false;
                     OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
                     lineFinished = true;
+                    NarratorDialog.Instance.SayNarratorLine(dialog, sentenceIndex);
                 }
                 else if (lineFinished && hasChoosen)
                 {

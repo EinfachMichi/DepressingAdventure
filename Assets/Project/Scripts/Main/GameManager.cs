@@ -68,6 +68,12 @@ namespace Main
                 Save();
                 return;
             }
+
+            if (SceneManager.GetActiveScene().name == "Village")
+            {
+                Narrator.Instance.MainPlay(15);
+            }
+            
             Vector2 offset = new Vector2();
             if (Data.LastScene == null) return;
             switch (SceneManager.GetActiveScene().name)

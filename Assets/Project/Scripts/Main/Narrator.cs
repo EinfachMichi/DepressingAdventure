@@ -34,8 +34,8 @@ namespace Main
             MainSource.clip = GetClipByID(ID);
             CurrentClip = MainSource.clip;
             MainSource.Play();
-            Invoke("ChangeState", MainSource.clip.length);
             GameManager.Instance.Data.SetPlayed(ID); 
+            Invoke("ChangeState", MainSource.clip.length);
         }
 
         private void ChangeState()

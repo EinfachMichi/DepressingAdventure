@@ -486,6 +486,49 @@ MonoBehaviour:
   m_DefaultActionMap: Map
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1 &698163999182477302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2901992422345695981}
+  - component: {fileID: 1761764013325745302}
+  m_Layer: 0
+  m_Name: Narrator Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2901992422345695981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698163999182477302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2384709736457967036}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761764013325745302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698163999182477302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c05cb57cdfe4289bab211b7390e261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &803336540810620575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,6 +2150,7 @@ Transform:
   - {fileID: 1539909494310967038}
   - {fileID: 8470967271076928790}
   - {fileID: 5674618430843959260}
+  - {fileID: 2901992422345695981}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3517,6 +3561,18 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 2890052a72aee934a851ee44278e85fa, type: 3}
   - ID: 9
     Clip: {fileID: 8300000, guid: 61bbdc595a3a6ab429ca1794e5a01ace, type: 3}
+  - ID: 10
+    Clip: {fileID: 8300000, guid: f6f488f60c6f0ed4b97930a849311aaf, type: 3}
+  - ID: 11
+    Clip: {fileID: 8300000, guid: 070cf7e94193fec41a611d7e40b6a730, type: 3}
+  - ID: 12
+    Clip: {fileID: 8300000, guid: 91c69d60567fe4b489e63fd2fa0ac25e, type: 3}
+  - ID: 13
+    Clip: {fileID: 8300000, guid: 8bb17fa8320403640b40caf292a7b0e1, type: 3}
+  - ID: 14
+    Clip: {fileID: 8300000, guid: 6c29a7b9a6bbe0140b2ed2fc8890db62, type: 3}
+  - ID: 15
+    Clip: {fileID: 8300000, guid: bd60a048d6f057c46b0c0a86926333a2, type: 3}
   CurrentClip: {fileID: 0}
 --- !u!82 &5484131914167047927
 AudioSource:

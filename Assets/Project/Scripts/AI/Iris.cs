@@ -70,6 +70,7 @@ namespace AI
             else if (DialogIndex == 1 && choice == 2)
             {
                 GameManager.Instance.Data.NpcInfos[2].DialogIndex = 1;
+                Narrator.Instance.MainPlay(14);
                 DialogIndex = 3;
             }
             else if (DialogIndex == 1 && choice == 1)
