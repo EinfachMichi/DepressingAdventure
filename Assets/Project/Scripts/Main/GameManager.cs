@@ -57,14 +57,19 @@ namespace Main
         {
             Narrator.Instance.MainPlay(3);
         }
+
+        private void StartNar()
+        {
+            Narrator.Instance.MainPlay(0);
+            Invoke("StartNarr", Narrator.Instance.CurrentClip.length + 1f);
+        }
         
         private void Start()
         {
             if(!Data.FirstSpawn)
             {
                 Data.FirstSpawn = true;
-                Narrator.Instance.MainPlay(0);
-                Invoke("StartNarr", Narrator.Instance.CurrentClip.length + 1f);
+                Invoke("StartNar", 0.5f);
                 Save();
                 return;
             }

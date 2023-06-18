@@ -1,4 +1,5 @@
 ﻿using System;
+using DialogSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -28,13 +29,13 @@ namespace Main
         {
             if (GameManager.Instance.Data.Played(ID)) return;
             
-            GameStateManager.Instance.ChangeAudioState(AudioState.InMainTalk);
             SideSource.Stop();
             MainSource.Stop();
             MainSource.clip = GetClipByID(ID);
             CurrentClip = MainSource.clip;
             MainSource.Play();
-            GameManager.Instance.Data.SetPlayed(ID); 
+            GameManager.Instance.Data.SetPlayed(ID);
+            GameStateManager.Instance.ChangeAudioState(AudioState.InMainTalk);
             Invoke("ChangeState", MainSource.clip.length);
         }
 
@@ -67,6 +68,7 @@ namespace Main
             {
                 SideSource.Stop();
                 MainSource.Stop();
+                DialogManager.Instance.UnPause();
                 ChangeState();
             }
         }
