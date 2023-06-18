@@ -10,7 +10,7 @@ namespace Other
 
         private void Start()
         {
-            Invoke("LateStart", 0.1f);
+            Invoke("LateStart", 0.2f);
         }
 
         private void LateStart()

@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 570729f5e4454544281c815f6f77f58f
+guid: 1945320619654064eb39f360d069d24d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1387276062667935908
-    second: Menu_v01-Sheet_0
+      213: 7567365722157329485
+    second: Menu_Sheet_0
   - first:
-      213: -6793251360163533451
-    second: Menu_v01-Sheet_1
+      213: -1000251617303898521
+    second: Menu_Sheet_1
   - first:
-      213: 4201327177628151436
-    second: Menu_v01-Sheet_2
+      213: 5100132379743366065
+    second: Menu_Sheet_2
   - first:
-      213: -1303502192172672570
-    second: Menu_v01-Sheet_3
+      213: 6070042907354602246
+    second: Menu_Sheet_3
   - first:
-      213: 2648140441956003367
-    second: Menu_v01-Sheet_4
+      213: -5075665920247999461
+    second: Menu_Sheet_4
   - first:
-      213: 9134008970996506138
-    second: Menu_v01-Sheet_5
+      213: -6697457194238807013
+    second: Menu_Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -83,7 +83,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -95,7 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu_v01-Sheet_0
+      name: Menu_Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5f664765c76fbce0800000000000000
-      internalID: -1387276062667935908
+      spriteID: d4ca7aad70fa40960800000000000000
+      internalID: 7567365722157329485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_v01-Sheet_1
+      name: Menu_Sheet_1
       rect:
         serializedVersion: 2
         x: 512
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d638f41e589b1a0800000000000000
-      internalID: -6793251360163533451
+      spriteID: 766579024746e12f0800000000000000
+      internalID: -1000251617303898521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_v01-Sheet_2
+      name: Menu_Sheet_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8e68b7fecc1e4a30800000000000000
-      internalID: 4201327177628151436
+      spriteID: 1bb2212b06f47c640800000000000000
+      internalID: 5100132379743366065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_v01-Sheet_3
+      name: Menu_Sheet_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9da9799a709ede0800000000000000
-      internalID: -1303502192172672570
+      spriteID: 60b10402ddf1d3450800000000000000
+      internalID: 6070042907354602246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_v01-Sheet_4
+      name: Menu_Sheet_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72e222693b510c420800000000000000
-      internalID: 2648140441956003367
+      spriteID: b14df01dcbc9f89b0800000000000000
+      internalID: -5075665920247999461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_v01-Sheet_5
+      name: Menu_Sheet_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e5a7bd3c482ce70800000000000000
-      internalID: 9134008970996506138
+      spriteID: b14f20f9a2add03a0800000000000000
+      internalID: -6697457194238807013
       vertices: []
       indices: 
       edges: []

@@ -20,14 +20,7 @@ namespace Player
         private void Start()
         {
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
-            GameStateManager.Instance.OnAudioStateChanged += OnAudioStateChanged;
             CanInteract = true;
-        }
-
-        private void OnAudioStateChanged(AudioState obj)
-        {
-            if (obj == AudioState.InMainTalk) CanInteract = false;
-            else CanInteract = true;
         }
 
         private void OnTriggerExit2D(Collider2D other)

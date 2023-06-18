@@ -35,7 +35,8 @@ namespace AI
 
         private void Update()
         {
-            if (!GameManager.Instance.Data.IrisNearTrigger)
+            if (!GameManager.Instance.Data.IrisNearTrigger
+                && GameStateManager.Instance.AudioState != AudioState.InMainTalk)
             {
                 Collider2D[] cols = Physics2D.OverlapCircleAll(
                     transform.position,

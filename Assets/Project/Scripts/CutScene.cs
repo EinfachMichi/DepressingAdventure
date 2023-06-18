@@ -1,3 +1,4 @@
+using System;
 using Main;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,12 @@ public class CutScene : Singleton<CutScene>
 {
     public AudioSource Source;
     public Animator transition;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     public void Play()
     {
