@@ -36,7 +36,11 @@ namespace Other
             if (context.started)
             {
                 mapUI.SetActive(!mapUI.activeSelf);
-                if(mapUI.activeSelf) GameStateManager.Instance.ChangeGameState(GameState.InMap);
+                if(mapUI.activeSelf)
+                {
+                    GameStateManager.Instance.ChangeGameState(GameState.InMap);
+                    AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);
+                }
                 else GameStateManager.Instance.ChangeGameState(GameState.Playing);
             }
         }
