@@ -1,23 +1,41 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Main
 {
     public class Narrator : Singleton<Narrator>
     {
-        public AudioSource Source;
+        public AudioSource MainSource;
+        public AudioSource SideSource;
         public NarratorClip[] Clips;
-        
+
+        public AudioClip CurrentClip;
+
         public void Play(int ID)
+        {
+            if(GameStateManager.Instance.AudioState == AudioState.InSideTalk
+               || GameStateManager.Instance.AudioState == AudioState.InMainTalk) return;
+            
+            GameStateManager.Instance.ChangeAudioState(AudioState.InSideTalk);
+            AudioClip clip = GetClipByID(ID);
+            SideSource.clip = clip;
+            SideSource.Play();
+            Invoke("ChangeState", SideSource.clip.length);
+        }
+        
+        public void MainPlay(int ID)
         {
             if (GameManager.Instance.Data.Played(ID)) return;
             
-            GameStateManager.Instance.ChangeAudioState(AudioState.InTalk);
-            Source.Stop();
-            Source.clip = GetClipByID(ID);
-            Source.Play();
-            Invoke("ChangeState", Source.clip.length);
-            GameManager.Instance.Data.SetPlayed(ID);
+            GameStateManager.Instance.ChangeAudioState(AudioState.InMainTalk);
+            SideSource.Stop();
+            MainSource.Stop();
+            MainSource.clip = GetClipByID(ID);
+            CurrentClip = MainSource.clip;
+            MainSource.Play();
+            Invoke("ChangeState", MainSource.clip.length);
+            GameManager.Instance.Data.SetPlayed(ID); 
         }
 
         private void ChangeState()
@@ -42,6 +60,19 @@ namespace Main
             }
         }
 
+#if UNITY_EDITOR
+        private void Update()
+        {
+            if (Keyboard.current.enterKey.isPressed)
+            {
+                SideSource.Stop();
+                MainSource.Stop();
+                ChangeState();
+            }
+        }
+#endif
+        
+
         private AudioClip GetClipByID(int ID)
         {
             foreach (NarratorClip clip in Clips)
@@ -65,6 +96,7 @@ namespace Main
     public enum AudioState
     {
         None,
-        InTalk
+        InSideTalk,
+        InMainTalk
     }
 }

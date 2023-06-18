@@ -540,6 +540,10 @@ PrefabInstance:
       value: -2.3024669
       objectReference: {fileID: 0}
     - target: {fileID: 6654071380345824858, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_Points.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654071380345824858, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
       propertyPath: m_Points.Array.data[0].x
       value: -2.668516
       objectReference: {fileID: 0}

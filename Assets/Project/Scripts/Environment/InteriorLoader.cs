@@ -1,4 +1,5 @@
 using System;
+using Main;
 using UnityEngine;
 
 namespace Environment
@@ -30,6 +31,8 @@ namespace Environment
             player = GameObject.FindWithTag("Player").transform;
             spawnpoint = GameObject.FindWithTag("Spawnpoint").transform;
 
+            Narrator.Instance.MainPlay(4);
+            
             Invoke("TPPlayer", 0.05f);
         }
 

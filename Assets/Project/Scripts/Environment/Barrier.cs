@@ -1,5 +1,6 @@
 ﻿using System;
 using DialogSystem;
+using Inventory_Items;
 using Main;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ namespace Environment
         public bool Active;
         public Dialog dialog;
         public Vector2 pushDirection;
+        public int NarratorID;
+        public bool HaraldTrigger;
 
         private Transform player;
         
@@ -32,6 +35,17 @@ namespace Environment
             if (col.gameObject.CompareTag("Player"))
             {
                 player = col.gameObject.transform;
+                if (GameManager.Instance.Data.NpcInfos[0].DialogIndex == 0 
+                    && InventoryManager.Instance.HasItem("Map") 
+                    && GameStateManager.Instance.AudioState != AudioState.InMainTalk
+                    && HaraldTrigger)
+                {
+                    Narrator.Instance.MainPlay(7);
+                }
+                else
+                {
+                    Narrator.Instance.Play(NarratorID);
+                }
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
                 DialogManager.Instance.StartDialog(dialog);
             }

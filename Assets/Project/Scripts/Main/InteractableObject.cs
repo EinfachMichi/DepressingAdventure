@@ -32,7 +32,12 @@ namespace Main
 
         public virtual void Interaction()
         {
-            if (!interactable) return;
+            if (!interactable)
+            {
+                EndInteraction();
+                return;
+            }
+            EndInteraction();
             foreach (UnityEvent unityEvent in InteractionEvents)
             {
                 unityEvent?.Invoke();
@@ -41,7 +46,6 @@ namespace Main
 
         public virtual void EndInteraction()
         {
-            if (!interactable) return;
             foreach (UnityEvent unityEvent in EndInteractionEvents)
             {
                 unityEvent?.Invoke();

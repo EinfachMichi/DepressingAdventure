@@ -26,19 +26,6 @@ namespace Player
         private void Start()
         {
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
-            GameStateManager.Instance.OnAudioStateChanged += OnAudioStateChanged;
-        }
-
-        private void OnAudioStateChanged(AudioState state)
-        {
-            print("test");
-            if (state == AudioState.None)
-            {
-                UnFreeze();
-                return;
-            }
-            
-            Freeze();
         }
 
         private void OnGameStateChanged(GameState state)

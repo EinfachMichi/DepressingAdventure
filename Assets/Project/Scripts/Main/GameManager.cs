@@ -42,11 +42,29 @@ namespace Main
             }
         }
 
+        private void StartNarr()
+        {
+            Narrator.Instance.MainPlay(1);
+            Invoke("StartHouseReminder", Narrator.Instance.CurrentClip.length);
+        }
+
+        private void StartHouseReminder()
+        {
+            Invoke("HouseReminder", 7.5f);
+        }
+        
+        private void HouseReminder()
+        {
+            Narrator.Instance.MainPlay(3);
+        }
+        
         private void Start()
         {
             if(!Data.FirstSpawn)
             {
                 Data.FirstSpawn = true;
+                Narrator.Instance.MainPlay(0);
+                Invoke("StartNarr", Narrator.Instance.CurrentClip.length + 1f);
                 Save();
                 return;
             }
@@ -136,7 +154,7 @@ namespace Main
         
         private void InitNPCs()
         {
-            Data.NpcInfos = new NPCInfo[5];
+            Data.NpcInfos = new NPCInfo[6];
 
             NPCInfo harald = new NPCInfo();
             harald.Name = "Harald";
@@ -157,6 +175,10 @@ namespace Main
             NPCInfo nikolaus = new NPCInfo();
             nikolaus.Name = "Nikolaus";
             Data.NpcInfos[4] = nikolaus;
+            
+            NPCInfo elisabeth = new NPCInfo();
+            elisabeth.Name = "Elisabeth";
+            Data.NpcInfos[5] = elisabeth;
         }
 
         private void InitBarriers()
@@ -255,6 +277,8 @@ namespace Main
         public bool CanCollectRose;
         public NarratorInfo[] NarratorInfos;
         public bool NarratorLoaded;
+        public bool BrotPlaced;
+        public bool HaraldCanTriggerNarrator;
         
         public bool Played(int ID)
         {

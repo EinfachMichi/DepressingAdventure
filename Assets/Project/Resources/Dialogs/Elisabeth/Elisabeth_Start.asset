@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
-    Text: 'Elisabeth: Entschuldigen Sie, junger Abenteurer!'
+    Text: Entschuldigen Sie, junger Abenteurer!
     Choice:
       Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
@@ -60,7 +60,7 @@ MonoBehaviour:
     Choice:
       Answers:
       - Text: Es tut mir leid. Gerade habe ich keine Zeit dazu.
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: 97d48e6b099211b4ea8c130ae4466046, type: 2}
       - Text: "Nat\xFCrlich kann ich es f\xFCr Sie \xFCbernehmen! Vielleicht kann
           ich Sie auf eine weitere Runde \xB4Schere, Stein, Papier\xB4 einladen!"
-        Dialog: {fileID: 0}
+        Dialog: {fileID: 11400000, guid: 41e4c8b4d7b35574e811997ac7851afb, type: 2}

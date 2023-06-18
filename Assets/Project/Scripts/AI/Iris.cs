@@ -1,11 +1,14 @@
 ﻿using DialogSystem;
+using Inventory_Items;
 using Main;
+using UnityEngine;
 
 namespace AI
 {
     public class Iris : NPC
     {
         private int choice;
+        public GameObject brot;
 
         protected override void Start()
         {
@@ -21,6 +24,11 @@ namespace AI
                 DialogManager.Instance.OnChoiceResults += OnChoiceResults;
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
                 DialogManager.Instance.StartDialog(Dialogs[1]);
+            }
+
+            if (GameManager.Instance.Data.BrotPlaced)
+            {
+                brot.SetActive(true);
             }
         }
 
@@ -67,6 +75,14 @@ namespace AI
             else if (DialogIndex == 1 && choice == 1)
             {
                 SceneHandler.Instance.EnterNewScene("Quest_01");
+            }
+            else if (DialogIndex == 5)
+            {
+                GameManager.Instance.Data.NpcInfos[5].DialogIndex = 4;
+                InventoryManager.Instance.RemoveItem(3);
+                GameManager.Instance.Data.BrotPlaced = true;
+                brot.SetActive(true);
+                DialogIndex = 4;
             }
 
             Invoke("ResetInteractable", 1f);

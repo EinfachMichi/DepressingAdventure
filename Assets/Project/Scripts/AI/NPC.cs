@@ -23,6 +23,7 @@ namespace AI
                 this.info = info;
             }
         }
+
         protected void ResetInteractable() => interactable = true;
     }
 }

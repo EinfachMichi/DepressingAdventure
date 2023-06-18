@@ -19,12 +19,6 @@ namespace Environment
         private void OnDialogEnd()
         {
             DialogManager.Instance.OnDialogEnd -= OnDialogEnd;
-            
-            Invoke("ResetInteractable", 1f);   
-        }
-
-        private void ResetInteractable()
-        {
             interactable = true;
         }
     }

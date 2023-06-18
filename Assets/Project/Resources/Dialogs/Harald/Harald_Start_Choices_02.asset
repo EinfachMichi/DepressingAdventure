@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Harald_Start_Choices_02
   m_EditorClassIdentifier: 
   Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Was redest du denn da f\xFCr einen Stuss? Tod und Verderben soll mich
+      in diesem kleinen Dorf erwarten? Wohl kaum."
+    Choice:
+      Answers: []
   - Speaker: {fileID: 11400000, guid: 8933e2684358ccd49a0986ecae41e40c, type: 2}
     Text: Flieh! Verderben! Dorf!
     Choice:

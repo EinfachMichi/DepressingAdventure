@@ -13,7 +13,11 @@ namespace AI
         protected override void Start()
         {
             base.Start();
-            if (GameManager.Instance.Data.LudmillaDead) return;
+            if (GameManager.Instance.Data.LudmillaDead)
+            {
+                gameObject.SetActive(false);
+                return;
+            }
             
             if (InventoryManager.Instance.HasItem("WhiteRose"))
             {
@@ -58,6 +62,7 @@ namespace AI
             else if (DialogIndex == 0 && choice == 1 || DialogIndex == 2)
             {
                 DialogIndex = 3;
+                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 7;
                 GameManager.Instance.Data.CanCollectRose = true;
                 GameManager.Instance.Save();
             }
@@ -79,6 +84,7 @@ namespace AI
             Cursor.visible = false;
             DialogIndex = 2;
             listQuest.SetActive(false);
+            interactable = true;
             Interaction();
         }
     }

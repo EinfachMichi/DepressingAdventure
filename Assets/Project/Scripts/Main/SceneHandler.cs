@@ -10,13 +10,11 @@ namespace Main
 
         private Animator anim;
         private string sceneName;
-        private Transform player;
-        
+
         protected override void Awake()
         {
             base.Awake();
             anim = GetComponent<Animator>();
-            player = FindObjectOfType<PlayerMovement>().transform;
         }
 
         private void Start()
@@ -36,7 +34,13 @@ namespace Main
 
         public void EnterNewScene(string sceneName)
         {
+            if (GameStateManager.Instance.AudioState == AudioState.InMainTalk) return;
+            
             this.sceneName = sceneName;
+            if (SceneManager.GetActiveScene().name == "WitchVillage")
+            {
+                GameManager.Instance.Data.NpcInfos[5].DialogIndex = 1;
+            }
             PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
             GameStateManager.Instance.ChangeGameState(GameState.InTeleportation);
             AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);
@@ -55,6 +59,7 @@ namespace Main
                 GameManager.Instance.Save();
                 return;
             }
+
             SceneManager.LoadScene(sceneName);
         }
     }

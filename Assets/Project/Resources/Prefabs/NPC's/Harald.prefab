@@ -429,6 +429,8 @@ MonoBehaviour:
   Dialogs:
   - {fileID: 11400000, guid: a84d5a751c8b1b54f92345d25e59203b, type: 2}
   - {fileID: 11400000, guid: 3db3a87cfbd211f4bb1adbcd20bd818f, type: 2}
+  Barrier: {fileID: 0}
+  NarratorTriggerRange: 5
 --- !u!1 &6615924755038162384
 GameObject:
   m_ObjectHideFlags: 0

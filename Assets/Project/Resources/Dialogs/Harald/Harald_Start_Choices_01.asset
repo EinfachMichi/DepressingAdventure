@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Harald_Start_Choices_01
   m_EditorClassIdentifier: 
   Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "K\xF6nnen Sie nicht normal reden oder fehlt Ihnen diese F\xE4higkeit?"
+    Choice:
+      Answers: []
   - Speaker: {fileID: 11400000, guid: 8933e2684358ccd49a0986ecae41e40c, type: 2}
     Text: Nein! Nein!
     Choice:

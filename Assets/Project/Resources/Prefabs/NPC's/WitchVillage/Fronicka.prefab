@@ -27,6 +27,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fronicka
       objectReference: {fileID: 0}
+    - target: {fileID: 3349065597584973846, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
+      propertyPath: m_Radius
+      value: 0.21773008
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349065597584973846, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.28226992
+      objectReference: {fileID: 0}
     - target: {fileID: 4507700824164181770, guid: ea026a19f46de984f8d1abc729f49a51, type: 3}
       propertyPath: m_RootOrder
       value: 0

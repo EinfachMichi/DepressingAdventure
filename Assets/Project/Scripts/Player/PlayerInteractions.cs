@@ -9,6 +9,8 @@ namespace Player
     {
         public float InteractionRadius;
 
+        private bool canInteract = true;
+        
         private CapsuleCollider2D collider;
 
         private void Awake()
@@ -19,10 +21,18 @@ namespace Player
         private void Start()
         {
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+            GameStateManager.Instance.OnAudioStateChanged += OnAudioStateChanged;
+        }
+
+        private void OnAudioStateChanged(AudioState obj)
+        {
+            if (obj == AudioState.InMainTalk) canInteract = false;
+            else canInteract = true;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (!canInteract) return;
             if (other.TryGetComponent(out IInteractable interactable))
             {
                 interactable.ShowInteraction();
@@ -54,7 +64,7 @@ namespace Player
         
         public void Interact(InputAction.CallbackContext context)
         {
-            if (isFreezed) return;
+            if (isFreezed || !canInteract) return;
             
             if (context.started)
             {

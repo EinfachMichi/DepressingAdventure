@@ -46,6 +46,10 @@ namespace AI
             {
                 DialogIndex = 3;
             }
+            else if (DialogIndex == 7)
+            {
+                DialogIndex = 8;
+            }
 
             Invoke("ResetInteractable", 1f);
         }

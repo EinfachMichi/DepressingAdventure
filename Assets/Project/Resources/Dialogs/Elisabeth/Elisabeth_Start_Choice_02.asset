@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Elisabeth_Start_Choice_02
   m_EditorClassIdentifier: 
   Sentences:
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Nat\xFCrlich kann ich es f\xFCr Sie \xFCbernehmen! Vielleicht kann ich
+      Sie auf eine weitere Runde \xB4Schere, Stein, Papier\xB4 einladen!"
+    Choice:
+      Answers: []
   - Speaker: {fileID: 11400000, guid: f5383c3a3a98bd7469b1af2b823a3c02, type: 2}
     Text: Also hatte die Kleine sie auch auf eine Runde eingeladen?
     Choice:
