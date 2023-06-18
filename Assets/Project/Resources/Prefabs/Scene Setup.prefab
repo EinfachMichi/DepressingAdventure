@@ -1578,8 +1578,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.3}
-  m_Size: {x: 2, y: 2}
+  m_Offset: {x: 0, y: 0.5}
+  m_Size: {x: 1.3, y: 1.36}
   m_Direction: 0
 --- !u!114 &2384709735186061457
 MonoBehaviour:
@@ -1785,7 +1785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a207435c953149e7aafbd9f84cb83957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractionRadius: 0.66
+  InteractionRadius: 0.54
   DrawInteractionRadius: 1
 --- !u!1 &2384709735522757881
 GameObject:
@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 2384709735574272142}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &1857529715

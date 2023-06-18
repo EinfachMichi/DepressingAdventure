@@ -8,6 +8,15 @@ namespace Other
     {
         public void SayNarratorLine(Dialog dialog, int sentenceIndex)
         {
+            if (dialog.name == "Harald_Start")
+            {
+                if (sentenceIndex == 5)
+                {
+                    Pause(8);
+                    return;
+                }
+            }
+            
             if (dialog.name == "Iris_Start")
             {
                 if (sentenceIndex == 4)

@@ -1,5 +1,4 @@
-﻿using System;
-using Main;
+﻿using Main;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +21,7 @@ namespace Player
         {
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
             GameStateManager.Instance.OnAudioStateChanged += OnAudioStateChanged;
+            CanInteract = true;
         }
 
         private void OnAudioStateChanged(AudioState obj)
@@ -38,10 +38,10 @@ namespace Player
             }
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             Collider2D[] cols = Physics2D.OverlapCircleAll(
-                transform.position,
+                transform.position + (Vector3) collider.offset,
                 InteractionRadius
             );
 
