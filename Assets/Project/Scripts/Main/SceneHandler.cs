@@ -34,8 +34,6 @@ namespace Main
 
         public void EnterNewScene(string sceneName)
         {
-            if (GameStateManager.Instance.AudioState == AudioState.InMainTalk) return;
-            
             this.sceneName = sceneName;
             if (SceneManager.GetActiveScene().name == "WitchVillage")
             {
