@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - Speaker: {fileID: 11400000, guid: b095754831b1d4d48a79ad65ce7b134b, type: 2}
-    Text: Hier geht es in richtung DORF.
+    Text: Hier geht es in Richtung Dorf.
     Choice:
       Answers: []

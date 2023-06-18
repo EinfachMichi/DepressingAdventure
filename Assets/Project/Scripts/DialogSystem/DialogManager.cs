@@ -24,6 +24,7 @@ namespace DialogSystem
         private int sentenceIndex;
         private bool hasChoosen = true;
         private bool inDialog = false;
+        private bool canSkip;
 
         public void StartDialog(Dialog dialog)
         {
@@ -47,12 +48,14 @@ namespace DialogSystem
             string text = dialog.GetText(sentenceIndex);
             for (int i = 0; i < text.Length; i++)
             {
+                if (i == 5) canSkip = true;
                 result += text[i];
                 OnTextChanged?.Invoke(result);
                 yield return new WaitForSeconds(1 / CharactersPerSecond);
             }
 
             lineFinished = true;
+            canSkip = false;
         }
 
         /*
@@ -97,24 +100,34 @@ namespace DialogSystem
         public void NextSentence(InputAction.CallbackContext context)
         {
             if (!inDialog) return;
-            
-            if (context.started && lineFinished && hasChoosen)
+
+            if (context.started)
             {
-                if (dialog.HasChoices(sentenceIndex, out Choice choice))
+                if (!lineFinished && canSkip)
                 {
-                    hasChoosen = false;
-                    OnChoice?.Invoke(choice);
+                    StopCoroutine(typing);
+                    canSkip = false;
+                    OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
+                    lineFinished = true;
                 }
-                else if(dialog.CanReadNext(sentenceIndex))
+                else if (lineFinished && hasChoosen)
                 {
-                    sentenceIndex++;
-                    typing = StartCoroutine(Type());
-                }
-                else
-                {
-                    inDialog = false;
-                    GameStateManager.Instance.ChangeGameState(GameState.Playing);
-                    OnDialogEnd?.Invoke();
+                    if (dialog.HasChoices(sentenceIndex, out Choice choice))
+                    {
+                        hasChoosen = false;
+                        OnChoice?.Invoke(choice);
+                    }
+                    else if(dialog.CanReadNext(sentenceIndex))
+                    {
+                        sentenceIndex++;
+                        typing = StartCoroutine(Type());
+                    }
+                    else
+                    {
+                        inDialog = false;
+                        GameStateManager.Instance.ChangeGameState(GameState.Playing);
+                        OnDialogEnd?.Invoke();
+                    }
                 }
             }
         }
