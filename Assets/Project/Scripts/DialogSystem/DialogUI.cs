@@ -13,7 +13,8 @@ namespace DialogSystem
         public TextMeshProUGUI Answer2;
         public GameObject Choices;
         public Image SpeakerImage;
-
+        public Image NextSentenceButton;
+        
         private void Start()
         {
             DialogManager.Instance.OnTextChanged += OnTextChanged;
@@ -22,9 +23,21 @@ namespace DialogSystem
             DialogManager.Instance.OnChoiceOver += OnChoiceOver;
             DialogManager.Instance.OnDialogStart += OnDialogStart;
             DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+            DialogManager.Instance.OnLineStarted += OnLineStarted;
+            DialogManager.Instance.OnLineFinished += OnLineFinished;
             
             DialogBox.SetActive(false);
             Choices.SetActive(false);
+        }
+
+        private void OnLineFinished()
+        {
+            NextSentenceButton.enabled = true;
+        }
+
+        private void OnLineStarted()
+        {
+            NextSentenceButton.enabled = false;
         }
 
         private void OnDialogStart()

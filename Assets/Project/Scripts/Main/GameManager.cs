@@ -285,6 +285,7 @@ namespace Main
         public bool NarratorLoaded;
         public bool BrotPlaced;
         public bool HaraldCanTriggerNarrator;
+        public bool IrisNearTrigger;
         
         public bool Played(int ID)
         {

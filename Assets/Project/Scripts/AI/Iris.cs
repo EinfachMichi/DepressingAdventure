@@ -1,4 +1,5 @@
-﻿using DialogSystem;
+﻿using System;
+using DialogSystem;
 using Inventory_Items;
 using Main;
 using UnityEngine;
@@ -29,6 +30,25 @@ namespace AI
             if (GameManager.Instance.Data.BrotPlaced)
             {
                 brot.SetActive(true);
+            }
+        }
+
+        private void Update()
+        {
+            if (!GameManager.Instance.Data.IrisNearTrigger)
+            {
+                Collider2D[] cols = Physics2D.OverlapCircleAll(
+                    transform.position,
+                    7f
+                );
+                foreach (Collider2D col in cols)
+                {
+                    if (col.CompareTag("Player"))
+                    {
+                        GameManager.Instance.Data.IrisNearTrigger = true;
+                        Narrator.Instance.MainPlay(10);
+                    }
+                }
             }
         }
 

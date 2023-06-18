@@ -54,11 +54,6 @@ MonoBehaviour:
       was mit meinen Karren passiert ist!"
     Choice:
       Answers: []
-  - Speaker: {fileID: 11400000, guid: 150f6ea196121a84089cf9863801912c, type: 2}
-    Text: "Seien Sie bitte nicht so hartn\xE4ckig und erz\xE4hlen Sie mir endlich,
-      was mit meinen Karren passiert ist!"
-    Choice:
-      Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
     Text: "Ich habe Ihren Karren gefunden, der allerdings sehr zerst\xF6rt wurde.  "
     Choice:

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Player;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -51,7 +53,30 @@ namespace Main
                 unityEvent?.Invoke();
             }
         }
-        
+
+        private void FixedUpdate()
+        {
+            Collider2D[] cols = Physics2D.OverlapCircleAll(
+                transform.position,
+                1f
+            );
+
+            foreach (Collider2D col in cols)
+            {
+                if (col.CompareTag("Player"))
+                {
+                    if (PlayerInteractions.CanInteract)
+                    {
+                        ShowInteraction();
+                    }
+                    else
+                    {
+                        EndInteraction();
+                    }
+                }
+            }
+        }
+
         public void DisableObject(GameObject gameObject)
         {
             gameObject.SetActive(false);

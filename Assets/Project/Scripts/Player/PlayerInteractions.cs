@@ -1,5 +1,4 @@
-﻿using System;
-using Main;
+﻿using Main;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,10 +6,10 @@ namespace Player
 {
     public class PlayerInteractions : Freezer
     {
+        public static bool CanInteract;
+        
         public float InteractionRadius;
 
-        private bool canInteract = true;
-        
         private CapsuleCollider2D collider;
 
         private void Awake()
@@ -26,26 +25,27 @@ namespace Player
 
         private void OnAudioStateChanged(AudioState obj)
         {
-            if (obj == AudioState.InMainTalk) canInteract = false;
-            else canInteract = true;
+            if (obj == AudioState.InMainTalk) CanInteract = false;
+            else CanInteract = true;
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (!canInteract) return;
-            if (other.TryGetComponent(out IInteractable interactable))
-            {
-                interactable.ShowInteraction();
-            }
-        }
-
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            if (other.TryGetComponent(out IInteractable interactable))
-            {
-                interactable.EndInteraction();
-            }
-        }
+        // private void OnTriggerEnter2D(Collider2D other)
+        // {
+        //     if (!canInteract) return;
+        //     
+        //     if (other.TryGetComponent(out IInteractable interactable))
+        //     {
+        //         interactable.ShowInteraction();
+        //     }
+        // }
+        //
+        // private void OnTriggerExit2D(Collider2D other)
+        // {
+        //     if (other.TryGetComponent(out IInteractable interactable))
+        //     {
+        //         interactable.EndInteraction();
+        //     }
+        // }
 
         private void OnGameStateChanged(GameState state)
         {
@@ -64,7 +64,7 @@ namespace Player
         
         public void Interact(InputAction.CallbackContext context)
         {
-            if (isFreezed || !canInteract) return;
+            if (isFreezed || !CanInteract) return;
             
             if (context.started)
             {

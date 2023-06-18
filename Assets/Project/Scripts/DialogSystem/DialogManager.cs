@@ -16,6 +16,8 @@ namespace DialogSystem
         public event Action<Choice> OnChoice;
         public event Action OnChoiceOver;
         public event Action<int> OnChoiceResults;
+        public event Action OnLineFinished;
+        public event Action OnLineStarted;
 
         public float CharactersPerSecond = 150;
 
@@ -81,6 +83,7 @@ namespace DialogSystem
         private IEnumerator Type()
         {
             lineFinished = false;
+            OnLineStarted?.Invoke();
 
             Speaker speaker = dialog.GetSpeaker(sentenceIndex);
             OnSpeakerChanged?.Invoke(speaker);
@@ -96,6 +99,7 @@ namespace DialogSystem
             }
 
             lineFinished = true;
+            OnLineFinished?.Invoke();
             NarratorDialog.Instance.SayNarratorLine(dialog, sentenceIndex);
             canSkip = false;
         }
