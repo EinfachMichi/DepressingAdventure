@@ -6912,11 +6912,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_Points.Array.data[15].x
-      value: -14
+      value: -16.980318
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+      propertyPath: m_Points.Array.data[15].y
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_Points.Array.data[16].x
-      value: -14
+      value: -17.000057
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+      propertyPath: m_Points.Array.data[16].y
+      value: -7.078949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+      propertyPath: m_Points.Array.data[17].x
+      value: -13.980262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897770836422286310, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+      propertyPath: m_Points.Array.data[17].y
+      value: -7.118423
       objectReference: {fileID: 0}
     - target: {fileID: 4928766999321123566, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchorMax.y
