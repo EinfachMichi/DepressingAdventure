@@ -120,10 +120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3554868319531698001}
     m_Modifications:
-    - target: {fileID: 541397111830770983, guid: f343b583e8492af488745704c1cb1bd9, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 63318acf4d295b7418a1b02f6690ed83, type: 2}
     - target: {fileID: 1957252215719233212, guid: f343b583e8492af488745704c1cb1bd9, type: 3}
       propertyPath: m_Name
       value: ofen-Sheet_0
