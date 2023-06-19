@@ -4,10 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Main;
 
 public class Quest_01ButtonInput : MonoBehaviour
 {
     public int round;
+
+    [SerializeField] bool isRandom = false;
     [SerializeField] private int choose;
     [SerializeField] private int enemychoose=0;
     private int playerpoints=0;
@@ -23,6 +26,7 @@ public class Quest_01ButtonInput : MonoBehaviour
     public string SceneName;
 
     public Animator Ani;
+    public Animator AniEnmey;
 
     public void Start()
     {
@@ -35,7 +39,8 @@ public class Quest_01ButtonInput : MonoBehaviour
         RoundCounterText.text = null;
         EnemyPointsText.text = enemypoints.ToString();
         PlayerPointsText.text = playerpoints.ToString();
-        
+
+        isRandom = GameManager.Instance.Data.Q1IsRandom;
     }
 
     public void Buttons()
@@ -57,8 +62,9 @@ public class Quest_01ButtonInput : MonoBehaviour
 
         Player.GetComponent<Image>().sprite = ChoosenItem[1];
         Enemy.GetComponent<Image>().sprite = ChoosenItem[1];
-        Ani.SetTrigger("OnClick");
-        if (round == 1 || round == 3)
+        Ani.SetTrigger("Trigger");
+        AniEnmey.SetTrigger("Trigger");
+        if ((round == 1 || round == 3)&&isRandom==false)
         {
             if (choose == 3)
             {
@@ -132,21 +138,26 @@ public class Quest_01ButtonInput : MonoBehaviour
             Button[i].GetComponent<Button>().interactable = false;
         }
         yield return new WaitForSeconds(2f);
+
+        GameManager.Instance.Data.Q1IsRandom = false;
+        GameManager.Instance.Save();
+
         SceneManager.LoadScene(SceneName);
     }
 
     void pointCheck()
     {
-        if (choose < enemychoose||enemychoose==1&&choose==3)
+        if ((choose==1&& enemychoose==2) || (choose == 2 && enemychoose == 3) || (choose == 3 && enemychoose == 1))
         {
             enemypoints++;
             EnemyPointsText.text = enemypoints.ToString();
+            print("ENEMY");
         }
-        else if (choose > enemychoose || enemychoose == 3 && choose == 1)
+        else if((choose == 2 && enemychoose == 1) || (choose == 3 && enemychoose == 2) || (choose == 1 && enemychoose == 3))
         {
             playerpoints++;
             PlayerPointsText.text = playerpoints.ToString();
+            print("PLAYER");
         }
-
     }
 }

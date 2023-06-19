@@ -291,6 +291,7 @@ namespace Main
         public bool BrotPlaced;
         public bool HaraldCanTriggerNarrator;
         public bool IrisNearTrigger;
+        public bool Q1IsRandom;
         
         public bool Played(int ID)
         {
