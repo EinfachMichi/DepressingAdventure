@@ -20,7 +20,12 @@ namespace Main
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
-            playerTransform = GameObject.FindWithTag("Player").transform;
+            if(SceneManager.GetActiveScene().name != "Quest_01")
+            {
+                playerTransform = GameObject.FindWithTag("Player").transform;
+            }
+           
+           
             
             Data = JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString(saveDataPath));
             if (Data == null)
@@ -98,7 +103,8 @@ namespace Main
                     if(Data.LastScene.Name == "Tutorial") offset = Vector2.down;
                     break;
             }
-            playerTransform.position = GetCurrentSceneInfo().PlayerPosition + offset;
+            if(playerTransform != null)
+                playerTransform.position = GetCurrentSceneInfo().PlayerPosition + offset;
         }
 
         private void LoadLastScene()

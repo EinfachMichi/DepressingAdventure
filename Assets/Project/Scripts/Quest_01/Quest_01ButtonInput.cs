@@ -41,6 +41,7 @@ public class Quest_01ButtonInput : MonoBehaviour
         PlayerPointsText.text = playerpoints.ToString();
 
         isRandom = GameManager.Instance.Data.Q1IsRandom;
+        print(isRandom + ("ran"));
     }
 
     public void Buttons()
@@ -139,7 +140,7 @@ public class Quest_01ButtonInput : MonoBehaviour
         }
         yield return new WaitForSeconds(2f);
 
-        GameManager.Instance.Data.Q1IsRandom = false;
+        GameManager.Instance.Data.Q1IsRandom = true;
         GameManager.Instance.Save();
 
         SceneManager.LoadScene(SceneName);
@@ -159,5 +160,19 @@ public class Quest_01ButtonInput : MonoBehaviour
             PlayerPointsText.text = playerpoints.ToString();
             print("PLAYER");
         }
+    }
+
+    void pause()
+    {
+        Button[0].GetComponent<Button>().interactable = false;
+        Button[1].GetComponent<Button>().interactable = false;
+        Button[2].GetComponent<Button>().interactable = false;
+    }
+
+    void unpause()
+    {
+        Button[0].GetComponent<Button>().interactable = true;
+        Button[1].GetComponent<Button>().interactable = true;
+        Button[2].GetComponent<Button>().interactable = true;
     }
 }
