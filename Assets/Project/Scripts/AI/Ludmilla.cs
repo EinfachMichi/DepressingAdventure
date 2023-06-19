@@ -15,7 +15,9 @@ namespace AI
             base.Start();
 
             if (InventoryManager.Instance.HasItem("WhiteRose")
-                && GameManager.Instance.Data.NpcInfos[3].DialogIndex == 3)
+                && GameManager.Instance.Data.NpcInfos[2].DialogIndex == 6
+                || GameManager.Instance.Data.NpcInfos[2].DialogIndex == 8
+                || GameManager.Instance.Data.NpcInfos[2].DialogIndex == 7)
             {
                 gameObject.SetActive(false);
                 if (!GameManager.Instance.Data.LudmillaDead)

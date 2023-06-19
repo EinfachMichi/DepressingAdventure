@@ -20,6 +20,7 @@ namespace Main
             
             GameStateManager.Instance.ChangeAudioState(AudioState.InSideTalk);
             AudioClip clip = GetClipByID(ID);
+            CurrentClip = clip;
             SideSource.clip = clip;
             SideSource.Play();
             Invoke("ChangeState", SideSource.clip.length);
@@ -75,7 +76,7 @@ namespace Main
 #endif
         
 
-        private AudioClip GetClipByID(int ID)
+        public AudioClip GetClipByID(int ID)
         {
             foreach (NarratorClip clip in Clips)
             {

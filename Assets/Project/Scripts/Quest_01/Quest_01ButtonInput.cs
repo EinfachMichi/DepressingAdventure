@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,12 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Main;
+using Random = UnityEngine.Random;
 
-public class Quest_01ButtonInput : MonoBehaviour
+public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
 {
+    public event Action<int, bool> OnRoundResults; 
+
     public int round;
 
     [SerializeField] bool isRandom = false;
@@ -19,6 +23,7 @@ public class Quest_01ButtonInput : MonoBehaviour
     public GameObject Player;
     public GameObject Enemy;
     public Sprite[] ChoosenItem;
+    private bool pause;
 
     public TMP_Text RoundCounterText;
     public TMP_Text PlayerPointsText;
@@ -128,6 +133,7 @@ public class Quest_01ButtonInput : MonoBehaviour
         pointCheck();
         if (round > 3)
         {
+            if (pause) return;
             StartCoroutine(GoScene());
         }
     }
@@ -148,6 +154,7 @@ public class Quest_01ButtonInput : MonoBehaviour
 
     void pointCheck()
     {
+        bool playerWon = false;
         if ((choose==1&& enemychoose==2) || (choose == 2 && enemychoose == 3) || (choose == 3 && enemychoose == 1))
         {
             enemypoints++;
@@ -157,22 +164,36 @@ public class Quest_01ButtonInput : MonoBehaviour
         else if((choose == 2 && enemychoose == 1) || (choose == 3 && enemychoose == 2) || (choose == 1 && enemychoose == 3))
         {
             playerpoints++;
+            playerWon = true;
             PlayerPointsText.text = playerpoints.ToString();
             print("PLAYER");
         }
+
+        OnRoundResults?.Invoke(round, playerWon);
+        
+        if (playerpoints > enemypoints)
+        {
+            GameManager.Instance.Data.Q1PlayerWon = true;
+        }
     }
 
-    void pause()
+    public void Pause()
     {
         Button[0].GetComponent<Button>().interactable = false;
         Button[1].GetComponent<Button>().interactable = false;
         Button[2].GetComponent<Button>().interactable = false;
+        pause = true;
     }
 
-    void unpause()
+    public void UnPause()
     {
         Button[0].GetComponent<Button>().interactable = true;
         Button[1].GetComponent<Button>().interactable = true;
         Button[2].GetComponent<Button>().interactable = true;
+        pause = false;
+        if (round == 4)
+        {
+            StartCoroutine(GoScene());
+        }
     }
 }

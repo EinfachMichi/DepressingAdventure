@@ -40,6 +40,15 @@ namespace Other
                     return;
                 }
             }
+
+            if (dialog.name == "Iris_Retry")
+            {
+                if (sentenceIndex == 1 && !GameManager.Instance.Data.Played(16))
+                {
+                    Pause(16);
+                    return;
+                }
+            }
         }
 
         private void Pause(int id)

@@ -20,11 +20,15 @@ namespace AI
 
         private void LateStart()
         {
-            if (DialogIndex == 1)
+            if (DialogIndex == 1 && !GameManager.Instance.Data.Q1PlayerWon)
             {
                 DialogManager.Instance.OnChoiceResults += OnChoiceResults;
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
                 DialogManager.Instance.StartDialog(Dialogs[1]);
+            }
+            else if (DialogIndex == 1 && GameManager.Instance.Data.Q1PlayerWon)
+            {
+                DialogIndex = 6;
             }
 
             if (GameManager.Instance.Data.BrotPlaced)

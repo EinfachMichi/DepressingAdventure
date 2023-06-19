@@ -547,6 +547,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 658fe00cf0ba89d439f258da9e91f858, type: 2}
   - {fileID: 11400000, guid: ebb384da60d30e649b90d96ef113f8eb, type: 2}
   - {fileID: 11400000, guid: a9b4e700c31260443b2e315ae829fa1d, type: 2}
+  - {fileID: 11400000, guid: 4c5fed4c4b7f8b44b888cf3cbbf23591, type: 2}
   brot: {fileID: 107881331330515246}
 --- !u!1 &8339856060293489438
 GameObject:

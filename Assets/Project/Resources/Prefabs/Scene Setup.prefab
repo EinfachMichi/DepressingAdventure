@@ -711,6 +711,7 @@ MonoBehaviour:
     HaraldCanTriggerNarrator: 0
     IrisNearTrigger: 0
     Q1IsRandom: 0
+    Q1PlayerWon: 0
 --- !u!1 &1156739749585965984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,10 +1948,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 20, y: 20}
-      - {x: 20, y: -30}
-      - {x: -25, y: -30}
-      - {x: -25, y: 20}
+    - - {x: 13.385433, y: 4.5030155}
+      - {x: 13.826405, y: -17.211838}
+      - {x: -19.704453, y: -17.120367}
+      - {x: -20.084225, y: 4.441925}
 --- !u!68 &4897770836422286310
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1971,12 +1972,12 @@ EdgeCollider2D:
   - {x: 6, y: 0}
   - {x: 6, y: -12}
   - {x: 4, y: -12}
-  - {x: 4, y: -13}
-  - {x: 3, y: -13}
-  - {x: 3, y: -13}
-  - {x: 1, y: -13}
-  - {x: 1, y: -13}
-  - {x: 0, y: -13}
+  - {x: 3.9882374, y: -15.517195}
+  - {x: 3.7410433, y: -15.458382}
+  - {x: 3.4705033, y: -15.4936695}
+  - {x: 1.9057196, y: -15.423094}
+  - {x: 1.3293526, y: -15.4936695}
+  - {x: 0.22348917, y: -15.481907}
   - {x: 0, y: -11}
   - {x: -12, y: -11}
   - {x: -12, y: -10}
@@ -2507,7 +2508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 0}
+  m_BoundingShape2D: {fileID: 2384709735574272142}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &1857529715
@@ -3861,6 +3862,20 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 6c29a7b9a6bbe0140b2ed2fc8890db62, type: 3}
   - ID: 15
     Clip: {fileID: 8300000, guid: bd60a048d6f057c46b0c0a86926333a2, type: 3}
+  - ID: 16
+    Clip: {fileID: 8300000, guid: c3c811b712a295b4c9070ce605fa8a98, type: 3}
+  - ID: 17
+    Clip: {fileID: 8300000, guid: cbe7b48efb00a2d4cb4b7b9ddf688607, type: 3}
+  - ID: 18
+    Clip: {fileID: 8300000, guid: b60b1aae274cb7c449dbee667ea318d3, type: 3}
+  - ID: 19
+    Clip: {fileID: 8300000, guid: 60fa794801deecb499b40176757e0ab8, type: 3}
+  - ID: 20
+    Clip: {fileID: 8300000, guid: d133f69263606404f904ec26b78480dd, type: 3}
+  - ID: 21
+    Clip: {fileID: 8300000, guid: 8579c87a515ac5c4291b3f94bc5a0ce6, type: 3}
+  - ID: 22
+    Clip: {fileID: 8300000, guid: 5f94b9abe07ac0341a29cde75307140a, type: 3}
   CurrentClip: {fileID: 0}
 --- !u!82 &5484131914167047927
 AudioSource:

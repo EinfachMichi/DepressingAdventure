@@ -6494,6 +6494,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!60 &321478792 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2384709735574272142, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
+  m_PrefabInstance: {fileID: 2095841889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &327871830
 GameObject:
   m_ObjectHideFlags: 0
@@ -65562,7 +65567,7 @@ PrefabInstance:
     - target: {fileID: 3453624041977256138, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 321478792}
     - target: {fileID: 3790653169903883769, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: Delete
       value: 0

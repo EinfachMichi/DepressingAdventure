@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ceff1534e414b81bd4c918b36c834, type: 3}
+  m_Name: Iris_AfterWon
+  m_EditorClassIdentifier: 
+  Sentences:
+  - Speaker: {fileID: 11400000, guid: 338661a9222a96c4e928372b35ac5540, type: 2}
+    Text: "Das war nur Gl\xFCck!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
+    Text: "Das war pures k\xF6nnen!"
+    Choice:
+      Answers: []
+  - Speaker: {fileID: 11400000, guid: bc6285b587c841848baff44b1c5589a2, type: 2}
+    Text: Meine Mutter musst du trotzdem finden!
+    Choice:
+      Answers: []

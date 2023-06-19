@@ -103,8 +103,9 @@ namespace Main
                     if(Data.LastScene.Name == "Tutorial") offset = Vector2.down;
                     break;
             }
-            if(playerTransform != null)
-                playerTransform.position = GetCurrentSceneInfo().PlayerPosition + offset;
+
+            if (playerTransform == null) return;
+            playerTransform.position = GetCurrentSceneInfo().PlayerPosition + offset;
         }
 
         private void LoadLastScene()
@@ -298,6 +299,7 @@ namespace Main
         public bool HaraldCanTriggerNarrator;
         public bool IrisNearTrigger;
         public bool Q1IsRandom;
+        public bool Q1PlayerWon;
         
         public bool Played(int ID)
         {
