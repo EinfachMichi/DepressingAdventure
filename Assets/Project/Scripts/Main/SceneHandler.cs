@@ -43,8 +43,6 @@ namespace Main
             GameStateManager.Instance.ChangeGameState(GameState.InTeleportation);
             AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);
             Play(FadeMode.FadeIn);
-            GameManager.Instance.SaveLastSceneInfo();
-            GameManager.Instance.SaveCurrentSceneInfo();
         }
 
         public void LoadScene()
@@ -58,6 +56,8 @@ namespace Main
                 return;
             }
 
+            GameManager.Instance.SaveLastSceneInfo();
+            GameManager.Instance.SaveCurrentSceneInfo();
             SceneManager.LoadScene(sceneName);
         }
     }

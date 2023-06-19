@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56eb970240f446bbe628dbdba888556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Delete: 1
+  Delete: 0
   Data:
     FirstLoad: 0
     FirstSpawn: 0
@@ -710,6 +710,7 @@ MonoBehaviour:
     BrotPlaced: 0
     HaraldCanTriggerNarrator: 0
     IrisNearTrigger: 0
+    Q1IsRandom: 0
 --- !u!1 &1156739749585965984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,14 +1224,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6981132, g: 0.587028, b: 0.40503737, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2b8b5f72f91840a4b9b4293316791eff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 547a2787cb65f2c4cbaeb5b0520e7afa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1947,9 +1948,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 20, y: 20}
-      - {x: -20, y: 20}
-      - {x: -20, y: -20}
-      - {x: 20, y: -20}
+      - {x: 20, y: -30}
+      - {x: -25, y: -30}
+      - {x: -25, y: 20}
 --- !u!68 &4897770836422286310
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1968,12 +1969,12 @@ EdgeCollider2D:
   m_Points:
   - {x: -12, y: 0}
   - {x: 6, y: 0}
-  - {x: 6, y: -11}
-  - {x: 4, y: -11}
+  - {x: 6, y: -12}
+  - {x: 4, y: -12}
   - {x: 4, y: -13}
   - {x: 3, y: -13}
-  - {x: 3, y: -14}
-  - {x: 1, y: -14}
+  - {x: 3, y: -13}
+  - {x: 1, y: -13}
   - {x: 1, y: -13}
   - {x: 0, y: -13}
   - {x: 0, y: -11}
@@ -1981,9 +1982,9 @@ EdgeCollider2D:
   - {x: -12, y: -10}
   - {x: -14, y: -10}
   - {x: -14, y: -9}
-  - {x: -15, y: -9}
-  - {x: -15, y: -7}
-  - {x: -14, y: -7}
+  - {x: -16.980318, y: -9}
+  - {x: -17.000057, y: -7.078949}
+  - {x: -13.980262, y: -7.118423}
   - {x: -14, y: -6}
   - {x: -12, y: -6}
   - {x: -12, y: 0}
@@ -2506,7 +2507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 2384709735574272142}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &1857529715
