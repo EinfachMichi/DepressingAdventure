@@ -13,20 +13,16 @@ namespace AI
         protected override void Start()
         {
             base.Start();
-            if (GameManager.Instance.Data.LudmillaDead)
-            {
-                gameObject.SetActive(false);
-                return;
-            }
-            
+
             if (InventoryManager.Instance.HasItem("WhiteRose")
-                && GameManager.Instance.Data.NpcInfos[2].DialogIndex == 8)
+                && GameManager.Instance.Data.NpcInfos[3].DialogIndex == 3)
             {
                 gameObject.SetActive(false);
                 if (!GameManager.Instance.Data.LudmillaDead)
                 {
                     GameManager.Instance.Data.LudmillaDead = true;
                     GameManager.Instance.Data.WitchVillage = true;
+                    GameManager.Instance.Save();
                 }
             }
         }
