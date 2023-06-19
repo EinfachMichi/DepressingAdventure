@@ -282,6 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6421008493559558048}
   - component: {fileID: 8964950029723586595}
+  - component: {fileID: 7650999971792967482}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -354,6 +355,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!95 &7650999971792967482
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004582160555393020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d77e7046279e124192f993d84d22e4c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2009803116284710521
 GameObject:
   m_ObjectHideFlags: 0

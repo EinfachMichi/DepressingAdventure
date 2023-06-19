@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8822038478671429689}
   - component: {fileID: 6853294427103215546}
+  - component: {fileID: 7815977346181900004}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -82,6 +83,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!95 &7815977346181900004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351472323050000485}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a84165e7adccdf44a381dc4de0aadb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3354456100571560827
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +347,7 @@ GameObject:
   - component: {fileID: 9125379875880342474}
   - component: {fileID: 2908885335069893902}
   - component: {fileID: 4959871120483484027}
+  - component: {fileID: 3656408345276126577}
   m_Layer: 0
   m_Name: Harald
   m_TagString: Untagged
@@ -431,6 +452,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3db3a87cfbd211f4bb1adbcd20bd818f, type: 2}
   Barrier: {fileID: 0}
   NarratorTriggerRange: 5
+--- !u!95 &3656408345276126577
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690494362144604355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a84165e7adccdf44a381dc4de0aadb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6615924755038162384
 GameObject:
   m_ObjectHideFlags: 0
