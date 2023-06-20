@@ -32,6 +32,9 @@ public class QuickTimePiano : MonoBehaviour
 
     [SerializeField] float timer;
 
+    [SerializeField] Color normal;
+    [SerializeField] Color pressed;
+
     char pressedLetter;
 
     [SerializeField] int tail = 0;
@@ -59,10 +62,11 @@ public class QuickTimePiano : MonoBehaviour
     [SerializeField] bool tailIsS = false;
     [SerializeField] bool tailIsD = false;
 
+    [SerializeField] bool rightpressed;
+
     bool gameEnd = false;
 
     bool tailPlayes = true;
-
     //reihenfolge der tail,firtsttail,currenttail in den funktionen verfolgen und korregieren!
 
     private void Awake()
@@ -93,10 +97,7 @@ public class QuickTimePiano : MonoBehaviour
         PointsText.text = score.ToString("0,0");
 
 
-        if (tailIsA && aPress)
-        {
-            score = score+Time.deltaTime * pointsPerSec;
-        }
+
 
         if (timer > 0)
         {
@@ -107,14 +108,15 @@ public class QuickTimePiano : MonoBehaviour
             gameEnd = true;
         }
 
-        if (tailIsS && sPress)
-        {
-            score = score + Time.deltaTime * pointsPerSec;
-        }
 
-        if(tailIsD && dPress)
+        if ((tailIsD && dPress)|| (tailIsS && sPress)|| (tailIsA && aPress))
         {
             score = score+Time.deltaTime * pointsPerSec;
+            pianoTail[TailLast].GetComponent<Image>().color = pressed;
+        }
+        else
+        {
+            pianoTail[TailLast].GetComponent<Image>().color = normal;
         }
 
         if ((tailIsA==true && (aPress==false||sPress==true||dPress==true))|| (tailIsS == true && (sPress == false || aPress == true || dPress == true)) || (tailIsD == true && (dPress == false || aPress == true || sPress == true)))
@@ -145,6 +147,12 @@ public class QuickTimePiano : MonoBehaviour
         {
             //print(firstTail+ ". Tail started");
 
+            //if ((tailIsS && sPress)|| (tailIsA && aPress)|| (tailIsD && dPress))
+            {
+                //  pianoTail[firstTail].GetComponent<Image>().color = pressed;
+                rightpressed = true;
+            }
+
             firstTail++;
             if (firstTail >= pianoTail.Length)
             {
@@ -168,6 +176,8 @@ public class QuickTimePiano : MonoBehaviour
         if (pianoTail[TailLast].transform.position.y <= finish.y - pianoTail[TailLast].transform.localScale.y*10 )
         {
             //print(TailLast + ". Tail finished");
+            pianoTail[TailLast].GetComponent<Image>().color = normal;
+            rightpressed = false;
             TailLast++;
             if (TailLast >= pianoTail.Length)
             {
@@ -178,8 +188,13 @@ public class QuickTimePiano : MonoBehaviour
             tailIsA = false;
             tailIsS = false;
             tailIsD = false;
+            //print("ende "+ TailLast);
+
+
+            //change color taillast -1
 
             TailLast = firstTail;
+
         }
     }
 
