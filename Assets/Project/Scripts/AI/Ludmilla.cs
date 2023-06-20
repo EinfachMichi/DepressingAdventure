@@ -58,33 +58,33 @@ namespace AI
             {
                 Inspect();
             }
-            else if (DialogIndex == 0 && choice == 1 || DialogIndex == 2)
-            {
-                DialogIndex = 3;
-                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 7;
-                GameManager.Instance.Data.CanCollectRose = true;
-                GameManager.Instance.Save();
-            }
 
             Invoke("ResetInteractable", 1f);
         }
 
         public void Inspect()
         {
-            listQuest.SetActive(true);
+            DialogManager.Instance.OnNextSentence += OnInspectDone;
+            DialogManager.Instance.StartDialog(Dialogs[2]);
             GameStateManager.Instance.ChangeGameState(GameState.InList);
+            InventoryManager.Instance.RemoveItem(1);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            listQuest.SetActive(true);
         }
         
         public void OnInspectDone()
         {
+            DialogManager.Instance.OnNextSentence -= OnInspectDone;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             DialogIndex = 2;
             listQuest.SetActive(false);
             interactable = true;
-            Interaction();
+            DialogIndex = 3;
+            GameManager.Instance.Data.NpcInfos[2].DialogIndex = 7;
+            GameManager.Instance.Data.CanCollectRose = true;
+            GameManager.Instance.Save();
         }
     }
 }

@@ -14,7 +14,8 @@ namespace Player
         private Animator anim;
         private Vector2 moveVector;
         private float speed;
-
+        private Vector2 dir;
+        
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -33,6 +34,12 @@ namespace Player
             if(state == GameState.Playing)
             {
                 UnFreeze();
+                return;
+            }
+            
+            if (state == GameState.InTeleportation)
+            {
+                rb.velocity = dir * speed;
                 return;
             }
             
@@ -78,8 +85,9 @@ namespace Player
                     AudioManager.Instance.Play("Walk", AudioManager.AudioSound.EffectSounds);
                 }
                 moveVector = context.ReadValue<Vector2>();
+                dir = moveVector;
             }
-            else if (context.canceled)
+            else if (context.canceled && GameStateManager.Instance.GameState != GameState.InTeleportation)
             {
                 moveVector = Vector2.zero;
                 AudioManager.Instance.StopAllSounds(AudioManager.AudioSound.EffectSounds);

@@ -8,7 +8,7 @@ namespace Main
         public event Action<GameState> OnGameStateChanged;
         public event Action<AudioState> OnAudioStateChanged;
         
-        private GameState gameState;
+        public GameState GameState;
         public AudioState AudioState;
 
         private void Start()
@@ -23,8 +23,8 @@ namespace Main
 
         public void ChangeGameState(GameState newState)
         {
-            gameState = newState;
-            OnGameStateChanged?.Invoke(gameState);
+            GameState = newState;
+            OnGameStateChanged?.Invoke(GameState);
         }
 
         public void ChangeAudioState(AudioState newState)

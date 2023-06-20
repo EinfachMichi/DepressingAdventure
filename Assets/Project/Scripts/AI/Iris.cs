@@ -22,9 +22,10 @@ namespace AI
         {
             if (DialogIndex == 1 && !GameManager.Instance.Data.Q1PlayerWon)
             {
-                DialogManager.Instance.OnChoiceResults += OnChoiceResults;
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
+                DialogIndex = 3;
                 DialogManager.Instance.StartDialog(Dialogs[3]);
+                interactable = false;
             }
             else if (DialogIndex == 1 && GameManager.Instance.Data.Q1PlayerWon)
             {
@@ -34,11 +35,13 @@ namespace AI
             if (GameManager.Instance.Data.BrotPlaced)
             {
                 brot.SetActive(true);
+                InventoryManager.Instance.RemoveItem(2);
             }
         }
 
         private void Update()
         {
+            print(DialogIndex);
             if (!GameManager.Instance.Data.IrisNearTrigger
                 && GameStateManager.Instance.AudioState != AudioState.InMainTalk)
             {
@@ -98,9 +101,10 @@ namespace AI
                 Narrator.Instance.MainPlay(14);
                 DialogIndex = 3;
             }
-            else if (DialogIndex == 1 && choice == 1)
+            else if (DialogIndex == 3)
             {
-                SceneHandler.Instance.EnterNewScene("Quest_01");
+                print("test");
+                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 1;
             }
             else if (DialogIndex == 5)
             {

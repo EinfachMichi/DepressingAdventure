@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: 03_Ludmilla_Start_Choice_02_After
   m_EditorClassIdentifier: 
   Sentences:
+  - Speaker: {fileID: 11400000, guid: b095754831b1d4d48a79ad65ce7b134b, type: 2}
+    Text: "*\xDCberpr\xFCfe, ob Ludmilla Items im Inventar hat, welche auf der Liste
+      stehen*"
+    Choice:
+      Answers: []
   - Speaker: {fileID: 11400000, guid: bf5e2b6bcbcedaa47a3c30e176e865e1, type: 2}
     Text: "Sie scheinen die Wahrheit zu erz\xE4hlen."
     Choice:

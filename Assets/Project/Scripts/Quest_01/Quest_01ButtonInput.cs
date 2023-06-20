@@ -184,6 +184,12 @@ public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
         Button[1].GetComponent<Button>().interactable = false;
         Button[2].GetComponent<Button>().interactable = false;
         pause = true;
+#if UNITY_EDITOR
+        Button[0].GetComponent<Button>().interactable = true;
+        Button[1].GetComponent<Button>().interactable = true;
+        Button[2].GetComponent<Button>().interactable = true;
+#endif
+        
     }
 
     public void UnPause()

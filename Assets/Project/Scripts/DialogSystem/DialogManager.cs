@@ -18,6 +18,7 @@ namespace DialogSystem
         public event Action<int> OnChoiceResults;
         public event Action OnLineFinished;
         public event Action OnLineStarted;
+        public event Action OnNextSentence;
 
         public float CharactersPerSecond = 150;
 
@@ -149,6 +150,7 @@ namespace DialogSystem
 
             if (context.started)
             {
+                OnNextSentence?.Invoke();
                 if (!lineFinished && canSkip)
                 {
                     StopCoroutine(typing);
