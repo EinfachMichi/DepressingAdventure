@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &4334075939070872902
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6898712378488600980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 611255cf046512e41a81544f1f384a0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2114696990592092216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15,6 +34,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.04
       objectReference: {fileID: 0}
+    - target: {fileID: 1940790614711741992, guid: cd3c978cd63d0ce40b7c257be0f4f1c9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -405738561522667339, guid: 1ba0d132edafd5f4383252d7d8856590, type: 3}
     - target: {fileID: 2285110612811937320, guid: cd3c978cd63d0ce40b7c257be0f4f1c9, type: 3}
       propertyPath: m_Name
       value: Tree Variant
@@ -69,3 +92,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd3c978cd63d0ce40b7c257be0f4f1c9, type: 3}
+--- !u!1 &6898712378488600980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4820487597358018988, guid: cd3c978cd63d0ce40b7c257be0f4f1c9, type: 3}
+  m_PrefabInstance: {fileID: 2114696990592092216}
+  m_PrefabAsset: {fileID: 0}
