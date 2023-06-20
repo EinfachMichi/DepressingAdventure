@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Main;
+using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
@@ -194,6 +195,30 @@ public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
         if (round == 4)
         {
             StartCoroutine(GoScene());
+        }
+    }
+
+    public void Press1(InputAction.CallbackContext context)
+    {
+        if (context.started&&Button[1].GetComponent<Button>().interactable==true)
+        {
+            PlayerChoose(1);
+        }
+    }
+
+    public void Press2(InputAction.CallbackContext context)
+    {
+        if (context.started && Button[2].GetComponent<Button>().interactable == true)
+        {
+            PlayerChoose(2);
+        }
+    }
+
+    public void Press3(InputAction.CallbackContext context)
+    {
+        if (context.started && Button[3].GetComponent<Button>().interactable == true)
+        {
+            PlayerChoose(3);
         }
     }
 }

@@ -514,6 +514,71 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Quest_01"",
+            ""id"": ""919d94a7-91b4-40b9-bbd2-6fde090d5313"",
+            ""actions"": [
+                {
+                    ""name"": ""Press1"",
+                    ""type"": ""Button"",
+                    ""id"": ""0a4af38a-9075-468a-bd95-93322b6f71df"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Press2"",
+                    ""type"": ""Button"",
+                    ""id"": ""77ab81a8-72dd-4ba8-82eb-977c12a0cb27"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Press3"",
+                    ""type"": ""Button"",
+                    ""id"": ""f87152ed-ce4c-4256-9128-360943b9c90e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""efad3ced-149c-4589-ae4b-d4c8109119c7"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Press1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b96f42c4-063e-4c70-8bca-890edbc16d4a"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Press2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b88d8e4f-5c81-4153-ad1b-c02400711344"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Press3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -542,6 +607,11 @@ public class @GameInput : IInputActionCollection, IDisposable
         // Map
         m_Map = asset.FindActionMap("Map", throwIfNotFound: true);
         m_Map_Toggle = m_Map.FindAction("Toggle", throwIfNotFound: true);
+        // Quest_01
+        m_Quest_01 = asset.FindActionMap("Quest_01", throwIfNotFound: true);
+        m_Quest_01_Press1 = m_Quest_01.FindAction("Press1", throwIfNotFound: true);
+        m_Quest_01_Press2 = m_Quest_01.FindAction("Press2", throwIfNotFound: true);
+        m_Quest_01_Press3 = m_Quest_01.FindAction("Press3", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -815,6 +885,55 @@ public class @GameInput : IInputActionCollection, IDisposable
         }
     }
     public MapActions @Map => new MapActions(this);
+
+    // Quest_01
+    private readonly InputActionMap m_Quest_01;
+    private IQuest_01Actions m_Quest_01ActionsCallbackInterface;
+    private readonly InputAction m_Quest_01_Press1;
+    private readonly InputAction m_Quest_01_Press2;
+    private readonly InputAction m_Quest_01_Press3;
+    public struct Quest_01Actions
+    {
+        private @GameInput m_Wrapper;
+        public Quest_01Actions(@GameInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Press1 => m_Wrapper.m_Quest_01_Press1;
+        public InputAction @Press2 => m_Wrapper.m_Quest_01_Press2;
+        public InputAction @Press3 => m_Wrapper.m_Quest_01_Press3;
+        public InputActionMap Get() { return m_Wrapper.m_Quest_01; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Quest_01Actions set) { return set.Get(); }
+        public void SetCallbacks(IQuest_01Actions instance)
+        {
+            if (m_Wrapper.m_Quest_01ActionsCallbackInterface != null)
+            {
+                @Press1.started -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress1;
+                @Press1.performed -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress1;
+                @Press1.canceled -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress1;
+                @Press2.started -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress2;
+                @Press2.performed -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress2;
+                @Press2.canceled -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress2;
+                @Press3.started -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress3;
+                @Press3.performed -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress3;
+                @Press3.canceled -= m_Wrapper.m_Quest_01ActionsCallbackInterface.OnPress3;
+            }
+            m_Wrapper.m_Quest_01ActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Press1.started += instance.OnPress1;
+                @Press1.performed += instance.OnPress1;
+                @Press1.canceled += instance.OnPress1;
+                @Press2.started += instance.OnPress2;
+                @Press2.performed += instance.OnPress2;
+                @Press2.canceled += instance.OnPress2;
+                @Press3.started += instance.OnPress3;
+                @Press3.performed += instance.OnPress3;
+                @Press3.canceled += instance.OnPress3;
+            }
+        }
+    }
+    public Quest_01Actions @Quest_01 => new Quest_01Actions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -842,5 +961,11 @@ public class @GameInput : IInputActionCollection, IDisposable
     public interface IMapActions
     {
         void OnToggle(InputAction.CallbackContext context);
+    }
+    public interface IQuest_01Actions
+    {
+        void OnPress1(InputAction.CallbackContext context);
+        void OnPress2(InputAction.CallbackContext context);
+        void OnPress3(InputAction.CallbackContext context);
     }
 }
