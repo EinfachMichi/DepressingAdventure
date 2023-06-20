@@ -660,6 +660,18 @@ PrefabInstance:
       propertyPath: m_Points.Array.data[12].y
       value: 1.1723452
       objectReference: {fileID: 0}
+    - target: {fileID: 9115041676432898493, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115041676432898493, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115041676432898493, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.84
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
 --- !u!4 &5028032696762195717 stripped

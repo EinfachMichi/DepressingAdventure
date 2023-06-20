@@ -54,7 +54,11 @@ namespace Inventory_Items
             }
         }
 
-        public void Disable() => ItemIconImage.enabled = false;
+        public void Disable()
+        {
+            ItemIconImage.enabled = false;
+            gameObject.SetActive(false);
+        }
         public void Enable() => ItemIconImage.enabled = true;
     }
 }

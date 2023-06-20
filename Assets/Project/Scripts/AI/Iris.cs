@@ -24,7 +24,7 @@ namespace AI
             {
                 DialogManager.Instance.OnChoiceResults += OnChoiceResults;
                 DialogManager.Instance.OnDialogEnd += OnDialogEnd;
-                DialogManager.Instance.StartDialog(Dialogs[1]);
+                DialogManager.Instance.StartDialog(Dialogs[3]);
             }
             else if (DialogIndex == 1 && GameManager.Instance.Data.Q1PlayerWon)
             {
@@ -44,7 +44,7 @@ namespace AI
             {
                 Collider2D[] cols = Physics2D.OverlapCircleAll(
                     transform.position,
-                    7f
+                    5f
                 );
                 foreach (Collider2D col in cols)
                 {

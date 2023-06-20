@@ -154,6 +154,7 @@ namespace DialogSystem
                     StopCoroutine(typing);
                     canSkip = false;
                     OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
+                    OnLineFinished?.Invoke();
                     lineFinished = true;
                     NarratorDialog.Instance.SayNarratorLine(dialog, sentenceIndex);
                 }

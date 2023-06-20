@@ -16,6 +16,7 @@ namespace Inventory_Items
             {
                 for (int i = 0; i < Slots.Length; i++)
                 {
+                    if(ItemIDs[i] != 0) Slots[i].gameObject.SetActive(true);
                     Slots[i].LoadData(ItemIDs[i]);
                 }
             }
@@ -38,8 +39,9 @@ namespace Inventory_Items
         {
             foreach (Slot slot in Slots)
             {
-                if (slot.ItemData == null)
+                if (!slot.gameObject.activeSelf)
                 {
+                    slot.gameObject.SetActive(true);
                     slot.SetItem(data);
                     GameManager.Instance.SaveInventory(Slots);
                     return true;
@@ -53,6 +55,7 @@ namespace Inventory_Items
             if (slotIndex < 0 || slotIndex >= Slots.Length) return;
             
             Slots[slotIndex].Clear();
+            Slots[slotIndex].gameObject.SetActive(false);
             GameManager.Instance.SaveInventory(Slots);
         }
 
@@ -60,7 +63,7 @@ namespace Inventory_Items
         {
             foreach (Slot slot in Slots)
             {
-                if (slot.ItemData != null)
+                if (slot.gameObject.activeSelf)
                 {
                     if (slot.ItemData.Name == name)
                     {
