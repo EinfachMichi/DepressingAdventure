@@ -83,6 +83,14 @@ namespace Main
             {
                 Narrator.Instance.MainPlay(15);
             }
+
+            if (Data.NpcInfos[2].DialogIndex == 6)
+            {
+                if (SceneManager.GetActiveScene().name == "Village")
+                {
+                    Narrator.Instance.MainPlay(27);
+                }
+            }
             
             Vector2 offset = new Vector2();
             if (Data.LastScene == null) return;

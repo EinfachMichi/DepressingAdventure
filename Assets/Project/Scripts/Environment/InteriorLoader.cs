@@ -32,6 +32,11 @@ namespace Environment
             spawnpoint = GameObject.FindWithTag("Spawnpoint").transform;
 
             Narrator.Instance.MainPlay(4);
+
+            if (house.HouseID == "warehouse" && GameManager.Instance.Data.NpcInfos[2].DialogIndex == 1)
+            {
+                Narrator.Instance.MainPlay(25);
+            }
             
             Invoke("TPPlayer", 0.05f);
         }

@@ -3939,6 +3939,16 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 8579c87a515ac5c4291b3f94bc5a0ce6, type: 3}
   - ID: 22
     Clip: {fileID: 8300000, guid: 5f94b9abe07ac0341a29cde75307140a, type: 3}
+  - ID: 23
+    Clip: {fileID: 8300000, guid: c3a1ab1b98a0b4e4b827b4d67aa3b31a, type: 3}
+  - ID: 24
+    Clip: {fileID: 8300000, guid: 0495defc88ba4d847b4e79fdd2691f90, type: 3}
+  - ID: 25
+    Clip: {fileID: 8300000, guid: 4282f46241e638a40bf0fa079e6b3e52, type: 3}
+  - ID: 26
+    Clip: {fileID: 8300000, guid: 8df7bc58a9dd2ae4b95bb194f831639f, type: 3}
+  - ID: 27
+    Clip: {fileID: 8300000, guid: 88ef1d0eb552f554db3ed0ceda3643f1, type: 3}
   CurrentClip: {fileID: 0}
 --- !u!82 &5484131914167047927
 AudioSource:
@@ -5103,6 +5113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac91ec36565498390e6fddd86eb39c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameState: 0
   AudioState: 0
 --- !u!1 &8114069385014182862
 GameObject:

@@ -49,6 +49,15 @@ namespace Other
                     return;
                 }
             }
+
+            if (dialog.name == "01_Fronicka_FirstQuest")
+            {
+                if (sentenceIndex == 14)
+                {
+                    Pause(26);
+                    return;
+                }
+            }
         }
 
         private void Pause(int id)

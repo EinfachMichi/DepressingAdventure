@@ -95,16 +95,11 @@ namespace AI
                 DialogIndex = 1;
                 SceneHandler.Instance.EnterNewScene("Quest_01");
             }
-            else if (DialogIndex == 1 && choice == 2)
+            else if (DialogIndex == 3)
             {
                 GameManager.Instance.Data.NpcInfos[2].DialogIndex = 1;
                 Narrator.Instance.MainPlay(14);
-                DialogIndex = 3;
-            }
-            else if (DialogIndex == 3)
-            {
-                print("test");
-                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 1;
+                Invoke("NextNarr", Narrator.Instance.CurrentClip.length);
             }
             else if (DialogIndex == 5)
             {
@@ -118,6 +113,17 @@ namespace AI
             Invoke("ResetInteractable", 1f);
         }
 
+        private void NextNarr()
+        {
+            Narrator.Instance.MainPlay(23);
+            Invoke("NextNarrTime", Narrator.Instance.CurrentClip.length + 7f);
+        }
+
+        private void NextNarrTime()
+        {
+            Narrator.Instance.MainPlay(24);
+        }
+        
         private void OnChoiceResults(int choice)
         {
             this.choice = choice;

@@ -87,6 +87,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
+    - target: {fileID: 4983295932874495484, guid: 2cc0bbba3b51f294e883215ba0000d17, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983295932874495484, guid: 2cc0bbba3b51f294e883215ba0000d17, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.63
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc0bbba3b51f294e883215ba0000d17, type: 3}
 --- !u!1001 &5546592752278784622
@@ -323,6 +331,18 @@ PrefabInstance:
     - target: {fileID: 6098873099698867179, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -2.5196924
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115041676432898493, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115041676432898493, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.312
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115041676432898493, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.888
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c987210bfe49a47b8c7f6f52e79d5e, type: 3}
