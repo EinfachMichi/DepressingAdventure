@@ -857,6 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac91ec36565498390e6fddd86eb39c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameState: 0
   AudioState: 0
 --- !u!1 &573022702
 GameObject:
@@ -2191,7 +2192,7 @@ MonoBehaviour:
     m_ActionName: Quest_01/Press3[/Keyboard/3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: QuickTime
+  m_DefaultActionMap: Quest_01
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &1396765684

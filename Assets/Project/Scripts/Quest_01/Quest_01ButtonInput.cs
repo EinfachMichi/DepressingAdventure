@@ -206,7 +206,7 @@ public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
 
     public void Press1(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && Button[2].GetComponent<Button>().interactable == true)
         {
             print(1+" pressed");
             PlayerChoose(1);

@@ -3027,9 +3027,25 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 5ab2b51e-e097-46bd-9e2b-485e72dd107b
     m_ActionName: QuickTime/Space[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 085f91d6-033e-4a11-a692-2e912a1a15de
+    m_ActionName: Map/Toggle[/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0a4af38a-9075-468a-bd95-93322b6f71df
+    m_ActionName: Quest_01/Press1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 77ab81a8-72dd-4ba8-82eb-977c12a0cb27
+    m_ActionName: Quest_01/Press2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f87152ed-ce4c-4256-9128-360943b9c90e
+    m_ActionName: Quest_01/Press3[/Keyboard/3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: QuickTime
+  m_DefaultActionMap: 2d83343a-5faa-4043-b269-af3e8411c8c1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &1385488919
