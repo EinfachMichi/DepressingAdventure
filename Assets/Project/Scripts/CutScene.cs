@@ -5,19 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CutScene : Singleton<CutScene>
 {
-    private const string saveDataPath = "SaveData";
     public AudioSource Source;
     public Animator transition;
-
-    protected override void Awake()
-    {
-        base.Awake();
-        SaveData data = JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString(saveDataPath));
-        if (data.LastScene != null)
-        {
-            SceneManager.LoadScene(data.LastScene.Name);
-        }
-    }
 
     private void Start()
     {
