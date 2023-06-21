@@ -579,6 +579,33 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Menu"",
+            ""id"": ""f7a67d64-7915-46a5-9674-ac0677503579"",
+            ""actions"": [
+                {
+                    ""name"": ""ESC"",
+                    ""type"": ""Button"",
+                    ""id"": ""83e4fafa-1a5c-459d-af46-e7d357ed0c2c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""b3dbd37d-df2d-44bf-b908-f1d275c69721"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ESC"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -612,6 +639,9 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_Quest_01_Press1 = m_Quest_01.FindAction("Press1", throwIfNotFound: true);
         m_Quest_01_Press2 = m_Quest_01.FindAction("Press2", throwIfNotFound: true);
         m_Quest_01_Press3 = m_Quest_01.FindAction("Press3", throwIfNotFound: true);
+        // Menu
+        m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
+        m_Menu_ESC = m_Menu.FindAction("ESC", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -934,6 +964,39 @@ public class @GameInput : IInputActionCollection, IDisposable
         }
     }
     public Quest_01Actions @Quest_01 => new Quest_01Actions(this);
+
+    // Menu
+    private readonly InputActionMap m_Menu;
+    private IMenuActions m_MenuActionsCallbackInterface;
+    private readonly InputAction m_Menu_ESC;
+    public struct MenuActions
+    {
+        private @GameInput m_Wrapper;
+        public MenuActions(@GameInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ESC => m_Wrapper.m_Menu_ESC;
+        public InputActionMap Get() { return m_Wrapper.m_Menu; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MenuActions set) { return set.Get(); }
+        public void SetCallbacks(IMenuActions instance)
+        {
+            if (m_Wrapper.m_MenuActionsCallbackInterface != null)
+            {
+                @ESC.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnESC;
+                @ESC.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnESC;
+                @ESC.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnESC;
+            }
+            m_Wrapper.m_MenuActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @ESC.started += instance.OnESC;
+                @ESC.performed += instance.OnESC;
+                @ESC.canceled += instance.OnESC;
+            }
+        }
+    }
+    public MenuActions @Menu => new MenuActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -967,5 +1030,9 @@ public class @GameInput : IInputActionCollection, IDisposable
         void OnPress1(InputAction.CallbackContext context);
         void OnPress2(InputAction.CallbackContext context);
         void OnPress3(InputAction.CallbackContext context);
+    }
+    public interface IMenuActions
+    {
+        void OnESC(InputAction.CallbackContext context);
     }
 }
