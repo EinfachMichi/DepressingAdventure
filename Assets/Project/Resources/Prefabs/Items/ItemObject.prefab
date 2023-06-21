@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 189230315331552106}
   - component: {fileID: 189230315331552105}
   - component: {fileID: 189230315331552107}
+  - component: {fileID: 420587025426342124}
   m_Layer: 0
   m_Name: ItemObject
   m_TagString: Untagged
@@ -174,6 +175,91 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Data: {fileID: 0}
+--- !u!114 &420587025426342124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189230315331552111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b473b077cdf6114fa619b34b19e48ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 420587025426342124}
+        m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
+        m_MethodName: DisableObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 961374291622078626}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ShowInteractionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 420587025426342124}
+        m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
+        m_MethodName: EnableObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 961374291622078626}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  InteractionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 420587025426342124}
+        m_TargetAssemblyTypeName: Map, Assembly-CSharp
+        m_MethodName: OnPickup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 420587025426342124}
+        m_TargetAssemblyTypeName: Inventory_Items.ItemObject, Assembly-CSharp
+        m_MethodName: Interaction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  EndInteractionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 420587025426342124}
+        m_TargetAssemblyTypeName: Main.InteractableObject, Assembly-CSharp
+        m_MethodName: DisableObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 961374291622078626}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Data: {fileID: 11400000, guid: 9c88dc0ee76f0a1479e6a6cb5071092f, type: 2}
 --- !u!1 &961374291622078626
 GameObject:
   m_ObjectHideFlags: 0
