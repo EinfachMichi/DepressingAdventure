@@ -1,43 +1,25 @@
 fileFormatVersion: 2
-guid: 9e49eeadd2348744cb2281faa777dae7
+guid: 14418b1fb49ad644388300be34b1456b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530601658314217118
-    second: Asset_Spritesheet_Trees_001_0
+      213: -1756604551178050342
+    second: Menu_Sheet02_0
   - first:
-      213: -4318128447960260236
-    second: Asset_Spritesheet_Trees_001_1
+      213: 7459174450391467797
+    second: Menu_Sheet02_1
   - first:
-      213: 1390683231070929822
-    second: Asset_Spritesheet_Trees_001_2
+      213: 2370977815296420555
+    second: Menu_Sheet02_2
   - first:
-      213: 6528956521544257506
-    second: Asset_Spritesheet_Trees_001_3
+      213: 1373047047381609610
+    second: Menu_Sheet02_3
   - first:
-      213: -4559976284723554080
-    second: Asset_Spritesheet_Trees_001_4
+      213: 726645312576260984
+    second: Menu_Sheet02_4
   - first:
-      213: 7294631045538222005
-    second: Asset_Spritesheet_Trees_001_5
-  - first:
-      213: -1167594352570242580
-    second: Asset_Spritesheet_Trees_001_6
-  - first:
-      213: -162815104081416859
-    second: Asset_Spritesheet_Trees_001_7
-  - first:
-      213: -6725799625647306726
-    second: Asset_Spritesheet_Trees_001_8
-  - first:
-      213: -3090340217467764637
-    second: Asset_Spritesheet_Trees_001_9
-  - first:
-      213: 1519178153408838151
-    second: Asset_Spritesheet_Trees_001_10
-  - first:
-      213: 8771281732869271641
-    second: Asset_Spritesheet_Trees_001_11
+      213: 7273308250720733765
+    second: Menu_Sheet02_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -82,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,7 +83,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -113,7 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -127,85 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_0
+      name: Menu_Sheet02_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5420168, y: 0.16386563}
+        width: 512
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9655dfecc08e1320800000000000000
-      internalID: 2530601658314217118
+      spriteID: ad4a234b7794f97e0800000000000000
+      internalID: -1756604551178050342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_1
+      name: Menu_Sheet02_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 512
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5583565, y: 0.17553696}
+        width: 512
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471e1d41e0de214c0800000000000000
-      internalID: -4318128447960260236
+      spriteID: 517c04964af448760800000000000000
+      internalID: 7459174450391467797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_2
+      name: Menu_Sheet02_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 1024
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.51633954, y: 0.09617188}
+        width: 512
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e93431fc703bc4310800000000000000
-      internalID: 1390683231070929822
+      spriteID: bca2313d2c767e020800000000000000
+      internalID: 2370977815296420555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asset_Spritesheet_Trees_001_3
+      name: Menu_Sheet02_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 1536
         y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5023339, y: 0.105508946}
+        width: 512
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ef8d9c4d538b9a50800000000000000
-      internalID: 6528956521544257506
+      spriteID: a8c641fc30b0e0310800000000000000
+      internalID: 1373047047381609610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_Sheet02_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b8fc5df00951a00800000000000000
+      internalID: 726645312576260984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_Sheet02_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a8022815bffe460800000000000000
+      internalID: 7273308250720733765
       vertices: []
       indices: 
       edges: []
