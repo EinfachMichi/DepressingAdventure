@@ -37,6 +37,9 @@ namespace AI
         {
             if (DialogIndex == 2)
             {
+                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 7;
+                GameManager.Instance.Data.CanCollectRose = true;
+                DialogIndex = 3;
                 OnInspectDone();
             }
         }
@@ -70,9 +73,6 @@ namespace AI
 
             if (DialogIndex == 2)
             {
-                DialogIndex = 3;
-                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 7;
-                GameManager.Instance.Data.CanCollectRose = true;
                 Narrator.Instance.MainPlay(35);
                 GameManager.Instance.Save();
             }
