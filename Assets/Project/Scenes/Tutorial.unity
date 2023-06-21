@@ -7440,18 +7440,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1681582694375697630, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_Color.b
-      value: 0.14117648
-      objectReference: {fileID: 0}
-    - target: {fileID: 1681582694375697630, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_Color.g
-      value: 0.14117648
-      objectReference: {fileID: 0}
-    - target: {fileID: 1681582694375697630, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_Color.r
-      value: 0.14117648
-      objectReference: {fileID: 0}
     - target: {fileID: 2384709736457967036, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7500,14 +7488,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Setup
       objectReference: {fileID: 0}
-    - target: {fileID: 2491600260387720700, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2491600260387720700, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.84
-      objectReference: {fileID: 0}
     - target: {fileID: 2873553914914563430, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7531,14 +7511,6 @@ PrefabInstance:
     - target: {fileID: 2873553914914563430, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3237192709562693300, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_ChildAlignment
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453624041977256138, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_BoundingShape2D
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4229486280550208487, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7609,42 +7581,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6884569758014573845, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7567452679232039627, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7571656061730399094, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476466774529288003, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476466774529288003, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

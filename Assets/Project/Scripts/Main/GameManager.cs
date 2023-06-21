@@ -68,6 +68,11 @@ namespace Main
             Narrator.Instance.MainPlay(0);
             Invoke("StartNarr", Narrator.Instance.CurrentClip.length + 1f);
         }
+
+        private void Delay31()
+        {
+            Narrator.Instance.Play(31);
+        }
         
         private void Start()
         {
@@ -90,6 +95,20 @@ namespace Main
                 {
                     Narrator.Instance.MainPlay(27);
                 }
+            }
+
+            if (SceneManager.GetActiveScene().name == "Tutorial")
+            {
+                if (Data.Played(27))
+                {
+                    Narrator.Instance.Play(29);
+                }
+            }
+
+            if (SceneManager.GetActiveScene().name == "Forest")
+            {
+                Narrator.Instance.Play(30);
+                Invoke("Delay31", Narrator.Instance.CurrentClip.length + 7f);
             }
             
             Vector2 offset = new Vector2();

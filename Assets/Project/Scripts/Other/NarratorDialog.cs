@@ -58,6 +58,46 @@ namespace Other
                     return;
                 }
             }
+
+            if (dialog.name == "00_Ludmilla_Start")
+            {
+                if(sentenceIndex == 1)
+                Pause(32);
+                return;
+            }
+
+            if (dialog.name == "01_Ludmilla_Start_Choice_01")
+            {
+                if (sentenceIndex == 41)
+                {
+                    Pause(33);
+                    return;
+                }
+            }
+
+            if (dialog.name == "03_Ludmilla_Start_Choice_02_After")
+            {
+                if (sentenceIndex == 30)
+                {
+                    Pause(33);
+                    return;
+                }
+            }
+
+            if (dialog.name == "03_Ludmilla_Start_Choice_02_After")
+            {
+                if (sentenceIndex == 0)
+                {
+                    Pause(34);
+                    return;
+                }
+            }
+
+            if (dialog.name == "08_Fronicka_FirstQuest_Done")
+            {
+                Pause(36);
+                return;
+            }
         }
 
         private void Pause(int id)

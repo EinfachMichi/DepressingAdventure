@@ -34,6 +34,8 @@ namespace AI
             if (!interactable) return;
             base.Interaction();
 
+            GameManager.Instance.Data.NarratorInfos[31].Played = true;
+            
             if (DialogIndex == 0)
             {
                 DialogManager.Instance.OnChoiceResults += OnChoiceResults;
@@ -57,6 +59,11 @@ namespace AI
             if (DialogIndex == 0 && choice == 2)
             {
                 Inspect();
+            }
+
+            if (DialogIndex == 2)
+            {
+                Narrator.Instance.MainPlay(35);
             }
 
             Invoke("ResetInteractable", 1f);
