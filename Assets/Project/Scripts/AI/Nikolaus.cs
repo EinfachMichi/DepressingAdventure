@@ -1,4 +1,5 @@
 ﻿using DialogSystem;
+using Main;
 
 namespace AI
 {
@@ -19,6 +20,7 @@ namespace AI
 
             if (DialogIndex == 0)
             {
+                Narrator.Instance.MainPlay(49);
                 DialogIndex = 1;
             }
             

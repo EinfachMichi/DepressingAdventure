@@ -37,6 +37,11 @@ namespace Environment
             {
                 Narrator.Instance.MainPlay(25);
             }
+
+            if (house.HouseID == "hexenhaus" && GameManager.Instance.Data.Played(45))
+            {
+                Narrator.Instance.MainPlay(46);
+            }
             
             Invoke("TPPlayer", 0.05f);
         }

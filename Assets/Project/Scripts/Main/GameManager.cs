@@ -24,9 +24,7 @@ namespace Main
             {
                 playerTransform = GameObject.FindWithTag("Player").transform;
             }
-           
-           
-            
+
             Data = JsonUtility.FromJson<SaveData>(PlayerPrefs.GetString(saveDataPath));
             if (Data == null)
             {
@@ -71,7 +69,30 @@ namespace Main
 
         private void Delay31()
         {
-            Narrator.Instance.Play(31);
+            Narrator.Instance.MainPlay(31);
+        }
+
+        private void InvokeTime1()
+        {
+            Narrator.Instance.MainPlay(39);
+            Invoke("InvokeTime2", Narrator.Instance.CurrentClip.length+6f);
+        }
+        
+        private void InvokeTime2()
+        {
+            Narrator.Instance.MainPlay(40);
+            Invoke("InvokeTime3", Narrator.Instance.CurrentClip.length+6f);
+        }
+        
+        private void InvokeTime3()
+        {
+            Narrator.Instance.MainPlay(41);
+            Invoke("InvokeTime4", Narrator.Instance.CurrentClip.length+6f);
+        }
+        
+        private void InvokeTime4()
+        {
+            Narrator.Instance.MainPlay(42);
         }
         
         private void Start()
@@ -87,13 +108,35 @@ namespace Main
             if (SceneManager.GetActiveScene().name == "Village")
             {
                 Narrator.Instance.MainPlay(15);
-            }
-
-            if (Data.NpcInfos[2].DialogIndex == 6)
-            {
-                if (SceneManager.GetActiveScene().name == "Village")
+                
+                if (Data.NpcInfos[2].DialogIndex == 6)
                 {
                     Narrator.Instance.MainPlay(27);
+                }
+
+                if (Data.NpcInfos[2].DialogIndex == 8)
+                {
+                    Narrator.Instance.MainPlay(38);
+                }
+
+                if (!InventoryManager.Instance.HasItem("WhiteRose"))
+                {
+                    if (Data.Played(41))
+                    {
+                        Invoke("InvokeTime4", Narrator.Instance.CurrentClip.length + 4f);
+                    }
+                    else if (Data.Played(40))
+                    {
+                        Invoke("InvokeTime3", 6f);
+                    }
+                    else if (Data.Played(39))
+                    {
+                        Invoke("InvokeTime2", 6f);
+                    }
+                    else if(Data.Played(38))
+                    {
+                        Invoke("InvokeTime1", 6f);
+                    }
                 }
             }
 
@@ -103,6 +146,11 @@ namespace Main
                 {
                     Narrator.Instance.MainPlay(29);
                 }
+
+                if (Data.Played(43))
+                {
+                    Narrator.Instance.MainPlay(44);
+                }
             }
 
             if (SceneManager.GetActiveScene().name == "Forest")
@@ -110,6 +158,11 @@ namespace Main
                 Narrator.Instance.MainPlay(30);
                 if(Narrator.Instance.CurrentClip != null)
                     Invoke("Delay31", Narrator.Instance.CurrentClip.length + 7f);
+
+                if (Data.Played(44))
+                {
+                    Narrator.Instance.MainPlay(45);
+                }
             }
             
             Vector2 offset = new Vector2();

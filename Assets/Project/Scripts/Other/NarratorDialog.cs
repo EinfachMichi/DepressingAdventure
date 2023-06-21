@@ -101,6 +101,24 @@ namespace Other
                     return;
                 }
             }
+
+            if (dialog.name == "Steve_Rose")
+            {
+                if (sentenceIndex == 0)
+                {
+                    Pause(43);
+                    return;
+                }
+            }
+
+            if (dialog.name == "Steve_WitchvillageReaction")
+            {
+                if (sentenceIndex == 0)
+                {
+                    Pause(48);
+                    return;
+                }
+            }
         }
 
         private void Pause(int id)
