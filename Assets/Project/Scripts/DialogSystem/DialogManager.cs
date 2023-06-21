@@ -34,40 +34,13 @@ namespace DialogSystem
         public void Pause()
         {
             paused = true;
+            OnLineStarted?.Invoke();
         }
 
         public void UnPause()
         {
             paused = false;
-            
-            if (!inDialog) return;
-
-            if (!lineFinished && canSkip)
-            {
-                StopCoroutine(typing);
-                canSkip = false;
-                OnTextChanged?.Invoke(dialog.GetText(sentenceIndex));
-                lineFinished = true;
-            }
-            else if (lineFinished && hasChoosen)
-            {
-                if (dialog.HasChoices(sentenceIndex, out Choice choice))
-                {
-                    hasChoosen = false;
-                    OnChoice?.Invoke(choice);
-                }
-                else if(dialog.CanReadNext(sentenceIndex))
-                {
-                    sentenceIndex++;
-                    typing = StartCoroutine(Type());
-                }
-                else
-                {
-                    inDialog = false;
-                    GameStateManager.Instance.ChangeGameState(GameState.Playing);
-                    OnDialogEnd?.Invoke();
-                }
-            }
+            OnLineFinished?.Invoke();
         }
         
         public void StartDialog(Dialog dialog)

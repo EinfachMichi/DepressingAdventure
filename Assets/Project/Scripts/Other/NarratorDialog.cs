@@ -93,7 +93,7 @@ namespace Other
                 }
             }
 
-            if (dialog.name == "08_Fronicka_FirstQuest_Done")
+            if (dialog.name == "07_Fronicka_FirstQuest_End")
             {
                 Pause(36);
                 return;

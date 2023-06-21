@@ -128,7 +128,7 @@ namespace AI
 
         private void NextNextNarrTime()
         {
-            Narrator.Instance.MainPlay(28);
+            Narrator.Instance.MainPlay(37);
         }
         
         private void OnChoiceResults(int choice)
