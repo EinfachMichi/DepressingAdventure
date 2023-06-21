@@ -16,8 +16,9 @@ public class QuestNarrator : MonoBehaviour
 
     private void OnRoundResults(int round, bool playerwon)
     {
-        if (round == 3 && !playerwon)
+        if (round == 3)
         {
+            Quest_01ButtonInput.Instance.Pause();
             PlayTrack(20);
         }
         else if (round == 4 && !playerwon)
@@ -41,7 +42,6 @@ public class QuestNarrator : MonoBehaviour
     {
         Narrator.Instance.MainPlay(id);
         clip = Narrator.Instance.CurrentClip;
-        if (clip == null) return;
         Quest_01ButtonInput.Instance.Pause();
         Invoke("UnPause", Narrator.Instance.CurrentClip.length);
     }
