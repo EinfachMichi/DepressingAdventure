@@ -48,7 +48,7 @@ public class QuestNarrator : MonoBehaviour
         Invoke("UnPause", Narrator.Instance.CurrentClip.length);
     }
 
-        private void PlayTrack(int id)
+    private void PlayTrack(int id)
     {
         Narrator.Instance.MainPlay(id);
         clip = Narrator.Instance.CurrentClip;

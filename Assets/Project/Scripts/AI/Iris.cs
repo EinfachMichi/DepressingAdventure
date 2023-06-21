@@ -43,7 +43,8 @@ namespace AI
         {
             print(DialogIndex);
             if (!GameManager.Instance.Data.IrisNearTrigger
-                && GameStateManager.Instance.AudioState != AudioState.InMainTalk)
+                && GameStateManager.Instance.AudioState != AudioState.InMainTalk
+                && DialogIndex == 0)
             {
                 Collider2D[] cols = Physics2D.OverlapCircleAll(
                     transform.position,
@@ -122,6 +123,12 @@ namespace AI
         private void NextNarrTime()
         {
             Narrator.Instance.MainPlay(24);
+            Invoke("NextNextNarrTime", Narrator.Instance.CurrentClip.length + 7f);
+        }
+
+        private void NextNextNarrTime()
+        {
+            Narrator.Instance.MainPlay(28);
         }
         
         private void OnChoiceResults(int choice)
