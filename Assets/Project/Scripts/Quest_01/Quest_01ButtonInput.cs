@@ -206,8 +206,9 @@ public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
 
     public void Press1(InputAction.CallbackContext context)
     {
-        if (context.started&&Button[1].GetComponent<Button>().interactable == true)
+        if (context.started)
         {
+            print(1+" pressed");
             PlayerChoose(1);
         }
     }
@@ -216,6 +217,7 @@ public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
     {
         if (context.started && Button[2].GetComponent<Button>().interactable == true)
         {
+            print(2);
             PlayerChoose(2);
         }
     }
@@ -224,6 +226,7 @@ public class Quest_01ButtonInput : Singleton<Quest_01ButtonInput>
     {
         if (context.started && Button[3].GetComponent<Button>().interactable == true)
         {
+            print(3);
             PlayerChoose(3);
         }
     }
