@@ -99,7 +99,7 @@ namespace AI
             {
                 GameManager.Instance.Data.NpcInfos[2].DialogIndex = 1;
                 Narrator.Instance.MainPlay(14);
-                Invoke("NextNarr", Narrator.Instance.CurrentClip.length + 1f);
+                Invoke("NextNarr", Narrator.Instance.CurrentClip.length);
             }
             else if (DialogIndex == 5)
             {
