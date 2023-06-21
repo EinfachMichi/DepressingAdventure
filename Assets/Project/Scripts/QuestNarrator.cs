@@ -7,6 +7,8 @@ public class QuestNarrator : MonoBehaviour
     public bool Quest1;
 
     private AudioClip clip;
+
+    private int temp;
     
     public void Start()
     {
@@ -16,11 +18,12 @@ public class QuestNarrator : MonoBehaviour
 
     private void OnRoundResults(int round, bool playerwon)
     {
-        if (round == 3 && !playerwon)
+        if (round == 3)
         {
-            PlayTrack(20);
+            temp = 20;
+            Invoke("PlayTemp", 0.1f);
         }
-        else if (round == 4 && !playerwon)
+        else if (round == 4)
         {
             PlayTrack(22);
         }
@@ -37,11 +40,18 @@ public class QuestNarrator : MonoBehaviour
         PlayTrack(19);
     }
 
-    private void PlayTrack(int id)
+    private void PlayTemp()
+    {
+        Narrator.Instance.MainPlay(temp);
+        clip = Narrator.Instance.CurrentClip;
+        Quest_01ButtonInput.Instance.Pause();
+        Invoke("UnPause", Narrator.Instance.CurrentClip.length);
+    }
+
+        private void PlayTrack(int id)
     {
         Narrator.Instance.MainPlay(id);
         clip = Narrator.Instance.CurrentClip;
-        if (clip == null) return;
         Quest_01ButtonInput.Instance.Pause();
         Invoke("UnPause", Narrator.Instance.CurrentClip.length);
     }

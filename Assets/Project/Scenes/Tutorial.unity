@@ -2091,11 +2091,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!60 &86895085 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2384709735574272142, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
-  m_PrefabInstance: {fileID: 443368886}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &92660862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7544,7 +7539,7 @@ PrefabInstance:
     - target: {fileID: 3453624041977256138, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 86895085}
+      objectReference: {fileID: 0}
     - target: {fileID: 4229486280550208487, guid: 9cb84372781ed0e439b82238c4cc11f8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

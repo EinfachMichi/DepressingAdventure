@@ -102,6 +102,7 @@ namespace Player
                     AudioManager.Instance.Play("Run", AudioManager.AudioSound.EffectSounds);
                     AudioManager.Instance.Stop("Walk", AudioManager.AudioSound.EffectSounds);
                 }
+                anim.SetBool("Run", true);
                 speed = RunSpeed;
             }
             else if (context.canceled)
@@ -111,6 +112,7 @@ namespace Player
                     AudioManager.Instance.Stop("Run", AudioManager.AudioSound.EffectSounds);
                     AudioManager.Instance.Play("Walk", AudioManager.AudioSound.EffectSounds);
                 }
+                anim.SetBool("Run", false);
                 speed = WalkSpeed;
             }
         }
