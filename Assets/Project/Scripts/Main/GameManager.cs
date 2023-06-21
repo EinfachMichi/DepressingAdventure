@@ -101,14 +101,15 @@ namespace Main
             {
                 if (Data.Played(27))
                 {
-                    Narrator.Instance.Play(29);
+                    Narrator.Instance.MainPlay(29);
                 }
             }
 
             if (SceneManager.GetActiveScene().name == "Forest")
             {
-                Narrator.Instance.Play(30);
-                Invoke("Delay31", Narrator.Instance.CurrentClip.length + 7f);
+                Narrator.Instance.MainPlay(30);
+                if(Narrator.Instance.CurrentClip != null)
+                    Invoke("Delay31", Narrator.Instance.CurrentClip.length + 7f);
             }
             
             Vector2 offset = new Vector2();

@@ -14,17 +14,19 @@ namespace AI
         {
             base.Start();
 
-            if (InventoryManager.Instance.HasItem("WhiteRose")
-                && GameManager.Instance.Data.NpcInfos[2].DialogIndex == 6
-                || GameManager.Instance.Data.NpcInfos[2].DialogIndex == 8
-                || GameManager.Instance.Data.NpcInfos[2].DialogIndex == 7)
+            if (InventoryManager.Instance.HasItem("WhiteRose"))
             {
-                gameObject.SetActive(false);
-                if (!GameManager.Instance.Data.LudmillaDead)
+                if (GameManager.Instance.Data.NpcInfos[2].DialogIndex == 6
+                    || GameManager.Instance.Data.NpcInfos[2].DialogIndex == 8
+                    || GameManager.Instance.Data.NpcInfos[2].DialogIndex == 7)
                 {
-                    GameManager.Instance.Data.LudmillaDead = true;
-                    GameManager.Instance.Data.WitchVillage = true;
-                    GameManager.Instance.Save();
+                    gameObject.SetActive(false);
+                    if (!GameManager.Instance.Data.LudmillaDead)
+                    {
+                        GameManager.Instance.Data.LudmillaDead = true;
+                        GameManager.Instance.Data.WitchVillage = true;
+                        GameManager.Instance.Save();
+                    }
                 }
             }
         }
@@ -61,8 +63,9 @@ namespace AI
                 Inspect();
             }
 
-            if (DialogIndex == 2)
+            if (DialogIndex == 3)
             {
+                GameManager.Instance.Data.NpcInfos[2].DialogIndex = 7;
                 Narrator.Instance.MainPlay(35);
             }
 
@@ -71,21 +74,24 @@ namespace AI
 
         public void Inspect()
         {
-            DialogManager.Instance.OnNextSentence += OnInspectDone;
+            DialogIndex = 2;
+            DialogManager.Instance.OnNextSentence += OnNextSentence;
             DialogManager.Instance.StartDialog(Dialogs[2]);
-            GameStateManager.Instance.ChangeGameState(GameState.InList);
             InventoryManager.Instance.RemoveItem(1);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
             listQuest.SetActive(true);
+        }
+
+        private void OnNextSentence()
+        {
+            if (GameManager.Instance.Data.NpcInfos[3].DialogIndex == 3)
+            {
+                DialogManager.Instance.OnNextSentence -= OnNextSentence;
+                OnInspectDone();
+            }
         }
         
         public void OnInspectDone()
         {
-            DialogManager.Instance.OnNextSentence -= OnInspectDone;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            DialogIndex = 2;
             listQuest.SetActive(false);
             interactable = true;
             DialogIndex = 3;

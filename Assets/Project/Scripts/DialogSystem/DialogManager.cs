@@ -67,6 +67,7 @@ namespace DialogSystem
             for (int i = 0; i < text.Length; i++)
             {
                 if (i == 5) canSkip = true;
+                if(i % 5 == 0) AudioManager.Instance.Play("Type", AudioManager.AudioSound.EffectSounds);
                 result += text[i];
                 OnTextChanged?.Invoke(result);
                 yield return new WaitForSeconds(1 / CharactersPerSecond);

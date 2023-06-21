@@ -95,8 +95,11 @@ namespace Other
 
             if (dialog.name == "07_Fronicka_FirstQuest_End")
             {
-                Pause(36);
-                return;
+                if (sentenceIndex == 21)
+                {
+                    Pause(36);
+                    return;
+                }
             }
         }
 

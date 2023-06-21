@@ -15,6 +15,7 @@ namespace Player
         private Vector2 moveVector;
         private float speed;
         private Vector2 dir;
+        private bool inTp;
         
         private void Awake()
         {
@@ -39,7 +40,9 @@ namespace Player
             
             if (state == GameState.InTeleportation)
             {
+                inTp = true;
                 rb.velocity = dir * speed;
+                anim.SetFloat("Speed", 0f);
                 return;
             }
             
@@ -60,6 +63,7 @@ namespace Player
         private void FixedUpdate()
         {
             SetVelocity();
+            if (inTp) return;
             anim.SetFloat("Speed", rb.velocity.magnitude);
             if (moveVector != Vector2.zero)
             {

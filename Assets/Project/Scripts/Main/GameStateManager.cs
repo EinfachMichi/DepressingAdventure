@@ -39,7 +39,6 @@ namespace Main
         Playing,
         InDialog,
         InMap,
-        InList,
         InTeleportation
     }
 }
